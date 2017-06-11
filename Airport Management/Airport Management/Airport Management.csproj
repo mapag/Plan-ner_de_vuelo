@@ -91,14 +91,23 @@
     <EmbeddedResource Include="agregarAvion.resx">
       <DependentUpon>agregarAvion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="agregarVuelo.resx">
+      <DependentUpon>agregarVuelo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="eliminarAvion.resx">
       <DependentUpon>eliminarAvion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eliminarVuelo.resx">
+      <DependentUpon>eliminarVuelo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modificarAvion.resx">
       <DependentUpon>modificarAvion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificarVuelo.resx">
+      <DependentUpon>modificarVuelo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -121,6 +130,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Clases\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
