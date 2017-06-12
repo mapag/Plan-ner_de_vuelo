@@ -17,76 +17,66 @@ namespace Airport_Management
             InitializeComponent();
         }
 
-        private void agregarAviónToolStripMenuItem_Click(object sender, EventArgs e)
+        public void borrarVentanaAnterior ()
         {
             for (int i = 0; i < this.MdiChildren.Length; i++)
             {
                 this.MdiChildren[i].Close();
             }
+        }
+
+       public void abrirVentana (Form frm)
+        {
+            frm.MdiParent = this;
+            frm.Show();
+        }
+        private void agregarAviónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             
+            borrarVentanaAnterior();
             agregarAvion agreAvion = new agregarAvion();
-            agreAvion.MdiParent = this;
-            agreAvion.Show();
+            abrirVentana(agreAvion);
+           
         }
 
         private void modificarAviónToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < this.MdiChildren.Length; i++)
-            {
-                this.MdiChildren[i].Close();
-            }
-
+           
+            borrarVentanaAnterior();
             modificarAvionn modAvion = new modificarAvionn();
-            modAvion.MdiParent = this;
-            modAvion.Show();
+            abrirVentana(modAvion);
         }
 
         private void eliminarAviónToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < this.MdiChildren.Length; i++)
-            {
-                this.MdiChildren[i].Close();
-            }
-
+           
+            borrarVentanaAnterior();
             eliminarAvion elimAvion = new eliminarAvion();
-            elimAvion.MdiParent = this;
-            elimAvion.Show();
+            abrirVentana(elimAvion);
         }
 
         private void agregarVueloToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < this.MdiChildren.Length; i++)
-            {
-                this.MdiChildren[i].Close();
-            }
-
+           
+            borrarVentanaAnterior();
             agregarVuelo agregVuelo = new agregarVuelo();
-            agregVuelo.MdiParent = this;
-            agregVuelo.Show();
+            abrirVentana(agregVuelo);
         }
 
         private void modificarVueloToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < this.MdiChildren.Length; i++)
-            {
-                this.MdiChildren[i].Close();
-            }
-
+           
+            borrarVentanaAnterior();
             modificarVuelo modVuelo = new modificarVuelo();
-            modVuelo.MdiParent = this;
-            modVuelo.Show();
+            abrirVentana(modVuelo);
         }
 
         private void eliminarVueloToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < this.MdiChildren.Length; i++)
-            {
-                this.MdiChildren[i].Close();
-            }
-
+           
+            borrarVentanaAnterior();
             eliminarVuelo elimVuelo = new eliminarVuelo();
-            elimVuelo.MdiParent = this;
-            elimVuelo.Show();
+            abrirVentana(elimVuelo);
         }
     }
 }
