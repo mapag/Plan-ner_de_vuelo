@@ -56,6 +56,8 @@
     <Compile Include="agregarVuelo.Designer.cs">
       <DependentUpon>agregarVuelo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clases\AccesoDatos.cs" />
+    <Compile Include="Clases\GestionAviones.cs" />
     <Compile Include="eliminarAvion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,9 +130,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Clases\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
