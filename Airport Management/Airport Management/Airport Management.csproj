@@ -105,6 +105,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="modificarAvionn.resx">
+      <DependentUpon>modificarAvionn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="modificarVuelo.resx">
       <DependentUpon>modificarVuelo.cs</DependentUpon>
     </EmbeddedResource>
