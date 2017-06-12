@@ -81,12 +81,14 @@
             this.modificarAviónToolStripMenuItem.Name = "modificarAviónToolStripMenuItem";
             this.modificarAviónToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.modificarAviónToolStripMenuItem.Text = "Modificar avión";
+            this.modificarAviónToolStripMenuItem.Click += new System.EventHandler(this.modificarAviónToolStripMenuItem_Click);
             // 
             // eliminarAviónToolStripMenuItem
             // 
             this.eliminarAviónToolStripMenuItem.Name = "eliminarAviónToolStripMenuItem";
             this.eliminarAviónToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.eliminarAviónToolStripMenuItem.Text = "Eliminar avión";
+            this.eliminarAviónToolStripMenuItem.Click += new System.EventHandler(this.eliminarAviónToolStripMenuItem_Click);
             // 
             // vUELOSToolStripMenuItem
             // 
@@ -103,18 +105,21 @@
             this.agregarVueloToolStripMenuItem.Name = "agregarVueloToolStripMenuItem";
             this.agregarVueloToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.agregarVueloToolStripMenuItem.Text = "Agregar vuelo";
+            this.agregarVueloToolStripMenuItem.Click += new System.EventHandler(this.agregarVueloToolStripMenuItem_Click);
             // 
             // modificarVueloToolStripMenuItem
             // 
             this.modificarVueloToolStripMenuItem.Name = "modificarVueloToolStripMenuItem";
             this.modificarVueloToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.modificarVueloToolStripMenuItem.Text = "Modificar vuelo";
+            this.modificarVueloToolStripMenuItem.Click += new System.EventHandler(this.modificarVueloToolStripMenuItem_Click);
             // 
             // eliminarVueloToolStripMenuItem
             // 
             this.eliminarVueloToolStripMenuItem.Name = "eliminarVueloToolStripMenuItem";
             this.eliminarVueloToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.eliminarVueloToolStripMenuItem.Text = "Eliminar vuelo";
+            this.eliminarVueloToolStripMenuItem.Click += new System.EventHandler(this.eliminarVueloToolStripMenuItem_Click);
             // 
             // pLANESToolStripMenuItem
             // 
