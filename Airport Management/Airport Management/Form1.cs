@@ -36,7 +36,7 @@ namespace Airport_Management
                 this.MdiChildren[i].Close();
             }
 
-            modificarAvion2 modAvion = new modificarAvion2();
+            modificarAvionn modAvion = new modificarAvionn();
             modAvion.MdiParent = this;
             modAvion.Show();
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Airport_Management
 {
-    public partial class modificarAvion : Form
+    public partial class modificarAvionn : Form
     {
-        public modificarAvion()
+        public modificarAvionn()
         {
             InitializeComponent();
         }
