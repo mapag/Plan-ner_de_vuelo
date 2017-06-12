@@ -58,6 +58,7 @@
     </Compile>
     <Compile Include="Clases\AccesoDatos.cs" />
     <Compile Include="Clases\GestionAviones.cs" />
+    <Compile Include="Clases\GestionVuelos.cs" />
     <Compile Include="eliminarAvion.cs">
       <SubType>Form</SubType>
     </Compile>
