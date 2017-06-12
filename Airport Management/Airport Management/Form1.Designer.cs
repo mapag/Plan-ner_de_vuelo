@@ -55,7 +55,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(303, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(777, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -132,7 +132,7 @@
             // generarPlanToolStripMenuItem
             // 
             this.generarPlanToolStripMenuItem.Name = "generarPlanToolStripMenuItem";
-            this.generarPlanToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.generarPlanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.generarPlanToolStripMenuItem.Text = "Generar plan";
             // 
             // rEPORTESToolStripMenuItem
@@ -151,13 +151,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(303, 274);
+            this.ClientSize = new System.Drawing.Size(777, 512);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
