@@ -1,0 +1,57 @@
+Procedimientos almacenados
+
+--Eliminar Avion
+
+CREATE PROCEDURE spEliminarAvion
+@Codigo VARCHAR (10)
+AS
+DELETE FROM aviones WHERE codigo_AV = @Codigo
+GO
+
+
+--Agregar Avion
+
+CREATE PROCEDURE spInsertarAvion
+@Codigo VARCHAR (10), @tipo VARCHAR (10)
+AS
+INSERT INTO aviones (codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV)
+SELECT @Codigo, @tipo, 'Ezeiza', null, 0
+GO
+
+--Modificar Avion
+
+CREATE PROCEDURE spModificarAvion
+@Codigo_AV_Actual VARCHAR(10), @Codigo_AV_Nuevo VARCHAR(10), @tipoNuevo VARCHAR(10)
+AS
+UPDATE aviones SET codigo_AV = @Codigo_AV_Nuevo, tipo_AV = @tipoNuevo WHERE codigo_AV = @Codigo_AV_Actual
+GO
+
+-- Eliminar Vuelo
+
+CREATE PROCEDURE spEliminarVuelo
+@codigo_VLO VARCHAR (10)
+AS
+DELETE FROM vuelos WHERE codigo_VLO = @codigo_VLO
+GO
+
+
+-- Crear Vuelo
+
+CREATE PROCEDURE spInsertarVuelo
+@codigo_VLO VARCHAR (10), @codigo_RTA VARCHAR (10), @fecha DATETIME
+AS
+INSERT INTO vuelos (codigo_VLO, codigo_RTA, fecha_salida_VLO)
+SELECT @codigo_VLO, @codigo_RTA, @fecha
+GO
+
+
+-- Modificar Vuelo
+
+CREATE PROCEDURE spModificarVuelo
+@codigo_VLO_Actual VARCHAR(10), @codigo_RTA_Nuevo VARCHAR(10), @codigo_VLO_Nuevo VARCHAR(10), @fecha_Nueva DATETIME
+AS
+UPDATE vuelos SET codigo_VLO = @codigo_VLO_Nuevo, codigo_RTA = @codigo_RTA_Nuevo, fecha_salida_VLO = @fecha_Nueva  WHERE codigo_VLO = @codigo_VLO_Actual
+GO
+
+
+
