@@ -1,0 +1,14 @@
+CREATE VIEW vistaAviones
+AS
+SELECT codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV FROM aviones
+GO
+
+CREATE VIEW vistaVuelos
+AS
+SELECT codigo_VLO, codigo_RTA, fecha_salida_VLO FROM vuelos
+GO
+
+CREATE VIEW vistaTripulantes
+AS
+SELECT legajo_TCP, tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP FROM tripulantes
+GO

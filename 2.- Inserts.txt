@@ -2,617 +2,735 @@ use Airport_Mannager
 go
 
 INSERT INTO aeropuertos (codigo_ATO, nombre_ATO, pais_ATO, provincia_ATO, contador_ATO)
-values ('sdf12dsfkj', 'Ezeiza', 'Argentina', 'Buenos Aires', 0)
-INSERT INTO aeropuertos (codigo_ATO, nombre_ATO, pais_ATO, provincia_ATO, contador_ATO)
-values('jghs679khj', 'Teniente Luis Candelaria', 'Argentina', 'Rio Negro', 0)
-INSERT INTO aeropuertos (codigo_ATO, nombre_ATO, pais_ATO, provincia_ATO, contador_ATO)
-values('lkghsg8970', 'Ing. Aer. Ambrosio Taravella', 'Argentina', 'Córdoba', 0)
-INSERT INTO aeropuertos (codigo_ATO, nombre_ATO, pais_ATO, provincia_ATO, contador_ATO)
-values('kksdju87aa', 'Chek Lap Kok', 'China', 'Hong Kong', 0)
-INSERT INTO aeropuertos (codigo_ATO, nombre_ATO, pais_ATO, provincia_ATO, contador_ATO)
-values('5658sdaeee', 'General Cesáreo L. Berisso', 'Uruguai', 'Montevideo', 0)
-INSERT INTO aeropuertos (codigo_ATO, nombre_ATO, pais_ATO, provincia_ATO, contador_ATO)
-values('6577sdf7s8', 'Giovanni Nicelli', 'Italia', 'Venecia', 0)
-INSERT INTO aeropuertos (codigo_ATO, nombre_ATO, pais_ATO, provincia_ATO, contador_ATO)
-values('sdq7q7q59i', 'Long Beach', 'Estados Unidos', 'California', 0)
-INSERT INTO aeropuertos (codigo_ATO, nombre_ATO, pais_ATO, provincia_ATO, contador_ATO)
-values('hgn58888h4', 'Barra', 'Reino Unido', 'Escocia', 0)
-INSERT INTO aeropuertos (codigo_ATO, nombre_ATO, pais_ATO, provincia_ATO, contador_ATO)
-values('1231bdffp9', 'Kansai', 'Japón', 'Osaka', 0)
-INSERT INTO aeropuertos (codigo_ATO, nombre_ATO, pais_ATO, provincia_ATO, contador_ATO)
-values('98sd7ty58a', 'Reina Tamar', 'Giorgia', 'Mestia', 0)
+SELECT 'sdf12dsfkj', 'Ezeiza', 'Argentina', 'Buenos Aires', 0 UNION
+SELECT 'jghs679khj', 'Teniente Luis Candelaria', 'Argentina', 'Rio Negro', 0 UNION
+SELECT 'lkghsg8970', 'Ing. Aer. Ambrosio Taravella', 'Argentina', 'Córdoba', 0 UNION
+SELECT 'kksdju87aa', 'Chek Lap Kok', 'China', 'Hong Kong', 0 UNION
+SELECT '5658sdaeee', 'General Cesáreo L. Berisso', 'Uruguai', 'Montevideo', 0 UNION
+SELECT '6577sdf7s8', 'Giovanni Nicelli', 'Italia', 'Venecia', 0 UNION
+SELECT 'sdq7q7q59i', 'Long Beach', 'Estados Unidos', 'California', 0 UNION
+SELECT 'hgn58888h4', 'Barra', 'Reino Unido', 'Escocia', 0 UNION
+SELECT '1231bdffp9', 'Kansai', 'Japón', 'Osaka', 0 UNION
+SELECT '98sd7ty58a', 'Reina Tamar', 'Giorgia', 'Mestia', 0
 
 
 
 
 
 INSERT INTO tipos_de_aviones (codigo_TA, nombre_TA, descripcion_TA, cant_pil_TA, cant_jc_TA, cant_com_TA, cant_aux_TA)
-VALUES ('asda78sd', 'Boeing 747', 'También conocido como Jumbo Jet o el modelo de Air Force One', 2, 1, 1, 7)
-INSERT INTO tipos_de_aviones (codigo_TA, nombre_TA, descripcion_TA, cant_pil_TA, cant_jc_TA, cant_com_TA, cant_aux_TA)
-VALUES ('6s884s9de', 'Boeing 777', 'Una capacidad de 300 a 550 pasajeros', 1, 1, 1, 8)
-INSERT INTO tipos_de_aviones (codigo_TA, nombre_TA, descripcion_TA, cant_pil_TA, cant_jc_TA, cant_com_TA, cant_aux_TA)
-VALUES ('6549sda3e', 'Boeing 757', 'Este avión de tamaño medio es ideal para vuelos comerciales, hasta 289 pasajeros', 1, 1, 1, 5)
-INSERT INTO tipos_de_aviones (codigo_TA, nombre_TA, descripcion_TA, cant_pil_TA, cant_jc_TA, cant_com_TA, cant_aux_TA)
-VALUES ('as8945e5ef', 'Airbus A320', 'perfecto para los vuelos comerciales nacionales', 1, 1, 1, 4)
+SELECT 'asda78sd', 'Boeing 747', 'También conocido como Jumbo Jet o el modelo de Air Force One', 2, 1, 1, 7 UNION
+SELECT '6s884s9de', 'Boeing 777', 'Una capacidad de 300 a 550 pasajeros', 1, 1, 1, 8 UNION
+SELECT '6549sda3e', 'Boeing 757', 'Este avión de tamaño medio es ideal para vuelos comerciales, hasta 289 pasajeros', 1, 1, 1, 5 UNION
+SELECT 'as8945e5ef', 'Airbus A320', 'perfecto para los vuelos comerciales nacionales', 1, 1, 1, 4
 
 
 
 
 
 INSERT INTO tipos_de_tripulantes (codigo_TT, nombre_TT, descripcion_TT)
-VALUES ('pil', 'Piloto', 'Piloto Civil de Aeronave')
-INSERT INTO tipos_de_tripulantes (codigo_TT, nombre_TT, descripcion_TT)
-VALUES ('jc', 'Jefe de Cabina', 'Responsable de la aeronave')
-INSERT INTO tipos_de_tripulantes (codigo_TT, nombre_TT, descripcion_TT)
-VALUES ('aux', 'Auxiliar', 'Le trae el agua')
-INSERT INTO tipos_de_tripulantes (codigo_TT, nombre_TT, descripcion_TT)
-VALUES ('com', 'Comisario', 'Responsable de seguridad')
+SELECT 'pil', 'Piloto', 'Piloto Civil de Aeronave' UNION
+SELECT 'jc', 'Jefe de Cabina', 'Responsable de la aeronave'  UNION
+SELECT 'aux', 'Auxiliar', 'Le trae el agua' UNION
+SELECT 'com', 'Comisario', 'Responsable de seguridad'
+
 
 
 
 
 INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Cristian', 'Herrera', '2176241473', '3094040250') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Ana', 'Radnikov', '1731735232', '2759831189') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Carmen', 'Bañez', '2568129770', '3152615786') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'David', 'Rufián', '3540624735', '3933215516') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Esther', 'Fernandez', '2984727060', '3428917128') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Carmen', 'Bañez', '3679417140', '3752335521') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Alberto', 'Rufián', '3494534220', '1143522939') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Emmanuel', 'Smith', '3587839389', '4226139495') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Carlos', 'Correa', '2285712529', '1427324685') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'María', 'de Lourdes', '2070542073', '1519430478') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Matías', 'Radnikov', '3912525414', '2242716144') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Esther', 'Borbón', '1076316888', '1097933792') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Damian', 'Fernandez', '2510216986', '3068523696') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Ana', 'Maldonado', '2984141188', '2313731100') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Jesús', 'Fernandez', '2957025079', '1199516602') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Alberto', 'Zapatero', '4208839728', '2299136098') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Ana', 'Herrera', '3692537225', '3414011660') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Lugo', 'Radnikov', '1408920319', '1863711807') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Matías', 'Gutierrez', '4169925137', '3752314847') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Carlos', 'Radnikov', '2001216439', '1004733947') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Carlos', 'Lapido', '3253021482', '1033016018') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'María', 'Bañez', '2836034760', '2768639905') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Damian', 'Luna', '2379820859', '3576039736') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Andrés', 'Rufián', '4103327062', '3244526542') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Raul', 'Borbón', '2743727517', '3006942308') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Patricia', 'Cardenas', '2664320686', '2811936349') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Cristian', 'Rodriguez', '3759631726', '2237118547') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Cristian', 'Fernandez', '2386333736', '3314341521') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Andrés', 'Luna', '1896140727', '4129510042') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Esther', 'Montero', '2059640281', '3345715748') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Lucia', 'Del Bueno', '3695611706', '3344118001') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Emmanuel', 'Pinto', '1752037756', '2195241135') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Marcelo', 'Perez', '2909642112', '2561736736') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Ariel', 'Montero', '1285523041', '1699919162') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Andrés', 'Gutierrez', '1110242145', '3830814248') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Alberto', 'Montero', '2200327733', '3444312741') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Carlos', 'Maldonado', '2041231188', '2787721523') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Pedro', 'Pinto', '3274919091', '3662534615') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Andrés', 'Lopez', '3364920857', '2032711008') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('com', 'Miguel', 'de Lourdes', '4243613771', '2942914247') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Carlos', 'Cardenas', '2182138336', '2481514638') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'David', 'Maldonado', '4057315309', '2989418828') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Lugo', 'Montenegro', '3096432692', '3776932960') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Miguel', 'Cardenas', '3559122195', '1543532029') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Jesús', 'Fuertez', '3055629511', '2462718778') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Carmen', 'Gutierrez', '2527537153', '2613839713') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Jesús', 'Estias', '3918018337', '2832121586') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Alberto', 'Del Bueno', '2613934057', '2101215076') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Carlos', 'Cardenas', '3454825574', '4188925774') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Marcelo', 'Herrera', '4069131085', '1583411124') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Carlos', 'Bañez', '2658422199', '3544629459') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Antonio', 'Lopez', '3033436886', '2759428327') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Marcelo', 'de Lourdes', '3022034057', '3083913039') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Monica', 'Correa', '1477610358', '1080937740') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Franco', 'Smith', '3518531786', '1815121733') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Lugo', 'Fuertez', '1024541945', '1406731573') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'David', 'Gutierrez', '2091113072', '1615012920') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Ludmila', 'Zapatero', '2662730418', '1508722373') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Carlos', 'Fuertez', '1553918147', '3807120219') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Lucila', 'Gutierrez', '3242713285', '2312726646') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Raul', 'Rodriguez', '1777132461', '3546022968') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Rubén', 'Correa', '4215831600', '3807119630') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Lucia', 'Maldonado', '4268841729', '4020840287') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Cristian', 'Fuertez', '3841431967', '2905928098') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Esther', 'Gomez', '1198829450', '2045934992') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Antonio', 'Gutierrez', '1433129967', '1351820234') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Franco', 'Lapido', '1190118260', '3097115467') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Ismaél', 'Lopez', '1252722018', '3898421606') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Monica', 'Gutierrez', '1664010751', '4252119064') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Pedro', 'Zapatero', '2023633732', '1752917969') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Emmanuel', 'Lopez', '2664229411', '3095437458') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Matías', 'Herrera', '2270821148', '3436441157') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Matías', 'Luna', '1434713022', '3814426296') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Patricia', 'Musiani', '4183312918', '3187031566') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Ismaél', 'Bañez', '3697231333', '3179326775') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Monica', 'Luna', '3607113200', '1490237331') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Lucila', 'Correa', '4008318249', '3000617201') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Pedro', 'Smith', '1292820579', '3907916001') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Ariel', 'Musiani', '3910042441', '2266213714') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('pil', 'Lucila', 'Cardenas', '3346310452', '1378028217') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Jesús', 'Correa', '2188313180', '3655413089') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'David', 'Buenafuente', '3417325227', '1593533087') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Cristian', 'Fuertez', '2561919392', '3343634704') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'David', 'Rodriguez', '3760610411', '3572231255') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Lucas', 'Estias', '1310110251', '3627436904') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Miguel', 'Buenafuente', '1675712767', '2868336856') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Patricia', 'Pinto', '1270316136', '1701929259') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Lucia', 'Fernandez', '1949941171', '1860740274') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Ludmila', 'Rodriguez', '3414528420', '2188825103') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Marcelo', 'Radnikov', '2355921308', '1286927103') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Damian', 'Lapido', '3701240651', '1095910746') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Pedro', 'Smith', '3460737970', '2510720738') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Lugo', 'Rufián', '1377741153', '4010434559') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'María', 'Pinto', '2800230607', '3420621083') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Rubén', 'Correa', '2654713379', '2647038071') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Carmen', 'Borbón', '4034822440', '1374926798') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Lucas', 'Cardenas', '2039116703', '2628717891') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Carmen', 'Correa', '1255513772', '1862317141') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Andrés', 'Montenegro', '3889810770', '3683042274') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Ludmila', 'Pinto', '1822629979', '3693315299') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Carlos', 'Bañez', '4224220385', '2193623022') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Patricia', 'Musiani', '2031511881', '1990610971') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Jesús', 'Cardenas', '1893741914', '2487811740') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Ariel', 'Fernandez', '1926538964', '2730527920') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Cristian', 'Buenafuente', '1752626028', '1941836372') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Lucila', 'Radnikov', '3046116098', '1631115966') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'David', 'Rufián', '3575025892', '1820417678') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Andrés', 'Perez', '3332935134', '3058616969') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'María', 'Lapido', '1601126442', '2379026766') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Damian', 'Cardenas', '1803517716', '2256222134') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Lucas', 'Radnikov', '1575435355', '1376614305') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Alberto', 'Montenegro', '4274814540', '3290235719') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Pedro', 'Fernandez', '1516316905', '3680326200') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Lugo', 'Rodriguez', '3419329540', '2572124635') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Ismaél', 'Borbón', '2058819920', '2127536357') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Marcelo', 'Radnikov', '3089623346', '3796639621') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Alberto', 'Perez', '2443815514', '2861218100') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Damian', 'Radnikov', '1203013048', '3984923659') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Carlos', 'Lopez', '2118825174', '2876940236') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('jc', 'Marcelo', 'Pogonza', '1124837896', '3367119298') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Carmen', 'Luna', '2193621314', '2746937654') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Andrés', 'Rodriguez', '1843711158', '1797633022') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Esther', 'Bañez', '1939321989', '2806217201') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Cristian', 'Gutierrez', '3413026358', '2176216806') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lucas', 'Smith', '1737223352', '1676238371') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Cristian', 'Gutierrez', '3200423275', '2220422378') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Jesús', 'Del Bueno', '1282738428', '2474742620') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lugo', 'Pogonza', '3632810945', '2520414928') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lucila', 'Smith', '3725629093', '1366829712') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Cristian', 'Pinto', '1947940668', '2072035386') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Miguel', 'Fuertez', '1130126871', '3345422582') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Raul', 'Estias', '1923530260', '1439019521') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ismaél', 'Borbón', '2924912636', '2203625086') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Patricia', 'Fernandez', '2189228688', '1596641549') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Raul', 'Gutierrez', '2789737546', '2830120787') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Damian', 'Montero', '1568435334', '2038022776') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ludmila', 'Buenafuente', '3892435283', '1757711729') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Matías', 'Gutierrez', '1277711826', '3367226532') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Cristian', 'Montero', '1200337325', '4095914281') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Pedro', 'de Lourdes', '1833919893', '1579116091') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'María', 'Gutierrez', '1455911940', '2606910995') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Alberto', 'Del Bueno', '3986241841', '2185532998') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Andrés', 'Fernandez', '2480538620', '3611337715') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Rubén', 'Correa', '1693739682', '2065432944') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ludmila', 'Estias', '2563938668', '2543911664') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ana', 'Fernandez', '2679838911', '3246041691') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'David', 'Bañez', '4203635767', '3677136785') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Rubén', 'Fernandez', '2325239281', '3213732035') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lugo', 'de Lourdes', '1030636205', '3216138425') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lucila', 'Gutierrez', '2135630099', '3024920467') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Carlos', 'Smith', '3935411042', '4068220677') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Miguel', 'Lopez', '1823210700', '4029513893') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lucila', 'Musiani', '3482120174', '1152927843') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Carlos', 'Radnikov', '3810631465', '1709410174') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Raul', 'de Lourdes', '3266110309', '2276622006') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Rubén', 'Fernandez', '1791524991', '3151910506') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Miguel', 'Luna', '1643714936', '3778636103') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lucia', 'Gutierrez', '1989732575', '1290318036') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Mateo', 'Pinto', '4059626155', '2356328078') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Damian', 'Luna', '2875838587', '1248013512') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Miguel', 'Montenegro', '2201139152', '1236134054') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ana', 'Pogonza', '2448742135', '3729522688') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Patricia', 'Candela', '3706742107', '1419422761') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'José', 'Luna', '1070010369', '2217412420') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Carmen', 'Borbón', '2556115560', '1533924096') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Patricia', 'Molina', '3549017900', '1493824093') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'José', 'Lapido', '2734225416', '3176020865') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Pedro', 'Musiani', '4208835080', '3264141981') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Franco', 'Buenafuente', '2124623916', '3257222002') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Emmanuel', 'Candela', '1771035731', '3610128860') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ariel', 'Del Bueno', '1530233685', '2278339596') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Raul', 'Del Bueno', '2785721225', '3380036203') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Patricia', 'Herrera', '2486612604', '3497611469') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lugo', 'Candela', '1720623882', '1841930009') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lucia', 'Montenegro', '2778916989', '1250116420') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ismaél', 'Correa', '3142927245', '2172016995') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lugo', 'Luna', '3484518984', '4192131544') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'David', 'Maldonado', '2333719269', '3277723648') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Mateo', 'de Lourdes', '3683028394', '3255837529') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ana', 'Candela', '2874117683', '3250421325') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ismaél', 'Borbón', '3211038712', '2177116235') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Cristian', 'Maldonado', '3928921420', '2056138038') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'José', 'Fuertez', '2709721598', '3997623855') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Jesús', 'Zapatero', '2997422283', '2543025829') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Antonio', 'Maldonado', '1682213830', '2590315059') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Alberto', 'Cardenas', '2562930745', '3928919279') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Antonio', 'Gutierrez', '3468929484', '3683827388') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Raul', 'Estias', '4153520667', '3231922973') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Emmanuel', 'Fuertez', '1644337953', '3190640850') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Andrés', 'Borbón', '1179341756', '2081932407') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'David', 'Luna', '2617535485', '3022223693') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ismaél', 'Rufián', '3214311324', '1610519383') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Carlos', 'Lapido', '3235924874', '2025436350') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Jesús', 'Bañez', '1505923992', '2517324204') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ismaél', 'Lapido', '1110329262', '2900519808') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Miguel', 'Cardenas', '3407035548', '2839521901') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Miguel', 'Pogonza', '2336820248', '2230125119') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Andrés', 'Perez', '2915921734', '3970432480') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Franco', 'Fuertez', '2753617326', '1198418793') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Antonio', 'Fuertez', '1911325243', '1068911338') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Damian', 'Rufián', '2433642230', '4131520788') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lucia', 'de Lourdes', '1697812047', '1173922618') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ana', 'Candela', '3338321378', '3117937519') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lugo', 'Borbón', '4080131664', '2567535024') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Antonio', 'Estias', '3957340897', '1035522317') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ariel', 'Pogonza', '3843212692', '1638339507') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Pedro', 'Fuertez', '3119431587', '2430813870') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Miguel', 'Zapatero', '2025115876', '3386924915') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Jesús', 'Montero', '3860941997', '1640629744') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lucas', 'Gomez', '2198313896', '3521119515') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Jesús', 'Rodriguez', '3322313117', '2458329333') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Alberto', 'Rufián', '2763920148', '3479829403') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ludmila', 'Fuertez', '2160016255', '3708214870') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Franco', 'Musiani', '3177928915', '3395916147') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Damian', 'Musiani', '3057331441', '1414627784') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ismaél', 'Molina', '1071532146', '1567539620') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ana', 'Pinto', '2330331314', '4187010733') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ismaél', 'Lopez', '1459533999', '1155520211') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Andrés', 'Candela', '3198337681', '1098413501') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Alberto', 'Bañez', '1892733442', '3523632830') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lucas', 'Molina', '2282530933', '3194524949') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'David', 'Molina', '4239327148', '2046329828') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ana', 'Del Bueno', '4117434888', '2886340289') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Damian', 'Del Bueno', '3843235743', '1676336303') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lucia', 'Borbón', '2133027881', '1853139077') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Patricia', 'Candela', '3469241805', '2729842629') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Miguel', 'Smith', '3828635410', '4136424466') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Alberto', 'Maldonado', '2780839285', '3673015055') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Carmen', 'Fernandez', '2551822405', '3813628454') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ismaél', 'Smith', '4208717195', '3966935656') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Mateo', 'Gomez', '3095038750', '1554037091') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'María', 'Musiani', '2339511718', '2770842217') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lucila', 'Pinto', '3521639476', '4081035285') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ludmila', 'Molina', '4234616815', '4051931284') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lucia', 'Herrera', '1115429905', '1521926846') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'María', 'Fernandez', '1936118536', '4243331135') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ludmila', 'Zapatero', '3505522676', '1187032836') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ariel', 'Pinto', '3551041434', '2485819778') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Damian', 'Gomez', '1450630947', '1347922140') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Franco', 'Musiani', '1570413539', '3044412228') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Esther', 'Zapatero', '2301010711', '3218739479') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Carmen', 'Cardenas', '1202626399', '4059433410') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ana', 'Gomez', '1975542018', '3690826029') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Damian', 'Lopez', '3757710229', '1203837121') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'María', 'Bañez', '1028139491', '1489723848') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Damian', 'Montenegro', '2327423269', '3685911670') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'David', 'Radnikov', '1624335565', '1904029908') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'José', 'Gutierrez', '2764011536', '2693937715') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Carlos', 'Estias', '2525431923', '3601427077') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Antonio', 'Radnikov', '2681341480', '1133014644') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Alberto', 'Pogonza', '4269536600', '1834214921') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lucia', 'Montero', '3742325561', '2153033418') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lucila', 'Montero', '2326235862', '1380010608') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'David', 'Lapido', '3063741559', '3058430886') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Ludmila', 'Cardenas', '3348726829', '1430939384') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Rubén', 'Montero', '2956236265', '3509631177') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Alberto', 'Herrera', '2981823790', '1480819388') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Andrés', 'Borbón', '1215314357', '2517335147') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Andrés', 'Montero', '2946233095', '3533519007') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Monica', 'Fuertez', '1181827406', '2970711530') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Miguel', 'Del Bueno', '2580240656', '3973937876') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Alberto', 'Musiani', '3786015226', '1476933814') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Miguel', 'Estias', '3239739702', '2854119121') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Matías', 'Cardenas', '1134826952', '1912133433') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Jesús', 'Radnikov', '3334311752', '1000230358') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lucia', 'Lapido', '2667822066', '4250632523') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Emmanuel', 'Gomez', '2739919520', '2860010328') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lucila', 'Molina', '2030540910', '3792831895') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Esther', 'Zapatero', '4196629812', '2051334513') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'María', 'de Lourdes', '4165610459', '1510724263') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Patricia', 'Rodriguez', '4217218333', '3575937836') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Mateo', 'Candela', '1107040393', '1650229303') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Lucas', 'Zapatero', '3713840006', '3953713325') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Mateo', 'Musiani', '2872916521', '3862530711') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Emmanuel', 'Candela', '1376830296', '2902218079') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'María', 'Pogonza', '2111534710', '2048139553') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Carmen', 'Gomez', '3290536932', '3860822370') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Franco', 'Perez', '1831823619', '3739032990') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Jesús', 'Cardenas', '1988324946', '1619414548') 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
- VALUES ('aux', 'Carmen', 'Radnikov', '1259033862', '3560525428') 
+SELECT 'pil', 'José', 'Pogonza', '1079312582', '3001910660' UNION 
+SELECT 'pil', 'Carmen', 'Pinto', '3239116677', '2492118182' UNION 
+SELECT 'pil', 'Marcelo', 'Montero', '2676838773', '3213432774' UNION 
+SELECT 'pil', 'Jesús', 'Zapatero', '3165227103', '2886016105' UNION 
+SELECT 'pil', 'Lucila', 'Candela', '3191424479', '1520638924' UNION 
+SELECT 'pil', 'Antonio', 'Montenegro', '3178332940', '1255634452' UNION 
+SELECT 'pil', 'Raul', 'Rufián', '2015228108', '2754516387' UNION 
+SELECT 'pil', 'Lucila', 'Fuertez', '2215027042', '3269310421' UNION 
+SELECT 'pil', 'Alberto', 'Correa', '1245323085', '2348635961' UNION 
+SELECT 'pil', 'Franco', 'Radnikov', '1211226493', '1720442437' UNION 
+SELECT 'pil', 'Lugo', 'Candela', '4262434692', '2220633578' UNION 
+SELECT 'pil', 'Matías', 'Pinto', '3336228747', '4021019996' UNION 
+SELECT 'pil', 'Ismaél', 'Buenafuente', '3052124820', '3977710027' UNION 
+SELECT 'pil', 'Patricia', 'Luna', '2711818261', '1948635640' UNION 
+SELECT 'pil', 'Alberto', 'Lapido', '3317819210', '1463921076' UNION 
+SELECT 'pil', 'Ismaél', 'Candela', '1656734895', '1508642056' UNION 
+SELECT 'pil', 'Lucia', 'Gomez', '3725737899', '2855334802' UNION 
+SELECT 'pil', 'Alberto', 'Lapido', '3105636803', '3035918943' UNION 
+SELECT 'pil', 'José', 'Lapido', '1266828543', '2739911437' UNION 
+SELECT 'pil', 'Mateo', 'de Lourdes', '1856527835', '3524330103' UNION 
+SELECT 'pil', 'Monica', 'Del Bueno', '1337218685', '3201920406' UNION 
+SELECT 'pil', 'Antonio', 'Pinto', '3217018349', '3057926402' UNION 
+SELECT 'pil', 'Miguel', 'Perez', '2940531287', '1069328981' UNION 
+SELECT 'pil', 'Pedro', 'Borbón', '4229127307', '2135720248' UNION 
+SELECT 'pil', 'Rubén', 'de Lourdes', '3148512361', '1024129169' UNION 
+SELECT 'pil', 'Jesús', 'Cardenas', '2088422218', '1255228446' UNION 
+SELECT 'pil', 'Lucas', 'Maldonado', '1055535902', '1223938977' UNION 
+SELECT 'pil', 'Ismaél', 'Bañez', '4258637586', '2652615891' UNION 
+SELECT 'pil', 'Antonio', 'Montero', '2764219171', '1304922066' UNION 
+SELECT 'pil', 'Miguel', 'Radnikov', '3316240743', '2629023392' UNION 
+SELECT 'pil', 'Andrés', 'Montenegro', '1083932720', '2353115608' UNION 
+SELECT 'pil', 'Franco', 'Buenafuente', '2437815095', '3850623936' UNION 
+SELECT 'pil', 'David', 'Candela', '3568712211', '2835818842' UNION 
+SELECT 'pil', 'José', 'Pogonza', '2135726276', '3284618381' UNION 
+SELECT 'pil', 'Matías', 'Rufián', '3934921982', '2682130424' UNION 
+SELECT 'pil', 'Marcelo', 'Gutierrez', '1387420339', '1542613196' UNION 
+SELECT 'pil', 'Ariel', 'Del Bueno', '3250741235', '3118916480' UNION 
+SELECT 'pil', 'Lucas', 'Gutierrez', '2406336982', '2400130779' UNION 
+SELECT 'pil', 'Lugo', 'Estias', '2153529582', '1342233585' UNION 
+SELECT 'pil', 'Emmanuel', 'Luna', '3386529878', '2389924346' UNION 
+SELECT 'jc', 'Jesús', 'Buenafuente', '1125731527', '1082719779' UNION 
+SELECT 'jc', 'Alberto', 'Pogonza', '1560726988', '1027129892' UNION 
+SELECT 'jc', 'Lucila', 'Fuertez', '2476129055', '3769337183' UNION 
+SELECT 'jc', 'Alberto', 'Musiani', '2947025270', '1146118942' UNION 
+SELECT 'jc', 'Mateo', 'Montero', '4115221962', '2636419175' UNION 
+SELECT 'jc', 'María', 'Radnikov', '3193419702', '2468316549' UNION 
+SELECT 'jc', 'Patricia', 'Maldonado', '1715637528', '2240520274' UNION 
+SELECT 'jc', 'Franco', 'Pinto', '3634025028', '2161710754' UNION 
+SELECT 'jc', 'Mateo', 'Gomez', '3186316768', '1197415427' UNION 
+SELECT 'jc', 'Alberto', 'Rufián', '1686534477', '2953713546' UNION 
+SELECT 'jc', 'Damian', 'Herrera', '2743231176', '3753140317' UNION 
+SELECT 'jc', 'Cristian', 'Pinto', '2391029951', '1472613291' UNION 
+SELECT 'jc', 'Monica', 'Perez', '1628317494', '2278924263' UNION 
+SELECT 'jc', 'Rubén', 'Borbón', '1385729904', '1325837050' UNION 
+SELECT 'jc', 'Lucia', 'Cardenas', '4106024790', '2679639707' UNION 
+SELECT 'jc', 'Emmanuel', 'Fernandez', '3114430544', '2478439132' UNION 
+SELECT 'jc', 'Lucia', 'Herrera', '4199418476', '2498237461' UNION 
+SELECT 'jc', 'Lugo', 'Pinto', '2074140015', '2056236755' UNION 
+SELECT 'jc', 'Lucia', 'Montenegro', '3202638940', '3536921049' UNION 
+SELECT 'jc', 'Cristian', 'Herrera', '4004928433', '4012312555' UNION 
+SELECT 'jc', 'Pedro', 'Buenafuente', '1344921559', '1545424260' UNION 
+SELECT 'jc', 'Franco', 'Borbón', '1723526192', '3968837573' UNION 
+SELECT 'jc', 'Carlos', 'Montenegro', '3643010248', '2029526039' UNION 
+SELECT 'jc', 'Franco', 'Lapido', '2162729586', '2377136163' UNION 
+SELECT 'jc', 'David', 'Radnikov', '2976038527', '1453118785' UNION 
+SELECT 'jc', 'Miguel', 'Pogonza', '2933811693', '2480039668' UNION 
+SELECT 'jc', 'Lugo', 'Fernandez', '3358017053', '2547136524' UNION 
+SELECT 'jc', 'Emmanuel', 'Gutierrez', '1869325239', '3619622625' UNION 
+SELECT 'jc', 'Ludmila', 'de Lourdes', '3845815712', '2999931338' UNION 
+SELECT 'jc', 'Monica', 'Luna', '3396240050', '2078637273' UNION 
+SELECT 'jc', 'Mateo', 'Borbón', '2777734033', '3303827105' UNION 
+SELECT 'jc', 'Rubén', 'Del Bueno', '3617826070', '3448135033' UNION 
+SELECT 'jc', 'Jesús', 'Candela', '1763941227', '2523512947' UNION 
+SELECT 'jc', 'Monica', 'Montenegro', '3151222881', '3001125215' UNION 
+SELECT 'jc', 'Lugo', 'Candela', '3590234990', '1547638226' UNION 
+SELECT 'jc', 'Alberto', 'Montenegro', '3383318556', '3603125136' UNION 
+SELECT 'jc', 'Miguel', 'Lapido', '3113215620', '2249536996' UNION 
+SELECT 'jc', 'Cristian', 'Fuertez', '2425334159', '1423325928' UNION 
+SELECT 'jc', 'Pedro', 'Maldonado', '1356217811', '2456740371' UNION 
+SELECT 'jc', 'Marcelo', 'Pinto', '2133340103', '2424118050' UNION 
+SELECT 'com', 'Patricia', 'Lapido', '1279825735', '2134039935' UNION 
+SELECT 'com', 'Pedro', 'de Lourdes', '1012421570', '3772611588' UNION 
+SELECT 'com', 'Antonio', 'Borbón', '2131840137', '2663428762' UNION 
+SELECT 'com', 'David', 'Cardenas', '4160120563', '2562818680' UNION 
+SELECT 'com', 'Andrés', 'Radnikov', '1970831594', '2422329682' UNION 
+SELECT 'com', 'Matías', 'Radnikov', '3935634773', '1376231806' UNION 
+SELECT 'com', 'Lugo', 'Del Bueno', '3719739762', '2101221193' UNION 
+SELECT 'com', 'Carmen', 'Buenafuente', '2489234485', '3602833091' UNION 
+SELECT 'com', 'Ana', 'Perez', '2530920230', '1524536709' UNION 
+SELECT 'com', 'Alberto', 'de Lourdes', '2758415787', '3176112124' UNION 
+SELECT 'com', 'Carlos', 'Herrera', '2262734257', '2939329026' UNION 
+SELECT 'com', 'Miguel', 'Montero', '1279815493', '4263126541' UNION 
+SELECT 'com', 'Raul', 'Pinto', '3033928217', '3047139738' UNION 
+SELECT 'com', 'Raul', 'Lapido', '3024022453', '3224718202' UNION 
+SELECT 'com', 'Franco', 'de Lourdes', '3172333184', '3166721331' UNION 
+SELECT 'com', 'Franco', 'Rufián', '4083134078', '2378918798' UNION 
+SELECT 'com', 'Lugo', 'Gutierrez', '1528025913', '3019119529' UNION 
+SELECT 'com', 'Damian', 'Fernandez', '1091531770', '2214818889' UNION 
+SELECT 'com', 'Raul', 'Rufián', '4145019502', '4247730844' UNION 
+SELECT 'com', 'Miguel', 'Molina', '2700125806', '2265535919' UNION 
+SELECT 'com', 'Pedro', 'Herrera', '1601318190', '2270013533' UNION 
+SELECT 'com', 'María', 'Rufián', '3682241649', '3165815629' UNION 
+SELECT 'com', 'Damian', 'Herrera', '2932211388', '2405722260' UNION 
+SELECT 'com', 'Cristian', 'Buenafuente', '1847634394', '4056236910' UNION 
+SELECT 'com', 'Raul', 'Buenafuente', '3971734581', '2832927189' UNION 
+SELECT 'com', 'Rubén', 'Zapatero', '1959429322', '4243528511' UNION 
+SELECT 'com', 'Raul', 'Lopez', '2242513473', '3253210372' UNION 
+SELECT 'com', 'Jesús', 'Lapido', '1634516505', '3280124703' UNION 
+SELECT 'com', 'Ariel', 'Pinto', '1764141597', '1480531238' UNION 
+SELECT 'com', 'Matías', 'Fuertez', '1723628516', '1818637259' UNION 
+SELECT 'com', 'Esther', 'Rodriguez', '1946421320', '4063934857' UNION 
+SELECT 'com', 'Carmen', 'de Lourdes', '3386427478', '3956213768' UNION 
+SELECT 'com', 'Patricia', 'Cardenas', '2410839372', '3331412277' UNION 
+SELECT 'com', 'Lucia', 'Herrera', '1588530517', '3766241009' UNION 
+SELECT 'com', 'Franco', 'Maldonado', '1521513614', '2668624469' UNION 
+SELECT 'com', 'Patricia', 'Smith', '2771634320', '2606218210' UNION 
+SELECT 'com', 'Lugo', 'Buenafuente', '4087114937', '3098311040' UNION 
+SELECT 'com', 'Ludmila', 'de Lourdes', '1057836776', '3853340261' UNION 
+SELECT 'com', 'Esther', 'Borbón', '2906230375', '3484342156' UNION 
+SELECT 'com', 'Damian', 'Lapido', '2998011324', '2168327581' UNION 
+SELECT 'aux', 'Ismaél', 'Rufián', '1351042360', '1633810089' UNION 
+SELECT 'aux', 'Andrés', 'Maldonado', '3327938784', '3277214797' UNION 
+SELECT 'aux', 'Antonio', 'Lapido', '3069742756', '1486240146' UNION 
+SELECT 'aux', 'Jesús', 'Lapido', '1471437133', '2384018421' UNION 
+SELECT 'aux', 'Alberto', 'Gomez', '2466017577', '1643016901' UNION 
+SELECT 'aux', 'Damian', 'Molina', '3820122295', '3607135243' UNION 
+SELECT 'aux', 'Damian', 'Cardenas', '2659840378', '3619823006' UNION 
+SELECT 'aux', 'Matías', 'Maldonado', '1252428162', '1533135910' UNION 
+SELECT 'aux', 'María', 'Maldonado', '1034125300', '2203213492' UNION 
+SELECT 'aux', 'José', 'Montenegro', '2934217429', '3223414383' UNION 
+SELECT 'aux', 'Emmanuel', 'Candela', '1638139013', '1230626449' UNION 
+SELECT 'aux', 'Marcelo', 'Borbón', '2044021034', '3996922248' UNION 
+SELECT 'aux', 'Matías', 'Del Bueno', '1586516508', '1777541748' UNION 
+SELECT 'aux', 'Andrés', 'Buenafuente', '3711216791', '2130218522' UNION 
+SELECT 'aux', 'Ismaél', 'Rodriguez', '3782430675', '1156239779' UNION 
+SELECT 'aux', 'Miguel', 'Pinto', '1198217243', '3221629539' UNION 
+SELECT 'aux', 'Mateo', 'de Lourdes', '1793721017', '3440242071' UNION 
+SELECT 'aux', 'Lucia', 'Buenafuente', '4261633932', '2649015775' UNION 
+SELECT 'aux', 'Raul', 'Smith', '2317033156', '1271530370' UNION 
+SELECT 'aux', 'Lucila', 'Buenafuente', '2444627648', '1722538517' UNION 
+SELECT 'aux', 'Carlos', 'Fernandez', '1567038295', '1757717603' UNION 
+SELECT 'aux', 'Jesús', 'Borbón', '3281736153', '3364224933' UNION 
+SELECT 'aux', 'Pedro', 'Radnikov', '3964523855', '3787536205' UNION 
+SELECT 'aux', 'Lugo', 'Musiani', '1952031894', '3596019344' UNION 
+SELECT 'aux', 'Lucia', 'Lapido', '2737714292', '2845422323' UNION 
+SELECT 'aux', 'Ludmila', 'Del Bueno', '2703528855', '3308522664' UNION 
+SELECT 'aux', 'Ariel', 'Luna', '4254225149', '2746316760' UNION 
+SELECT 'aux', 'José', 'Zapatero', '1012323856', '4164712889' UNION 
+SELECT 'aux', 'Pedro', 'Montero', '2593835364', '2236638550' UNION 
+SELECT 'aux', 'Antonio', 'Del Bueno', '4200229298', '3281335031' UNION 
+SELECT 'aux', 'Marcelo', 'Gutierrez', '2562213643', '1415919277' UNION 
+SELECT 'aux', 'Lucas', 'Buenafuente', '2752012022', '2969035881' UNION 
+SELECT 'aux', 'Antonio', 'Perez', '4209218382', '2482638766' UNION 
+SELECT 'aux', 'Alberto', 'Rodriguez', '2824628074', '1023320117' UNION 
+SELECT 'aux', 'Raul', 'Borbón', '1176913738', '3880637831' UNION 
+SELECT 'aux', 'Lucila', 'Correa', '2697440352', '4061839310' UNION 
+SELECT 'aux', 'Carlos', 'Molina', '4245311150', '1671435152' UNION 
+SELECT 'aux', 'Patricia', 'Fuertez', '3994636596', '3184433274' UNION 
+SELECT 'aux', 'José', 'Borbón', '1497715072', '3764523958' UNION 
+SELECT 'aux', 'Mateo', 'de Lourdes', '2689333021', '3605218376' UNION 
+SELECT 'aux', 'Damian', 'Buenafuente', '4100021778', '2015918536' UNION 
+SELECT 'aux', 'Raul', 'Smith', '1567223992', '1656619634' UNION 
+SELECT 'aux', 'Lucila', 'Maldonado', '3919441511', '2855116064' UNION 
+SELECT 'aux', 'Ariel', 'Pinto', '2267820080', '4091311854' UNION 
+SELECT 'aux', 'Carmen', 'Correa', '1805332384', '2468616116' UNION 
+SELECT 'aux', 'Marcelo', 'Borbón', '2196238322', '2744820315' UNION 
+SELECT 'aux', 'Jesús', 'Fuertez', '1573311243', '3922827165' UNION 
+SELECT 'aux', 'Rubén', 'Zapatero', '3575123151', '2758223625' UNION 
+SELECT 'aux', 'Matías', 'Musiani', '3994933261', '1576238598' UNION 
+SELECT 'aux', 'Lugo', 'Rufián', '4225620595', '1042538665' UNION 
+SELECT 'aux', 'David', 'Maldonado', '3968710574', '3949618648' UNION 
+SELECT 'aux', 'Rubén', 'de Lourdes', '3560127141', '3353130230' UNION 
+SELECT 'aux', 'Lucas', 'Lapido', '2237712005', '4020115044' UNION 
+SELECT 'aux', 'Ismaél', 'Maldonado', '3206232479', '2868625283' UNION 
+SELECT 'aux', 'Matías', 'Smith', '2061631141', '4151525586' UNION 
+SELECT 'aux', 'Ana', 'Fuertez', '2977237968', '2091041670' UNION 
+SELECT 'aux', 'Patricia', 'Pogonza', '2208228648', '1352310346' UNION 
+SELECT 'aux', 'Lugo', 'Gomez', '1098912974', '4237914596' UNION 
+SELECT 'aux', 'José', 'Gomez', '2546322523', '4026540384' UNION 
+SELECT 'aux', 'Emmanuel', 'Gutierrez', '2686429697', '3513518847' UNION 
+SELECT 'aux', 'Carlos', 'Borbón', '4116016361', '2293637189' UNION 
+SELECT 'aux', 'Emmanuel', 'Luna', '2780014318', '2010919773' UNION 
+SELECT 'aux', 'Matías', 'Pinto', '3573130859', '2365815211' UNION 
+SELECT 'aux', 'Emmanuel', 'Perez', '3641210465', '3990040858' UNION 
+SELECT 'aux', 'Lucia', 'Perez', '3204628623', '1180919575' UNION 
+SELECT 'aux', 'Patricia', 'Montero', '3126332381', '2174613649' UNION 
+SELECT 'aux', 'Ismaél', 'Montenegro', '3645030280', '1951315981' UNION 
+SELECT 'aux', 'Pedro', 'Correa', '4008010568', '1842034021' UNION 
+SELECT 'aux', 'Ariel', 'Pinto', '3767415350', '2530938968' UNION 
+SELECT 'aux', 'María', 'Lopez', '4000521394', '2319828438' UNION 
+SELECT 'aux', 'Marcelo', 'Montenegro', '1092436950', '1555936377' UNION 
+SELECT 'aux', 'David', 'Gomez', '3250025509', '1324612897' UNION 
+SELECT 'aux', 'Andrés', 'Pogonza', '4082312717', '3413911089' UNION 
+SELECT 'aux', 'Ariel', 'Estias', '2155527443', '4018213784' UNION 
+SELECT 'aux', 'Damian', 'Luna', '3788614224', '1459828945' UNION 
+SELECT 'aux', 'Carlos', 'Herrera', '3342612284', '3909014116' UNION 
+SELECT 'aux', 'Raul', 'Gomez', '1416525783', '2453238561' UNION 
+SELECT 'aux', 'Ana', 'Lapido', '3762114782', '2672610199' UNION 
+SELECT 'aux', 'Jesús', 'Bañez', '3229827651', '2824022223' UNION 
+SELECT 'aux', 'Ismaél', 'Candela', '3845437217', '3252417910' UNION 
+SELECT 'aux', 'Jesús', 'Musiani', '3994129900', '2678430362' UNION 
+SELECT 'aux', 'Monica', 'Bañez', '3301840290', '3990115301' UNION 
+SELECT 'aux', 'Rubén', 'Estias', '1453127247', '4195228959' UNION 
+SELECT 'aux', 'Damian', 'Musiani', '3937918304', '3515021205' UNION 
+SELECT 'aux', 'Franco', 'de Lourdes', '4052825367', '1683029891' UNION 
+SELECT 'aux', 'Raul', 'Lopez', '2191122437', '1543734379' UNION 
+SELECT 'aux', 'Rubén', 'Borbón', '2320410699', '1698240353' UNION 
+SELECT 'aux', 'David', 'Borbón', '1587112311', '2041232883' UNION 
+SELECT 'aux', 'Rubén', 'Correa', '3737514264', '1851139222' UNION 
+SELECT 'aux', 'Patricia', 'Rufián', '1600222238', '3895820356' UNION 
+SELECT 'aux', 'Marcelo', 'Montenegro', '3210410431', '2744640778' UNION 
+SELECT 'aux', 'Ana', 'Lapido', '2955530839', '1942423988' UNION 
+SELECT 'aux', 'Esther', 'Borbón', '2083430530', '1333727681' UNION 
+SELECT 'aux', 'Antonio', 'Smith', '2236120410', '3148230847' UNION 
+SELECT 'aux', 'Ludmila', 'Gomez', '3505635626', '4106310210' UNION 
+SELECT 'aux', 'Esther', 'Fuertez', '2727840713', '2151029491' UNION 
+SELECT 'aux', 'Matías', 'Herrera', '2068426684', '1818326438' UNION 
+SELECT 'aux', 'Rubén', 'Borbón', '1257042682', '2884812479' UNION 
+SELECT 'aux', 'Cristian', 'Pogonza', '3657934716', '3167012677' UNION 
+SELECT 'aux', 'Ariel', 'Montero', '4168117605', '4268741148' UNION 
+SELECT 'aux', 'Jesús', 'Cardenas', '1691510401', '3600514205' UNION 
+SELECT 'aux', 'Raul', 'Smith', '2705110673', '3925131676' UNION 
+SELECT 'aux', 'Patricia', 'Herrera', '1386342203', '3029010276' UNION 
+SELECT 'aux', 'Mateo', 'Montenegro', '3542620155', '3440019154' UNION 
+SELECT 'aux', 'Raul', 'Bañez', '1845037730', '1066220015' UNION 
+SELECT 'aux', 'Ludmila', 'Pinto', '2132939240', '3594634401' UNION 
+SELECT 'aux', 'Antonio', 'Rufián', '1393118272', '1646425347' UNION 
+SELECT 'aux', 'Pedro', 'Correa', '1166022413', '2573022569' UNION 
+SELECT 'aux', 'José', 'Correa', '1488930177', '1520017116' UNION 
+SELECT 'aux', 'Ismaél', 'Fernandez', '1132333403', '1958519598' UNION 
+SELECT 'aux', 'Lucila', 'Rufián', '2550336569', '1027928219' UNION 
+SELECT 'aux', 'Lucas', 'Montenegro', '3026728912', '4032232554' UNION 
+SELECT 'aux', 'Ismaél', 'Montenegro', '3065038262', '1825333940' UNION 
+SELECT 'aux', 'Lugo', 'Musiani', '2610326652', '1910836502' UNION 
+SELECT 'aux', 'Lugo', 'Rodriguez', '1880833703', '3742642039' UNION 
+SELECT 'aux', 'Lucas', 'Herrera', '3161813616', '1740925460' UNION 
+SELECT 'aux', 'Monica', 'Correa', '1937134028', '1498623423' UNION 
+SELECT 'aux', 'Esther', 'Candela', '3199315437', '3120938592' UNION 
+SELECT 'aux', 'Esther', 'Pinto', '2225537983', '3281938713' UNION 
+SELECT 'aux', 'Lucia', 'Cardenas', '2485610411', '3184233623'
 
 
+
+
+
+
+
+INSERT INTO TCP_por_TA(codigo_TA, legajo_TCP)
+SELECT 'as8945e5ef', '19000' UNION 
+SELECT 'as8945e5ef', '19001' UNION 
+SELECT '6s884s9de', '19002' UNION 
+SELECT 'asda78sd', '19002' UNION 
+SELECT '6s884s9de', '19003' UNION  
+SELECT 'asda78sd', '19004' UNION 
+SELECT '6s884s9de', '19004' UNION 
+SELECT 'asda78sd', '19005' UNION 
+SELECT '6s884s9de', '19005' UNION 
+SELECT 'as8945e5ef', '19006' UNION 
+SELECT '6549sda3e', '19007' UNION 
+SELECT '6s884s9de', '19007' UNION 
+SELECT 'as8945e5ef', '19008' UNION 
+SELECT '6549sda3e', '19009' UNION 
+SELECT 'as8945e5ef', '19009' UNION 
+SELECT 'as8945e5ef', '19010' UNION 
+SELECT '6549sda3e', '19011' UNION 
+SELECT 'asda78sd', '19012' UNION 
+SELECT '6s884s9de', '19013' UNION 
+SELECT 'as8945e5ef', '19013' UNION 
+SELECT 'as8945e5ef', '19014' UNION 
+SELECT 'asda78sd', '19014' UNION 
+SELECT 'as8945e5ef', '19015' UNION 
+SELECT '6s884s9de', '19016' UNION 
+SELECT 'as8945e5ef', '19017' UNION 
+SELECT '6s884s9de', '19018' UNION 
+SELECT '6s884s9de', '19018' UNION 
+SELECT '6549sda3e', '19019' UNION 
+SELECT '6s884s9de', '19019' UNION 
+SELECT 'asda78sd', '19020' UNION 
+SELECT '6s884s9de', '19020' UNION 
+SELECT '6s884s9de', '19021' UNION 
+SELECT 'asda78sd', '19022' UNION 
+SELECT 'asda78sd', '19022' UNION 
+SELECT '6549sda3e', '19023' UNION 
+SELECT '6s884s9de', '19024' UNION 
+SELECT 'asda78sd', '19025' UNION 
+SELECT 'asda78sd', '19026' UNION 
+SELECT '6s884s9de', '19026' UNION 
+SELECT 'asda78sd', '19027' UNION 
+SELECT 'asda78sd', '19028' UNION 
+SELECT '6549sda3e', '19029' UNION 
+SELECT '6s884s9de', '19029' UNION 
+SELECT '6s884s9de', '19030' UNION 
+SELECT 'as8945e5ef', '19030' UNION 
+SELECT '6s884s9de', '19031' UNION 
+SELECT '6549sda3e', '19032' UNION 
+SELECT 'as8945e5ef', '19033' UNION 
+SELECT '6s884s9de', '19033' UNION 
+SELECT '6s884s9de', '19034' UNION 
+SELECT 'asda78sd', '19035' UNION 
+SELECT '6549sda3e', '19035' UNION 
+SELECT 'asda78sd', '19036' UNION 
+SELECT 'as8945e5ef', '19037' UNION 
+SELECT '6549sda3e', '19037' UNION 
+SELECT 'as8945e5ef', '19038' UNION 
+SELECT '6s884s9de', '19038' UNION 
+SELECT '6s884s9de', '19039' UNION 
+SELECT '6549sda3e', '19039' UNION 
+SELECT '6s884s9de', '19040' UNION 
+SELECT 'as8945e5ef', '19040' UNION 
+SELECT '6549sda3e', '19041' UNION 
+SELECT '6s884s9de', '19042' UNION 
+SELECT 'as8945e5ef', '19043' UNION 
+SELECT '6549sda3e', '19044' UNION 
+SELECT '6s884s9de', '19044' UNION 
+SELECT '6s884s9de', '19045' UNION 
+SELECT 'asda78sd', '19046' UNION 
+SELECT 'as8945e5ef', '19046' UNION 
+SELECT '6s884s9de', '19047' UNION 
+SELECT '6549sda3e', '19048' UNION 
+SELECT 'as8945e5ef', '19048' UNION 
+SELECT '6549sda3e', '19049' UNION 
+SELECT '6s884s9de', '19050' UNION 
+SELECT 'asda78sd', '19050' UNION 
+SELECT 'as8945e5ef', '19051' UNION 
+SELECT '6s884s9de', '19051' UNION 
+SELECT '6549sda3e', '19052' UNION 
+SELECT 'asda78sd', '19052' UNION 
+SELECT 'asda78sd', '19053' UNION 
+SELECT 'as8945e5ef', '19053' UNION 
+SELECT 'asda78sd', '19054' UNION 
+SELECT 'asda78sd', '19055' UNION 
+SELECT '6s884s9de', '19055' UNION 
+SELECT 'as8945e5ef', '19056' UNION 
+SELECT 'asda78sd', '19057' UNION 
+SELECT '6s884s9de', '19058' UNION 
+SELECT 'as8945e5ef', '19058' UNION 
+SELECT 'asda78sd', '19059' UNION 
+SELECT 'asda78sd', '19060' UNION 
+SELECT 'asda78sd', '19061' UNION 
+SELECT 'asda78sd', '19062' UNION 
+SELECT 'as8945e5ef', '19063' UNION 
+SELECT 'asda78sd', '19063' UNION 
+SELECT 'as8945e5ef', '19064' UNION 
+SELECT 'as8945e5ef', '19065' UNION 
+SELECT 'asda78sd', '19065' UNION 
+SELECT 'as8945e5ef', '19066' UNION 
+SELECT 'as8945e5ef', '19067' UNION 
+SELECT '6549sda3e', '19068' UNION 
+SELECT '6549sda3e', '19069' UNION 
+SELECT '6549sda3e', '19070' UNION 
+SELECT 'as8945e5ef', '19070' UNION 
+SELECT 'as8945e5ef', '19071' UNION 
+SELECT '6549sda3e', '19072' UNION 
+SELECT 'asda78sd', '19072' UNION 
+SELECT '6s884s9de', '19073' UNION 
+SELECT 'as8945e5ef', '19074' UNION 
+SELECT 'as8945e5ef', '19075' UNION 
+SELECT 'as8945e5ef', '19076' UNION 
+SELECT 'asda78sd', '19077' UNION 
+SELECT 'asda78sd', '19077' UNION 
+SELECT '6s884s9de', '19078' UNION 
+SELECT '6s884s9de', '19079' UNION 
+SELECT '6549sda3e', '19079' UNION 
+SELECT 'as8945e5ef', '19080' UNION 
+SELECT 'asda78sd', '19080' UNION 
+SELECT '6s884s9de', '19081' UNION 
+SELECT '6549sda3e', '19082' UNION 
+SELECT 'as8945e5ef', '19082' UNION 
+SELECT 'asda78sd', '19083' UNION 
+SELECT '6s884s9de', '19083' UNION 
+SELECT '6549sda3e', '19084' UNION 
+SELECT 'as8945e5ef', '19084' UNION 
+SELECT '6s884s9de', '19085' UNION 
+SELECT '6549sda3e', '19085' UNION 
+SELECT '6s884s9de', '19086' UNION 
+SELECT 'asda78sd', '19087' UNION 
+SELECT '6549sda3e', '19088' UNION 
+SELECT 'asda78sd', '19089' UNION 
+SELECT 'as8945e5ef', '19089' UNION 
+SELECT '6s884s9de', '19090' UNION 
+SELECT 'asda78sd', '19090' UNION 
+SELECT '6s884s9de', '19091' UNION 
+SELECT '6549sda3e', '19091' UNION 
+SELECT '6549sda3e', '19092' UNION 
+SELECT '6s884s9de', '19093' UNION 
+SELECT 'as8945e5ef', '19094' UNION 
+SELECT 'asda78sd', '19095' UNION 
+SELECT '6s884s9de', '19095' UNION 
+SELECT '6549sda3e', '19096' UNION 
+SELECT '6549sda3e', '19097' UNION 
+SELECT 'asda78sd', '19098' UNION 
+SELECT '6s884s9de', '19099' UNION 
+SELECT 'asda78sd', '19099' UNION 
+SELECT 'as8945e5ef', '19100' UNION 
+SELECT 'asda78sd', '19101' UNION 
+SELECT 'as8945e5ef', '19102' UNION 
+SELECT '6549sda3e', '19103' UNION 
+SELECT 'as8945e5ef', '19104' UNION 
+SELECT 'asda78sd', '19104' UNION 
+SELECT 'asda78sd', '19105' UNION 
+SELECT '6549sda3e', '19105' UNION 
+SELECT 'asda78sd', '19106' UNION 
+SELECT '6s884s9de', '19107' UNION 
+SELECT '6s884s9de', '19108' UNION 
+SELECT '6s884s9de', '19109' UNION 
+SELECT 'asda78sd', '19110' UNION 
+SELECT 'as8945e5ef', '19110' UNION 
+SELECT '6s884s9de', '19111' UNION 
+SELECT 'asda78sd', '19111' UNION 
+SELECT 'asda78sd', '19112' UNION 
+SELECT '6s884s9de', '19112' UNION 
+SELECT 'as8945e5ef', '19113' UNION 
+SELECT 'asda78sd', '19113' UNION 
+SELECT 'as8945e5ef', '19114' UNION 
+SELECT '6s884s9de', '19115' UNION 
+SELECT '6549sda3e', '19115' UNION 
+SELECT 'asda78sd', '19116' UNION 
+SELECT 'as8945e5ef', '19117' UNION 
+SELECT 'as8945e5ef', '19118' UNION 
+SELECT 'as8945e5ef', '19119' UNION 
+SELECT '6549sda3e', '19120' UNION 
+SELECT '6549sda3e', '19121' UNION 
+SELECT 'asda78sd', '19122' UNION 
+SELECT 'asda78sd', '19122' UNION 
+SELECT 'asda78sd', '19123' UNION 
+SELECT '6s884s9de', '19123' UNION 
+SELECT '6s884s9de', '19124' UNION 
+SELECT 'asda78sd', '19124' UNION 
+SELECT 'as8945e5ef', '19125' UNION 
+SELECT 'asda78sd', '19125' UNION 
+SELECT '6s884s9de', '19126' UNION 
+SELECT '6s884s9de', '19127' UNION 
+SELECT 'asda78sd', '19128' UNION 
+SELECT '6549sda3e', '19128' UNION 
+SELECT '6549sda3e', '19129' UNION 
+SELECT 'as8945e5ef', '19130' UNION 
+SELECT '6549sda3e', '19130' UNION 
+SELECT 'as8945e5ef', '19131' UNION 
+SELECT 'as8945e5ef', '19132' UNION 
+SELECT '6s884s9de', '19133' UNION 
+SELECT '6549sda3e', '19134' UNION 
+SELECT '6549sda3e', '19135' UNION 
+SELECT '6549sda3e', '19135' UNION 
+SELECT 'asda78sd', '19136' UNION 
+SELECT '6s884s9de', '19137' UNION 
+SELECT 'asda78sd', '19138' UNION 
+SELECT 'asda78sd', '19139' UNION 
+SELECT 'asda78sd', '19140' UNION 
+SELECT '6s884s9de', '19140' UNION 
+SELECT 'asda78sd', '19141' UNION 
+SELECT '6s884s9de', '19141' UNION 
+SELECT 'asda78sd', '19142' UNION  
+SELECT '6s884s9de', '19143' UNION 
+SELECT '6549sda3e', '19144' UNION 
+SELECT 'asda78sd', '19145' UNION 
+SELECT '6549sda3e', '19146' UNION 
+SELECT 'asda78sd', '19147' UNION 
+SELECT 'as8945e5ef', '19148' UNION 
+SELECT '6s884s9de', '19148' UNION 
+SELECT '6s884s9de', '19149' UNION 
+SELECT 'as8945e5ef', '19150' UNION 
+SELECT '6549sda3e', '19151' UNION 
+SELECT 'as8945e5ef', '19152' UNION 
+SELECT '6549sda3e', '19152' UNION 
+SELECT 'as8945e5ef', '19153' UNION 
+SELECT 'asda78sd', '19153' UNION 
+SELECT 'as8945e5ef', '19154' UNION 
+SELECT 'as8945e5ef', '19155' UNION 
+SELECT 'asda78sd', '19155' UNION 
+SELECT '6549sda3e', '19156' UNION 
+SELECT '6549sda3e', '19157' UNION 
+SELECT 'asda78sd', '19158' UNION 
+SELECT 'asda78sd', '19159' UNION 
+SELECT '6s884s9de', '19160' UNION 
+SELECT '6s884s9de', '19160' UNION 
+SELECT 'as8945e5ef', '19161' UNION 
+SELECT 'as8945e5ef', '19162' UNION 
+SELECT '6s884s9de', '19163' UNION 
+SELECT 'asda78sd', '19163' UNION 
+SELECT 'asda78sd', '19164' UNION 
+SELECT '6549sda3e', '19165' UNION 
+SELECT 'asda78sd', '19166' UNION 
+SELECT 'as8945e5ef', '19166' UNION 
+SELECT '6s884s9de', '19167' UNION 
+SELECT 'as8945e5ef', '19168' UNION 
+SELECT 'as8945e5ef', '19169' UNION 
+SELECT 'as8945e5ef', '19170' UNION 
+SELECT '6s884s9de', '19171' UNION 
+SELECT 'asda78sd', '19172' UNION 
+SELECT '6549sda3e', '19173' UNION 
+SELECT '6549sda3e', '19174' UNION 
+SELECT '6s884s9de', '19174' UNION 
+SELECT '6s884s9de', '19175' UNION 
+SELECT 'asda78sd', '19176' UNION 
+SELECT '6549sda3e', '19177' UNION 
+SELECT 'as8945e5ef', '19178' UNION 
+SELECT '6s884s9de', '19179' UNION 
+SELECT 'as8945e5ef', '19179' UNION 
+SELECT 'as8945e5ef', '19180' UNION 
+SELECT 'asda78sd', '19180' UNION 
+SELECT '6549sda3e', '19181' UNION 
+SELECT 'as8945e5ef', '19181' UNION 
+SELECT '6s884s9de', '19182' UNION 
+SELECT 'as8945e5ef', '19183' UNION 
+SELECT '6549sda3e', '19184' UNION 
+SELECT '6549sda3e', '19184' UNION 
+SELECT 'as8945e5ef', '19185' UNION 
+SELECT '6s884s9de', '19186' UNION 
+SELECT '6s884s9de', '19186' UNION 
+SELECT 'asda78sd', '19187' UNION 
+SELECT '6549sda3e', '19187' UNION 
+SELECT '6s884s9de', '19188' UNION 
+SELECT 'as8945e5ef', '19188' UNION 
+SELECT 'asda78sd', '19189' UNION 
+SELECT 'asda78sd', '19190' UNION 
+SELECT 'as8945e5ef', '19191' UNION 
+SELECT 'as8945e5ef', '19191' UNION 
+SELECT '6549sda3e', '19192' UNION 
+SELECT '6549sda3e', '19193' UNION 
+SELECT '6s884s9de', '19193' UNION 
+SELECT '6s884s9de', '19194' UNION 
+SELECT '6549sda3e', '19194' UNION 
+SELECT 'as8945e5ef', '19195' UNION 
+SELECT '6s884s9de', '19196' UNION 
+SELECT '6549sda3e', '19196' UNION 
+SELECT 'asda78sd', '19197' UNION 
+SELECT '6549sda3e', '19198' UNION 
+SELECT '6s884s9de', '19198' UNION 
+SELECT '6549sda3e', '19199' UNION 
+SELECT 'as8945e5ef', '19200' UNION 
+SELECT '6s884s9de', '19200' UNION 
+SELECT '6s884s9de', '19201' UNION 
+SELECT 'asda78sd', '19201' UNION 
+SELECT 'as8945e5ef', '19202' UNION 
+SELECT 'asda78sd', '19203' UNION 
+SELECT 'as8945e5ef', '19203' UNION 
+SELECT 'as8945e5ef', '19204' UNION 
+SELECT 'asda78sd', '19205' UNION 
+SELECT 'as8945e5ef', '19206' UNION 
+SELECT 'as8945e5ef', '19206' UNION 
+SELECT '6s884s9de', '19207' UNION 
+SELECT '6549sda3e', '19208' UNION 
+SELECT 'as8945e5ef', '19208' UNION 
+SELECT 'as8945e5ef', '19209' UNION 
+SELECT '6549sda3e', '19210' UNION 
+SELECT 'asda78sd', '19211' UNION 
+SELECT '6549sda3e', '19211' UNION 
+SELECT 'as8945e5ef', '19212' UNION 
+SELECT '6549sda3e', '19213' UNION 
+SELECT '6s884s9de', '19213' UNION 
+SELECT 'as8945e5ef', '19214' UNION 
+SELECT '6s884s9de', '19215' UNION 
+SELECT '6s884s9de', '19216' UNION 
+SELECT 'asda78sd', '19216' UNION 
+SELECT '6549sda3e', '19217' UNION 
+SELECT 'asda78sd', '19218' UNION 
+SELECT 'as8945e5ef', '19218' UNION 
+SELECT 'as8945e5ef', '19219' UNION 
+SELECT '6s884s9de', '19220' UNION 
+SELECT '6s884s9de', '19221' UNION 
+SELECT '6549sda3e', '19221' UNION 
+SELECT 'asda78sd', '19222' UNION 
+SELECT '6549sda3e', '19222' UNION 
+SELECT '6549sda3e', '19223' UNION 
+SELECT 'asda78sd', '19224' UNION 
+SELECT 'asda78sd', '19224' UNION 
+SELECT '6s884s9de', '19225' UNION 
+SELECT '6s884s9de', '19226' UNION 
+SELECT '6549sda3e', '19227' UNION 
+SELECT 'as8945e5ef', '19228' UNION 
+SELECT 'asda78sd', '19228' UNION 
+SELECT '6549sda3e', '19229' UNION 
+SELECT 'as8945e5ef', '19229' UNION 
+SELECT 'asda78sd', '19230' UNION 
+SELECT 'asda78sd', '19230' UNION 
+SELECT '6s884s9de', '19231' UNION 
+SELECT '6s884s9de', '19231' UNION 
+SELECT 'as8945e5ef', '19232' UNION 
+SELECT 'as8945e5ef', '19233' UNION 
+SELECT 'as8945e5ef', '19233' UNION 
+SELECT '6549sda3e', '19234' UNION 
+SELECT '6549sda3e', '19235' UNION 
+SELECT 'asda78sd', '19236' UNION 
+SELECT '6s884s9de', '19236' UNION 
+SELECT '6s884s9de', '19237' UNION 
+SELECT '6549sda3e', '19238' UNION 
+SELECT 'as8945e5ef', '19239'
+
+
+
+
+
+
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='1231bdffp9')+1 
+ WHERE codigo_ATO='1231bdffp9' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'A320-00', 'as8945e5ef', '1231bdffp9', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='1231bdffp9') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='jghs679khj')+1 
+ WHERE codigo_ATO='jghs679khj' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'A320-01', 'as8945e5ef', 'jghs679khj', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='jghs679khj') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='98sd7ty58a')+1 
+ WHERE codigo_ATO='98sd7ty58a' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'A320-02', 'as8945e5ef', '98sd7ty58a', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='98sd7ty58a') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='5658sdaeee')+1 
+ WHERE codigo_ATO='5658sdaeee' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'A320-03', 'as8945e5ef', '5658sdaeee', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='5658sdaeee') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='6577sdf7s8')+1 
+ WHERE codigo_ATO='6577sdf7s8' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'B747-00', 'asda78sd', '6577sdf7s8', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='6577sdf7s8') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='sdq7q7q59i')+1 
+ WHERE codigo_ATO='sdq7q7q59i' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'B747-01', 'asda78sd', 'sdq7q7q59i', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='sdq7q7q59i') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='jghs679khj')+1 
+ WHERE codigo_ATO='jghs679khj' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'B747-02', 'asda78sd', 'jghs679khj', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='jghs679khj') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='jghs679khj')+1 
+ WHERE codigo_ATO='jghs679khj' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'B747-03', 'asda78sd', 'jghs679khj', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='jghs679khj') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='hgn58888h4')+1 
+ WHERE codigo_ATO='hgn58888h4' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'B747-04', 'asda78sd', 'hgn58888h4', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='hgn58888h4') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='kksdju87aa')+1 
+ WHERE codigo_ATO='kksdju87aa' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'B747-05', 'asda78sd', 'kksdju87aa', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='kksdju87aa') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='1231bdffp9')+1 
+ WHERE codigo_ATO='1231bdffp9' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'B777-00', '6s884s9de', '1231bdffp9', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='1231bdffp9') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='1231bdffp9')+1 
+ WHERE codigo_ATO='1231bdffp9' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'B777-01', '6s884s9de', '1231bdffp9', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='1231bdffp9') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='1231bdffp9')+1 
+ WHERE codigo_ATO='1231bdffp9' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'B777-02', '6s884s9de', '1231bdffp9', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='1231bdffp9') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='98sd7ty58a')+1 
+ WHERE codigo_ATO='98sd7ty58a' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'B777-03', '6s884s9de', '98sd7ty58a', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='98sd7ty58a') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='hgn58888h4')+1 
+ WHERE codigo_ATO='hgn58888h4' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'B777-04', '6s884s9de', 'hgn58888h4', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='hgn58888h4') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='6577sdf7s8')+1 
+ WHERE codigo_ATO='6577sdf7s8' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'B757-00', '6549sda3e', '6577sdf7s8', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='6577sdf7s8') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='kksdju87aa')+1 
+ WHERE codigo_ATO='kksdju87aa' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'B757-01', '6549sda3e', 'kksdju87aa', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='kksdju87aa') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='lkghsg8970')+1 
+ WHERE codigo_ATO='lkghsg8970' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'B757-02', '6549sda3e', 'lkghsg8970', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='lkghsg8970') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='sdf12dsfkj')+1 
+ WHERE codigo_ATO='sdf12dsfkj' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'B757-03', '6549sda3e', 'sdf12dsfkj', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='sdf12dsfkj') 
+UPDATE aeropuertos 
+ SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='lkghsg8970')+1 
+ WHERE codigo_ATO='lkghsg8970' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
+ SELECT 'B757-04', '6549sda3e', 'lkghsg8970', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='lkghsg8970') 
 
 
 
