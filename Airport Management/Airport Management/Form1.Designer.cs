@@ -41,6 +41,7 @@
             this.generarPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rEPORTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONFIGURACIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarAvionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,19 +55,19 @@
             this.cONFIGURACIONToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(777, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1904, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // aVIONESToolStripMenuItem
             // 
             this.aVIONESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listarAvionesToolStripMenuItem,
             this.agregarAviónToolStripMenuItem,
             this.modificarAviónToolStripMenuItem,
             this.eliminarAviónToolStripMenuItem});
             this.aVIONESToolStripMenuItem.Name = "aVIONESToolStripMenuItem";
-            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
+            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.aVIONESToolStripMenuItem.Text = "AVIONES";
             // 
             // agregarAviónToolStripMenuItem
@@ -97,7 +98,7 @@
             this.modificarVueloToolStripMenuItem,
             this.eliminarVueloToolStripMenuItem});
             this.vUELOSToolStripMenuItem.Name = "vUELOSToolStripMenuItem";
-            this.vUELOSToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
+            this.vUELOSToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.vUELOSToolStripMenuItem.Text = "VUELOS";
             // 
             // agregarVueloToolStripMenuItem
@@ -126,36 +127,43 @@
             this.pLANESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.generarPlanToolStripMenuItem});
             this.pLANESToolStripMenuItem.Name = "pLANESToolStripMenuItem";
-            this.pLANESToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
+            this.pLANESToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.pLANESToolStripMenuItem.Text = "PLANES";
             // 
             // generarPlanToolStripMenuItem
             // 
             this.generarPlanToolStripMenuItem.Name = "generarPlanToolStripMenuItem";
-            this.generarPlanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.generarPlanToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.generarPlanToolStripMenuItem.Text = "Generar plan";
             // 
             // rEPORTESToolStripMenuItem
             // 
             this.rEPORTESToolStripMenuItem.Name = "rEPORTESToolStripMenuItem";
-            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(74, 22);
+            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.rEPORTESToolStripMenuItem.Text = "REPORTES";
             // 
             // cONFIGURACIONToolStripMenuItem
             // 
             this.cONFIGURACIONToolStripMenuItem.Name = "cONFIGURACIONToolStripMenuItem";
-            this.cONFIGURACIONToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.cONFIGURACIONToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
             this.cONFIGURACIONToolStripMenuItem.Text = "CONFIGURACIÓN";
+            // 
+            // listarAvionesToolStripMenuItem
+            // 
+            this.listarAvionesToolStripMenuItem.Name = "listarAvionesToolStripMenuItem";
+            this.listarAvionesToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.listarAvionesToolStripMenuItem.Text = "Listar aviones";
+            this.listarAvionesToolStripMenuItem.Click += new System.EventHandler(this.listarAvionesToolStripMenuItem_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(777, 512);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -181,6 +189,7 @@
         private System.Windows.Forms.ToolStripMenuItem generarPlanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rEPORTESToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cONFIGURACIONToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listarAvionesToolStripMenuItem;
 
     }
 }

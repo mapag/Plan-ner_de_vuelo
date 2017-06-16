@@ -10,8 +10,8 @@ namespace Airport_Management.Clases
 {
     class AccesoDatos
     {
-        String rutaBDNeptuno =
-    "Data Source=localhost\\sqlexpress;Initial Catalog=Neptuno;Integrated Security=True";
+        String rutaBD =
+    "Data Source=localhost\\sqlexpress;Initial Catalog=Airport_Mannager;Integrated Security=True";
 
         public AccesoDatos()
         {
@@ -20,7 +20,7 @@ namespace Airport_Management.Clases
 
         public SqlConnection ObtenerConexion()
         {
-            SqlConnection cn = new SqlConnection(rutaBDNeptuno);
+            SqlConnection cn = new SqlConnection(rutaBD);
             try
             {
                 cn.Open();

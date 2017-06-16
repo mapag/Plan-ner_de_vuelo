@@ -77,6 +77,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="listarAviones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listarAviones.Designer.cs">
+      <DependentUpon>listarAviones.cs</DependentUpon>
+    </Compile>
     <Compile Include="modificarAvionn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="listarAviones.resx">
+      <DependentUpon>listarAviones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="modificarAvionn.resx">
       <DependentUpon>modificarAvionn.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +129,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -134,7 +144,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

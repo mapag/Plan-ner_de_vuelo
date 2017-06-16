@@ -78,5 +78,12 @@ namespace Airport_Management
             eliminarVuelo elimVuelo = new eliminarVuelo();
             abrirVentana(elimVuelo);
         }
+
+        private void listarAvionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarVentanaAnterior();
+            listarAviones listarAviones = new listarAviones();
+            abrirVentana(listarAviones);
+        }
     }
 }

@@ -25,13 +25,6 @@ namespace Airport_Management.Clases
             ad.cargaTabla(nombreTabla, "select * from Aviones", ref ds);
         }
 
-        public void listarAviones(String clausula, String nombreTabla, ref DataSet ds)
-        {
-            AccesoDatos ad = new AccesoDatos();
-            ad.cargaTabla(nombreTabla, clausula, ref ds);
-        }
-
-
         public bool eliminarAvion(String NombreTabla, DataSet ds)
         {
             int FilasEliminadas = 0;

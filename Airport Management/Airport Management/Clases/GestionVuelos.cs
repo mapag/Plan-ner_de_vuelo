@@ -19,17 +19,17 @@ namespace Airport_Management.Clases
             //
         }
 
-        public void listarVuelos(String nombreTabla, ref DataSet ds)
-        {
-            AccesoDatos ad = new AccesoDatos();
-            ad.cargaTabla(nombreTabla, "select * from Vuelos", ref ds);
-        }
+        //public DataTable listarVuelos(String nombreTabla)
+        //{
+        //    AccesoDatos ad = new AccesoDatos();
+        //    return ad.ObtenerTabla(nombreTabla, "select * from Vuelos");
+        //}
 
-        public void listarVuelos(String clausula, String nombreTabla, ref DataSet ds)
-        {
-            AccesoDatos ad = new AccesoDatos();
-            ad.cargaTabla(nombreTabla, clausula, ref ds);
-        }
+        //public void listarVuelos(String clausula, String nombreTabla, ref DataSet ds)
+        //{
+        //    AccesoDatos ad = new AccesoDatos();
+        //    ad.cargaTabla(nombreTabla, clausula, ref ds);
+        //}
 
 
         public bool eliminarVuelo(String NombreTabla, DataSet ds)
