@@ -1,0 +1,119 @@
+use master
+go
+
+CREATE DATABASE Airport_Mannager
+GO
+ 
+USE Airport_Mannager
+GO
+  
+--DROP DATABASE AirportMannager
+--GO
+
+CREATE TABLE tipos_de_aviones
+(
+codigo_TA varchar(10),
+nombre_TA varchar(50) NOT NULL,
+descripcion_TA varchar(255) NOT NULL,
+cant_pil_TA int NULL,
+cant_jc_TA int NULL,
+cant_com_TA int NULL,
+cant_aux_TA int NULL,
+CONSTRAINT PK_TA PRIMARY KEY (codigo_TA)
+)
+GO
+
+CREATE TABLE tipos_de_tripulantes
+(
+codigo_TT varchar(10) NOT NULL,
+nombre_TT varchar (50) NOT NULL,
+descripcion_TT varchar (50) NOT NULL,
+Constraint PK_TT PRIMARY KEY (codigo_TT)
+)
+GO
+
+CREATE TABLE tripulantes
+(
+legajo_TCP int IDENTITY (19000,1),
+tipo_TCP varchar (10) NOT NULL REFERENCES tipos_de_tripulantes(codigo_TT),
+nombre_TCP varchar (20) NOT NULL,
+apellido_TCP varchar (20) NOT NULL,
+cuil_TCP varchar (10) NOT NULL,
+telefono_TCP varchar (20) NOT NULL,
+CONSTRAINT PK_TCP PRIMARY KEY (legajo_TCP)
+)
+GO
+
+CREATE TABLE TCP_por_TA(
+legajo_TCP int REFERENCES tripulantes(legajo_TCP),
+codigo_TA varchar (10) REFERENCES tipos_de_aviones(codigo_TA),
+CONSTRAINT FK_TCPTA PRIMARY KEY( legajo_TCP, codigo_TA)
+)
+GO
+
+
+CREATE TABLE aeropuertos
+(
+codigo_ATO varchar(10),
+nombre_ATO varchar(50) NOT NULL,
+pais_ATO varchar(50) NOT NULL,
+provincia_ATO varchar(50) NOT NULL,
+contador_ATO int NOT NULL,
+CONSTRAINT PK_ATO PRIMARY KEY (codigo_ATO)
+)
+GO
+
+CREATE TABLE aviones
+(
+codigo_AV varchar (10),
+tipo_AV varchar (10) NOT NULL REFERENCES tipos_de_aviones(codigo_TA),
+ultimo_ATO_programado_AV varchar(10) NOT NULL REFERENCES aeropuertos(codigo_ATO),
+ultima_fecha_programada_AV datetime NOT NULL,
+posicion_AV int NULL,
+CONSTRAINT PK_AV PRIMARY KEY (codigo_AV)
+)
+GO
+
+CREATE TABLE rutas
+(
+codigo_RTA varchar(10),
+ATOpartida_RTA varchar(10) NOT NULL REFERENCES aeropuertos(codigo_ATO),
+ATOarrivo_RTA varchar(10) NOT NULL REFERENCES aeropuertos(codigo_ATO),
+ETA_RTA time NOT NULL,
+posta_RTA time NOT NULL,
+CONSTRAINT PK_RTA PRIMARY KEY (codigo_RTA)
+)
+GO
+
+CREATE TABLE RTA_por_TA
+(
+codigo_RTA varchar(10) REFERENCES rutas(codigo_RTA),
+codigo_TA varchar(10) REFERENCES tipos_de_aviones(codigo_TA),
+CONSTRAINT PK_RTA_POR_AV PRIMARY KEY (codigo_RTA, codigo_TA)
+)
+GO
+
+CREATE TABLE vuelos
+(
+codigo_VLO varchar(10),
+codigo_RTA varchar(10) NOT NULL REFERENCES rutas(codigo_RTA),
+fecha_salida_VLO datetime NOT NULL,
+CONSTRAINT PK_VLO PRIMARY KEY (codigo_VLO)
+)
+GO
+
+CREATE TABLE VLO_por_AV
+(
+codigo_VLO varchar(10) REFERENCES vuelos(codigo_VLO),
+codigo_AV varchar(10) REFERENCES aviones(codigo_AV),
+CONSTRAINT PK_VLO_por_AV PRIMARY KEY (codigo_VLO, codigo_AV)
+)
+
+CREATE TABLE VLO_por_AV_por_TCP
+(
+legajo_TCP int,
+codigo_VLO varchar(10),
+codigo_AV varchar(10),
+CONSTRAINT FK_VLO_por_AV FOREIGN KEY (codigo_VLO, codigo_AV) REFERENCES VLO_por_AV(codigo_VLO, codigo_AV),
+CONSTRAINT PK_VLO_por_AV_por_TCP FOREIGN KEY (legajo_TCP) REFERENCES tripulantes (legajo_TCP)
+)
