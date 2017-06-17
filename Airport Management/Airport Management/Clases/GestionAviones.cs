@@ -22,7 +22,7 @@ namespace Airport_Management.Clases
         public void listarAviones(String nombreTabla, ref DataSet ds)
         {
             AccesoDatos ad = new AccesoDatos();
-            ad.cargaTabla(nombreTabla, "select * from Aviones", ref ds);
+            ad.cargaTabla(nombreTabla, "select a.codigo_AV as Código, b.nombre_TA as 'Tipo de avión', b.descripcion_TA as Descripción from Aviones a inner join tipos_de_aviones b on b.codigo_TA = a.tipo_AV", ref ds);
         }
 
         public bool eliminarAvion(String NombreTabla, DataSet ds)
