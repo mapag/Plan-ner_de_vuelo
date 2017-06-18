@@ -11,7 +11,7 @@ namespace Airport_Management.Clases
     class AccesoDatos
     {
         String rutaBD =
-    "Data Source=localhost\\sqlexpress;Initial Catalog=Airport_Mannager;Integrated Security=True";
+    "Data Source=localhost\\sqlexpress;Initial Catalog=Airport_Manager;Integrated Security=True";
 
         public AccesoDatos()
         {

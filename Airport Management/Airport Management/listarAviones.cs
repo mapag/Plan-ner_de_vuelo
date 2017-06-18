@@ -14,6 +14,7 @@ namespace Airport_Management
 {
     public partial class listarAviones : Form
     {
+        DataSet dsAviones;
         public listarAviones()
         {
             InitializeComponent();
@@ -22,12 +23,14 @@ namespace Airport_Management
         private void listarAviones_Load(object sender, EventArgs e)
         {
 
-            DataSet dsAviones = new DataSet();
+            dsAviones = new DataSet();
             GestionAviones ga = new GestionAviones();
             ga.listarAviones("Productos", ref dsAviones);
             grdListarAviones.DataSource = dsAviones.Tables["Productos"];
 
-            CargarComboTexto(ref cmbTipo);
+            CargarComboTexto(ref cmbCodigo);
+            CargarComboTexto(ref cmbFabricante);
+            CargarComboTexto(ref cmbModelo);
         }
         private void CargarComboTexto(ref ComboBox NombreCombo)
         {
@@ -90,7 +93,22 @@ namespace Airport_Management
 
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
+            string ClausulaSQLProductos = "";
+            if (cmbCodigo.Text != "" && txtCodigo.Text != "")
+                ConstruirClausulaSQL("codigo_AV",
+                                     cmbCodigo.Text,
+                                     txtCodigo.Text,
+                                     ref ClausulaSQLProductos);
+            if (cmbFabricante.Text != "" && txtFabricante.Text != "")
+                ConstruirClausulaSQL("fabricante_TA",
+                                     cmbFabricante.Text,
+                                     txtFabricante.Text,
+                                     ref ClausulaSQLProductos);
 
+            dsAviones.Tables.Clear();
+            GestionAviones gp = new GestionAviones();
+            gp.listarAvionesClausula("select a.codigo_AV as Código, b.fabricante_TA as 'Fabricante', b.modelo_TA as Modelo, b.descripcion_TA as Descripción from Aviones a inner join tipos_de_aviones b on b.codigo_TA = a.tipo_AV" + ClausulaSQLProductos, "Productos", ref dsAviones);
+            grdListarAviones.DataSource = dsAviones.Tables["Productos"];
         }
   /*      private void btnFiltrar_Click(object sender, EventArgs e)
         {
