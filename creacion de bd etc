@@ -1,7 +1,7 @@
 use master
 go
 
-CREATE DATABASE Airport_Mannager
+CREATE DATABASE Airport_Manager
 GO
  
 USE Airport_Manager
