@@ -56,7 +56,7 @@ GO
 CREATE TABLE aeropuertos
 (
 codigo_ATO varchar(10),
-nombre_ATO varchar(50) NOT NULL,
+nombre_ATO varchar(100) NOT NULL,
 pais_ATO varchar(50) NOT NULL,
 provincia_ATO varchar(50) NOT NULL,
 contador_ATO int NOT NULL,
