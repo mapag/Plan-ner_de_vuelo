@@ -2,26 +2,40 @@ use Airport_Mannager
 go
 
 INSERT INTO aeropuertos (codigo_ATO, nombre_ATO, pais_ATO, provincia_ATO, contador_ATO)
-SELECT 'EZE', 'Ezeiza', 'Argentina', 'Buenos Aires', 0 UNION
-SELECT 'TLC', 'Teniente Luis Candelaria', 'Argentina', 'Rio Negro', 0 UNION
-SELECT 'IAET', 'Ing. Aer. Ambrosio Taravella', 'Argentina', 'CÛrdoba', 0 UNION
-SELECT 'CHI', 'Chek Lap Kok', 'China', 'Hong Kong', 0 UNION
-SELECT 'URU', 'General Ces·reo L. Berisso', 'Uruguai', 'Montevideo', 0 UNION
-SELECT 'ITA', 'Giovanni Nicelli', 'Italia', 'Venecia', 0 UNION
-SELECT 'USA', 'Long Beach', 'Estados Unidos', 'California', 0 UNION
-SELECT 'UK', 'Barra', 'Reino Unido', 'Escocia', 0 UNION
-SELECT 'JAP', 'Kansai', 'JapÛn', 'Osaka', 0 UNION
-SELECT 'GIO', 'Reina Tamar', 'Giorgia', 'Mestia', 0
+SELECT 'EZE', 'Aeropuerto Internacional Ministro Pistarini de Ezeiza', 'Argentina', 'Buenos Aires', 0 UNION
+SELECT 'BRC', 'Aeropuerto Internacional Teniente Luis Candelaria', 'Argentina', 'Rio Negro', 0 UNION
+SELECT 'COR', 'Aeropuerto Internacional Ingeniero Ambrosio Taravella', 'Argentina', 'C√≥rdoba', 0 UNION
+SELECT 'SCL', 'Aeropuerto Internacional Comodoro Arturo Merino Benitez', 'Chile', 'Santiago de Chile', 0 UNION
+SELECT 'MVD', 'Aeropuerto Internacional de Carrasco', 'Uruguay', 'Montevideo', 0 UNION
+SELECT 'ROM', 'Aeropuerto Intercontinental Leonardo da Vinci', 'Italia', 'Roma', 0 UNION
+SELECT 'JKF', 'Aeropuerto Internacioanl John F. Kennedy', 'Estados Unidos', 'New York', 0 UNION
+SELECT 'CDG', 'Aeropuerto de Paris - Charles de Gaulle', 'Francia', 'Paris', 0 UNION
+SELECT 'LHR', 'Aeropuerto de Londres - Heatrow', 'Inglaterra', 'Londres', 0 UNION
+SELECT 'HND', 'Aeropuerto Internacional de Tokio', 'Japon', 'Tokio', 0 UNION
+SELECT 'SVO', 'Aeropuerto Internacional de Moscu - Sheremetyevo', 'Rusia', 'Moscu', 0 UNION
+SELECT 'DFW', 'Aeropuerto Internacional de Dallas - Fort Worth', 'Estados Unidos', 'Dallas', 0 UNION
+SELECT 'MEX', 'Aeropuerto Internacional Benito Ju√°rez de la Ciudad de M√©xico', 'Mexico', 'Ciudad de Mexico', 0 UNION
+SELECT 'GRU', 'Aeropuerto Internacional de S√£o Paulo-Guarulhos ‚Äì Gobernador Andr√© Franco Montoro', 'Brasil', 'San Pablo', 0 UNION
+SELECT 'GIG', 'Aeropuerto Internacional Ant√¥nio Carlos Jobim de R√≠o de Janeiro', 'Brasil', 'Rio de Janeiro', 0 UNION
+SELECT 'MAD', 'Aeropuerto de Madrid Barajas Adolfo Su√°rez', 'Espa√±a', 'Madrid' , 0
+GO
 
 
 
 
 
 INSERT INTO tipos_de_aviones (codigo_TA, fabricante_TA, modelo_TA, descripcion_TA, cant_pil_TA, cant_jc_TA, cant_com_TA, cant_aux_TA)
-SELECT 'B747', 'Boeing', '747', 'TambiÈn conocido como Jumbo Jet o el modelo de Air Force One', 2, 1, 1, 7 UNION
+SELECT 'B747', 'Boeing', '747', 'Tambi√©n conocido como Jumbo Jet o el modelo de Air Force One', 2, 1, 1, 7 UNION
 SELECT 'B777', 'Boeing', '777', 'Una capacidad de 300 a 550 pasajeros', 1, 1, 1, 8 UNION
-SELECT 'B757', 'Boeing', '757', 'Este aviÛn de tamaÒo medio es ideal para vuelos comerciales, hasta 289 pasajeros', 1, 1, 1, 5 UNION
-SELECT 'A320', 'Airbus', 'A320', 'perfecto para los vuelos comerciales nacionales', 1, 1, 1, 4
+SELECT 'B757', 'Boeing', '757', 'Este avi√≥n de tama√±o medio es ideal para vuelos comerciales, hasta 289 pasajeros', 1, 1, 1, 5 UNION
+SELECT 'A320', 'Airbus', 'A320', 'perfecto para los vuelos comerciales nacionales', 1, 1, 1, 4 UNION
+SELECT 'B737', 'Boeing', '737', 'Un avion de porte peque√±o para vuelos rapidos', 1, 1, 1, 3 UNION
+SELECT 'B787', 'Boeing', '787', 'Su gran capacidad y su ingenier√≠a inteligente son sus mejores atractivos', 1, 1, 1, 3 UNION
+SELECT 'A340', 'Airbus', '340', 'El avi√≥n Airbus A340 es un avi√≥n jet comercial de pasajeros de largo alcance', 2, 2, 1, 10 UNION
+SELECT 'A380', 'Airbus', '380', 'El Airbus A380 es considerado el mayor avi√≥n de pasajeros hoy en d√≠a', 2, 2, 1, 16 UNION
+SELECT 'MD80', 'McDonnell Douglas', '80', 'MD-80 es una familia de jets comerciales de tama√±o mediano, de corto y mediano alcance, de un solo pasillo.', 2, 2, 1, 8 UNION
+SELECT 'E170', 'Embraer', '170', 'La familia E-Jet es una de jets de fuselaje estrecho de mediano alcance mas utilizado', 2, 1, 1, 4 UNION
+SELECT 'A330', 'Airbus', '330', 'El Airbus A330 es un avi√≥n jet de fuselaje ancho bimotor', 1, 1, 1, 4 
 
 
 
@@ -38,60 +52,60 @@ SELECT 'com', 'Comisario', 'Responsable de seguridad'
 
 
 INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
-SELECT 'pil', 'JosÈ', 'Pogonza', '1079312582', '3001910660' UNION 
+SELECT 'pil', 'Jos√©', 'Pogonza', '1079312582', '3001910660' UNION 
 SELECT 'pil', 'Carmen', 'Pinto', '3239116677', '2492118182' UNION 
 SELECT 'pil', 'Marcelo', 'Montero', '2676838773', '3213432774' UNION 
-SELECT 'pil', 'Jes˙s', 'Zapatero', '3165227103', '2886016105' UNION 
+SELECT 'pil', 'Jes√∫s', 'Zapatero', '3165227103', '2886016105' UNION 
 SELECT 'pil', 'Lucila', 'Candela', '3191424479', '1520638924' UNION 
 SELECT 'pil', 'Antonio', 'Montenegro', '3178332940', '1255634452' UNION 
-SELECT 'pil', 'Raul', 'Rufi·n', '2015228108', '2754516387' UNION 
+SELECT 'pil', 'Raul', 'Rufi√°n', '2015228108', '2754516387' UNION 
 SELECT 'pil', 'Lucila', 'Fuertez', '2215027042', '3269310421' UNION 
 SELECT 'pil', 'Alberto', 'Correa', '1245323085', '2348635961' UNION 
 SELECT 'pil', 'Franco', 'Radnikov', '1211226493', '1720442437' UNION 
 SELECT 'pil', 'Lugo', 'Candela', '4262434692', '2220633578' UNION 
-SELECT 'pil', 'MatÌas', 'Pinto', '3336228747', '4021019996' UNION 
-SELECT 'pil', 'IsmaÈl', 'Buenafuente', '3052124820', '3977710027' UNION 
+SELECT 'pil', 'Mat√≠as', 'Pinto', '3336228747', '4021019996' UNION 
+SELECT 'pil', 'Isma√©l', 'Buenafuente', '3052124820', '3977710027' UNION 
 SELECT 'pil', 'Patricia', 'Luna', '2711818261', '1948635640' UNION 
 SELECT 'pil', 'Alberto', 'Lapido', '3317819210', '1463921076' UNION 
-SELECT 'pil', 'IsmaÈl', 'Candela', '1656734895', '1508642056' UNION 
+SELECT 'pil', 'Isma√©l', 'Candela', '1656734895', '1508642056' UNION 
 SELECT 'pil', 'Lucia', 'Gomez', '3725737899', '2855334802' UNION 
 SELECT 'pil', 'Alberto', 'Lapido', '3105636803', '3035918943' UNION 
-SELECT 'pil', 'JosÈ', 'Lapido', '1266828543', '2739911437' UNION 
+SELECT 'pil', 'Jos√©', 'Lapido', '1266828543', '2739911437' UNION 
 SELECT 'pil', 'Mateo', 'de Lourdes', '1856527835', '3524330103' UNION 
 SELECT 'pil', 'Monica', 'Del Bueno', '1337218685', '3201920406' UNION 
 SELECT 'pil', 'Antonio', 'Pinto', '3217018349', '3057926402' UNION 
 SELECT 'pil', 'Miguel', 'Perez', '2940531287', '1069328981' UNION 
-SELECT 'pil', 'Pedro', 'BorbÛn', '4229127307', '2135720248' UNION 
-SELECT 'pil', 'RubÈn', 'de Lourdes', '3148512361', '1024129169' UNION 
-SELECT 'pil', 'Jes˙s', 'Cardenas', '2088422218', '1255228446' UNION 
+SELECT 'pil', 'Pedro', 'Borb√≥n', '4229127307', '2135720248' UNION 
+SELECT 'pil', 'Rub√©n', 'de Lourdes', '3148512361', '1024129169' UNION 
+SELECT 'pil', 'Jes√∫s', 'Cardenas', '2088422218', '1255228446' UNION 
 SELECT 'pil', 'Lucas', 'Maldonado', '1055535902', '1223938977' UNION 
-SELECT 'pil', 'IsmaÈl', 'BaÒez', '4258637586', '2652615891' UNION 
+SELECT 'pil', 'Isma√©l', 'Ba√±ez', '4258637586', '2652615891' UNION 
 SELECT 'pil', 'Antonio', 'Montero', '2764219171', '1304922066' UNION 
 SELECT 'pil', 'Miguel', 'Radnikov', '3316240743', '2629023392' UNION 
-SELECT 'pil', 'AndrÈs', 'Montenegro', '1083932720', '2353115608' UNION 
+SELECT 'pil', 'Andr√©s', 'Montenegro', '1083932720', '2353115608' UNION 
 SELECT 'pil', 'Franco', 'Buenafuente', '2437815095', '3850623936' UNION 
 SELECT 'pil', 'David', 'Candela', '3568712211', '2835818842' UNION 
-SELECT 'pil', 'JosÈ', 'Pogonza', '2135726276', '3284618381' UNION 
-SELECT 'pil', 'MatÌas', 'Rufi·n', '3934921982', '2682130424' UNION 
+SELECT 'pil', 'Jos√©', 'Pogonza', '2135726276', '3284618381' UNION 
+SELECT 'pil', 'Mat√≠as', 'Rufi√°n', '3934921982', '2682130424' UNION 
 SELECT 'pil', 'Marcelo', 'Gutierrez', '1387420339', '1542613196' UNION 
 SELECT 'pil', 'Ariel', 'Del Bueno', '3250741235', '3118916480' UNION 
 SELECT 'pil', 'Lucas', 'Gutierrez', '2406336982', '2400130779' UNION 
 SELECT 'pil', 'Lugo', 'Estias', '2153529582', '1342233585' UNION 
 SELECT 'pil', 'Emmanuel', 'Luna', '3386529878', '2389924346' UNION 
-SELECT 'jc', 'Jes˙s', 'Buenafuente', '1125731527', '1082719779' UNION 
+SELECT 'jc', 'Jes√∫s', 'Buenafuente', '1125731527', '1082719779' UNION 
 SELECT 'jc', 'Alberto', 'Pogonza', '1560726988', '1027129892' UNION 
 SELECT 'jc', 'Lucila', 'Fuertez', '2476129055', '3769337183' UNION 
 SELECT 'jc', 'Alberto', 'Musiani', '2947025270', '1146118942' UNION 
 SELECT 'jc', 'Mateo', 'Montero', '4115221962', '2636419175' UNION 
-SELECT 'jc', 'MarÌa', 'Radnikov', '3193419702', '2468316549' UNION 
+SELECT 'jc', 'Mar√≠a', 'Radnikov', '3193419702', '2468316549' UNION 
 SELECT 'jc', 'Patricia', 'Maldonado', '1715637528', '2240520274' UNION 
 SELECT 'jc', 'Franco', 'Pinto', '3634025028', '2161710754' UNION 
 SELECT 'jc', 'Mateo', 'Gomez', '3186316768', '1197415427' UNION 
-SELECT 'jc', 'Alberto', 'Rufi·n', '1686534477', '2953713546' UNION 
+SELECT 'jc', 'Alberto', 'Rufi√°n', '1686534477', '2953713546' UNION 
 SELECT 'jc', 'Damian', 'Herrera', '2743231176', '3753140317' UNION 
 SELECT 'jc', 'Cristian', 'Pinto', '2391029951', '1472613291' UNION 
 SELECT 'jc', 'Monica', 'Perez', '1628317494', '2278924263' UNION 
-SELECT 'jc', 'RubÈn', 'BorbÛn', '1385729904', '1325837050' UNION 
+SELECT 'jc', 'Rub√©n', 'Borb√≥n', '1385729904', '1325837050' UNION 
 SELECT 'jc', 'Lucia', 'Cardenas', '4106024790', '2679639707' UNION 
 SELECT 'jc', 'Emmanuel', 'Fernandez', '3114430544', '2478439132' UNION 
 SELECT 'jc', 'Lucia', 'Herrera', '4199418476', '2498237461' UNION 
@@ -99,7 +113,7 @@ SELECT 'jc', 'Lugo', 'Pinto', '2074140015', '2056236755' UNION
 SELECT 'jc', 'Lucia', 'Montenegro', '3202638940', '3536921049' UNION 
 SELECT 'jc', 'Cristian', 'Herrera', '4004928433', '4012312555' UNION 
 SELECT 'jc', 'Pedro', 'Buenafuente', '1344921559', '1545424260' UNION 
-SELECT 'jc', 'Franco', 'BorbÛn', '1723526192', '3968837573' UNION 
+SELECT 'jc', 'Franco', 'Borb√≥n', '1723526192', '3968837573' UNION 
 SELECT 'jc', 'Carlos', 'Montenegro', '3643010248', '2029526039' UNION 
 SELECT 'jc', 'Franco', 'Lapido', '2162729586', '2377136163' UNION 
 SELECT 'jc', 'David', 'Radnikov', '2976038527', '1453118785' UNION 
@@ -108,9 +122,9 @@ SELECT 'jc', 'Lugo', 'Fernandez', '3358017053', '2547136524' UNION
 SELECT 'jc', 'Emmanuel', 'Gutierrez', '1869325239', '3619622625' UNION 
 SELECT 'jc', 'Ludmila', 'de Lourdes', '3845815712', '2999931338' UNION 
 SELECT 'jc', 'Monica', 'Luna', '3396240050', '2078637273' UNION 
-SELECT 'jc', 'Mateo', 'BorbÛn', '2777734033', '3303827105' UNION 
-SELECT 'jc', 'RubÈn', 'Del Bueno', '3617826070', '3448135033' UNION 
-SELECT 'jc', 'Jes˙s', 'Candela', '1763941227', '2523512947' UNION 
+SELECT 'jc', 'Mateo', 'Borb√≥n', '2777734033', '3303827105' UNION 
+SELECT 'jc', 'Rub√©n', 'Del Bueno', '3617826070', '3448135033' UNION 
+SELECT 'jc', 'Jes√∫s', 'Candela', '1763941227', '2523512947' UNION 
 SELECT 'jc', 'Monica', 'Montenegro', '3151222881', '3001125215' UNION 
 SELECT 'jc', 'Lugo', 'Candela', '3590234990', '1547638226' UNION 
 SELECT 'jc', 'Alberto', 'Montenegro', '3383318556', '3603125136' UNION 
@@ -120,10 +134,10 @@ SELECT 'jc', 'Pedro', 'Maldonado', '1356217811', '2456740371' UNION
 SELECT 'jc', 'Marcelo', 'Pinto', '2133340103', '2424118050' UNION 
 SELECT 'com', 'Patricia', 'Lapido', '1279825735', '2134039935' UNION 
 SELECT 'com', 'Pedro', 'de Lourdes', '1012421570', '3772611588' UNION 
-SELECT 'com', 'Antonio', 'BorbÛn', '2131840137', '2663428762' UNION 
+SELECT 'com', 'Antonio', 'Borb√≥n', '2131840137', '2663428762' UNION 
 SELECT 'com', 'David', 'Cardenas', '4160120563', '2562818680' UNION 
-SELECT 'com', 'AndrÈs', 'Radnikov', '1970831594', '2422329682' UNION 
-SELECT 'com', 'MatÌas', 'Radnikov', '3935634773', '1376231806' UNION 
+SELECT 'com', 'Andr√©s', 'Radnikov', '1970831594', '2422329682' UNION 
+SELECT 'com', 'Mat√≠as', 'Radnikov', '3935634773', '1376231806' UNION 
 SELECT 'com', 'Lugo', 'Del Bueno', '3719739762', '2101221193' UNION 
 SELECT 'com', 'Carmen', 'Buenafuente', '2489234485', '3602833091' UNION 
 SELECT 'com', 'Ana', 'Perez', '2530920230', '1524536709' UNION 
@@ -133,21 +147,21 @@ SELECT 'com', 'Miguel', 'Montero', '1279815493', '4263126541' UNION
 SELECT 'com', 'Raul', 'Pinto', '3033928217', '3047139738' UNION 
 SELECT 'com', 'Raul', 'Lapido', '3024022453', '3224718202' UNION 
 SELECT 'com', 'Franco', 'de Lourdes', '3172333184', '3166721331' UNION 
-SELECT 'com', 'Franco', 'Rufi·n', '4083134078', '2378918798' UNION 
+SELECT 'com', 'Franco', 'Rufi√°n', '4083134078', '2378918798' UNION 
 SELECT 'com', 'Lugo', 'Gutierrez', '1528025913', '3019119529' UNION 
 SELECT 'com', 'Damian', 'Fernandez', '1091531770', '2214818889' UNION 
-SELECT 'com', 'Raul', 'Rufi·n', '4145019502', '4247730844' UNION 
+SELECT 'com', 'Raul', 'Rufi√°n', '4145019502', '4247730844' UNION 
 SELECT 'com', 'Miguel', 'Molina', '2700125806', '2265535919' UNION 
 SELECT 'com', 'Pedro', 'Herrera', '1601318190', '2270013533' UNION 
-SELECT 'com', 'MarÌa', 'Rufi·n', '3682241649', '3165815629' UNION 
+SELECT 'com', 'Mar√≠a', 'Rufi√°n', '3682241649', '3165815629' UNION 
 SELECT 'com', 'Damian', 'Herrera', '2932211388', '2405722260' UNION 
 SELECT 'com', 'Cristian', 'Buenafuente', '1847634394', '4056236910' UNION 
 SELECT 'com', 'Raul', 'Buenafuente', '3971734581', '2832927189' UNION 
-SELECT 'com', 'RubÈn', 'Zapatero', '1959429322', '4243528511' UNION 
+SELECT 'com', 'Rub√©n', 'Zapatero', '1959429322', '4243528511' UNION 
 SELECT 'com', 'Raul', 'Lopez', '2242513473', '3253210372' UNION 
-SELECT 'com', 'Jes˙s', 'Lapido', '1634516505', '3280124703' UNION 
+SELECT 'com', 'Jes√∫s', 'Lapido', '1634516505', '3280124703' UNION 
 SELECT 'com', 'Ariel', 'Pinto', '1764141597', '1480531238' UNION 
-SELECT 'com', 'MatÌas', 'Fuertez', '1723628516', '1818637259' UNION 
+SELECT 'com', 'Mat√≠as', 'Fuertez', '1723628516', '1818637259' UNION 
 SELECT 'com', 'Esther', 'Rodriguez', '1946421320', '4063934857' UNION 
 SELECT 'com', 'Carmen', 'de Lourdes', '3386427478', '3956213768' UNION 
 SELECT 'com', 'Patricia', 'Cardenas', '2410839372', '3331412277' UNION 
@@ -156,121 +170,121 @@ SELECT 'com', 'Franco', 'Maldonado', '1521513614', '2668624469' UNION
 SELECT 'com', 'Patricia', 'Smith', '2771634320', '2606218210' UNION 
 SELECT 'com', 'Lugo', 'Buenafuente', '4087114937', '3098311040' UNION 
 SELECT 'com', 'Ludmila', 'de Lourdes', '1057836776', '3853340261' UNION 
-SELECT 'com', 'Esther', 'BorbÛn', '2906230375', '3484342156' UNION 
+SELECT 'com', 'Esther', 'Borb√≥n', '2906230375', '3484342156' UNION 
 SELECT 'com', 'Damian', 'Lapido', '2998011324', '2168327581' UNION 
-SELECT 'aux', 'IsmaÈl', 'Rufi·n', '1351042360', '1633810089' UNION 
-SELECT 'aux', 'AndrÈs', 'Maldonado', '3327938784', '3277214797' UNION 
+SELECT 'aux', 'Isma√©l', 'Rufi√°n', '1351042360', '1633810089' UNION 
+SELECT 'aux', 'Andr√©s', 'Maldonado', '3327938784', '3277214797' UNION 
 SELECT 'aux', 'Antonio', 'Lapido', '3069742756', '1486240146' UNION 
-SELECT 'aux', 'Jes˙s', 'Lapido', '1471437133', '2384018421' UNION 
+SELECT 'aux', 'Jes√∫s', 'Lapido', '1471437133', '2384018421' UNION 
 SELECT 'aux', 'Alberto', 'Gomez', '2466017577', '1643016901' UNION 
 SELECT 'aux', 'Damian', 'Molina', '3820122295', '3607135243' UNION 
 SELECT 'aux', 'Damian', 'Cardenas', '2659840378', '3619823006' UNION 
-SELECT 'aux', 'MatÌas', 'Maldonado', '1252428162', '1533135910' UNION 
-SELECT 'aux', 'MarÌa', 'Maldonado', '1034125300', '2203213492' UNION 
-SELECT 'aux', 'JosÈ', 'Montenegro', '2934217429', '3223414383' UNION 
+SELECT 'aux', 'Mat√≠as', 'Maldonado', '1252428162', '1533135910' UNION 
+SELECT 'aux', 'Mar√≠a', 'Maldonado', '1034125300', '2203213492' UNION 
+SELECT 'aux', 'Jos√©', 'Montenegro', '2934217429', '3223414383' UNION 
 SELECT 'aux', 'Emmanuel', 'Candela', '1638139013', '1230626449' UNION 
-SELECT 'aux', 'Marcelo', 'BorbÛn', '2044021034', '3996922248' UNION 
-SELECT 'aux', 'MatÌas', 'Del Bueno', '1586516508', '1777541748' UNION 
-SELECT 'aux', 'AndrÈs', 'Buenafuente', '3711216791', '2130218522' UNION 
-SELECT 'aux', 'IsmaÈl', 'Rodriguez', '3782430675', '1156239779' UNION 
+SELECT 'aux', 'Marcelo', 'Borb√≥n', '2044021034', '3996922248' UNION 
+SELECT 'aux', 'Mat√≠as', 'Del Bueno', '1586516508', '1777541748' UNION 
+SELECT 'aux', 'Andr√©s', 'Buenafuente', '3711216791', '2130218522' UNION 
+SELECT 'aux', 'Isma√©l', 'Rodriguez', '3782430675', '1156239779' UNION 
 SELECT 'aux', 'Miguel', 'Pinto', '1198217243', '3221629539' UNION 
 SELECT 'aux', 'Mateo', 'de Lourdes', '1793721017', '3440242071' UNION 
 SELECT 'aux', 'Lucia', 'Buenafuente', '4261633932', '2649015775' UNION 
 SELECT 'aux', 'Raul', 'Smith', '2317033156', '1271530370' UNION 
 SELECT 'aux', 'Lucila', 'Buenafuente', '2444627648', '1722538517' UNION 
 SELECT 'aux', 'Carlos', 'Fernandez', '1567038295', '1757717603' UNION 
-SELECT 'aux', 'Jes˙s', 'BorbÛn', '3281736153', '3364224933' UNION 
+SELECT 'aux', 'Jes√∫s', 'Borb√≥n', '3281736153', '3364224933' UNION 
 SELECT 'aux', 'Pedro', 'Radnikov', '3964523855', '3787536205' UNION 
 SELECT 'aux', 'Lugo', 'Musiani', '1952031894', '3596019344' UNION 
 SELECT 'aux', 'Lucia', 'Lapido', '2737714292', '2845422323' UNION 
 SELECT 'aux', 'Ludmila', 'Del Bueno', '2703528855', '3308522664' UNION 
 SELECT 'aux', 'Ariel', 'Luna', '4254225149', '2746316760' UNION 
-SELECT 'aux', 'JosÈ', 'Zapatero', '1012323856', '4164712889' UNION 
+SELECT 'aux', 'Jos√©', 'Zapatero', '1012323856', '4164712889' UNION 
 SELECT 'aux', 'Pedro', 'Montero', '2593835364', '2236638550' UNION 
 SELECT 'aux', 'Antonio', 'Del Bueno', '4200229298', '3281335031' UNION 
 SELECT 'aux', 'Marcelo', 'Gutierrez', '2562213643', '1415919277' UNION 
 SELECT 'aux', 'Lucas', 'Buenafuente', '2752012022', '2969035881' UNION 
 SELECT 'aux', 'Antonio', 'Perez', '4209218382', '2482638766' UNION 
 SELECT 'aux', 'Alberto', 'Rodriguez', '2824628074', '1023320117' UNION 
-SELECT 'aux', 'Raul', 'BorbÛn', '1176913738', '3880637831' UNION 
+SELECT 'aux', 'Raul', 'Borb√≥n', '1176913738', '3880637831' UNION 
 SELECT 'aux', 'Lucila', 'Correa', '2697440352', '4061839310' UNION 
 SELECT 'aux', 'Carlos', 'Molina', '4245311150', '1671435152' UNION 
 SELECT 'aux', 'Patricia', 'Fuertez', '3994636596', '3184433274' UNION 
-SELECT 'aux', 'JosÈ', 'BorbÛn', '1497715072', '3764523958' UNION 
+SELECT 'aux', 'Jos√©', 'Borb√≥n', '1497715072', '3764523958' UNION 
 SELECT 'aux', 'Mateo', 'de Lourdes', '2689333021', '3605218376' UNION 
 SELECT 'aux', 'Damian', 'Buenafuente', '4100021778', '2015918536' UNION 
 SELECT 'aux', 'Raul', 'Smith', '1567223992', '1656619634' UNION 
 SELECT 'aux', 'Lucila', 'Maldonado', '3919441511', '2855116064' UNION 
 SELECT 'aux', 'Ariel', 'Pinto', '2267820080', '4091311854' UNION 
 SELECT 'aux', 'Carmen', 'Correa', '1805332384', '2468616116' UNION 
-SELECT 'aux', 'Marcelo', 'BorbÛn', '2196238322', '2744820315' UNION 
-SELECT 'aux', 'Jes˙s', 'Fuertez', '1573311243', '3922827165' UNION 
-SELECT 'aux', 'RubÈn', 'Zapatero', '3575123151', '2758223625' UNION 
-SELECT 'aux', 'MatÌas', 'Musiani', '3994933261', '1576238598' UNION 
-SELECT 'aux', 'Lugo', 'Rufi·n', '4225620595', '1042538665' UNION 
+SELECT 'aux', 'Marcelo', 'Borb√≥n', '2196238322', '2744820315' UNION 
+SELECT 'aux', 'Jes√∫s', 'Fuertez', '1573311243', '3922827165' UNION 
+SELECT 'aux', 'Rub√©n', 'Zapatero', '3575123151', '2758223625' UNION 
+SELECT 'aux', 'Mat√≠as', 'Musiani', '3994933261', '1576238598' UNION 
+SELECT 'aux', 'Lugo', 'Rufi√°n', '4225620595', '1042538665' UNION 
 SELECT 'aux', 'David', 'Maldonado', '3968710574', '3949618648' UNION 
-SELECT 'aux', 'RubÈn', 'de Lourdes', '3560127141', '3353130230' UNION 
+SELECT 'aux', 'Rub√©n', 'de Lourdes', '3560127141', '3353130230' UNION 
 SELECT 'aux', 'Lucas', 'Lapido', '2237712005', '4020115044' UNION 
-SELECT 'aux', 'IsmaÈl', 'Maldonado', '3206232479', '2868625283' UNION 
-SELECT 'aux', 'MatÌas', 'Smith', '2061631141', '4151525586' UNION 
+SELECT 'aux', 'Isma√©l', 'Maldonado', '3206232479', '2868625283' UNION 
+SELECT 'aux', 'Mat√≠as', 'Smith', '2061631141', '4151525586' UNION 
 SELECT 'aux', 'Ana', 'Fuertez', '2977237968', '2091041670' UNION 
 SELECT 'aux', 'Patricia', 'Pogonza', '2208228648', '1352310346' UNION 
 SELECT 'aux', 'Lugo', 'Gomez', '1098912974', '4237914596' UNION 
-SELECT 'aux', 'JosÈ', 'Gomez', '2546322523', '4026540384' UNION 
+SELECT 'aux', 'Jos√©', 'Gomez', '2546322523', '4026540384' UNION 
 SELECT 'aux', 'Emmanuel', 'Gutierrez', '2686429697', '3513518847' UNION 
-SELECT 'aux', 'Carlos', 'BorbÛn', '4116016361', '2293637189' UNION 
+SELECT 'aux', 'Carlos', 'Borb√≥n', '4116016361', '2293637189' UNION 
 SELECT 'aux', 'Emmanuel', 'Luna', '2780014318', '2010919773' UNION 
-SELECT 'aux', 'MatÌas', 'Pinto', '3573130859', '2365815211' UNION 
+SELECT 'aux', 'Mat√≠as', 'Pinto', '3573130859', '2365815211' UNION 
 SELECT 'aux', 'Emmanuel', 'Perez', '3641210465', '3990040858' UNION 
 SELECT 'aux', 'Lucia', 'Perez', '3204628623', '1180919575' UNION 
 SELECT 'aux', 'Patricia', 'Montero', '3126332381', '2174613649' UNION 
-SELECT 'aux', 'IsmaÈl', 'Montenegro', '3645030280', '1951315981' UNION 
+SELECT 'aux', 'Isma√©l', 'Montenegro', '3645030280', '1951315981' UNION 
 SELECT 'aux', 'Pedro', 'Correa', '4008010568', '1842034021' UNION 
 SELECT 'aux', 'Ariel', 'Pinto', '3767415350', '2530938968' UNION 
-SELECT 'aux', 'MarÌa', 'Lopez', '4000521394', '2319828438' UNION 
+SELECT 'aux', 'Mar√≠a', 'Lopez', '4000521394', '2319828438' UNION 
 SELECT 'aux', 'Marcelo', 'Montenegro', '1092436950', '1555936377' UNION 
 SELECT 'aux', 'David', 'Gomez', '3250025509', '1324612897' UNION 
-SELECT 'aux', 'AndrÈs', 'Pogonza', '4082312717', '3413911089' UNION 
+SELECT 'aux', 'Andr√©s', 'Pogonza', '4082312717', '3413911089' UNION 
 SELECT 'aux', 'Ariel', 'Estias', '2155527443', '4018213784' UNION 
 SELECT 'aux', 'Damian', 'Luna', '3788614224', '1459828945' UNION 
 SELECT 'aux', 'Carlos', 'Herrera', '3342612284', '3909014116' UNION 
 SELECT 'aux', 'Raul', 'Gomez', '1416525783', '2453238561' UNION 
 SELECT 'aux', 'Ana', 'Lapido', '3762114782', '2672610199' UNION 
-SELECT 'aux', 'Jes˙s', 'BaÒez', '3229827651', '2824022223' UNION 
-SELECT 'aux', 'IsmaÈl', 'Candela', '3845437217', '3252417910' UNION 
-SELECT 'aux', 'Jes˙s', 'Musiani', '3994129900', '2678430362' UNION 
-SELECT 'aux', 'Monica', 'BaÒez', '3301840290', '3990115301' UNION 
-SELECT 'aux', 'RubÈn', 'Estias', '1453127247', '4195228959' UNION 
+SELECT 'aux', 'Jes√∫s', 'Ba√±ez', '3229827651', '2824022223' UNION 
+SELECT 'aux', 'Isma√©l', 'Candela', '3845437217', '3252417910' UNION 
+SELECT 'aux', 'Jes√∫s', 'Musiani', '3994129900', '2678430362' UNION 
+SELECT 'aux', 'Monica', 'Ba√±ez', '3301840290', '3990115301' UNION 
+SELECT 'aux', 'Rub√©n', 'Estias', '1453127247', '4195228959' UNION 
 SELECT 'aux', 'Damian', 'Musiani', '3937918304', '3515021205' UNION 
 SELECT 'aux', 'Franco', 'de Lourdes', '4052825367', '1683029891' UNION 
 SELECT 'aux', 'Raul', 'Lopez', '2191122437', '1543734379' UNION 
-SELECT 'aux', 'RubÈn', 'BorbÛn', '2320410699', '1698240353' UNION 
-SELECT 'aux', 'David', 'BorbÛn', '1587112311', '2041232883' UNION 
-SELECT 'aux', 'RubÈn', 'Correa', '3737514264', '1851139222' UNION 
-SELECT 'aux', 'Patricia', 'Rufi·n', '1600222238', '3895820356' UNION 
+SELECT 'aux', 'Rub√©n', 'Borb√≥n', '2320410699', '1698240353' UNION 
+SELECT 'aux', 'David', 'Borb√≥n', '1587112311', '2041232883' UNION 
+SELECT 'aux', 'Rub√©n', 'Correa', '3737514264', '1851139222' UNION 
+SELECT 'aux', 'Patricia', 'Rufi√°n', '1600222238', '3895820356' UNION 
 SELECT 'aux', 'Marcelo', 'Montenegro', '3210410431', '2744640778' UNION 
 SELECT 'aux', 'Ana', 'Lapido', '2955530839', '1942423988' UNION 
-SELECT 'aux', 'Esther', 'BorbÛn', '2083430530', '1333727681' UNION 
+SELECT 'aux', 'Esther', 'Borb√≥n', '2083430530', '1333727681' UNION 
 SELECT 'aux', 'Antonio', 'Smith', '2236120410', '3148230847' UNION 
 SELECT 'aux', 'Ludmila', 'Gomez', '3505635626', '4106310210' UNION 
 SELECT 'aux', 'Esther', 'Fuertez', '2727840713', '2151029491' UNION 
-SELECT 'aux', 'MatÌas', 'Herrera', '2068426684', '1818326438' UNION 
-SELECT 'aux', 'RubÈn', 'BorbÛn', '1257042682', '2884812479' UNION 
+SELECT 'aux', 'Mat√≠as', 'Herrera', '2068426684', '1818326438' UNION 
+SELECT 'aux', 'Rub√©n', 'Borb√≥n', '1257042682', '2884812479' UNION 
 SELECT 'aux', 'Cristian', 'Pogonza', '3657934716', '3167012677' UNION 
 SELECT 'aux', 'Ariel', 'Montero', '4168117605', '4268741148' UNION 
-SELECT 'aux', 'Jes˙s', 'Cardenas', '1691510401', '3600514205' UNION 
+SELECT 'aux', 'Jes√∫s', 'Cardenas', '1691510401', '3600514205' UNION 
 SELECT 'aux', 'Raul', 'Smith', '2705110673', '3925131676' UNION 
 SELECT 'aux', 'Patricia', 'Herrera', '1386342203', '3029010276' UNION 
 SELECT 'aux', 'Mateo', 'Montenegro', '3542620155', '3440019154' UNION 
-SELECT 'aux', 'Raul', 'BaÒez', '1845037730', '1066220015' UNION 
+SELECT 'aux', 'Raul', 'Ba√±ez', '1845037730', '1066220015' UNION 
 SELECT 'aux', 'Ludmila', 'Pinto', '2132939240', '3594634401' UNION 
-SELECT 'aux', 'Antonio', 'Rufi·n', '1393118272', '1646425347' UNION 
+SELECT 'aux', 'Antonio', 'Rufi√°n', '1393118272', '1646425347' UNION 
 SELECT 'aux', 'Pedro', 'Correa', '1166022413', '2573022569' UNION 
-SELECT 'aux', 'JosÈ', 'Correa', '1488930177', '1520017116' UNION 
-SELECT 'aux', 'IsmaÈl', 'Fernandez', '1132333403', '1958519598' UNION 
-SELECT 'aux', 'Lucila', 'Rufi·n', '2550336569', '1027928219' UNION 
+SELECT 'aux', 'Jos√©', 'Correa', '1488930177', '1520017116' UNION 
+SELECT 'aux', 'Isma√©l', 'Fernandez', '1132333403', '1958519598' UNION 
+SELECT 'aux', 'Lucila', 'Rufi√°n', '2550336569', '1027928219' UNION 
 SELECT 'aux', 'Lucas', 'Montenegro', '3026728912', '4032232554' UNION 
-SELECT 'aux', 'IsmaÈl', 'Montenegro', '3065038262', '1825333940' UNION 
+SELECT 'aux', 'Isma√©l', 'Montenegro', '3065038262', '1825333940' UNION 
 SELECT 'aux', 'Lugo', 'Musiani', '2610326652', '1910836502' UNION 
 SELECT 'aux', 'Lugo', 'Rodriguez', '1880833703', '3742642039' UNION 
 SELECT 'aux', 'Lucas', 'Herrera', '3161813616', '1740925460' UNION 
