@@ -104,11 +104,13 @@ namespace Airport_Management
                                      cmbFabricante.Text,
                                      txtFabricante.Text,
                                      ref ClausulaSQL);
-            if (cmbFabricante.Text != "" && txtFabricante.Text != "")
+            if (cmbModelo.Text != "" && txtModelo.Text != "")
                 ConstruirClausulaSQL("modelo_TA",
                                      cmbModelo.Text,
                                      txtModelo.Text,
                                      ref ClausulaSQL);
+
+            MessageBox.Show(ClausulaSQL);
 
             dsAviones.Tables.Clear();
             GestionAviones gp = new GestionAviones();

@@ -56,6 +56,7 @@
             this.grdListarAviones.Location = new System.Drawing.Point(8, 175);
             this.grdListarAviones.Margin = new System.Windows.Forms.Padding(2);
             this.grdListarAviones.Name = "grdListarAviones";
+            this.grdListarAviones.ReadOnly = true;
             this.grdListarAviones.RowTemplate.Height = 28;
             this.grdListarAviones.Size = new System.Drawing.Size(724, 370);
             this.grdListarAviones.TabIndex = 0;

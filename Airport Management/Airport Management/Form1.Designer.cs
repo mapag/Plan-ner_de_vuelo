@@ -42,6 +42,9 @@
             this.generarPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rEPORTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONFIGURACIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tRIPULANTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarTripulantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarVueloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +54,7 @@
             this.aVIONESToolStripMenuItem,
             this.vUELOSToolStripMenuItem,
             this.pLANESToolStripMenuItem,
+            this.tRIPULANTESToolStripMenuItem,
             this.rEPORTESToolStripMenuItem,
             this.cONFIGURACIONToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -102,6 +106,7 @@
             // vUELOSToolStripMenuItem
             // 
             this.vUELOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listarVueloToolStripMenuItem,
             this.agregarVueloToolStripMenuItem,
             this.modificarVueloToolStripMenuItem,
             this.eliminarVueloToolStripMenuItem});
@@ -141,7 +146,7 @@
             // generarPlanToolStripMenuItem
             // 
             this.generarPlanToolStripMenuItem.Name = "generarPlanToolStripMenuItem";
-            this.generarPlanToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.generarPlanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.generarPlanToolStripMenuItem.Text = "Generar plan";
             // 
             // rEPORTESToolStripMenuItem
@@ -156,6 +161,26 @@
             this.cONFIGURACIONToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.cONFIGURACIONToolStripMenuItem.Text = "CONFIGURACIÓN";
             // 
+            // tRIPULANTESToolStripMenuItem
+            // 
+            this.tRIPULANTESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listarTripulantesToolStripMenuItem});
+            this.tRIPULANTESToolStripMenuItem.Name = "tRIPULANTESToolStripMenuItem";
+            this.tRIPULANTESToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.tRIPULANTESToolStripMenuItem.Text = "TRIPULANTES";
+            // 
+            // listarTripulantesToolStripMenuItem
+            // 
+            this.listarTripulantesToolStripMenuItem.Name = "listarTripulantesToolStripMenuItem";
+            this.listarTripulantesToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.listarTripulantesToolStripMenuItem.Text = "Listar tripulantes";
+            // 
+            // listarVueloToolStripMenuItem
+            // 
+            this.listarVueloToolStripMenuItem.Name = "listarVueloToolStripMenuItem";
+            this.listarVueloToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.listarVueloToolStripMenuItem.Text = "Listar vuelo";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,7 +191,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.TransparencyKey = System.Drawing.Color.Transparent;
@@ -194,6 +219,9 @@
         private System.Windows.Forms.ToolStripMenuItem rEPORTESToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cONFIGURACIONToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarAvionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tRIPULANTESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listarTripulantesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listarVueloToolStripMenuItem;
 
     }
 }
