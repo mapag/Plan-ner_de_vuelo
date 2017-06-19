@@ -120,7 +120,7 @@ namespace Airport_Management
         {
            // DataSet dsActualizar;
             DataSet dsEliminar;
-            DataSet dsAgregar;
+            //DataSet dsAgregar;
             GestionAviones gp = new GestionAviones();
             /*
             if (dsAviones.HasChanges(DataRowState.Modified))

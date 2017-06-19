@@ -25,10 +25,17 @@ namespace Airport_Management
 
             GestionAviones ga = new GestionAviones();
 
-            if (ga.insertarAvion("Aviones", txtCodigo.Text, txtTipo.Text))
+            try
             {
+                ga.insertarAvion("Aviones", txtCodigo.Text, txtTipo.Text);
                 MessageBox.Show("Avión agregado!");
-
+                txtCodigo.Clear();
+                txtTipo.Clear();
+                txtCodigo.Select();
+            }
+            catch(SyntaxErrorException re)
+            {
+                MessageBox.Show(re.ToString());
             }
         }
     }
