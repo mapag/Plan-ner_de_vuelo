@@ -619,102 +619,102 @@ UPDATE aeropuertos
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='TLC')+1 
 WHERE codigo_ATO='TLC' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'A320-00', 'A320', 'TLC' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='TLC') 
+SELECT 'BAU-320', 'A320', 'TLC' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='TLC') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='TLC')+1 
 WHERE codigo_ATO='TLC' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'A320-01', 'A320', 'TLC' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='TLC') 
+SELECT 'RXT-877', 'A320', 'TLC' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='TLC') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='IAET')+1 
 WHERE codigo_ATO='IAET' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'A320-02', 'A320', 'IAET' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='IAET') 
+SELECT 'PII-743', 'A320', 'IAET' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='IAET') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='TLC')+1 
 WHERE codigo_ATO='TLC' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'A320-03', 'A320', 'TLC' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='TLC') 
+SELECT 'MAT-223', 'A320', 'TLC' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='TLC') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE')+1 
 WHERE codigo_ATO='EZE' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'A320-04', 'A320', 'EZE' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE') 
+SELECT 'EOP-801', 'A320', 'EZE' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='UK')+1 
 WHERE codigo_ATO='UK' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'B777-00', 'B777', 'UK' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='UK') 
+SELECT 'EDR-006', 'B777', 'UK' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='UK') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='USA')+1 
 WHERE codigo_ATO='USA' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'B777-01', 'B777', 'USA' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='USA') 
+SELECT 'AST-101', 'B777', 'USA' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='USA') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='URU')+1 
 WHERE codigo_ATO='URU' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'B777-02', 'B777', 'URU' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='URU') 
+SELECT 'AXD-014', 'B777', 'URU' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='URU') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='ITA')+1 
 WHERE codigo_ATO='ITA' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'B777-03', 'B777', 'ITA' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='ITA') 
+SELECT 'BRO-833', 'B777', 'ITA' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='ITA') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='URU')+1 
 WHERE codigo_ATO='URU' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'B777-04', 'B777', 'URU' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='URU') 
+SELECT 'PUL-552', 'B777', 'URU' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='URU') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='URU')+1 
 WHERE codigo_ATO='URU' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'B757-00', 'B757', 'URU' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='URU') 
+SELECT 'JNN-787', 'B757', 'URU' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='URU') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='CHI')+1 
 WHERE codigo_ATO='CHI' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'B757-01', 'B757', 'CHI' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='CHI') 
+SELECT 'EIN-330', 'B757', 'CHI' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='CHI') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='GIO')+1 
 WHERE codigo_ATO='GIO' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'B757-02', 'B757', 'GIO' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='GIO') 
+SELECT 'SEE-894', 'B757', 'GIO' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='GIO') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='IAET')+1 
 WHERE codigo_ATO='IAET' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'B757-03', 'B757', 'IAET' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='IAET') 
+SELECT 'YIM-676', 'B757', 'IAET' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='IAET') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='JAP')+1 
 WHERE codigo_ATO='JAP' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'B757-04', 'B757', 'JAP' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='JAP') 
+SELECT 'DRK-666', 'B757', 'JAP' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='JAP') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='GIO')+1 
 WHERE codigo_ATO='GIO' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'B747-00', 'B747', 'GIO' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='GIO') 
+SELECT 'AGV-340', 'B747', 'GIO' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='GIO') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='USA')+1 
 WHERE codigo_ATO='USA' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'B747-01', 'B747', 'USA' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='USA') 
+SELECT 'CMM-016', 'B747', 'USA' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='USA') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='ITA')+1 
 WHERE codigo_ATO='ITA' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'B747-02', 'B747', 'ITA' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='ITA') 
+SELECT 'JAV-433', 'B747', 'ITA' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='ITA') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='JAP')+1 
 WHERE codigo_ATO='JAP' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'B747-03', 'B747', 'JAP' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='JAP') 
+SELECT 'CPP-898', 'B747', 'JAP' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='JAP') 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE')+1 
 WHERE codigo_ATO='EZE' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'B747-04', 'B747', 'EZE' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE') 
+SELECT 'RUN-302', 'B747', 'EZE' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE') 
 
 
 
