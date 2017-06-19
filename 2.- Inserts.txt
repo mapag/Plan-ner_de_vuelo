@@ -25,17 +25,17 @@ GO
 
 
 INSERT INTO tipos_de_aviones (codigo_TA, fabricante_TA, modelo_TA, descripcion_TA, cant_pil_TA, cant_jc_TA, cant_com_TA, cant_aux_TA)
-SELECT 'B-747', 'Boeing', 'También conocido como Jumbo Jet o el modelo de Air Force One', 2, 1, 1, 7 UNION
-SELECT 'B-777', 'Boeing', 'Una capacidad de 300 a 550 pasajeros', 1, 1, 1, 8 UNION
-SELECT 'B-757', 'Boeing', 'Este avión de tamaño medio es ideal para vuelos comerciales, hasta 289 pasajeros', 1, 1, 1, 5 UNION
-SELECT 'A-320', 'Airbus', 'Perfecto para los vuelos comerciales nacionales', 1, 1, 1, 4 UNION
-SELECT 'B-737', 'Boeing', 'Un avion de porte pequeño para vuelos rapidos', 1, 1, 1, 3 UNION
-SELECT 'B-787', 'Boeing', 'Su gran capacidad y su ingeniería inteligente son sus mejores atractivos', 1, 1, 1, 3 UNION
-SELECT 'A-340', 'Airbus', 'El avión Airbus A340 es un avión jet comercial de pasajeros de largo alcance', 2, 2, 1, 10 UNION
-SELECT 'A-380', 'Airbus', 'El Airbus A380 es considerado el mayor avión de pasajeros hoy en día', 2, 2, 1, 16 UNION
-SELECT 'MD-80', 'McDonnell Douglas', 'MD-80 es una familia de jets comerciales de tamaño mediano, de corto y mediano alcance, de un solo pasillo.', 2, 2, 1, 8 UNION
-SELECT 'E-170', 'Embraer', 'La familia E-Jet es una de jets de fuselaje estrecho de mediano alcance mas utilizado', 2, 1, 1, 4 UION
-SELECT 'A-330', 'Airbus', 'El Airbus A330 es un avión jet de fuselaje ancho bimotor', 1, 1, 1, 4 UNION
+SELECT 'B-747', 'Boeing', '747 ', 'También conocido como Jumbo Jet o el modelo de Air Force One', 2, 1, 1, 7 UNION
+SELECT 'B-777', 'Boeing', '777', 'Una capacidad de 300 a 550 pasajeros', 1, 1, 1, 8 UNION
+SELECT 'B-757', 'Boeing', '757', 'Este avión de tamaño medio es ideal para vuelos comerciales, hasta 289 pasajeros', 1, 1, 1, 5 UNION
+SELECT 'A-320', 'Airbus', '320', 'Perfecto para los vuelos comerciales nacionales', 1, 1, 1, 4 UNION
+SELECT 'B-737', 'Boeing', '737', 'Un avion de porte pequeño para vuelos rapidos', 1, 1, 1, 3 UNION
+SELECT 'B-787', 'Boeing', '787', 'Su gran capacidad y su ingeniería inteligente son sus mejores atractivos', 1, 1, 1, 3 UNION
+SELECT 'A-340', 'Airbus', '340', 'El avión Airbus A340 es un avión jet comercial de pasajeros de largo alcance', 2, 2, 1, 10 UNION
+SELECT 'A-380', 'Airbus', '380', 'El Airbus A380 es considerado el mayor avión de pasajeros hoy en día', 2, 2, 1, 16 UNION
+SELECT 'MD-80', 'McDonnell Douglas', '80', 'MD-80 es una familia de jets comerciales de tamaño mediano, de corto y mediano alcance, de un solo pasillo.', 2, 2, 1, 8 UNION
+SELECT 'E-170', 'Embraer', '170', 'La familia E-Jet es una de jets de fuselaje estrecho de mediano alcance mas utilizado', 2, 1, 1, 4 UNION
+SELECT 'A-330', 'Airbus', '330', 'El Airbus A330 es un avión jet de fuselaje ancho bimotor', 1, 1, 1, 4 
 GO
 
 
