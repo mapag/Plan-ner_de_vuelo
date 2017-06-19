@@ -2,41 +2,26 @@ use Airport_Mannager
 go
 
 INSERT INTO aeropuertos (codigo_ATO, nombre_ATO, pais_ATO, provincia_ATO, contador_ATO)
-SELECT 'EZE', 'Aeropuerto Internacional Ministro Pistarini de Ezeiza', 'Argentina', 'Buenos Aires', 0 UNION
-SELECT 'BRC', 'Aeropuerto Internacional Teniente Luis Candelaria', 'Argentina', 'Rio Negro', 0 UNION
-SELECT 'COR', 'Aeropuerto Internacional Ingeniero Ambrosio Taravella', 'Argentina', 'C√≥rdoba', 0 UNION
-SELECT 'SCL', 'Aeropuerto Internacional Comodoro Arturo Merino Benitez', 'Chile', 'Santiago de Chile', 0 UNION
-SELECT 'MVD', 'Aeropuerto Internacional de Carrasco', 'Uruguay', 'Montevideo', 0 UNION
-SELECT 'ROM', 'Aeropuerto Intercontinental Leonardo da Vinci', 'Italia', 'Roma', 0 UNION
-SELECT 'JKF', 'Aeropuerto Internacioanl John F. Kennedy', 'Estados Unidos', 'New York', 0 UNION
-SELECT 'CDG', 'Aeropuerto de Paris - Charles de Gaulle', 'Francia', 'Paris', 0 UNION
-SELECT 'LHR', 'Aeropuerto de Londres - Heatrow', 'Inglaterra', 'Londres', 0 UNION
-SELECT 'HND', 'Aeropuerto Internacional de Tokio', 'Japon', 'Tokio', 0 UNION
-SELECT 'SVO', 'Aeropuerto Internacional de Moscu - Sheremetyevo', 'Rusia', 'Moscu', 0 UNION
-SELECT 'DFW', 'Aeropuerto Internacional de Dallas - Fort Worth', 'Estados Unidos', 'Dallas', 0 UNION
-SELECT 'MEX', 'Aeropuerto Internacional Benito Ju√°rez de la Ciudad de M√©xico', 'Mexico', 'Ciudad de Mexico', 0 UNION
-SELECT 'GRU', 'Aeropuerto Internacional de S√£o Paulo-Guarulhos ‚Äì Gobernador Andr√© Franco Montoro', 'Brasil', 'San Pablo', 0 UNION
-SELECT 'GIG', 'Aeropuerto Internacional Ant√¥nio Carlos Jobim de R√≠o de Janeiro', 'Brasil', 'Rio de Janeiro', 0 UNION
-SELECT 'MAD', 'Aeropuerto de Madrid Barajas Adolfo Su√°rez', 'Espa√±a', 'Madrid' , 0
-GO
+SELECT 'EZE', 'Ezeiza', 'Argentina', 'Buenos Aires', 0 UNION
+SELECT 'TLC', 'Teniente Luis Candelaria', 'Argentina', 'Rio Negro', 0 UNION
+SELECT 'IAET', 'Ing. Aer. Ambrosio Taravella', 'Argentina', 'CÛrdoba', 0 UNION
+SELECT 'CHI', 'Chek Lap Kok', 'China', 'Hong Kong', 0 UNION
+SELECT 'URU', 'General Ces·reo L. Berisso', 'Uruguai', 'Montevideo', 0 UNION
+SELECT 'ITA', 'Giovanni Nicelli', 'Italia', 'Venecia', 0 UNION
+SELECT 'USA', 'Long Beach', 'Estados Unidos', 'California', 0 UNION
+SELECT 'UK', 'Barra', 'Reino Unido', 'Escocia', 0 UNION
+SELECT 'JAP', 'Kansai', 'JapÛn', 'Osaka', 0 UNION
+SELECT 'GIO', 'Reina Tamar', 'Giorgia', 'Mestia', 0
 
 
 
 
 
 INSERT INTO tipos_de_aviones (codigo_TA, fabricante_TA, modelo_TA, descripcion_TA, cant_pil_TA, cant_jc_TA, cant_com_TA, cant_aux_TA)
-SELECT 'B-747', 'Boeing', '747 ', 'Tambi√©n conocido como Jumbo Jet o el modelo de Air Force One', 2, 1, 1, 7 UNION
-SELECT 'B-777', 'Boeing', '777', 'Una capacidad de 300 a 550 pasajeros', 1, 1, 1, 8 UNION
-SELECT 'B-757', 'Boeing', '757', 'Este avi√≥n de tama√±o medio es ideal para vuelos comerciales, hasta 289 pasajeros', 1, 1, 1, 5 UNION
-SELECT 'A-320', 'Airbus', '320', 'Perfecto para los vuelos comerciales nacionales', 1, 1, 1, 4 UNION
-SELECT 'B-737', 'Boeing', '737', 'Un avion de porte peque√±o para vuelos rapidos', 1, 1, 1, 3 UNION
-SELECT 'B-787', 'Boeing', '787', 'Su gran capacidad y su ingenier√≠a inteligente son sus mejores atractivos', 1, 1, 1, 3 UNION
-SELECT 'A-340', 'Airbus', '340', 'El avi√≥n Airbus A340 es un avi√≥n jet comercial de pasajeros de largo alcance', 2, 2, 1, 10 UNION
-SELECT 'A-380', 'Airbus', '380', 'El Airbus A380 es considerado el mayor avi√≥n de pasajeros hoy en d√≠a', 2, 2, 1, 16 UNION
-SELECT 'MD-80', 'McDonnell Douglas', '80', 'MD-80 es una familia de jets comerciales de tama√±o mediano, de corto y mediano alcance, de un solo pasillo.', 2, 2, 1, 8 UNION
-SELECT 'E-170', 'Embraer', '170', 'La familia E-Jet es una de jets de fuselaje estrecho de mediano alcance mas utilizado', 2, 1, 1, 4 UNION
-SELECT 'A-330', 'Airbus', '330', 'El Airbus A330 es un avi√≥n jet de fuselaje ancho bimotor', 1, 1, 1, 4 
-GO
+SELECT 'B747', 'Boeing', '747', 'TambiÈn conocido como Jumbo Jet o el modelo de Air Force One', 2, 1, 1, 7 UNION
+SELECT 'B777', 'Boeing', '777', 'Una capacidad de 300 a 550 pasajeros', 1, 1, 1, 8 UNION
+SELECT 'B757', 'Boeing', '757', 'Este aviÛn de tamaÒo medio es ideal para vuelos comerciales, hasta 289 pasajeros', 1, 1, 1, 5 UNION
+SELECT 'A320', 'Airbus', 'A320', 'perfecto para los vuelos comerciales nacionales', 1, 1, 1, 4
 
 
 
@@ -53,60 +38,60 @@ SELECT 'com', 'Comisario', 'Responsable de seguridad'
 
 
 INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
-SELECT 'pil', 'Jos√©', 'Pogonza', '1079312582', '3001910660' UNION 
+SELECT 'pil', 'JosÈ', 'Pogonza', '1079312582', '3001910660' UNION 
 SELECT 'pil', 'Carmen', 'Pinto', '3239116677', '2492118182' UNION 
 SELECT 'pil', 'Marcelo', 'Montero', '2676838773', '3213432774' UNION 
-SELECT 'pil', 'Jes√∫s', 'Zapatero', '3165227103', '2886016105' UNION 
+SELECT 'pil', 'Jes˙s', 'Zapatero', '3165227103', '2886016105' UNION 
 SELECT 'pil', 'Lucila', 'Candela', '3191424479', '1520638924' UNION 
 SELECT 'pil', 'Antonio', 'Montenegro', '3178332940', '1255634452' UNION 
-SELECT 'pil', 'Raul', 'Rufi√°n', '2015228108', '2754516387' UNION 
+SELECT 'pil', 'Raul', 'Rufi·n', '2015228108', '2754516387' UNION 
 SELECT 'pil', 'Lucila', 'Fuertez', '2215027042', '3269310421' UNION 
 SELECT 'pil', 'Alberto', 'Correa', '1245323085', '2348635961' UNION 
 SELECT 'pil', 'Franco', 'Radnikov', '1211226493', '1720442437' UNION 
 SELECT 'pil', 'Lugo', 'Candela', '4262434692', '2220633578' UNION 
-SELECT 'pil', 'Mat√≠as', 'Pinto', '3336228747', '4021019996' UNION 
-SELECT 'pil', 'Isma√©l', 'Buenafuente', '3052124820', '3977710027' UNION 
+SELECT 'pil', 'MatÌas', 'Pinto', '3336228747', '4021019996' UNION 
+SELECT 'pil', 'IsmaÈl', 'Buenafuente', '3052124820', '3977710027' UNION 
 SELECT 'pil', 'Patricia', 'Luna', '2711818261', '1948635640' UNION 
 SELECT 'pil', 'Alberto', 'Lapido', '3317819210', '1463921076' UNION 
-SELECT 'pil', 'Isma√©l', 'Candela', '1656734895', '1508642056' UNION 
+SELECT 'pil', 'IsmaÈl', 'Candela', '1656734895', '1508642056' UNION 
 SELECT 'pil', 'Lucia', 'Gomez', '3725737899', '2855334802' UNION 
 SELECT 'pil', 'Alberto', 'Lapido', '3105636803', '3035918943' UNION 
-SELECT 'pil', 'Jos√©', 'Lapido', '1266828543', '2739911437' UNION 
+SELECT 'pil', 'JosÈ', 'Lapido', '1266828543', '2739911437' UNION 
 SELECT 'pil', 'Mateo', 'de Lourdes', '1856527835', '3524330103' UNION 
 SELECT 'pil', 'Monica', 'Del Bueno', '1337218685', '3201920406' UNION 
 SELECT 'pil', 'Antonio', 'Pinto', '3217018349', '3057926402' UNION 
 SELECT 'pil', 'Miguel', 'Perez', '2940531287', '1069328981' UNION 
-SELECT 'pil', 'Pedro', 'Borb√≥n', '4229127307', '2135720248' UNION 
-SELECT 'pil', 'Rub√©n', 'de Lourdes', '3148512361', '1024129169' UNION 
-SELECT 'pil', 'Jes√∫s', 'Cardenas', '2088422218', '1255228446' UNION 
+SELECT 'pil', 'Pedro', 'BorbÛn', '4229127307', '2135720248' UNION 
+SELECT 'pil', 'RubÈn', 'de Lourdes', '3148512361', '1024129169' UNION 
+SELECT 'pil', 'Jes˙s', 'Cardenas', '2088422218', '1255228446' UNION 
 SELECT 'pil', 'Lucas', 'Maldonado', '1055535902', '1223938977' UNION 
-SELECT 'pil', 'Isma√©l', 'Ba√±ez', '4258637586', '2652615891' UNION 
+SELECT 'pil', 'IsmaÈl', 'BaÒez', '4258637586', '2652615891' UNION 
 SELECT 'pil', 'Antonio', 'Montero', '2764219171', '1304922066' UNION 
 SELECT 'pil', 'Miguel', 'Radnikov', '3316240743', '2629023392' UNION 
-SELECT 'pil', 'Andr√©s', 'Montenegro', '1083932720', '2353115608' UNION 
+SELECT 'pil', 'AndrÈs', 'Montenegro', '1083932720', '2353115608' UNION 
 SELECT 'pil', 'Franco', 'Buenafuente', '2437815095', '3850623936' UNION 
 SELECT 'pil', 'David', 'Candela', '3568712211', '2835818842' UNION 
-SELECT 'pil', 'Jos√©', 'Pogonza', '2135726276', '3284618381' UNION 
-SELECT 'pil', 'Mat√≠as', 'Rufi√°n', '3934921982', '2682130424' UNION 
+SELECT 'pil', 'JosÈ', 'Pogonza', '2135726276', '3284618381' UNION 
+SELECT 'pil', 'MatÌas', 'Rufi·n', '3934921982', '2682130424' UNION 
 SELECT 'pil', 'Marcelo', 'Gutierrez', '1387420339', '1542613196' UNION 
 SELECT 'pil', 'Ariel', 'Del Bueno', '3250741235', '3118916480' UNION 
 SELECT 'pil', 'Lucas', 'Gutierrez', '2406336982', '2400130779' UNION 
 SELECT 'pil', 'Lugo', 'Estias', '2153529582', '1342233585' UNION 
 SELECT 'pil', 'Emmanuel', 'Luna', '3386529878', '2389924346' UNION 
-SELECT 'jc', 'Jes√∫s', 'Buenafuente', '1125731527', '1082719779' UNION 
+SELECT 'jc', 'Jes˙s', 'Buenafuente', '1125731527', '1082719779' UNION 
 SELECT 'jc', 'Alberto', 'Pogonza', '1560726988', '1027129892' UNION 
 SELECT 'jc', 'Lucila', 'Fuertez', '2476129055', '3769337183' UNION 
 SELECT 'jc', 'Alberto', 'Musiani', '2947025270', '1146118942' UNION 
 SELECT 'jc', 'Mateo', 'Montero', '4115221962', '2636419175' UNION 
-SELECT 'jc', 'Mar√≠a', 'Radnikov', '3193419702', '2468316549' UNION 
+SELECT 'jc', 'MarÌa', 'Radnikov', '3193419702', '2468316549' UNION 
 SELECT 'jc', 'Patricia', 'Maldonado', '1715637528', '2240520274' UNION 
 SELECT 'jc', 'Franco', 'Pinto', '3634025028', '2161710754' UNION 
 SELECT 'jc', 'Mateo', 'Gomez', '3186316768', '1197415427' UNION 
-SELECT 'jc', 'Alberto', 'Rufi√°n', '1686534477', '2953713546' UNION 
+SELECT 'jc', 'Alberto', 'Rufi·n', '1686534477', '2953713546' UNION 
 SELECT 'jc', 'Damian', 'Herrera', '2743231176', '3753140317' UNION 
 SELECT 'jc', 'Cristian', 'Pinto', '2391029951', '1472613291' UNION 
 SELECT 'jc', 'Monica', 'Perez', '1628317494', '2278924263' UNION 
-SELECT 'jc', 'Rub√©n', 'Borb√≥n', '1385729904', '1325837050' UNION 
+SELECT 'jc', 'RubÈn', 'BorbÛn', '1385729904', '1325837050' UNION 
 SELECT 'jc', 'Lucia', 'Cardenas', '4106024790', '2679639707' UNION 
 SELECT 'jc', 'Emmanuel', 'Fernandez', '3114430544', '2478439132' UNION 
 SELECT 'jc', 'Lucia', 'Herrera', '4199418476', '2498237461' UNION 
@@ -114,7 +99,7 @@ SELECT 'jc', 'Lugo', 'Pinto', '2074140015', '2056236755' UNION
 SELECT 'jc', 'Lucia', 'Montenegro', '3202638940', '3536921049' UNION 
 SELECT 'jc', 'Cristian', 'Herrera', '4004928433', '4012312555' UNION 
 SELECT 'jc', 'Pedro', 'Buenafuente', '1344921559', '1545424260' UNION 
-SELECT 'jc', 'Franco', 'Borb√≥n', '1723526192', '3968837573' UNION 
+SELECT 'jc', 'Franco', 'BorbÛn', '1723526192', '3968837573' UNION 
 SELECT 'jc', 'Carlos', 'Montenegro', '3643010248', '2029526039' UNION 
 SELECT 'jc', 'Franco', 'Lapido', '2162729586', '2377136163' UNION 
 SELECT 'jc', 'David', 'Radnikov', '2976038527', '1453118785' UNION 
@@ -123,9 +108,9 @@ SELECT 'jc', 'Lugo', 'Fernandez', '3358017053', '2547136524' UNION
 SELECT 'jc', 'Emmanuel', 'Gutierrez', '1869325239', '3619622625' UNION 
 SELECT 'jc', 'Ludmila', 'de Lourdes', '3845815712', '2999931338' UNION 
 SELECT 'jc', 'Monica', 'Luna', '3396240050', '2078637273' UNION 
-SELECT 'jc', 'Mateo', 'Borb√≥n', '2777734033', '3303827105' UNION 
-SELECT 'jc', 'Rub√©n', 'Del Bueno', '3617826070', '3448135033' UNION 
-SELECT 'jc', 'Jes√∫s', 'Candela', '1763941227', '2523512947' UNION 
+SELECT 'jc', 'Mateo', 'BorbÛn', '2777734033', '3303827105' UNION 
+SELECT 'jc', 'RubÈn', 'Del Bueno', '3617826070', '3448135033' UNION 
+SELECT 'jc', 'Jes˙s', 'Candela', '1763941227', '2523512947' UNION 
 SELECT 'jc', 'Monica', 'Montenegro', '3151222881', '3001125215' UNION 
 SELECT 'jc', 'Lugo', 'Candela', '3590234990', '1547638226' UNION 
 SELECT 'jc', 'Alberto', 'Montenegro', '3383318556', '3603125136' UNION 
@@ -135,10 +120,10 @@ SELECT 'jc', 'Pedro', 'Maldonado', '1356217811', '2456740371' UNION
 SELECT 'jc', 'Marcelo', 'Pinto', '2133340103', '2424118050' UNION 
 SELECT 'com', 'Patricia', 'Lapido', '1279825735', '2134039935' UNION 
 SELECT 'com', 'Pedro', 'de Lourdes', '1012421570', '3772611588' UNION 
-SELECT 'com', 'Antonio', 'Borb√≥n', '2131840137', '2663428762' UNION 
+SELECT 'com', 'Antonio', 'BorbÛn', '2131840137', '2663428762' UNION 
 SELECT 'com', 'David', 'Cardenas', '4160120563', '2562818680' UNION 
-SELECT 'com', 'Andr√©s', 'Radnikov', '1970831594', '2422329682' UNION 
-SELECT 'com', 'Mat√≠as', 'Radnikov', '3935634773', '1376231806' UNION 
+SELECT 'com', 'AndrÈs', 'Radnikov', '1970831594', '2422329682' UNION 
+SELECT 'com', 'MatÌas', 'Radnikov', '3935634773', '1376231806' UNION 
 SELECT 'com', 'Lugo', 'Del Bueno', '3719739762', '2101221193' UNION 
 SELECT 'com', 'Carmen', 'Buenafuente', '2489234485', '3602833091' UNION 
 SELECT 'com', 'Ana', 'Perez', '2530920230', '1524536709' UNION 
@@ -148,21 +133,21 @@ SELECT 'com', 'Miguel', 'Montero', '1279815493', '4263126541' UNION
 SELECT 'com', 'Raul', 'Pinto', '3033928217', '3047139738' UNION 
 SELECT 'com', 'Raul', 'Lapido', '3024022453', '3224718202' UNION 
 SELECT 'com', 'Franco', 'de Lourdes', '3172333184', '3166721331' UNION 
-SELECT 'com', 'Franco', 'Rufi√°n', '4083134078', '2378918798' UNION 
+SELECT 'com', 'Franco', 'Rufi·n', '4083134078', '2378918798' UNION 
 SELECT 'com', 'Lugo', 'Gutierrez', '1528025913', '3019119529' UNION 
 SELECT 'com', 'Damian', 'Fernandez', '1091531770', '2214818889' UNION 
-SELECT 'com', 'Raul', 'Rufi√°n', '4145019502', '4247730844' UNION 
+SELECT 'com', 'Raul', 'Rufi·n', '4145019502', '4247730844' UNION 
 SELECT 'com', 'Miguel', 'Molina', '2700125806', '2265535919' UNION 
 SELECT 'com', 'Pedro', 'Herrera', '1601318190', '2270013533' UNION 
-SELECT 'com', 'Mar√≠a', 'Rufi√°n', '3682241649', '3165815629' UNION 
+SELECT 'com', 'MarÌa', 'Rufi·n', '3682241649', '3165815629' UNION 
 SELECT 'com', 'Damian', 'Herrera', '2932211388', '2405722260' UNION 
 SELECT 'com', 'Cristian', 'Buenafuente', '1847634394', '4056236910' UNION 
 SELECT 'com', 'Raul', 'Buenafuente', '3971734581', '2832927189' UNION 
-SELECT 'com', 'Rub√©n', 'Zapatero', '1959429322', '4243528511' UNION 
+SELECT 'com', 'RubÈn', 'Zapatero', '1959429322', '4243528511' UNION 
 SELECT 'com', 'Raul', 'Lopez', '2242513473', '3253210372' UNION 
-SELECT 'com', 'Jes√∫s', 'Lapido', '1634516505', '3280124703' UNION 
+SELECT 'com', 'Jes˙s', 'Lapido', '1634516505', '3280124703' UNION 
 SELECT 'com', 'Ariel', 'Pinto', '1764141597', '1480531238' UNION 
-SELECT 'com', 'Mat√≠as', 'Fuertez', '1723628516', '1818637259' UNION 
+SELECT 'com', 'MatÌas', 'Fuertez', '1723628516', '1818637259' UNION 
 SELECT 'com', 'Esther', 'Rodriguez', '1946421320', '4063934857' UNION 
 SELECT 'com', 'Carmen', 'de Lourdes', '3386427478', '3956213768' UNION 
 SELECT 'com', 'Patricia', 'Cardenas', '2410839372', '3331412277' UNION 
@@ -171,121 +156,121 @@ SELECT 'com', 'Franco', 'Maldonado', '1521513614', '2668624469' UNION
 SELECT 'com', 'Patricia', 'Smith', '2771634320', '2606218210' UNION 
 SELECT 'com', 'Lugo', 'Buenafuente', '4087114937', '3098311040' UNION 
 SELECT 'com', 'Ludmila', 'de Lourdes', '1057836776', '3853340261' UNION 
-SELECT 'com', 'Esther', 'Borb√≥n', '2906230375', '3484342156' UNION 
+SELECT 'com', 'Esther', 'BorbÛn', '2906230375', '3484342156' UNION 
 SELECT 'com', 'Damian', 'Lapido', '2998011324', '2168327581' UNION 
-SELECT 'aux', 'Isma√©l', 'Rufi√°n', '1351042360', '1633810089' UNION 
-SELECT 'aux', 'Andr√©s', 'Maldonado', '3327938784', '3277214797' UNION 
+SELECT 'aux', 'IsmaÈl', 'Rufi·n', '1351042360', '1633810089' UNION 
+SELECT 'aux', 'AndrÈs', 'Maldonado', '3327938784', '3277214797' UNION 
 SELECT 'aux', 'Antonio', 'Lapido', '3069742756', '1486240146' UNION 
-SELECT 'aux', 'Jes√∫s', 'Lapido', '1471437133', '2384018421' UNION 
+SELECT 'aux', 'Jes˙s', 'Lapido', '1471437133', '2384018421' UNION 
 SELECT 'aux', 'Alberto', 'Gomez', '2466017577', '1643016901' UNION 
 SELECT 'aux', 'Damian', 'Molina', '3820122295', '3607135243' UNION 
 SELECT 'aux', 'Damian', 'Cardenas', '2659840378', '3619823006' UNION 
-SELECT 'aux', 'Mat√≠as', 'Maldonado', '1252428162', '1533135910' UNION 
-SELECT 'aux', 'Mar√≠a', 'Maldonado', '1034125300', '2203213492' UNION 
-SELECT 'aux', 'Jos√©', 'Montenegro', '2934217429', '3223414383' UNION 
+SELECT 'aux', 'MatÌas', 'Maldonado', '1252428162', '1533135910' UNION 
+SELECT 'aux', 'MarÌa', 'Maldonado', '1034125300', '2203213492' UNION 
+SELECT 'aux', 'JosÈ', 'Montenegro', '2934217429', '3223414383' UNION 
 SELECT 'aux', 'Emmanuel', 'Candela', '1638139013', '1230626449' UNION 
-SELECT 'aux', 'Marcelo', 'Borb√≥n', '2044021034', '3996922248' UNION 
-SELECT 'aux', 'Mat√≠as', 'Del Bueno', '1586516508', '1777541748' UNION 
-SELECT 'aux', 'Andr√©s', 'Buenafuente', '3711216791', '2130218522' UNION 
-SELECT 'aux', 'Isma√©l', 'Rodriguez', '3782430675', '1156239779' UNION 
+SELECT 'aux', 'Marcelo', 'BorbÛn', '2044021034', '3996922248' UNION 
+SELECT 'aux', 'MatÌas', 'Del Bueno', '1586516508', '1777541748' UNION 
+SELECT 'aux', 'AndrÈs', 'Buenafuente', '3711216791', '2130218522' UNION 
+SELECT 'aux', 'IsmaÈl', 'Rodriguez', '3782430675', '1156239779' UNION 
 SELECT 'aux', 'Miguel', 'Pinto', '1198217243', '3221629539' UNION 
 SELECT 'aux', 'Mateo', 'de Lourdes', '1793721017', '3440242071' UNION 
 SELECT 'aux', 'Lucia', 'Buenafuente', '4261633932', '2649015775' UNION 
 SELECT 'aux', 'Raul', 'Smith', '2317033156', '1271530370' UNION 
 SELECT 'aux', 'Lucila', 'Buenafuente', '2444627648', '1722538517' UNION 
 SELECT 'aux', 'Carlos', 'Fernandez', '1567038295', '1757717603' UNION 
-SELECT 'aux', 'Jes√∫s', 'Borb√≥n', '3281736153', '3364224933' UNION 
+SELECT 'aux', 'Jes˙s', 'BorbÛn', '3281736153', '3364224933' UNION 
 SELECT 'aux', 'Pedro', 'Radnikov', '3964523855', '3787536205' UNION 
 SELECT 'aux', 'Lugo', 'Musiani', '1952031894', '3596019344' UNION 
 SELECT 'aux', 'Lucia', 'Lapido', '2737714292', '2845422323' UNION 
 SELECT 'aux', 'Ludmila', 'Del Bueno', '2703528855', '3308522664' UNION 
 SELECT 'aux', 'Ariel', 'Luna', '4254225149', '2746316760' UNION 
-SELECT 'aux', 'Jos√©', 'Zapatero', '1012323856', '4164712889' UNION 
+SELECT 'aux', 'JosÈ', 'Zapatero', '1012323856', '4164712889' UNION 
 SELECT 'aux', 'Pedro', 'Montero', '2593835364', '2236638550' UNION 
 SELECT 'aux', 'Antonio', 'Del Bueno', '4200229298', '3281335031' UNION 
 SELECT 'aux', 'Marcelo', 'Gutierrez', '2562213643', '1415919277' UNION 
 SELECT 'aux', 'Lucas', 'Buenafuente', '2752012022', '2969035881' UNION 
 SELECT 'aux', 'Antonio', 'Perez', '4209218382', '2482638766' UNION 
 SELECT 'aux', 'Alberto', 'Rodriguez', '2824628074', '1023320117' UNION 
-SELECT 'aux', 'Raul', 'Borb√≥n', '1176913738', '3880637831' UNION 
+SELECT 'aux', 'Raul', 'BorbÛn', '1176913738', '3880637831' UNION 
 SELECT 'aux', 'Lucila', 'Correa', '2697440352', '4061839310' UNION 
 SELECT 'aux', 'Carlos', 'Molina', '4245311150', '1671435152' UNION 
 SELECT 'aux', 'Patricia', 'Fuertez', '3994636596', '3184433274' UNION 
-SELECT 'aux', 'Jos√©', 'Borb√≥n', '1497715072', '3764523958' UNION 
+SELECT 'aux', 'JosÈ', 'BorbÛn', '1497715072', '3764523958' UNION 
 SELECT 'aux', 'Mateo', 'de Lourdes', '2689333021', '3605218376' UNION 
 SELECT 'aux', 'Damian', 'Buenafuente', '4100021778', '2015918536' UNION 
 SELECT 'aux', 'Raul', 'Smith', '1567223992', '1656619634' UNION 
 SELECT 'aux', 'Lucila', 'Maldonado', '3919441511', '2855116064' UNION 
 SELECT 'aux', 'Ariel', 'Pinto', '2267820080', '4091311854' UNION 
 SELECT 'aux', 'Carmen', 'Correa', '1805332384', '2468616116' UNION 
-SELECT 'aux', 'Marcelo', 'Borb√≥n', '2196238322', '2744820315' UNION 
-SELECT 'aux', 'Jes√∫s', 'Fuertez', '1573311243', '3922827165' UNION 
-SELECT 'aux', 'Rub√©n', 'Zapatero', '3575123151', '2758223625' UNION 
-SELECT 'aux', 'Mat√≠as', 'Musiani', '3994933261', '1576238598' UNION 
-SELECT 'aux', 'Lugo', 'Rufi√°n', '4225620595', '1042538665' UNION 
+SELECT 'aux', 'Marcelo', 'BorbÛn', '2196238322', '2744820315' UNION 
+SELECT 'aux', 'Jes˙s', 'Fuertez', '1573311243', '3922827165' UNION 
+SELECT 'aux', 'RubÈn', 'Zapatero', '3575123151', '2758223625' UNION 
+SELECT 'aux', 'MatÌas', 'Musiani', '3994933261', '1576238598' UNION 
+SELECT 'aux', 'Lugo', 'Rufi·n', '4225620595', '1042538665' UNION 
 SELECT 'aux', 'David', 'Maldonado', '3968710574', '3949618648' UNION 
-SELECT 'aux', 'Rub√©n', 'de Lourdes', '3560127141', '3353130230' UNION 
+SELECT 'aux', 'RubÈn', 'de Lourdes', '3560127141', '3353130230' UNION 
 SELECT 'aux', 'Lucas', 'Lapido', '2237712005', '4020115044' UNION 
-SELECT 'aux', 'Isma√©l', 'Maldonado', '3206232479', '2868625283' UNION 
-SELECT 'aux', 'Mat√≠as', 'Smith', '2061631141', '4151525586' UNION 
+SELECT 'aux', 'IsmaÈl', 'Maldonado', '3206232479', '2868625283' UNION 
+SELECT 'aux', 'MatÌas', 'Smith', '2061631141', '4151525586' UNION 
 SELECT 'aux', 'Ana', 'Fuertez', '2977237968', '2091041670' UNION 
 SELECT 'aux', 'Patricia', 'Pogonza', '2208228648', '1352310346' UNION 
 SELECT 'aux', 'Lugo', 'Gomez', '1098912974', '4237914596' UNION 
-SELECT 'aux', 'Jos√©', 'Gomez', '2546322523', '4026540384' UNION 
+SELECT 'aux', 'JosÈ', 'Gomez', '2546322523', '4026540384' UNION 
 SELECT 'aux', 'Emmanuel', 'Gutierrez', '2686429697', '3513518847' UNION 
-SELECT 'aux', 'Carlos', 'Borb√≥n', '4116016361', '2293637189' UNION 
+SELECT 'aux', 'Carlos', 'BorbÛn', '4116016361', '2293637189' UNION 
 SELECT 'aux', 'Emmanuel', 'Luna', '2780014318', '2010919773' UNION 
-SELECT 'aux', 'Mat√≠as', 'Pinto', '3573130859', '2365815211' UNION 
+SELECT 'aux', 'MatÌas', 'Pinto', '3573130859', '2365815211' UNION 
 SELECT 'aux', 'Emmanuel', 'Perez', '3641210465', '3990040858' UNION 
 SELECT 'aux', 'Lucia', 'Perez', '3204628623', '1180919575' UNION 
 SELECT 'aux', 'Patricia', 'Montero', '3126332381', '2174613649' UNION 
-SELECT 'aux', 'Isma√©l', 'Montenegro', '3645030280', '1951315981' UNION 
+SELECT 'aux', 'IsmaÈl', 'Montenegro', '3645030280', '1951315981' UNION 
 SELECT 'aux', 'Pedro', 'Correa', '4008010568', '1842034021' UNION 
 SELECT 'aux', 'Ariel', 'Pinto', '3767415350', '2530938968' UNION 
-SELECT 'aux', 'Mar√≠a', 'Lopez', '4000521394', '2319828438' UNION 
+SELECT 'aux', 'MarÌa', 'Lopez', '4000521394', '2319828438' UNION 
 SELECT 'aux', 'Marcelo', 'Montenegro', '1092436950', '1555936377' UNION 
 SELECT 'aux', 'David', 'Gomez', '3250025509', '1324612897' UNION 
-SELECT 'aux', 'Andr√©s', 'Pogonza', '4082312717', '3413911089' UNION 
+SELECT 'aux', 'AndrÈs', 'Pogonza', '4082312717', '3413911089' UNION 
 SELECT 'aux', 'Ariel', 'Estias', '2155527443', '4018213784' UNION 
 SELECT 'aux', 'Damian', 'Luna', '3788614224', '1459828945' UNION 
 SELECT 'aux', 'Carlos', 'Herrera', '3342612284', '3909014116' UNION 
 SELECT 'aux', 'Raul', 'Gomez', '1416525783', '2453238561' UNION 
 SELECT 'aux', 'Ana', 'Lapido', '3762114782', '2672610199' UNION 
-SELECT 'aux', 'Jes√∫s', 'Ba√±ez', '3229827651', '2824022223' UNION 
-SELECT 'aux', 'Isma√©l', 'Candela', '3845437217', '3252417910' UNION 
-SELECT 'aux', 'Jes√∫s', 'Musiani', '3994129900', '2678430362' UNION 
-SELECT 'aux', 'Monica', 'Ba√±ez', '3301840290', '3990115301' UNION 
-SELECT 'aux', 'Rub√©n', 'Estias', '1453127247', '4195228959' UNION 
+SELECT 'aux', 'Jes˙s', 'BaÒez', '3229827651', '2824022223' UNION 
+SELECT 'aux', 'IsmaÈl', 'Candela', '3845437217', '3252417910' UNION 
+SELECT 'aux', 'Jes˙s', 'Musiani', '3994129900', '2678430362' UNION 
+SELECT 'aux', 'Monica', 'BaÒez', '3301840290', '3990115301' UNION 
+SELECT 'aux', 'RubÈn', 'Estias', '1453127247', '4195228959' UNION 
 SELECT 'aux', 'Damian', 'Musiani', '3937918304', '3515021205' UNION 
 SELECT 'aux', 'Franco', 'de Lourdes', '4052825367', '1683029891' UNION 
 SELECT 'aux', 'Raul', 'Lopez', '2191122437', '1543734379' UNION 
-SELECT 'aux', 'Rub√©n', 'Borb√≥n', '2320410699', '1698240353' UNION 
-SELECT 'aux', 'David', 'Borb√≥n', '1587112311', '2041232883' UNION 
-SELECT 'aux', 'Rub√©n', 'Correa', '3737514264', '1851139222' UNION 
-SELECT 'aux', 'Patricia', 'Rufi√°n', '1600222238', '3895820356' UNION 
+SELECT 'aux', 'RubÈn', 'BorbÛn', '2320410699', '1698240353' UNION 
+SELECT 'aux', 'David', 'BorbÛn', '1587112311', '2041232883' UNION 
+SELECT 'aux', 'RubÈn', 'Correa', '3737514264', '1851139222' UNION 
+SELECT 'aux', 'Patricia', 'Rufi·n', '1600222238', '3895820356' UNION 
 SELECT 'aux', 'Marcelo', 'Montenegro', '3210410431', '2744640778' UNION 
 SELECT 'aux', 'Ana', 'Lapido', '2955530839', '1942423988' UNION 
-SELECT 'aux', 'Esther', 'Borb√≥n', '2083430530', '1333727681' UNION 
+SELECT 'aux', 'Esther', 'BorbÛn', '2083430530', '1333727681' UNION 
 SELECT 'aux', 'Antonio', 'Smith', '2236120410', '3148230847' UNION 
 SELECT 'aux', 'Ludmila', 'Gomez', '3505635626', '4106310210' UNION 
 SELECT 'aux', 'Esther', 'Fuertez', '2727840713', '2151029491' UNION 
-SELECT 'aux', 'Mat√≠as', 'Herrera', '2068426684', '1818326438' UNION 
-SELECT 'aux', 'Rub√©n', 'Borb√≥n', '1257042682', '2884812479' UNION 
+SELECT 'aux', 'MatÌas', 'Herrera', '2068426684', '1818326438' UNION 
+SELECT 'aux', 'RubÈn', 'BorbÛn', '1257042682', '2884812479' UNION 
 SELECT 'aux', 'Cristian', 'Pogonza', '3657934716', '3167012677' UNION 
 SELECT 'aux', 'Ariel', 'Montero', '4168117605', '4268741148' UNION 
-SELECT 'aux', 'Jes√∫s', 'Cardenas', '1691510401', '3600514205' UNION 
+SELECT 'aux', 'Jes˙s', 'Cardenas', '1691510401', '3600514205' UNION 
 SELECT 'aux', 'Raul', 'Smith', '2705110673', '3925131676' UNION 
 SELECT 'aux', 'Patricia', 'Herrera', '1386342203', '3029010276' UNION 
 SELECT 'aux', 'Mateo', 'Montenegro', '3542620155', '3440019154' UNION 
-SELECT 'aux', 'Raul', 'Ba√±ez', '1845037730', '1066220015' UNION 
+SELECT 'aux', 'Raul', 'BaÒez', '1845037730', '1066220015' UNION 
 SELECT 'aux', 'Ludmila', 'Pinto', '2132939240', '3594634401' UNION 
-SELECT 'aux', 'Antonio', 'Rufi√°n', '1393118272', '1646425347' UNION 
+SELECT 'aux', 'Antonio', 'Rufi·n', '1393118272', '1646425347' UNION 
 SELECT 'aux', 'Pedro', 'Correa', '1166022413', '2573022569' UNION 
-SELECT 'aux', 'Jos√©', 'Correa', '1488930177', '1520017116' UNION 
-SELECT 'aux', 'Isma√©l', 'Fernandez', '1132333403', '1958519598' UNION 
-SELECT 'aux', 'Lucila', 'Rufi√°n', '2550336569', '1027928219' UNION 
+SELECT 'aux', 'JosÈ', 'Correa', '1488930177', '1520017116' UNION 
+SELECT 'aux', 'IsmaÈl', 'Fernandez', '1132333403', '1958519598' UNION 
+SELECT 'aux', 'Lucila', 'Rufi·n', '2550336569', '1027928219' UNION 
 SELECT 'aux', 'Lucas', 'Montenegro', '3026728912', '4032232554' UNION 
-SELECT 'aux', 'Isma√©l', 'Montenegro', '3065038262', '1825333940' UNION 
+SELECT 'aux', 'IsmaÈl', 'Montenegro', '3065038262', '1825333940' UNION 
 SELECT 'aux', 'Lugo', 'Musiani', '2610326652', '1910836502' UNION 
 SELECT 'aux', 'Lugo', 'Rodriguez', '1880833703', '3742642039' UNION 
 SELECT 'aux', 'Lucas', 'Herrera', '3161813616', '1740925460' UNION 
@@ -297,458 +282,511 @@ SELECT 'aux', 'Lucia', 'Cardenas', '2485610411', '3184233623'
 
 
 
-
-
-
-INSERT INTO TCP_por_TA(codigo_TA, legajo_TCP)
-SELECT 'as8945e5ef', '19000' UNION 
-SELECT 'as8945e5ef', '19001' UNION 
-SELECT '6s884s9de', '19002' UNION 
-SELECT 'asda78sd', '19002' UNION 
-SELECT '6s884s9de', '19003' UNION  
-SELECT 'asda78sd', '19004' UNION 
-SELECT '6s884s9de', '19004' UNION 
-SELECT 'asda78sd', '19005' UNION 
-SELECT '6s884s9de', '19005' UNION 
-SELECT 'as8945e5ef', '19006' UNION 
-SELECT '6549sda3e', '19007' UNION 
-SELECT '6s884s9de', '19007' UNION 
-SELECT 'as8945e5ef', '19008' UNION 
-SELECT '6549sda3e', '19009' UNION 
-SELECT 'as8945e5ef', '19009' UNION 
-SELECT 'as8945e5ef', '19010' UNION 
-SELECT '6549sda3e', '19011' UNION 
-SELECT 'asda78sd', '19012' UNION 
-SELECT '6s884s9de', '19013' UNION 
-SELECT 'as8945e5ef', '19013' UNION 
-SELECT 'as8945e5ef', '19014' UNION 
-SELECT 'asda78sd', '19014' UNION 
-SELECT 'as8945e5ef', '19015' UNION 
-SELECT '6s884s9de', '19016' UNION 
-SELECT 'as8945e5ef', '19017' UNION 
-SELECT '6s884s9de', '19018' UNION 
-SELECT '6s884s9de', '19018' UNION 
-SELECT '6549sda3e', '19019' UNION 
-SELECT '6s884s9de', '19019' UNION 
-SELECT 'asda78sd', '19020' UNION 
-SELECT '6s884s9de', '19020' UNION 
-SELECT '6s884s9de', '19021' UNION 
-SELECT 'asda78sd', '19022' UNION 
-SELECT 'asda78sd', '19022' UNION 
-SELECT '6549sda3e', '19023' UNION 
-SELECT '6s884s9de', '19024' UNION 
-SELECT 'asda78sd', '19025' UNION 
-SELECT 'asda78sd', '19026' UNION 
-SELECT '6s884s9de', '19026' UNION 
-SELECT 'asda78sd', '19027' UNION 
-SELECT 'asda78sd', '19028' UNION 
-SELECT '6549sda3e', '19029' UNION 
-SELECT '6s884s9de', '19029' UNION 
-SELECT '6s884s9de', '19030' UNION 
-SELECT 'as8945e5ef', '19030' UNION 
-SELECT '6s884s9de', '19031' UNION 
-SELECT '6549sda3e', '19032' UNION 
-SELECT 'as8945e5ef', '19033' UNION 
-SELECT '6s884s9de', '19033' UNION 
-SELECT '6s884s9de', '19034' UNION 
-SELECT 'asda78sd', '19035' UNION 
-SELECT '6549sda3e', '19035' UNION 
-SELECT 'asda78sd', '19036' UNION 
-SELECT 'as8945e5ef', '19037' UNION 
-SELECT '6549sda3e', '19037' UNION 
-SELECT 'as8945e5ef', '19038' UNION 
-SELECT '6s884s9de', '19038' UNION 
-SELECT '6s884s9de', '19039' UNION 
-SELECT '6549sda3e', '19039' UNION 
-SELECT '6s884s9de', '19040' UNION 
-SELECT 'as8945e5ef', '19040' UNION 
-SELECT '6549sda3e', '19041' UNION 
-SELECT '6s884s9de', '19042' UNION 
-SELECT 'as8945e5ef', '19043' UNION 
-SELECT '6549sda3e', '19044' UNION 
-SELECT '6s884s9de', '19044' UNION 
-SELECT '6s884s9de', '19045' UNION 
-SELECT 'asda78sd', '19046' UNION 
-SELECT 'as8945e5ef', '19046' UNION 
-SELECT '6s884s9de', '19047' UNION 
-SELECT '6549sda3e', '19048' UNION 
-SELECT 'as8945e5ef', '19048' UNION 
-SELECT '6549sda3e', '19049' UNION 
-SELECT '6s884s9de', '19050' UNION 
-SELECT 'asda78sd', '19050' UNION 
-SELECT 'as8945e5ef', '19051' UNION 
-SELECT '6s884s9de', '19051' UNION 
-SELECT '6549sda3e', '19052' UNION 
-SELECT 'asda78sd', '19052' UNION 
-SELECT 'asda78sd', '19053' UNION 
-SELECT 'as8945e5ef', '19053' UNION 
-SELECT 'asda78sd', '19054' UNION 
-SELECT 'asda78sd', '19055' UNION 
-SELECT '6s884s9de', '19055' UNION 
-SELECT 'as8945e5ef', '19056' UNION 
-SELECT 'asda78sd', '19057' UNION 
-SELECT '6s884s9de', '19058' UNION 
-SELECT 'as8945e5ef', '19058' UNION 
-SELECT 'asda78sd', '19059' UNION 
-SELECT 'asda78sd', '19060' UNION 
-SELECT 'asda78sd', '19061' UNION 
-SELECT 'asda78sd', '19062' UNION 
-SELECT 'as8945e5ef', '19063' UNION 
-SELECT 'asda78sd', '19063' UNION 
-SELECT 'as8945e5ef', '19064' UNION 
-SELECT 'as8945e5ef', '19065' UNION 
-SELECT 'asda78sd', '19065' UNION 
-SELECT 'as8945e5ef', '19066' UNION 
-SELECT 'as8945e5ef', '19067' UNION 
-SELECT '6549sda3e', '19068' UNION 
-SELECT '6549sda3e', '19069' UNION 
-SELECT '6549sda3e', '19070' UNION 
-SELECT 'as8945e5ef', '19070' UNION 
-SELECT 'as8945e5ef', '19071' UNION 
-SELECT '6549sda3e', '19072' UNION 
-SELECT 'asda78sd', '19072' UNION 
-SELECT '6s884s9de', '19073' UNION 
-SELECT 'as8945e5ef', '19074' UNION 
-SELECT 'as8945e5ef', '19075' UNION 
-SELECT 'as8945e5ef', '19076' UNION 
-SELECT 'asda78sd', '19077' UNION 
-SELECT 'asda78sd', '19077' UNION 
-SELECT '6s884s9de', '19078' UNION 
-SELECT '6s884s9de', '19079' UNION 
-SELECT '6549sda3e', '19079' UNION 
-SELECT 'as8945e5ef', '19080' UNION 
-SELECT 'asda78sd', '19080' UNION 
-SELECT '6s884s9de', '19081' UNION 
-SELECT '6549sda3e', '19082' UNION 
-SELECT 'as8945e5ef', '19082' UNION 
-SELECT 'asda78sd', '19083' UNION 
-SELECT '6s884s9de', '19083' UNION 
-SELECT '6549sda3e', '19084' UNION 
-SELECT 'as8945e5ef', '19084' UNION 
-SELECT '6s884s9de', '19085' UNION 
-SELECT '6549sda3e', '19085' UNION 
-SELECT '6s884s9de', '19086' UNION 
-SELECT 'asda78sd', '19087' UNION 
-SELECT '6549sda3e', '19088' UNION 
-SELECT 'asda78sd', '19089' UNION 
-SELECT 'as8945e5ef', '19089' UNION 
-SELECT '6s884s9de', '19090' UNION 
-SELECT 'asda78sd', '19090' UNION 
-SELECT '6s884s9de', '19091' UNION 
-SELECT '6549sda3e', '19091' UNION 
-SELECT '6549sda3e', '19092' UNION 
-SELECT '6s884s9de', '19093' UNION 
-SELECT 'as8945e5ef', '19094' UNION 
-SELECT 'asda78sd', '19095' UNION 
-SELECT '6s884s9de', '19095' UNION 
-SELECT '6549sda3e', '19096' UNION 
-SELECT '6549sda3e', '19097' UNION 
-SELECT 'asda78sd', '19098' UNION 
-SELECT '6s884s9de', '19099' UNION 
-SELECT 'asda78sd', '19099' UNION 
-SELECT 'as8945e5ef', '19100' UNION 
-SELECT 'asda78sd', '19101' UNION 
-SELECT 'as8945e5ef', '19102' UNION 
-SELECT '6549sda3e', '19103' UNION 
-SELECT 'as8945e5ef', '19104' UNION 
-SELECT 'asda78sd', '19104' UNION 
-SELECT 'asda78sd', '19105' UNION 
-SELECT '6549sda3e', '19105' UNION 
-SELECT 'asda78sd', '19106' UNION 
-SELECT '6s884s9de', '19107' UNION 
-SELECT '6s884s9de', '19108' UNION 
-SELECT '6s884s9de', '19109' UNION 
-SELECT 'asda78sd', '19110' UNION 
-SELECT 'as8945e5ef', '19110' UNION 
-SELECT '6s884s9de', '19111' UNION 
-SELECT 'asda78sd', '19111' UNION 
-SELECT 'asda78sd', '19112' UNION 
-SELECT '6s884s9de', '19112' UNION 
-SELECT 'as8945e5ef', '19113' UNION 
-SELECT 'asda78sd', '19113' UNION 
-SELECT 'as8945e5ef', '19114' UNION 
-SELECT '6s884s9de', '19115' UNION 
-SELECT '6549sda3e', '19115' UNION 
-SELECT 'asda78sd', '19116' UNION 
-SELECT 'as8945e5ef', '19117' UNION 
-SELECT 'as8945e5ef', '19118' UNION 
-SELECT 'as8945e5ef', '19119' UNION 
-SELECT '6549sda3e', '19120' UNION 
-SELECT '6549sda3e', '19121' UNION 
-SELECT 'asda78sd', '19122' UNION 
-SELECT 'asda78sd', '19122' UNION 
-SELECT 'asda78sd', '19123' UNION 
-SELECT '6s884s9de', '19123' UNION 
-SELECT '6s884s9de', '19124' UNION 
-SELECT 'asda78sd', '19124' UNION 
-SELECT 'as8945e5ef', '19125' UNION 
-SELECT 'asda78sd', '19125' UNION 
-SELECT '6s884s9de', '19126' UNION 
-SELECT '6s884s9de', '19127' UNION 
-SELECT 'asda78sd', '19128' UNION 
-SELECT '6549sda3e', '19128' UNION 
-SELECT '6549sda3e', '19129' UNION 
-SELECT 'as8945e5ef', '19130' UNION 
-SELECT '6549sda3e', '19130' UNION 
-SELECT 'as8945e5ef', '19131' UNION 
-SELECT 'as8945e5ef', '19132' UNION 
-SELECT '6s884s9de', '19133' UNION 
-SELECT '6549sda3e', '19134' UNION 
-SELECT '6549sda3e', '19135' UNION 
-SELECT '6549sda3e', '19135' UNION 
-SELECT 'asda78sd', '19136' UNION 
-SELECT '6s884s9de', '19137' UNION 
-SELECT 'asda78sd', '19138' UNION 
-SELECT 'asda78sd', '19139' UNION 
-SELECT 'asda78sd', '19140' UNION 
-SELECT '6s884s9de', '19140' UNION 
-SELECT 'asda78sd', '19141' UNION 
-SELECT '6s884s9de', '19141' UNION 
-SELECT 'asda78sd', '19142' UNION  
-SELECT '6s884s9de', '19143' UNION 
-SELECT '6549sda3e', '19144' UNION 
-SELECT 'asda78sd', '19145' UNION 
-SELECT '6549sda3e', '19146' UNION 
-SELECT 'asda78sd', '19147' UNION 
-SELECT 'as8945e5ef', '19148' UNION 
-SELECT '6s884s9de', '19148' UNION 
-SELECT '6s884s9de', '19149' UNION 
-SELECT 'as8945e5ef', '19150' UNION 
-SELECT '6549sda3e', '19151' UNION 
-SELECT 'as8945e5ef', '19152' UNION 
-SELECT '6549sda3e', '19152' UNION 
-SELECT 'as8945e5ef', '19153' UNION 
-SELECT 'asda78sd', '19153' UNION 
-SELECT 'as8945e5ef', '19154' UNION 
-SELECT 'as8945e5ef', '19155' UNION 
-SELECT 'asda78sd', '19155' UNION 
-SELECT '6549sda3e', '19156' UNION 
-SELECT '6549sda3e', '19157' UNION 
-SELECT 'asda78sd', '19158' UNION 
-SELECT 'asda78sd', '19159' UNION 
-SELECT '6s884s9de', '19160' UNION 
-SELECT '6s884s9de', '19160' UNION 
-SELECT 'as8945e5ef', '19161' UNION 
-SELECT 'as8945e5ef', '19162' UNION 
-SELECT '6s884s9de', '19163' UNION 
-SELECT 'asda78sd', '19163' UNION 
-SELECT 'asda78sd', '19164' UNION 
-SELECT '6549sda3e', '19165' UNION 
-SELECT 'asda78sd', '19166' UNION 
-SELECT 'as8945e5ef', '19166' UNION 
-SELECT '6s884s9de', '19167' UNION 
-SELECT 'as8945e5ef', '19168' UNION 
-SELECT 'as8945e5ef', '19169' UNION 
-SELECT 'as8945e5ef', '19170' UNION 
-SELECT '6s884s9de', '19171' UNION 
-SELECT 'asda78sd', '19172' UNION 
-SELECT '6549sda3e', '19173' UNION 
-SELECT '6549sda3e', '19174' UNION 
-SELECT '6s884s9de', '19174' UNION 
-SELECT '6s884s9de', '19175' UNION 
-SELECT 'asda78sd', '19176' UNION 
-SELECT '6549sda3e', '19177' UNION 
-SELECT 'as8945e5ef', '19178' UNION 
-SELECT '6s884s9de', '19179' UNION 
-SELECT 'as8945e5ef', '19179' UNION 
-SELECT 'as8945e5ef', '19180' UNION 
-SELECT 'asda78sd', '19180' UNION 
-SELECT '6549sda3e', '19181' UNION 
-SELECT 'as8945e5ef', '19181' UNION 
-SELECT '6s884s9de', '19182' UNION 
-SELECT 'as8945e5ef', '19183' UNION 
-SELECT '6549sda3e', '19184' UNION 
-SELECT '6549sda3e', '19184' UNION 
-SELECT 'as8945e5ef', '19185' UNION 
-SELECT '6s884s9de', '19186' UNION 
-SELECT '6s884s9de', '19186' UNION 
-SELECT 'asda78sd', '19187' UNION 
-SELECT '6549sda3e', '19187' UNION 
-SELECT '6s884s9de', '19188' UNION 
-SELECT 'as8945e5ef', '19188' UNION 
-SELECT 'asda78sd', '19189' UNION 
-SELECT 'asda78sd', '19190' UNION 
-SELECT 'as8945e5ef', '19191' UNION 
-SELECT 'as8945e5ef', '19191' UNION 
-SELECT '6549sda3e', '19192' UNION 
-SELECT '6549sda3e', '19193' UNION 
-SELECT '6s884s9de', '19193' UNION 
-SELECT '6s884s9de', '19194' UNION 
-SELECT '6549sda3e', '19194' UNION 
-SELECT 'as8945e5ef', '19195' UNION 
-SELECT '6s884s9de', '19196' UNION 
-SELECT '6549sda3e', '19196' UNION 
-SELECT 'asda78sd', '19197' UNION 
-SELECT '6549sda3e', '19198' UNION 
-SELECT '6s884s9de', '19198' UNION 
-SELECT '6549sda3e', '19199' UNION 
-SELECT 'as8945e5ef', '19200' UNION 
-SELECT '6s884s9de', '19200' UNION 
-SELECT '6s884s9de', '19201' UNION 
-SELECT 'asda78sd', '19201' UNION 
-SELECT 'as8945e5ef', '19202' UNION 
-SELECT 'asda78sd', '19203' UNION 
-SELECT 'as8945e5ef', '19203' UNION 
-SELECT 'as8945e5ef', '19204' UNION 
-SELECT 'asda78sd', '19205' UNION 
-SELECT 'as8945e5ef', '19206' UNION 
-SELECT 'as8945e5ef', '19206' UNION 
-SELECT '6s884s9de', '19207' UNION 
-SELECT '6549sda3e', '19208' UNION 
-SELECT 'as8945e5ef', '19208' UNION 
-SELECT 'as8945e5ef', '19209' UNION 
-SELECT '6549sda3e', '19210' UNION 
-SELECT 'asda78sd', '19211' UNION 
-SELECT '6549sda3e', '19211' UNION 
-SELECT 'as8945e5ef', '19212' UNION 
-SELECT '6549sda3e', '19213' UNION 
-SELECT '6s884s9de', '19213' UNION 
-SELECT 'as8945e5ef', '19214' UNION 
-SELECT '6s884s9de', '19215' UNION 
-SELECT '6s884s9de', '19216' UNION 
-SELECT 'asda78sd', '19216' UNION 
-SELECT '6549sda3e', '19217' UNION 
-SELECT 'asda78sd', '19218' UNION 
-SELECT 'as8945e5ef', '19218' UNION 
-SELECT 'as8945e5ef', '19219' UNION 
-SELECT '6s884s9de', '19220' UNION 
-SELECT '6s884s9de', '19221' UNION 
-SELECT '6549sda3e', '19221' UNION 
-SELECT 'asda78sd', '19222' UNION 
-SELECT '6549sda3e', '19222' UNION 
-SELECT '6549sda3e', '19223' UNION 
-SELECT 'asda78sd', '19224' UNION 
-SELECT 'asda78sd', '19224' UNION 
-SELECT '6s884s9de', '19225' UNION 
-SELECT '6s884s9de', '19226' UNION 
-SELECT '6549sda3e', '19227' UNION 
-SELECT 'as8945e5ef', '19228' UNION 
-SELECT 'asda78sd', '19228' UNION 
-SELECT '6549sda3e', '19229' UNION 
-SELECT 'as8945e5ef', '19229' UNION 
-SELECT 'asda78sd', '19230' UNION 
-SELECT 'asda78sd', '19230' UNION 
-SELECT '6s884s9de', '19231' UNION 
-SELECT '6s884s9de', '19231' UNION 
-SELECT 'as8945e5ef', '19232' UNION 
-SELECT 'as8945e5ef', '19233' UNION 
-SELECT 'as8945e5ef', '19233' UNION 
-SELECT '6549sda3e', '19234' UNION 
-SELECT '6549sda3e', '19235' UNION 
-SELECT 'asda78sd', '19236' UNION 
-SELECT '6s884s9de', '19236' UNION 
-SELECT '6s884s9de', '19237' UNION 
-SELECT '6549sda3e', '19238' UNION 
-SELECT 'as8945e5ef', '19239'
-
-
-
-
+INSERT INTO TCP_por_TA(legajo_TCP, codigo_TA)
+SELECT '19000', 'B757' UNION 
+SELECT '19000', 'B757' UNION 
+SELECT '19001', 'B757' UNION 
+SELECT '19002', 'B777' UNION 
+SELECT '19002', 'B757' UNION 
+SELECT '19003', 'A320' UNION 
+SELECT '19004', 'A320' UNION 
+SELECT '19005', 'B757' UNION 
+SELECT '19006', 'A320' UNION 
+SELECT '19006', 'A320' UNION 
+SELECT '19007', 'A320' UNION 
+SELECT '19007', 'B747' UNION 
+SELECT '19008', 'A320' UNION 
+SELECT '19009', 'A320' UNION 
+SELECT '19009', 'B757' UNION 
+SELECT '19010', 'B747' UNION 
+SELECT '19010', 'A320' UNION 
+SELECT '19011', 'B747' UNION 
+SELECT '19012', 'A320' UNION 
+SELECT '19012', 'B747' UNION 
+SELECT '19013', 'B777' UNION 
+SELECT '19013', 'B757' UNION 
+SELECT '19014', 'B757' UNION 
+SELECT '19014', 'B747' UNION 
+SELECT '19015', 'B757' UNION 
+SELECT '19015', 'B747' UNION 
+SELECT '19016', 'A320' UNION 
+SELECT '19017', 'B757' UNION 
+SELECT '19017', 'B747' UNION 
+SELECT '19018', 'B757' UNION 
+SELECT '19018', 'B747' UNION 
+SELECT '19019', 'B757' UNION 
+SELECT '19020', 'B747' UNION 
+SELECT '19021', 'A320' UNION 
+SELECT '19021', 'B757' UNION 
+SELECT '19022', 'A320' UNION 
+SELECT '19022', 'A320' UNION 
+SELECT '19023', 'B747' UNION 
+SELECT '19024', 'B777' UNION 
+SELECT '19024', 'B747' UNION 
+SELECT '19025', 'B777' UNION 
+SELECT '19026', 'B757' UNION 
+SELECT '19027', 'B747' UNION 
+SELECT '19027', 'B777' UNION 
+SELECT '19028', 'B757' UNION 
+SELECT '19029', 'B757' UNION 
+SELECT '19030', 'B757' UNION 
+SELECT '19031', 'B777' UNION 
+SELECT '19032', 'B757' UNION 
+SELECT '19032', 'A320' UNION 
+SELECT '19033', 'B747' UNION 
+SELECT '19034', 'A320' UNION 
+SELECT '19035', 'A320' UNION 
+SELECT '19036', 'B747' UNION 
+SELECT '19036', 'B777' UNION 
+SELECT '19037', 'B757' UNION 
+SELECT '19037', 'B747' UNION 
+SELECT '19038', 'B757' UNION 
+SELECT '19038', 'B747' UNION 
+SELECT '19039', 'B757' UNION 
+SELECT '19039', 'A320' UNION 
+SELECT '19040', 'A320' UNION 
+SELECT '19040', 'B757' UNION 
+SELECT '19041', 'A320' UNION 
+SELECT '19042', 'B777' UNION 
+SELECT '19042', 'A320' UNION 
+SELECT '19043', 'B757' UNION 
+SELECT '19044', 'B747' UNION 
+SELECT '19044', 'A320' UNION 
+SELECT '19045', 'B777' UNION 
+SELECT '19046', 'B747' UNION  
+SELECT '19047', 'A320' UNION 
+SELECT '19048', 'B747' UNION 
+SELECT '19049', 'A320' UNION 
+SELECT '19050', 'B747' UNION 
+SELECT '19051', 'B747' UNION 
+SELECT '19052', 'B757' UNION 
+SELECT '19052', 'B747' UNION 
+SELECT '19053', 'B777' UNION 
+SELECT '19054', 'B757' UNION 
+SELECT '19054', 'B747' UNION 
+SELECT '19055', 'B777' UNION 
+SELECT '19056', 'A320' UNION 
+SELECT '19056', 'B747' UNION 
+SELECT '19057', 'B747' UNION 
+SELECT '19057', 'B757' UNION 
+SELECT '19058', 'B757' UNION 
+SELECT '19059', 'A320' UNION 
+SELECT '19060', 'B777' UNION 
+SELECT '19061', 'B777' UNION 
+SELECT '19061', 'B757' UNION 
+SELECT '19062', 'B747' UNION 
+SELECT '19062', 'B757' UNION 
+SELECT '19063', 'A320' UNION 
+SELECT '19064', 'A320' UNION 
+SELECT '19064', 'B757' UNION 
+SELECT '19065', 'A320' UNION 
+SELECT '19066', 'B777' UNION 
+SELECT '19066', 'B747' UNION 
+SELECT '19067', 'A320' UNION 
+SELECT '19067', 'B757' UNION 
+SELECT '19068', 'B747' UNION 
+SELECT '19068', 'B757' UNION 
+SELECT '19069', 'B777' UNION 
+SELECT '19069', 'B747' UNION 
+SELECT '19070', 'B777' UNION 
+SELECT '19070', 'B757' UNION 
+SELECT '19071', 'A320' UNION 
+SELECT '19072', 'B757' UNION 
+SELECT '19073', 'B747' UNION 
+SELECT '19073', 'B777' UNION 
+SELECT '19074', 'B777' UNION 
+SELECT '19074', 'B747' UNION 
+SELECT '19075', 'B777' UNION 
+SELECT '19075', 'B757' UNION 
+SELECT '19076', 'A320' UNION 
+SELECT '19076', 'B777' UNION 
+SELECT '19077', 'A320' UNION 
+SELECT '19078', 'B747' UNION 
+SELECT '19079', 'B777' UNION 
+SELECT '19080', 'A320' UNION 
+SELECT '19080', 'B777' UNION 
+SELECT '19081', 'B747' UNION 
+SELECT '19082', 'A320' UNION 
+SELECT '19083', 'B747' UNION 
+SELECT '19083', 'B757' UNION 
+SELECT '19084', 'A320' UNION 
+SELECT '19085', 'A320' UNION 
+SELECT '19086', 'A320' UNION 
+SELECT '19087', 'B757' UNION 
+SELECT '19088', 'A320' UNION 
+SELECT '19088', 'B757' UNION 
+SELECT '19089', 'B757' UNION 
+SELECT '19089', 'B747' UNION 
+SELECT '19090', 'B777' UNION 
+SELECT '19091', 'A320' UNION 
+SELECT '19092', 'B747' UNION 
+SELECT '19093', 'A320' UNION 
+SELECT '19093', 'B747' UNION 
+SELECT '19094', 'B757' UNION 
+SELECT '19094', 'B747' UNION 
+SELECT '19095', 'B747' UNION 
+SELECT '19096', 'B757' UNION 
+SELECT '19096', 'B777' UNION 
+SELECT '19097', 'A320' UNION 
+SELECT '19098', 'B777' UNION 
+SELECT '19099', 'B747' UNION 
+SELECT '19099', 'B777' UNION 
+SELECT '19100', 'A320' UNION 
+SELECT '19101', 'B777' UNION 
+SELECT '19102', 'B757' UNION 
+SELECT '19103', 'A320' UNION 
+SELECT '19103', 'B757' UNION 
+SELECT '19104', 'A320' UNION 
+SELECT '19104', 'B757' UNION 
+SELECT '19105', 'B747' UNION 
+SELECT '19105', 'A320' UNION 
+SELECT '19106', 'B777' UNION 
+SELECT '19106', 'B747' UNION 
+SELECT '19107', 'A320' UNION 
+SELECT '19107', 'B747' UNION 
+SELECT '19108', 'B747' UNION 
+SELECT '19108', 'B757' UNION 
+SELECT '19109', 'B757' UNION 
+SELECT '19110', 'B757' UNION 
+SELECT '19111', 'A320' UNION 
+SELECT '19112', 'B757' UNION 
+SELECT '19112', 'A320' UNION 
+SELECT '19113', 'A320' UNION 
+SELECT '19113', 'B777' UNION 
+SELECT '19114', 'B747' UNION 
+SELECT '19114', 'B777' UNION 
+SELECT '19115', 'B757' UNION 
+SELECT '19115', 'B747' UNION 
+SELECT '19116', 'A320' UNION 
+SELECT '19116', 'B757' UNION 
+SELECT '19117', 'B777' UNION 
+SELECT '19118', 'B747' UNION 
+SELECT '19118', 'A320' UNION 
+SELECT '19119', 'B777' UNION 
+SELECT '19120', 'B757' UNION 
+SELECT '19121', 'B747' UNION 
+SELECT '19122', 'A320' UNION 
+SELECT '19122', 'B757' UNION 
+SELECT '19123', 'B747' UNION 
+SELECT '19124', 'B747' UNION 
+SELECT '19125', 'B777' UNION 
+SELECT '19126', 'B757' UNION 
+SELECT '19126', 'B777' UNION 
+SELECT '19127', 'B747' UNION 
+SELECT '19128', 'B747' UNION 
+SELECT '19129', 'B747' UNION 
+SELECT '19130', 'A320' UNION 
+SELECT '19131', 'B777' UNION 
+SELECT '19131', 'B747' UNION 
+SELECT '19132', 'A320' UNION 
+SELECT '19133', 'B747' UNION 
+SELECT '19134', 'B757' UNION 
+SELECT '19135', 'B757' UNION 
+SELECT '19136', 'A320' UNION  
+SELECT '19137', 'B757' UNION 
+SELECT '19138', 'A320' UNION 
+SELECT '19139', 'B757' UNION 
+SELECT '19140', 'B777' UNION 
+SELECT '19141', 'B747' UNION 
+SELECT '19141', 'A320' UNION 
+SELECT '19142', 'B747' UNION 
+SELECT '19142', 'A320' UNION 
+SELECT '19143', 'B757' UNION 
+SELECT '19143', 'A320' UNION 
+SELECT '19144', 'B747' UNION 
+SELECT '19145', 'B777' UNION 
+SELECT '19146', 'B777' UNION 
+SELECT '19147', 'A320' UNION 
+SELECT '19148', 'B757' UNION 
+SELECT '19149', 'A320' UNION 
+SELECT '19150', 'A320' UNION 
+SELECT '19150', 'B747' UNION 
+SELECT '19151', 'B777' UNION 
+SELECT '19151', 'B757' UNION 
+SELECT '19152', 'B747' UNION 
+SELECT '19153', 'B757' UNION 
+SELECT '19154', 'B777' UNION 
+SELECT '19155', 'B757' UNION 
+SELECT '19156', 'B777' UNION 
+SELECT '19156', 'A320' UNION 
+SELECT '19157', 'A320' UNION 
+SELECT '19158', 'B757' UNION 
+SELECT '19159', 'B757' UNION 
+SELECT '19160', 'B757' UNION 
+SELECT '19161', 'B777' UNION 
+SELECT '19162', 'B757' UNION 
+SELECT '19163', 'B747' UNION 
+SELECT '19164', 'B777' UNION 
+SELECT '19165', 'B757' UNION 
+SELECT '19166', 'B747' UNION 
+SELECT '19167', 'A320' UNION 
+SELECT '19168', 'A320' UNION 
+SELECT '19169', 'B747' UNION 
+SELECT '19170', 'B747' UNION 
+SELECT '19170', 'B757' UNION 
+SELECT '19171', 'B777' UNION 
+SELECT '19171', 'B757' UNION 
+SELECT '19172', 'B777' UNION 
+SELECT '19173', 'B777' UNION 
+SELECT '19173', 'A320' UNION 
+SELECT '19174', 'A320' UNION 
+SELECT '19174', 'B777' UNION 
+SELECT '19175', 'B757' UNION 
+SELECT '19175', 'A320' UNION 
+SELECT '19176', 'B747' UNION 
+SELECT '19177', 'B777' UNION 
+SELECT '19178', 'A320' UNION 
+SELECT '19178', 'B747' UNION 
+SELECT '19179', 'B747' UNION 
+SELECT '19179', 'B777' UNION 
+SELECT '19180', 'B757' UNION 
+SELECT '19180', 'B757' UNION 
+SELECT '19181', 'A320' UNION 
+SELECT '19182', 'B777' UNION 
+SELECT '19183', 'A320' UNION 
+SELECT '19184', 'B747' UNION 
+SELECT '19185', 'A320' UNION 
+SELECT '19186', 'B777' UNION 
+SELECT '19187', 'B757' UNION 
+SELECT '19188', 'A320' UNION 
+SELECT '19188', 'B747' UNION 
+SELECT '19189', 'B777' UNION 
+SELECT '19190', 'A320' UNION 
+SELECT '19191', 'B747' UNION 
+SELECT '19191', 'B777' UNION 
+SELECT '19192', 'B747' UNION 
+SELECT '19192', 'B777' UNION 
+SELECT '19193', 'B747' UNION 
+SELECT '19194', 'B757' UNION 
+SELECT '19195', 'B747' UNION 
+SELECT '19196', 'A320' UNION 
+SELECT '19196', 'B777' UNION 
+SELECT '19197', 'A320' UNION 
+SELECT '19198', 'A320' UNION 
+SELECT '19198', 'B757' UNION 
+SELECT '19199', 'B757' UNION 
+SELECT '19199', 'B747' UNION 
+SELECT '19200', 'A320' UNION 
+SELECT '19201', 'B747' UNION 
+SELECT '19202', 'B747' UNION 
+SELECT '19203', 'A320' UNION 
+SELECT '19204', 'B747' UNION 
+SELECT '19205', 'B757' UNION 
+SELECT '19206', 'B757' UNION 
+SELECT '19207', 'B747' UNION 
+SELECT '19208', 'A320' UNION 
+SELECT '19209', 'B777' UNION 
+SELECT '19210', 'B757' UNION 
+SELECT '19210', 'B747' UNION 
+SELECT '19211', 'B757' UNION 
+SELECT '19212', 'B747' UNION 
+SELECT '19213', 'B757' UNION 
+SELECT '19214', 'A320' UNION 
+SELECT '19214', 'B757' UNION 
+SELECT '19215', 'B757' UNION 
+SELECT '19216', 'B757' UNION 
+SELECT '19217', 'B777' UNION 
+SELECT '19218', 'B757' UNION 
+SELECT '19219', 'B777' UNION 
+SELECT '19220', 'B777' UNION 
+SELECT '19221', 'B747' UNION 
+SELECT '19221', 'B777' UNION 
+SELECT '19222', 'A320' UNION 
+SELECT '19223', 'B757' UNION 
+SELECT '19224', 'B777' UNION 
+SELECT '19225', 'A320' UNION 
+SELECT '19226', 'B777' UNION 
+SELECT '19227', 'B747' UNION 
+SELECT '19228', 'A320' UNION 
+SELECT '19228', 'B747' UNION 
+SELECT '19229', 'B757' UNION 
+SELECT '19230', 'B757' UNION 
+SELECT '19230', 'B777' UNION 
+SELECT '19231', 'B757' UNION 
+SELECT '19231', 'A320' UNION 
+SELECT '19232', 'B757' UNION 
+SELECT '19232', 'B777' UNION 
+SELECT '19233', 'A320' UNION 
+SELECT '19234', 'B757' UNION 
+SELECT '19235', 'B757' UNION 
+SELECT '19236', 'B747' UNION 
+SELECT '19237', 'A320' UNION 
+SELECT '19238', 'B747' UNION 
+SELECT '19239', 'B777'
 
 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='1231bdffp9')+1 
- WHERE codigo_ATO='1231bdffp9' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='TLC')+1 
+WHERE codigo_ATO='TLC' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'A320-00', 'as8945e5ef', '1231bdffp9', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='1231bdffp9') 
+SELECT 'A320-00', 'A320', 'TLC' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='TLC') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='jghs679khj')+1 
- WHERE codigo_ATO='jghs679khj' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='TLC')+1 
+WHERE codigo_ATO='TLC' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'A320-01', 'as8945e5ef', 'jghs679khj', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='jghs679khj') 
+SELECT 'A320-01', 'A320', 'TLC' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='TLC') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='98sd7ty58a')+1 
- WHERE codigo_ATO='98sd7ty58a' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='IAET')+1 
+WHERE codigo_ATO='IAET' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'A320-02', 'as8945e5ef', '98sd7ty58a', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='98sd7ty58a') 
+SELECT 'A320-02', 'A320', 'IAET' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='IAET') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='5658sdaeee')+1 
- WHERE codigo_ATO='5658sdaeee' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='TLC')+1 
+WHERE codigo_ATO='TLC' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'A320-03', 'as8945e5ef', '5658sdaeee', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='5658sdaeee') 
+SELECT 'A320-03', 'A320', 'TLC' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='TLC') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='6577sdf7s8')+1 
- WHERE codigo_ATO='6577sdf7s8' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE')+1 
+WHERE codigo_ATO='EZE' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'B747-00', 'asda78sd', '6577sdf7s8', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='6577sdf7s8') 
+SELECT 'A320-04', 'A320', 'EZE' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='sdq7q7q59i')+1 
- WHERE codigo_ATO='sdq7q7q59i' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='UK')+1 
+WHERE codigo_ATO='UK' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'B747-01', 'asda78sd', 'sdq7q7q59i', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='sdq7q7q59i') 
+SELECT 'B777-00', 'B777', 'UK' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='UK') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='jghs679khj')+1 
- WHERE codigo_ATO='jghs679khj' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='USA')+1 
+WHERE codigo_ATO='USA' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'B747-02', 'asda78sd', 'jghs679khj', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='jghs679khj') 
+SELECT 'B777-01', 'B777', 'USA' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='USA') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='jghs679khj')+1 
- WHERE codigo_ATO='jghs679khj' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='URU')+1 
+WHERE codigo_ATO='URU' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'B747-03', 'asda78sd', 'jghs679khj', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='jghs679khj') 
+SELECT 'B777-02', 'B777', 'URU' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='URU') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='hgn58888h4')+1 
- WHERE codigo_ATO='hgn58888h4' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='ITA')+1 
+WHERE codigo_ATO='ITA' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'B747-04', 'asda78sd', 'hgn58888h4', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='hgn58888h4') 
+SELECT 'B777-03', 'B777', 'ITA' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='ITA') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='kksdju87aa')+1 
- WHERE codigo_ATO='kksdju87aa' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='URU')+1 
+WHERE codigo_ATO='URU' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'B747-05', 'asda78sd', 'kksdju87aa', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='kksdju87aa') 
+SELECT 'B777-04', 'B777', 'URU' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='URU') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='1231bdffp9')+1 
- WHERE codigo_ATO='1231bdffp9' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='URU')+1 
+WHERE codigo_ATO='URU' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'B777-00', '6s884s9de', '1231bdffp9', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='1231bdffp9') 
+SELECT 'B757-00', 'B757', 'URU' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='URU') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='1231bdffp9')+1 
- WHERE codigo_ATO='1231bdffp9' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='CHI')+1 
+WHERE codigo_ATO='CHI' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'B777-01', '6s884s9de', '1231bdffp9', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='1231bdffp9') 
+SELECT 'B757-01', 'B757', 'CHI' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='CHI') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='1231bdffp9')+1 
- WHERE codigo_ATO='1231bdffp9' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='GIO')+1 
+WHERE codigo_ATO='GIO' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'B777-02', '6s884s9de', '1231bdffp9', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='1231bdffp9') 
+SELECT 'B757-02', 'B757', 'GIO' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='GIO') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='98sd7ty58a')+1 
- WHERE codigo_ATO='98sd7ty58a' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='IAET')+1 
+WHERE codigo_ATO='IAET' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'B777-03', '6s884s9de', '98sd7ty58a', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='98sd7ty58a') 
+SELECT 'B757-03', 'B757', 'IAET' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='IAET') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='hgn58888h4')+1 
- WHERE codigo_ATO='hgn58888h4' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='JAP')+1 
+WHERE codigo_ATO='JAP' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'B777-04', '6s884s9de', 'hgn58888h4', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='hgn58888h4') 
+SELECT 'B757-04', 'B757', 'JAP' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='JAP') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='6577sdf7s8')+1 
- WHERE codigo_ATO='6577sdf7s8' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='GIO')+1 
+WHERE codigo_ATO='GIO' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'B757-00', '6549sda3e', '6577sdf7s8', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='6577sdf7s8') 
+SELECT 'B747-00', 'B747', 'GIO' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='GIO') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='kksdju87aa')+1 
- WHERE codigo_ATO='kksdju87aa' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='USA')+1 
+WHERE codigo_ATO='USA' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'B757-01', '6549sda3e', 'kksdju87aa', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='kksdju87aa') 
+SELECT 'B747-01', 'B747', 'USA' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='USA') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='lkghsg8970')+1 
- WHERE codigo_ATO='lkghsg8970' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='ITA')+1 
+WHERE codigo_ATO='ITA' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'B757-02', '6549sda3e', 'lkghsg8970', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='lkghsg8970') 
+SELECT 'B747-02', 'B747', 'ITA' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='ITA') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='sdf12dsfkj')+1 
- WHERE codigo_ATO='sdf12dsfkj' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='JAP')+1 
+WHERE codigo_ATO='JAP' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'B757-03', '6549sda3e', 'sdf12dsfkj', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='sdf12dsfkj') 
+SELECT 'B747-03', 'B747', 'JAP' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='JAP') 
 UPDATE aeropuertos 
- SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='lkghsg8970')+1 
- WHERE codigo_ATO='lkghsg8970' 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE')+1 
+WHERE codigo_ATO='EZE' 
 INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
- SELECT 'B757-04', '6549sda3e', 'lkghsg8970', GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='lkghsg8970') 
+SELECT 'B747-04', 'B747', 'EZE' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE') 
 
 
 
+
+
+INSERT rutas (codigo_RTA, ATOpartida_RTA, ATOarrivo_RTA, ETA_RTA, posta_RTA)
+SELECT 'EZE-TLC', 'EZE', 'TLC', 2, 1 UNION
+SELECT 'TLC-EZE', 'TLC', 'EZE', 2, 1 UNION
+SELECT 'EZE-IAET', 'EZE', 'IAET', 2, 1 UNION
+SELECT 'IAET-EZE', 'IAET', 'EZE', 2, 1 UNION
+SELECT 'EZE-CHI', 'EZE', 'CHI', 15, 36 UNION
+SELECT 'CHI-EZE', 'CHI', 'EZE', 15, 36 UNION
+SELECT 'EZE-URU', 'EZE', 'URU', 2, 1 UNION
+SELECT 'URU-EZE', 'URU', 'EZE', 2, 1 UNION
+SELECT 'EZE-ITA', 'EZE', 'ITA', 12, 12 UNION
+SELECT 'ITA-EZE', 'ITA', 'EZE', 12, 12 UNION
+SELECT 'EZE-USA', 'EZE', 'USA', 8, 12 UNION
+SELECT 'USA-EZE', 'USA', 'EZE', 8, 12 UNION
+SELECT 'EZE-UK', 'EZE', 'UK', 14, 36 UNION
+SELECT 'UK-EZE', 'UK', 'EZE', 14, 36 UNION
+SELECT 'EZE-JAP', 'EZE', 'JAP', 13, 36 UNION
+SELECT 'JAP-EZE', 'JAP', 'EZE', 13, 36 UNION
+SELECT 'EZE-GIO', 'EZE', 'GIO', 17, 36 UNION
+SELECT 'GIO-EZE', 'GIO', 'EZE', 17, 36
+
+
+
+
+
+INSERT RTA_por_TA (codigo_RTA, codigo_TA)
+SELECT 'EZE-TLC', 'A320' UNION
+SELECT 'TLC-EZE', 'A320' UNION
+SELECT 'EZE-IAET', 'A320' UNION
+SELECT 'IAET-EZE', 'A320' UNION
+SELECT 'EZE-URU', 'A320' UNION
+SELECT 'URU-EZE', 'A320' UNION
+SELECT 'EZE-CHI', 'B747' UNION
+SELECT 'CHI-EZE', 'B747' UNION
+SELECT 'EZE-CHI', 'B757' UNION
+SELECT 'CHI-EZE', 'B757' UNION
+SELECT 'EZE-CHI', 'B777' UNION
+SELECT 'CHI-EZE', 'B777' UNION
+SELECT 'EZE-ITA', 'B747' UNION
+SELECT 'ITA-EZE', 'B747' UNION
+SELECT 'EZE-ITA', 'B757' UNION
+SELECT 'ITA-EZE', 'B757' UNION
+SELECT 'EZE-ITA', 'B777' UNION
+SELECT 'ITA-EZE', 'B777' UNION
+SELECT 'EZE-USA', 'B747' UNION
+SELECT 'USA-EZE', 'B747' UNION
+SELECT 'EZE-USA', 'B757' UNION
+SELECT 'USA-EZE', 'B757' UNION
+SELECT 'EZE-USA', 'B777' UNION
+SELECT 'USA-EZE', 'B777' UNION
+SELECT 'EZE-UK', 'B747' UNION
+SELECT 'UK-EZE', 'B747' UNION
+SELECT 'EZE-UK', 'B757' UNION
+SELECT 'UK-EZE', 'B757' UNION
+SELECT 'EZE-UK', 'B777' UNION
+SELECT 'UK-EZE', 'B777' UNION
+SELECT 'EZE-JAP', 'B747' UNION
+SELECT 'JAP-EZE', 'B747' UNION
+SELECT 'EZE-JAP', 'B757' UNION
+SELECT 'JAP-EZE', 'B757' UNION
+SELECT 'EZE-JAP', 'B777' UNION
+SELECT 'JAP-EZE', 'B777' UNION
+SELECT 'EZE-GIO', 'B747' UNION
+SELECT 'GIO-EZE', 'B747' UNION
+SELECT 'EZE-GIO', 'B757' UNION
+SELECT 'GIO-EZE', 'B757' UNION
+SELECT 'EZE-GIO', 'B777' UNION
+SELECT 'GIO-EZE', 'B777' 
 
 
 
