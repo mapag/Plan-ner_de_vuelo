@@ -83,12 +83,6 @@
     <Compile Include="listarAviones.Designer.cs">
       <DependentUpon>listarAviones.cs</DependentUpon>
     </Compile>
-    <Compile Include="listarVuelos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="listarVuelos.Designer.cs">
-      <DependentUpon>listarVuelos.cs</DependentUpon>
-    </Compile>
     <Compile Include="modificarAvionn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,9 +114,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="listarAviones.resx">
       <DependentUpon>listarAviones.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="listarVuelos.resx">
-      <DependentUpon>listarVuelos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modificarAvionn.resx">
       <DependentUpon>modificarAvionn.cs</DependentUpon>
