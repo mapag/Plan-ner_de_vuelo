@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
+using Airport_Management.Clases;
 
 namespace Airport_Management
 {
@@ -20,6 +23,8 @@ namespace Airport_Management
         private void btnAgregar_Click(object sender, EventArgs e)
         {
 
+            GestionAviones ga = new GestionAviones();
+            ga.insertarAvion("Aviones", "", "");
         }
     }
 }

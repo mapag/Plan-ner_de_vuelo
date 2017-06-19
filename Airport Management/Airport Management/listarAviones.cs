@@ -25,8 +25,8 @@ namespace Airport_Management
 
             dsAviones = new DataSet();
             GestionAviones ga = new GestionAviones();
-            ga.listarAviones("Productos", ref dsAviones);
-            grdListarAviones.DataSource = dsAviones.Tables["Productos"];
+            ga.listarAviones("Aviones", ref dsAviones);
+            grdListarAviones.DataSource = dsAviones.Tables["Aviones"];
 
             CargarComboTexto(ref cmbCodigo);
             CargarComboTexto(ref cmbFabricante);
@@ -82,7 +82,7 @@ namespace Airport_Management
                     d1 = " LIKE '%";
                     d2 = "%'";
                     break;
-                case "Es Igual a:":
+                case "Es igual a:":
                     d1 = " ='";
                     d2 = "'";
                     break;
@@ -93,51 +93,55 @@ namespace Airport_Management
 
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
-            string ClausulaSQLProductos = "";
+            string ClausulaSQL = "";
             if (cmbCodigo.Text != "" && txtCodigo.Text != "")
                 ConstruirClausulaSQL("codigo_AV",
                                      cmbCodigo.Text,
                                      txtCodigo.Text,
-                                     ref ClausulaSQLProductos);
+                                     ref ClausulaSQL);
             if (cmbFabricante.Text != "" && txtFabricante.Text != "")
                 ConstruirClausulaSQL("fabricante_TA",
                                      cmbFabricante.Text,
                                      txtFabricante.Text,
-                                     ref ClausulaSQLProductos);
+                                     ref ClausulaSQL);
+            if (cmbFabricante.Text != "" && txtFabricante.Text != "")
+                ConstruirClausulaSQL("modelo_TA",
+                                     cmbModelo.Text,
+                                     txtModelo.Text,
+                                     ref ClausulaSQL);
 
             dsAviones.Tables.Clear();
             GestionAviones gp = new GestionAviones();
-            gp.listarAvionesClausula("select a.codigo_AV as Código, b.fabricante_TA as 'Fabricante', b.modelo_TA as Modelo, b.descripcion_TA as Descripción from Aviones a inner join tipos_de_aviones b on b.codigo_TA = a.tipo_AV" + ClausulaSQLProductos, "Productos", ref dsAviones);
-            grdListarAviones.DataSource = dsAviones.Tables["Productos"];
+            gp.listarAvionesClausula("select a.codigo_AV as Codigo, b.fabricante_TA as 'Fabricante', b.modelo_TA as Modelo, b.descripcion_TA as Descripción from Aviones a inner join tipos_de_aviones b on b.codigo_TA = a.tipo_AV" + ClausulaSQL, "Aviones", ref dsAviones);
+            grdListarAviones.DataSource = dsAviones.Tables["Aviones"];
         }
-  /*      private void btnFiltrar_Click(object sender, EventArgs e)
-        {
-            string ClausulaSQLProductos = "";
-            if (comboBox1.Text != "" && textBox1.Text != "")
-                ConstruirClausulaSQL("IdProducto",
-                                     comboBox1.Text,
-                                     textBox1.Text,
-                                     ref ClausulaSQLProductos);
-            if (comboBox2.Text != "" && textBox2.Text != "")
-                ConstruirClausulaSQL("NombreProducto",
-                                     comboBox2.Text,
-                                     textBox2.Text,
-                                     ref ClausulaSQLProductos);
-            if (comboBox3.Text != "" && textBox3.Text != "")
-                ConstruirClausulaSQL("IdCategoría",
-                                     comboBox3.Text,
-                                     textBox3.Text,
-                                     ref ClausulaSQLProductos);
-            if (comboBox4.Text != "" && textBox4.Text != "")
-                ConstruirClausulaSQL("IdProveedor",
-                                     comboBox4.Text,
-                                     textBox4.Text,
-                                     ref ClausulaSQLProductos);
 
-            dsNeptuno.Tables.Clear();
-            GestionProductos gp = new GestionProductos();
-            gp.ObtenerTodosLosProductosClausula("Select * from productos " + ClausulaSQLProductos, "Productos", ref dsNeptuno);
-            Grilla.DataSource = dsNeptuno.Tables["Productos"];
-        }*/
+        private void button1_Click(object sender, EventArgs e)
+        {
+           // DataSet dsActualizar;
+            DataSet dsEliminar;
+            DataSet dsAgregar;
+            GestionAviones gp = new GestionAviones();
+            /*
+            if (dsAviones.HasChanges(DataRowState.Modified))
+            {
+                dsActualizar = new DataSet();
+                dsActualizar = dsAviones.GetChanges(DataRowState.Modified);
+                gp.modificarAvion("Aviones", dsActualizar);
+            }
+            if (dsAviones.HasChanges(DataRowState.Added))
+            {
+                dsAgregar = new DataSet();
+                dsAgregar = dsAviones.GetChanges(DataRowState.Added);
+                gp.insertarAvion("Aviones", dsAgregar);
+            }*/
+            if (dsAviones.HasChanges(DataRowState.Deleted))
+            {
+                dsEliminar = new DataSet();
+                dsEliminar = dsAviones.GetChanges(DataRowState.Deleted);
+                gp.eliminarAvion("Aviones", dsEliminar);
+            }
+        }
+
     }
 }
