@@ -13,7 +13,7 @@ SELECT 'CDG', 'Aeropuerto de Paris - Charles de Gaulle', 'Francia', 'Paris', 0 U
 SELECT 'LHR', 'Aeropuerto de Londres - Heatrow', 'Inglaterra', 'Londres', 0 UNION
 SELECT 'HND', 'Aeropuerto Internacional de Tokio', 'Japon', 'Tokio', 0 UNION
 SELECT 'SVO', 'Aeropuerto Internacional de Moscu - Sheremetyevo', 'Rusia', 'Moscu', 0 UNION
-SELECT 'DFW', 'Aeropuerto Internacional de Dallas - Fort Worth', 'Estados Unidos', 'Dallas', 0 
+SELECT 'DFW', 'Aeropuerto Internacional de Dallas - Fort Worth', 'Estados Unidos', 'Dallas', 0 UNION
 SELECT 'MEX', 'Aeropuerto Internacional Benito Juárez de la Ciudad de México', 'Mexico', 'Ciudad de Mexico', 0 UNION
 SELECT 'GRU', 'Aeropuerto Internacional de São Paulo-Guarulhos – Gobernador André Franco Montoro', 'Brasil', 'San Pablo', 0 UNION
 SELECT 'GIG', 'Aeropuerto Internacional Antônio Carlos Jobim de Río de Janeiro', 'Brasil', 'Rio de Janeiro', 0 UNION
