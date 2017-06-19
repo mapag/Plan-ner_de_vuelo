@@ -15,7 +15,7 @@ CREATE PROCEDURE spInsertarAvion
 @Codigo VARCHAR (10), @tipo VARCHAR (10)
 AS
 INSERT INTO aviones (codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV)
-SELECT @Codigo, @tipo, 'Ezeiza', null, 0
+SELECT @Codigo, @tipo, 'EZE', '17/05/2017', 0
 GO
 
 --Modificar Avion
