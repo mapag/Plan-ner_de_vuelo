@@ -48,12 +48,13 @@
             // 
             // grdListarAviones
             // 
+            this.grdListarAviones.AllowUserToAddRows = false;
             this.grdListarAviones.AllowUserToResizeColumns = false;
             this.grdListarAviones.AllowUserToResizeRows = false;
             this.grdListarAviones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.grdListarAviones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdListarAviones.Location = new System.Drawing.Point(8, 175);
-            this.grdListarAviones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grdListarAviones.Margin = new System.Windows.Forms.Padding(2);
             this.grdListarAviones.Name = "grdListarAviones";
             this.grdListarAviones.RowTemplate.Height = 28;
             this.grdListarAviones.Size = new System.Drawing.Size(724, 370);
@@ -75,7 +76,7 @@
             this.cmbCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCodigo.FormattingEnabled = true;
             this.cmbCodigo.Location = new System.Drawing.Point(174, 29);
-            this.cmbCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCodigo.Name = "cmbCodigo";
             this.cmbCodigo.Size = new System.Drawing.Size(147, 32);
             this.cmbCodigo.TabIndex = 2;
@@ -95,7 +96,7 @@
             // 
             this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigo.Location = new System.Drawing.Point(411, 29);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(171, 29);
             this.txtCodigo.TabIndex = 4;
@@ -104,7 +105,7 @@
             // 
             this.btnFiltrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltrar.Location = new System.Drawing.Point(631, 62);
-            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(101, 38);
             this.btnFiltrar.TabIndex = 5;
@@ -116,7 +117,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(192, 570);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(345, 40);
             this.button1.TabIndex = 6;
@@ -151,7 +152,7 @@
             this.cmbFabricante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbFabricante.FormattingEnabled = true;
             this.cmbFabricante.Location = new System.Drawing.Point(174, 72);
-            this.cmbFabricante.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbFabricante.Margin = new System.Windows.Forms.Padding(2);
             this.cmbFabricante.Name = "cmbFabricante";
             this.cmbFabricante.Size = new System.Drawing.Size(147, 32);
             this.cmbFabricante.TabIndex = 9;
@@ -161,7 +162,7 @@
             this.cmbModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbModelo.FormattingEnabled = true;
             this.cmbModelo.Location = new System.Drawing.Point(174, 112);
-            this.cmbModelo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbModelo.Margin = new System.Windows.Forms.Padding(2);
             this.cmbModelo.Name = "cmbModelo";
             this.cmbModelo.Size = new System.Drawing.Size(147, 32);
             this.cmbModelo.TabIndex = 10;
@@ -192,7 +193,7 @@
             // 
             this.txtFabricante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFabricante.Location = new System.Drawing.Point(411, 71);
-            this.txtFabricante.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFabricante.Margin = new System.Windows.Forms.Padding(2);
             this.txtFabricante.Name = "txtFabricante";
             this.txtFabricante.Size = new System.Drawing.Size(171, 29);
             this.txtFabricante.TabIndex = 13;
@@ -201,7 +202,7 @@
             // 
             this.txtModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtModelo.Location = new System.Drawing.Point(411, 112);
-            this.txtModelo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtModelo.Margin = new System.Windows.Forms.Padding(2);
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Size = new System.Drawing.Size(171, 29);
             this.txtModelo.TabIndex = 14;
@@ -227,7 +228,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grdListarAviones);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "listarAviones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "listarAviones";

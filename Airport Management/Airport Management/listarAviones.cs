@@ -141,6 +141,7 @@ namespace Airport_Management
                 dsEliminar = dsAviones.GetChanges(DataRowState.Deleted);
                 gp.eliminarAvion("Aviones", dsEliminar);
             }
+            MessageBox.Show("Cambios efectuados en la base de datos.");
         }
 
     }

@@ -79,9 +79,9 @@ namespace Airport_Management.Clases
         public void ArmarParametrosAviones(ref SqlCommand Comando, String codigo_av, String tipo_av)
         {
             SqlParameter SqlParametros = new SqlParameter();
-            SqlParametros = Comando.Parameters.Add("@codigo_AV", SqlDbType.VarChar, 10);
+            SqlParametros = Comando.Parameters.Add("@Codigo", SqlDbType.VarChar, 10);
             SqlParametros.Value = codigo_av;
-            SqlParametros = Comando.Parameters.Add("@tipo_AV", SqlDbType.VarChar, 10);
+            SqlParametros = Comando.Parameters.Add("@Tipo", SqlDbType.VarChar, 10);
             SqlParametros.Value = tipo_av;
         }
 
