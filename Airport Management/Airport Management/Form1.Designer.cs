@@ -35,16 +35,16 @@
             this.modificarAviónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarAviónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vUELOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarVueloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarVueloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarVueloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarVueloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pLANESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generarPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rEPORTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cONFIGURACIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tRIPULANTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarTripulantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarVueloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rEPORTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cONFIGURACIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,6 +114,13 @@
             this.vUELOSToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
             this.vUELOSToolStripMenuItem.Text = "VUELOS";
             // 
+            // listarVueloToolStripMenuItem
+            // 
+            this.listarVueloToolStripMenuItem.Name = "listarVueloToolStripMenuItem";
+            this.listarVueloToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.listarVueloToolStripMenuItem.Text = "Listar vuelo";
+            this.listarVueloToolStripMenuItem.Click += new System.EventHandler(this.listarVueloToolStripMenuItem_Click);
+            // 
             // agregarVueloToolStripMenuItem
             // 
             this.agregarVueloToolStripMenuItem.Name = "agregarVueloToolStripMenuItem";
@@ -149,18 +156,6 @@
             this.generarPlanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.generarPlanToolStripMenuItem.Text = "Generar plan";
             // 
-            // rEPORTESToolStripMenuItem
-            // 
-            this.rEPORTESToolStripMenuItem.Name = "rEPORTESToolStripMenuItem";
-            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(74, 22);
-            this.rEPORTESToolStripMenuItem.Text = "REPORTES";
-            // 
-            // cONFIGURACIONToolStripMenuItem
-            // 
-            this.cONFIGURACIONToolStripMenuItem.Name = "cONFIGURACIONToolStripMenuItem";
-            this.cONFIGURACIONToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
-            this.cONFIGURACIONToolStripMenuItem.Text = "CONFIGURACIÓN";
-            // 
             // tRIPULANTESToolStripMenuItem
             // 
             this.tRIPULANTESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -175,11 +170,17 @@
             this.listarTripulantesToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.listarTripulantesToolStripMenuItem.Text = "Listar tripulantes";
             // 
-            // listarVueloToolStripMenuItem
+            // rEPORTESToolStripMenuItem
             // 
-            this.listarVueloToolStripMenuItem.Name = "listarVueloToolStripMenuItem";
-            this.listarVueloToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.listarVueloToolStripMenuItem.Text = "Listar vuelo";
+            this.rEPORTESToolStripMenuItem.Name = "rEPORTESToolStripMenuItem";
+            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(74, 22);
+            this.rEPORTESToolStripMenuItem.Text = "REPORTES";
+            // 
+            // cONFIGURACIONToolStripMenuItem
+            // 
+            this.cONFIGURACIONToolStripMenuItem.Name = "cONFIGURACIONToolStripMenuItem";
+            this.cONFIGURACIONToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.cONFIGURACIONToolStripMenuItem.Text = "CONFIGURACIÓN";
             // 
             // Form1
             // 

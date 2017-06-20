@@ -16,5 +16,11 @@ namespace Airport_Management
         {
             InitializeComponent();
         }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if (txtCodigo.Text.Length == 0 || txtCodigo.Text.Length != 7) MessageBox.Show("Debe ingresar un código válido");
+
+        }
     }
 }

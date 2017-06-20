@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grdListarAviones = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbCodigo = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,23 +42,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtFabricante = new System.Windows.Forms.TextBox();
             this.txtModelo = new System.Windows.Forms.TextBox();
+            this.grdListarAviones = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.grdListarAviones)).BeginInit();
             this.SuspendLayout();
-            // 
-            // grdListarAviones
-            // 
-            this.grdListarAviones.AllowUserToAddRows = false;
-            this.grdListarAviones.AllowUserToResizeColumns = false;
-            this.grdListarAviones.AllowUserToResizeRows = false;
-            this.grdListarAviones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.grdListarAviones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdListarAviones.Location = new System.Drawing.Point(8, 175);
-            this.grdListarAviones.Margin = new System.Windows.Forms.Padding(2);
-            this.grdListarAviones.Name = "grdListarAviones";
-            this.grdListarAviones.ReadOnly = true;
-            this.grdListarAviones.RowTemplate.Height = 28;
-            this.grdListarAviones.Size = new System.Drawing.Size(724, 370);
-            this.grdListarAviones.TabIndex = 0;
             // 
             // label1
             // 
@@ -208,12 +193,27 @@
             this.txtModelo.Size = new System.Drawing.Size(171, 29);
             this.txtModelo.TabIndex = 14;
             // 
+            // grdListarAviones
+            // 
+            this.grdListarAviones.AllowUserToAddRows = false;
+            this.grdListarAviones.AllowUserToResizeColumns = false;
+            this.grdListarAviones.AllowUserToResizeRows = false;
+            this.grdListarAviones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.grdListarAviones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdListarAviones.Location = new System.Drawing.Point(8, 175);
+            this.grdListarAviones.Margin = new System.Windows.Forms.Padding(2);
+            this.grdListarAviones.Name = "grdListarAviones";
+            this.grdListarAviones.ReadOnly = true;
+            this.grdListarAviones.RowTemplate.Height = 28;
+            this.grdListarAviones.Size = new System.Drawing.Size(724, 370);
+            this.grdListarAviones.TabIndex = 0;
+            // 
             // listarAviones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(1230, 939);
+            this.ClientSize = new System.Drawing.Size(1230, 788);
             this.Controls.Add(this.txtModelo);
             this.Controls.Add(this.txtFabricante);
             this.Controls.Add(this.label6);
@@ -244,7 +244,6 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView grdListarAviones;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbCodigo;
         private System.Windows.Forms.Label label2;
@@ -259,5 +258,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtFabricante;
         private System.Windows.Forms.TextBox txtModelo;
+        private System.Windows.Forms.DataGridView grdListarAviones;
     }
 }

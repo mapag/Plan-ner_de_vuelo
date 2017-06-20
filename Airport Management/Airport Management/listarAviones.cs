@@ -34,10 +34,10 @@ namespace Airport_Management
         }
         private void CargarComboTexto(ref ComboBox NombreCombo)
         {
-            NombreCombo.Items.Add("Comienza con:");
-            NombreCombo.Items.Add("Termina en:");
-            NombreCombo.Items.Add("Contiene:");
-            NombreCombo.Items.Add("Es igual a:");
+            NombreCombo.Items.Add("Comienza con");
+            NombreCombo.Items.Add("Termina en");
+            NombreCombo.Items.Add("Contiene");
+            NombreCombo.Items.Add("Es igual a");
         }
         private void CargarComboNumerico(ref ComboBox NombreCombo)
         {

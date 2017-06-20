@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using Airport_Management.Clases;
 
 namespace Airport_Management
 {
@@ -15,6 +17,30 @@ namespace Airport_Management
         public agregarVuelo()
         {
             InitializeComponent();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            GestionVuelos gv = new GestionVuelos();
+
+            try
+            {
+                if (txtVuelo.Text == "") MessageBox.Show("Debe ingresar un código de vuelo");
+                else if (txtVuelo.Text != "" && txtRuta.Text == "") MessageBox.Show("Debe ingresar un código de ruta");
+
+                //gv.InsertarVuelo("Vuelos", txtVuelo.Text, txtRuta.Text);
+                MessageBox.Show("Vuelo agregado!");
+                txtVuelo.Clear();
+                txtRuta.Clear();
+                txtVuelo.Select();
+
+
+            }
+
+            catch (SyntaxErrorException re)
+            {
+                MessageBox.Show(re.ToString());
+            }
         }
     }
 }

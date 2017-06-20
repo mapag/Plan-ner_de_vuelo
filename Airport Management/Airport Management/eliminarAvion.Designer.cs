@@ -30,53 +30,47 @@
         {
             this.label3 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.tipoAvion = new System.Windows.Forms.Label();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 31);
+            this.label3.Location = new System.Drawing.Point(8, 20);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 20);
+            this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "Código:";
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(81, 28);
+            this.txtCodigo.Location = new System.Drawing.Point(54, 18);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(152, 26);
+            this.txtCodigo.Size = new System.Drawing.Size(103, 20);
             this.txtCodigo.TabIndex = 5;
             // 
-            // btnModificar
+            // btnEliminar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(16, 160);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(217, 35);
-            this.btnModificar.TabIndex = 7;
-            this.btnModificar.Text = "Eliminar avión";
-            this.btnModificar.UseVisualStyleBackColor = true;
-            // 
-            // tipoAvion
-            // 
-            this.tipoAvion.AutoSize = true;
-            this.tipoAvion.Location = new System.Drawing.Point(77, 89);
-            this.tipoAvion.Name = "tipoAvion";
-            this.tipoAvion.Size = new System.Drawing.Size(102, 20);
-            this.tipoAvion.TabIndex = 8;
-            this.tipoAvion.Text = "Tipo de avión";
+            this.btnEliminar.Location = new System.Drawing.Point(11, 104);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(145, 23);
+            this.btnEliminar.TabIndex = 7;
+            this.btnEliminar.Text = "Eliminar avión";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // eliminarAvion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(260, 229);
-            this.Controls.Add(this.tipoAvion);
-            this.Controls.Add(this.btnModificar);
+            this.ClientSize = new System.Drawing.Size(173, 149);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label3);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "eliminarAvion";
             this.Text = "eliminarAvion";
             this.ResumeLayout(false);
@@ -88,7 +82,6 @@
 
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.Label tipoAvion;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }
