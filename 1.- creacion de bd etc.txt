@@ -41,6 +41,7 @@ nombre_TCP varchar (20) NOT NULL,
 apellido_TCP varchar (20) NOT NULL,
 cuil_TCP varchar (10) NOT NULL,
 telefono_TCP varchar (20) NOT NULL,
+baja_TCP int NOT NULL,
 CONSTRAINT PK_TCP PRIMARY KEY (legajo_TCP)
 )
 GO
@@ -71,6 +72,7 @@ tipo_AV varchar (10) NOT NULL REFERENCES tipos_de_aviones(codigo_TA),
 ultimo_ATO_programado_AV varchar(10) NOT NULL REFERENCES aeropuertos(codigo_ATO),
 ultima_fecha_programada_AV datetime NOT NULL,
 posicion_AV int NULL,
+baja_AV int NOT NULL,
 CONSTRAINT PK_AV PRIMARY KEY (codigo_AV)
 )
 GO

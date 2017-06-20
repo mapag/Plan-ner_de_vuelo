@@ -47,247 +47,250 @@ SELECT 'com', 'Comisario', 'Responsable de seguridad'
 
 
 
-INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP) 
-SELECT 'pil', 'José', 'Pogonza', '1079312582', '3001910660' UNION 
-SELECT 'pil', 'Carmen', 'Pinto', '3239116677', '2492118182' UNION 
-SELECT 'pil', 'Marcelo', 'Montero', '2676838773', '3213432774' UNION 
-SELECT 'pil', 'Jesús', 'Zapatero', '3165227103', '2886016105' UNION 
-SELECT 'pil', 'Lucila', 'Candela', '3191424479', '1520638924' UNION 
-SELECT 'pil', 'Antonio', 'Montenegro', '3178332940', '1255634452' UNION 
-SELECT 'pil', 'Raul', 'Rufián', '2015228108', '2754516387' UNION 
-SELECT 'pil', 'Lucila', 'Fuertez', '2215027042', '3269310421' UNION 
-SELECT 'pil', 'Alberto', 'Correa', '1245323085', '2348635961' UNION 
-SELECT 'pil', 'Franco', 'Radnikov', '1211226493', '1720442437' UNION 
-SELECT 'pil', 'Lugo', 'Candela', '4262434692', '2220633578' UNION 
-SELECT 'pil', 'Matías', 'Pinto', '3336228747', '4021019996' UNION 
-SELECT 'pil', 'Ismaél', 'Buenafuente', '3052124820', '3977710027' UNION 
-SELECT 'pil', 'Patricia', 'Luna', '2711818261', '1948635640' UNION 
-SELECT 'pil', 'Alberto', 'Lapido', '3317819210', '1463921076' UNION 
-SELECT 'pil', 'Ismaél', 'Candela', '1656734895', '1508642056' UNION 
-SELECT 'pil', 'Lucia', 'Gomez', '3725737899', '2855334802' UNION 
-SELECT 'pil', 'Alberto', 'Lapido', '3105636803', '3035918943' UNION 
-SELECT 'pil', 'José', 'Lapido', '1266828543', '2739911437' UNION 
-SELECT 'pil', 'Mateo', 'de Lourdes', '1856527835', '3524330103' UNION 
-SELECT 'pil', 'Monica', 'Del Bueno', '1337218685', '3201920406' UNION 
-SELECT 'pil', 'Antonio', 'Pinto', '3217018349', '3057926402' UNION 
-SELECT 'pil', 'Miguel', 'Perez', '2940531287', '1069328981' UNION 
-SELECT 'pil', 'Pedro', 'Borbón', '4229127307', '2135720248' UNION 
-SELECT 'pil', 'Rubén', 'de Lourdes', '3148512361', '1024129169' UNION 
-SELECT 'pil', 'Jesús', 'Cardenas', '2088422218', '1255228446' UNION 
-SELECT 'pil', 'Lucas', 'Maldonado', '1055535902', '1223938977' UNION 
-SELECT 'pil', 'Ismaél', 'Bañez', '4258637586', '2652615891' UNION 
-SELECT 'pil', 'Antonio', 'Montero', '2764219171', '1304922066' UNION 
-SELECT 'pil', 'Miguel', 'Radnikov', '3316240743', '2629023392' UNION 
-SELECT 'pil', 'Andrés', 'Montenegro', '1083932720', '2353115608' UNION 
-SELECT 'pil', 'Franco', 'Buenafuente', '2437815095', '3850623936' UNION 
-SELECT 'pil', 'David', 'Candela', '3568712211', '2835818842' UNION 
-SELECT 'pil', 'José', 'Pogonza', '2135726276', '3284618381' UNION 
-SELECT 'pil', 'Matías', 'Rufián', '3934921982', '2682130424' UNION 
-SELECT 'pil', 'Marcelo', 'Gutierrez', '1387420339', '1542613196' UNION 
-SELECT 'pil', 'Ariel', 'Del Bueno', '3250741235', '3118916480' UNION 
-SELECT 'pil', 'Lucas', 'Gutierrez', '2406336982', '2400130779' UNION 
-SELECT 'pil', 'Lugo', 'Estias', '2153529582', '1342233585' UNION 
-SELECT 'pil', 'Emmanuel', 'Luna', '3386529878', '2389924346' UNION 
-SELECT 'jc', 'Jesús', 'Buenafuente', '1125731527', '1082719779' UNION 
-SELECT 'jc', 'Alberto', 'Pogonza', '1560726988', '1027129892' UNION 
-SELECT 'jc', 'Lucila', 'Fuertez', '2476129055', '3769337183' UNION 
-SELECT 'jc', 'Alberto', 'Musiani', '2947025270', '1146118942' UNION 
-SELECT 'jc', 'Mateo', 'Montero', '4115221962', '2636419175' UNION 
-SELECT 'jc', 'María', 'Radnikov', '3193419702', '2468316549' UNION 
-SELECT 'jc', 'Patricia', 'Maldonado', '1715637528', '2240520274' UNION 
-SELECT 'jc', 'Franco', 'Pinto', '3634025028', '2161710754' UNION 
-SELECT 'jc', 'Mateo', 'Gomez', '3186316768', '1197415427' UNION 
-SELECT 'jc', 'Alberto', 'Rufián', '1686534477', '2953713546' UNION 
-SELECT 'jc', 'Damian', 'Herrera', '2743231176', '3753140317' UNION 
-SELECT 'jc', 'Cristian', 'Pinto', '2391029951', '1472613291' UNION 
-SELECT 'jc', 'Monica', 'Perez', '1628317494', '2278924263' UNION 
-SELECT 'jc', 'Rubén', 'Borbón', '1385729904', '1325837050' UNION 
-SELECT 'jc', 'Lucia', 'Cardenas', '4106024790', '2679639707' UNION 
-SELECT 'jc', 'Emmanuel', 'Fernandez', '3114430544', '2478439132' UNION 
-SELECT 'jc', 'Lucia', 'Herrera', '4199418476', '2498237461' UNION 
-SELECT 'jc', 'Lugo', 'Pinto', '2074140015', '2056236755' UNION 
-SELECT 'jc', 'Lucia', 'Montenegro', '3202638940', '3536921049' UNION 
-SELECT 'jc', 'Cristian', 'Herrera', '4004928433', '4012312555' UNION 
-SELECT 'jc', 'Pedro', 'Buenafuente', '1344921559', '1545424260' UNION 
-SELECT 'jc', 'Franco', 'Borbón', '1723526192', '3968837573' UNION 
-SELECT 'jc', 'Carlos', 'Montenegro', '3643010248', '2029526039' UNION 
-SELECT 'jc', 'Franco', 'Lapido', '2162729586', '2377136163' UNION 
-SELECT 'jc', 'David', 'Radnikov', '2976038527', '1453118785' UNION 
-SELECT 'jc', 'Miguel', 'Pogonza', '2933811693', '2480039668' UNION 
-SELECT 'jc', 'Lugo', 'Fernandez', '3358017053', '2547136524' UNION 
-SELECT 'jc', 'Emmanuel', 'Gutierrez', '1869325239', '3619622625' UNION 
-SELECT 'jc', 'Ludmila', 'de Lourdes', '3845815712', '2999931338' UNION 
-SELECT 'jc', 'Monica', 'Luna', '3396240050', '2078637273' UNION 
-SELECT 'jc', 'Mateo', 'Borbón', '2777734033', '3303827105' UNION 
-SELECT 'jc', 'Rubén', 'Del Bueno', '3617826070', '3448135033' UNION 
-SELECT 'jc', 'Jesús', 'Candela', '1763941227', '2523512947' UNION 
-SELECT 'jc', 'Monica', 'Montenegro', '3151222881', '3001125215' UNION 
-SELECT 'jc', 'Lugo', 'Candela', '3590234990', '1547638226' UNION 
-SELECT 'jc', 'Alberto', 'Montenegro', '3383318556', '3603125136' UNION 
-SELECT 'jc', 'Miguel', 'Lapido', '3113215620', '2249536996' UNION 
-SELECT 'jc', 'Cristian', 'Fuertez', '2425334159', '1423325928' UNION 
-SELECT 'jc', 'Pedro', 'Maldonado', '1356217811', '2456740371' UNION 
-SELECT 'jc', 'Marcelo', 'Pinto', '2133340103', '2424118050' UNION 
-SELECT 'com', 'Patricia', 'Lapido', '1279825735', '2134039935' UNION 
-SELECT 'com', 'Pedro', 'de Lourdes', '1012421570', '3772611588' UNION 
-SELECT 'com', 'Antonio', 'Borbón', '2131840137', '2663428762' UNION 
-SELECT 'com', 'David', 'Cardenas', '4160120563', '2562818680' UNION 
-SELECT 'com', 'Andrés', 'Radnikov', '1970831594', '2422329682' UNION 
-SELECT 'com', 'Matías', 'Radnikov', '3935634773', '1376231806' UNION 
-SELECT 'com', 'Lugo', 'Del Bueno', '3719739762', '2101221193' UNION 
-SELECT 'com', 'Carmen', 'Buenafuente', '2489234485', '3602833091' UNION 
-SELECT 'com', 'Ana', 'Perez', '2530920230', '1524536709' UNION 
-SELECT 'com', 'Alberto', 'de Lourdes', '2758415787', '3176112124' UNION 
-SELECT 'com', 'Carlos', 'Herrera', '2262734257', '2939329026' UNION 
-SELECT 'com', 'Miguel', 'Montero', '1279815493', '4263126541' UNION 
-SELECT 'com', 'Raul', 'Pinto', '3033928217', '3047139738' UNION 
-SELECT 'com', 'Raul', 'Lapido', '3024022453', '3224718202' UNION 
-SELECT 'com', 'Franco', 'de Lourdes', '3172333184', '3166721331' UNION 
-SELECT 'com', 'Franco', 'Rufián', '4083134078', '2378918798' UNION 
-SELECT 'com', 'Lugo', 'Gutierrez', '1528025913', '3019119529' UNION 
-SELECT 'com', 'Damian', 'Fernandez', '1091531770', '2214818889' UNION 
-SELECT 'com', 'Raul', 'Rufián', '4145019502', '4247730844' UNION 
-SELECT 'com', 'Miguel', 'Molina', '2700125806', '2265535919' UNION 
-SELECT 'com', 'Pedro', 'Herrera', '1601318190', '2270013533' UNION 
-SELECT 'com', 'María', 'Rufián', '3682241649', '3165815629' UNION 
-SELECT 'com', 'Damian', 'Herrera', '2932211388', '2405722260' UNION 
-SELECT 'com', 'Cristian', 'Buenafuente', '1847634394', '4056236910' UNION 
-SELECT 'com', 'Raul', 'Buenafuente', '3971734581', '2832927189' UNION 
-SELECT 'com', 'Rubén', 'Zapatero', '1959429322', '4243528511' UNION 
-SELECT 'com', 'Raul', 'Lopez', '2242513473', '3253210372' UNION 
-SELECT 'com', 'Jesús', 'Lapido', '1634516505', '3280124703' UNION 
-SELECT 'com', 'Ariel', 'Pinto', '1764141597', '1480531238' UNION 
-SELECT 'com', 'Matías', 'Fuertez', '1723628516', '1818637259' UNION 
-SELECT 'com', 'Esther', 'Rodriguez', '1946421320', '4063934857' UNION 
-SELECT 'com', 'Carmen', 'de Lourdes', '3386427478', '3956213768' UNION 
-SELECT 'com', 'Patricia', 'Cardenas', '2410839372', '3331412277' UNION 
-SELECT 'com', 'Lucia', 'Herrera', '1588530517', '3766241009' UNION 
-SELECT 'com', 'Franco', 'Maldonado', '1521513614', '2668624469' UNION 
-SELECT 'com', 'Patricia', 'Smith', '2771634320', '2606218210' UNION 
-SELECT 'com', 'Lugo', 'Buenafuente', '4087114937', '3098311040' UNION 
-SELECT 'com', 'Ludmila', 'de Lourdes', '1057836776', '3853340261' UNION 
-SELECT 'com', 'Esther', 'Borbón', '2906230375', '3484342156' UNION 
-SELECT 'com', 'Damian', 'Lapido', '2998011324', '2168327581' UNION 
-SELECT 'aux', 'Ismaél', 'Rufián', '1351042360', '1633810089' UNION 
-SELECT 'aux', 'Andrés', 'Maldonado', '3327938784', '3277214797' UNION 
-SELECT 'aux', 'Antonio', 'Lapido', '3069742756', '1486240146' UNION 
-SELECT 'aux', 'Jesús', 'Lapido', '1471437133', '2384018421' UNION 
-SELECT 'aux', 'Alberto', 'Gomez', '2466017577', '1643016901' UNION 
-SELECT 'aux', 'Damian', 'Molina', '3820122295', '3607135243' UNION 
-SELECT 'aux', 'Damian', 'Cardenas', '2659840378', '3619823006' UNION 
-SELECT 'aux', 'Matías', 'Maldonado', '1252428162', '1533135910' UNION 
-SELECT 'aux', 'María', 'Maldonado', '1034125300', '2203213492' UNION 
-SELECT 'aux', 'José', 'Montenegro', '2934217429', '3223414383' UNION 
-SELECT 'aux', 'Emmanuel', 'Candela', '1638139013', '1230626449' UNION 
-SELECT 'aux', 'Marcelo', 'Borbón', '2044021034', '3996922248' UNION 
-SELECT 'aux', 'Matías', 'Del Bueno', '1586516508', '1777541748' UNION 
-SELECT 'aux', 'Andrés', 'Buenafuente', '3711216791', '2130218522' UNION 
-SELECT 'aux', 'Ismaél', 'Rodriguez', '3782430675', '1156239779' UNION 
-SELECT 'aux', 'Miguel', 'Pinto', '1198217243', '3221629539' UNION 
-SELECT 'aux', 'Mateo', 'de Lourdes', '1793721017', '3440242071' UNION 
-SELECT 'aux', 'Lucia', 'Buenafuente', '4261633932', '2649015775' UNION 
-SELECT 'aux', 'Raul', 'Smith', '2317033156', '1271530370' UNION 
-SELECT 'aux', 'Lucila', 'Buenafuente', '2444627648', '1722538517' UNION 
-SELECT 'aux', 'Carlos', 'Fernandez', '1567038295', '1757717603' UNION 
-SELECT 'aux', 'Jesús', 'Borbón', '3281736153', '3364224933' UNION 
-SELECT 'aux', 'Pedro', 'Radnikov', '3964523855', '3787536205' UNION 
-SELECT 'aux', 'Lugo', 'Musiani', '1952031894', '3596019344' UNION 
-SELECT 'aux', 'Lucia', 'Lapido', '2737714292', '2845422323' UNION 
-SELECT 'aux', 'Ludmila', 'Del Bueno', '2703528855', '3308522664' UNION 
-SELECT 'aux', 'Ariel', 'Luna', '4254225149', '2746316760' UNION 
-SELECT 'aux', 'José', 'Zapatero', '1012323856', '4164712889' UNION 
-SELECT 'aux', 'Pedro', 'Montero', '2593835364', '2236638550' UNION 
-SELECT 'aux', 'Antonio', 'Del Bueno', '4200229298', '3281335031' UNION 
-SELECT 'aux', 'Marcelo', 'Gutierrez', '2562213643', '1415919277' UNION 
-SELECT 'aux', 'Lucas', 'Buenafuente', '2752012022', '2969035881' UNION 
-SELECT 'aux', 'Antonio', 'Perez', '4209218382', '2482638766' UNION 
-SELECT 'aux', 'Alberto', 'Rodriguez', '2824628074', '1023320117' UNION 
-SELECT 'aux', 'Raul', 'Borbón', '1176913738', '3880637831' UNION 
-SELECT 'aux', 'Lucila', 'Correa', '2697440352', '4061839310' UNION 
-SELECT 'aux', 'Carlos', 'Molina', '4245311150', '1671435152' UNION 
-SELECT 'aux', 'Patricia', 'Fuertez', '3994636596', '3184433274' UNION 
-SELECT 'aux', 'José', 'Borbón', '1497715072', '3764523958' UNION 
-SELECT 'aux', 'Mateo', 'de Lourdes', '2689333021', '3605218376' UNION 
-SELECT 'aux', 'Damian', 'Buenafuente', '4100021778', '2015918536' UNION 
-SELECT 'aux', 'Raul', 'Smith', '1567223992', '1656619634' UNION 
-SELECT 'aux', 'Lucila', 'Maldonado', '3919441511', '2855116064' UNION 
-SELECT 'aux', 'Ariel', 'Pinto', '2267820080', '4091311854' UNION 
-SELECT 'aux', 'Carmen', 'Correa', '1805332384', '2468616116' UNION 
-SELECT 'aux', 'Marcelo', 'Borbón', '2196238322', '2744820315' UNION 
-SELECT 'aux', 'Jesús', 'Fuertez', '1573311243', '3922827165' UNION 
-SELECT 'aux', 'Rubén', 'Zapatero', '3575123151', '2758223625' UNION 
-SELECT 'aux', 'Matías', 'Musiani', '3994933261', '1576238598' UNION 
-SELECT 'aux', 'Lugo', 'Rufián', '4225620595', '1042538665' UNION 
-SELECT 'aux', 'David', 'Maldonado', '3968710574', '3949618648' UNION 
-SELECT 'aux', 'Rubén', 'de Lourdes', '3560127141', '3353130230' UNION 
-SELECT 'aux', 'Lucas', 'Lapido', '2237712005', '4020115044' UNION 
-SELECT 'aux', 'Ismaél', 'Maldonado', '3206232479', '2868625283' UNION 
-SELECT 'aux', 'Matías', 'Smith', '2061631141', '4151525586' UNION 
-SELECT 'aux', 'Ana', 'Fuertez', '2977237968', '2091041670' UNION 
-SELECT 'aux', 'Patricia', 'Pogonza', '2208228648', '1352310346' UNION 
-SELECT 'aux', 'Lugo', 'Gomez', '1098912974', '4237914596' UNION 
-SELECT 'aux', 'José', 'Gomez', '2546322523', '4026540384' UNION 
-SELECT 'aux', 'Emmanuel', 'Gutierrez', '2686429697', '3513518847' UNION 
-SELECT 'aux', 'Carlos', 'Borbón', '4116016361', '2293637189' UNION 
-SELECT 'aux', 'Emmanuel', 'Luna', '2780014318', '2010919773' UNION 
-SELECT 'aux', 'Matías', 'Pinto', '3573130859', '2365815211' UNION 
-SELECT 'aux', 'Emmanuel', 'Perez', '3641210465', '3990040858' UNION 
-SELECT 'aux', 'Lucia', 'Perez', '3204628623', '1180919575' UNION 
-SELECT 'aux', 'Patricia', 'Montero', '3126332381', '2174613649' UNION 
-SELECT 'aux', 'Ismaél', 'Montenegro', '3645030280', '1951315981' UNION 
-SELECT 'aux', 'Pedro', 'Correa', '4008010568', '1842034021' UNION 
-SELECT 'aux', 'Ariel', 'Pinto', '3767415350', '2530938968' UNION 
-SELECT 'aux', 'María', 'Lopez', '4000521394', '2319828438' UNION 
-SELECT 'aux', 'Marcelo', 'Montenegro', '1092436950', '1555936377' UNION 
-SELECT 'aux', 'David', 'Gomez', '3250025509', '1324612897' UNION 
-SELECT 'aux', 'Andrés', 'Pogonza', '4082312717', '3413911089' UNION 
-SELECT 'aux', 'Ariel', 'Estias', '2155527443', '4018213784' UNION 
-SELECT 'aux', 'Damian', 'Luna', '3788614224', '1459828945' UNION 
-SELECT 'aux', 'Carlos', 'Herrera', '3342612284', '3909014116' UNION 
-SELECT 'aux', 'Raul', 'Gomez', '1416525783', '2453238561' UNION 
-SELECT 'aux', 'Ana', 'Lapido', '3762114782', '2672610199' UNION 
-SELECT 'aux', 'Jesús', 'Bañez', '3229827651', '2824022223' UNION 
-SELECT 'aux', 'Ismaél', 'Candela', '3845437217', '3252417910' UNION 
-SELECT 'aux', 'Jesús', 'Musiani', '3994129900', '2678430362' UNION 
-SELECT 'aux', 'Monica', 'Bañez', '3301840290', '3990115301' UNION 
-SELECT 'aux', 'Rubén', 'Estias', '1453127247', '4195228959' UNION 
-SELECT 'aux', 'Damian', 'Musiani', '3937918304', '3515021205' UNION 
-SELECT 'aux', 'Franco', 'de Lourdes', '4052825367', '1683029891' UNION 
-SELECT 'aux', 'Raul', 'Lopez', '2191122437', '1543734379' UNION 
-SELECT 'aux', 'Rubén', 'Borbón', '2320410699', '1698240353' UNION 
-SELECT 'aux', 'David', 'Borbón', '1587112311', '2041232883' UNION 
-SELECT 'aux', 'Rubén', 'Correa', '3737514264', '1851139222' UNION 
-SELECT 'aux', 'Patricia', 'Rufián', '1600222238', '3895820356' UNION 
-SELECT 'aux', 'Marcelo', 'Montenegro', '3210410431', '2744640778' UNION 
-SELECT 'aux', 'Ana', 'Lapido', '2955530839', '1942423988' UNION 
-SELECT 'aux', 'Esther', 'Borbón', '2083430530', '1333727681' UNION 
-SELECT 'aux', 'Antonio', 'Smith', '2236120410', '3148230847' UNION 
-SELECT 'aux', 'Ludmila', 'Gomez', '3505635626', '4106310210' UNION 
-SELECT 'aux', 'Esther', 'Fuertez', '2727840713', '2151029491' UNION 
-SELECT 'aux', 'Matías', 'Herrera', '2068426684', '1818326438' UNION 
-SELECT 'aux', 'Rubén', 'Borbón', '1257042682', '2884812479' UNION 
-SELECT 'aux', 'Cristian', 'Pogonza', '3657934716', '3167012677' UNION 
-SELECT 'aux', 'Ariel', 'Montero', '4168117605', '4268741148' UNION 
-SELECT 'aux', 'Jesús', 'Cardenas', '1691510401', '3600514205' UNION 
-SELECT 'aux', 'Raul', 'Smith', '2705110673', '3925131676' UNION 
-SELECT 'aux', 'Patricia', 'Herrera', '1386342203', '3029010276' UNION 
-SELECT 'aux', 'Mateo', 'Montenegro', '3542620155', '3440019154' UNION 
-SELECT 'aux', 'Raul', 'Bañez', '1845037730', '1066220015' UNION 
-SELECT 'aux', 'Ludmila', 'Pinto', '2132939240', '3594634401' UNION 
-SELECT 'aux', 'Antonio', 'Rufián', '1393118272', '1646425347' UNION 
-SELECT 'aux', 'Pedro', 'Correa', '1166022413', '2573022569' UNION 
-SELECT 'aux', 'José', 'Correa', '1488930177', '1520017116' UNION 
-SELECT 'aux', 'Ismaél', 'Fernandez', '1132333403', '1958519598' UNION 
-SELECT 'aux', 'Lucila', 'Rufián', '2550336569', '1027928219' UNION 
-SELECT 'aux', 'Lucas', 'Montenegro', '3026728912', '4032232554' UNION 
-SELECT 'aux', 'Ismaél', 'Montenegro', '3065038262', '1825333940' UNION 
-SELECT 'aux', 'Lugo', 'Musiani', '2610326652', '1910836502' UNION 
-SELECT 'aux', 'Lugo', 'Rodriguez', '1880833703', '3742642039' UNION 
-SELECT 'aux', 'Lucas', 'Herrera', '3161813616', '1740925460' UNION 
-SELECT 'aux', 'Monica', 'Correa', '1937134028', '1498623423' UNION 
-SELECT 'aux', 'Esther', 'Candela', '3199315437', '3120938592' UNION 
-SELECT 'aux', 'Esther', 'Pinto', '2225537983', '3281938713' UNION 
-SELECT 'aux', 'Lucia', 'Cardenas', '2485610411', '3184233623'
+
+INSERT INTO tripulantes(tipo_TCP, nombre_TCP, apellido_TCP, cuil_TCP, telefono_TCP, baja_TCP)
+SELECT 'pil', 'Carlos', 'Musiani', '1040630040', '3056619968', 1 UNION
+SELECT 'pil', 'Jesús', 'Herrera', '4008630481', '3519316998', 1 UNION
+SELECT 'pil', 'Lugo', 'Rufián', '1563219251', '1670832722', 1 UNION
+SELECT 'pil', 'Franco', 'Bañez', '3248810286', '2986728920', 1 UNION
+SELECT 'pil', 'Lucila', 'Pinto', '1009826566', '3716029976', 1 UNION
+SELECT 'pil', 'Miguel', 'Buenafuente', '2787721855', '4156830654', 1 UNION
+SELECT 'pil', 'Damian', 'Lopez', '1266616434', '2075821362', 1 UNION
+SELECT 'pil', 'Ariel', 'Buenafuente', '2558337165', '3147432219', 1 UNION
+SELECT 'pil', 'Jesús', 'Smith', '1932229362', '3912215434', 1 UNION
+SELECT 'pil', 'Patricia', 'Maldonado', '1594827770', '1143038316', 1 UNION
+SELECT 'pil', 'Ana', 'de Lourdes', '1874016435', '1255029516', 1 UNION
+SELECT 'pil', 'Ismaél', 'Montenegro', '2970725538', '2149829677', 1 UNION
+SELECT 'pil', 'Emmanuel', 'Perez', '2506015405', '2962027942', 1 UNION
+SELECT 'pil', 'Emmanuel', 'Gutierrez', '2386518581', '1207834059', 1 UNION
+SELECT 'pil', 'Lucila', 'Radnikov', '1627020167', '1379117024', 1 UNION
+SELECT 'pil', 'Marcelo', 'Del Bueno', '2490025427', '1051231947', 1 UNION
+SELECT 'pil', 'Alberto', 'Estias', '1063325899', '4261217214', 1 UNION
+SELECT 'pil', 'Ariel', 'Fernandez', '1630218730', '1818815387', 1 UNION
+SELECT 'pil', 'Esther', 'Fuertez', '3847627685', '2009442484', 1 UNION
+SELECT 'pil', 'Miguel', 'Pogonza', '2405441549', '1803410551', 1 UNION
+SELECT 'pil', 'Lucas', 'Buenafuente', '1240728930', '4058636778', 1 UNION
+SELECT 'pil', 'Damian', 'Buenafuente', '1811523669', '2996122016', 1 UNION
+SELECT 'pil', 'Ludmila', 'Luna', '3971633959', '1365528625', 1 UNION
+SELECT 'pil', 'Matías', 'Bañez', '1800234205', '3707637016', 1 UNION
+SELECT 'pil', 'Lucas', 'Gutierrez', '3313515599', '1939327780', 1 UNION
+SELECT 'pil', 'Ana', 'Lopez', '2051419193', '1514014913', 1 UNION
+SELECT 'pil', 'María', 'Cardenas', '1568328746', '2916723299', 1 UNION
+SELECT 'pil', 'Patricia', 'Herrera', '3938922583', '1916632887', 1 UNION
+SELECT 'pil', 'Matías', 'Fuertez', '4131934707', '3525932876', 1 UNION
+SELECT 'pil', 'Andrés', 'Maldonado', '3879237625', '3534121579', 1 UNION
+SELECT 'pil', 'Emmanuel', 'Radnikov', '1299933329', '1084938586', 1 UNION
+SELECT 'pil', 'Ana', 'Cardenas', '1764528305', '1092215361', 1 UNION
+SELECT 'pil', 'Raul', 'Gomez', '2381534928', '2289120995', 1 UNION
+SELECT 'pil', 'Cristian', 'Rodriguez', '2669621502', '3242623277', 1 UNION
+SELECT 'pil', 'Lugo', 'Lapido', '2822910272', '1762825069', 1 UNION
+SELECT 'pil', 'Damian', 'Smith', '1489723079', '1620019338', 1 UNION
+SELECT 'pil', 'Pedro', 'Cardenas', '2615738767', '2729111121', 1 UNION
+SELECT 'pil', 'Miguel', 'Smith', '4064919030', '2856410203', 1 UNION
+SELECT 'pil', 'Lucia', 'Gutierrez', '2566639427', '2281714036', 1 UNION
+SELECT 'pil', 'Ariel', 'Bañez', '2359211510', '4255623558', 1 UNION
+SELECT 'jc', 'Marcelo', 'Lopez', '1086327488', '4118213728', 1 UNION
+SELECT 'jc', 'Miguel', 'Bañez', '1707713879', '2028741004', 1 UNION
+SELECT 'jc', 'Jesús', 'Zapatero', '3488341977', '1065135223', 1 UNION
+SELECT 'jc', 'Emmanuel', 'Rufián', '2664526940', '2240633563', 1 UNION
+SELECT 'jc', 'Monica', 'Musiani', '2289834699', '3846810043', 1 UNION
+SELECT 'jc', 'Lucia', 'Rodriguez', '2202531880', '2583226849', 1 UNION
+SELECT 'jc', 'Emmanuel', 'Buenafuente', '3832631259', '3922839962', 1 UNION
+SELECT 'jc', 'Antonio', 'Borbón', '3357310257', '1547631624', 1 UNION
+SELECT 'jc', 'Patricia', 'de Lourdes', '3015210673', '2454131188', 1 UNION
+SELECT 'jc', 'Antonio', 'Estias', '2940233334', '3097337062', 1 UNION
+SELECT 'jc', 'Andrés', 'Perez', '2314635121', '3735134775', 1 UNION
+SELECT 'jc', 'Damian', 'Candela', '1808031802', '3421827220', 1 UNION
+SELECT 'jc', 'Mateo', 'Bañez', '2117628027', '2717810594', 1 UNION
+SELECT 'jc', 'Emmanuel', 'Luna', '1956026368', '3270616528', 1 UNION
+SELECT 'jc', 'Ludmila', 'Musiani', '1988710438', '2162313240', 1 UNION
+SELECT 'jc', 'Pedro', 'Herrera', '1388831752', '3576529525', 1 UNION
+SELECT 'jc', 'Alberto', 'Lopez', '1715016441', '1555512451', 1 UNION
+SELECT 'jc', 'Andrés', 'Zapatero', '2644042665', '2698932026', 1 UNION
+SELECT 'jc', 'Jesús', 'Radnikov', '2433238859', '3164418731', 1 UNION
+SELECT 'jc', 'Miguel', 'Correa', '3323635216', '2146133865', 1 UNION
+SELECT 'jc', 'Ludmila', 'Rodriguez', '3232912380', '3579321655', 1 UNION
+SELECT 'jc', 'Lucia', 'Cardenas', '4169731864', '3063442721', 1 UNION
+SELECT 'jc', 'Lucia', 'Perez', '3372021523', '3004418340', 1 UNION
+SELECT 'jc', 'Lucia', 'Pinto', '3039732299', '3622523630', 1 UNION
+SELECT 'jc', 'Carmen', 'Fuertez', '2220419705', '3931532772', 1 UNION
+SELECT 'jc', 'Patricia', 'Zapatero', '3761722200', '2536935208', 1 UNION
+SELECT 'jc', 'Marcelo', 'Fernandez', '3792233238', '1959810265', 1 UNION
+SELECT 'jc', 'Esther', 'Gomez', '1675426101', '2454641834', 1 UNION
+SELECT 'jc', 'Carmen', 'Montero', '1598338219', '2658712019', 1 UNION
+SELECT 'jc', 'Patricia', 'Del Bueno', '1050423096', '2068531572', 1 UNION
+SELECT 'jc', 'Ariel', 'Pinto', '3108325392', '1699236998', 1 UNION
+SELECT 'jc', 'Jesús', 'Fuertez', '3251019281', '3464537379', 1 UNION
+SELECT 'jc', 'Lucas', 'Montenegro', '4017430768', '1473527183', 1 UNION
+SELECT 'jc', 'José', 'Fuertez', '1178630154', '3886136015', 1 UNION
+SELECT 'jc', 'David', 'Zapatero', '1098524481', '1428838761', 1 UNION
+SELECT 'jc', 'Patricia', 'Lapido', '4057437474', '1713110341', 1 UNION
+SELECT 'jc', 'Matías', 'Molina', '2987825512', '2564321195', 1 UNION
+SELECT 'jc', 'Carlos', 'Musiani', '3576034246', '2216518343', 1 UNION
+SELECT 'jc', 'Andrés', 'Musiani', '3165239821', '2642038725', 1 UNION
+SELECT 'jc', 'Rubén', 'Luna', '3754225745', '3735430273', 1 UNION
+SELECT 'com', 'Alberto', 'Fuertez', '1149715527', '3342328955', 1 UNION
+SELECT 'com', 'Matías', 'Estias', '3106935812', '1227227927', 1 UNION
+SELECT 'com', 'Ismaél', 'Borbón', '3721640700', '2332223708', 1 UNION
+SELECT 'com', 'Antonio', 'Molina', '2135635974', '4155822209', 1 UNION
+SELECT 'com', 'Damian', 'Fernandez', '3782717414', '1079127830', 1 UNION
+SELECT 'com', 'Lucia', 'Luna', '1438436408', '4147735619', 1 UNION
+SELECT 'com', 'Andrés', 'Zapatero', '1115731206', '1005321735', 1 UNION
+SELECT 'com', 'Monica', 'Pinto', '1234532888', '3403523310', 1 UNION
+SELECT 'com', 'Raul', 'Montero', '1051931118', '2727417441', 1 UNION
+SELECT 'com', 'Ludmila', 'Maldonado', '3727938703', '1966910513', 1 UNION
+SELECT 'com', 'Alberto', 'Luna', '2269811395', '3567214444', 1 UNION
+SELECT 'com', 'David', 'Buenafuente', '3239732524', '3124841135', 1 UNION
+SELECT 'com', 'Esther', 'Smith', '3264626326', '2519926812', 1 UNION
+SELECT 'com', 'Miguel', 'Montenegro', '3559639967', '1635118917', 1 UNION
+SELECT 'com', 'Monica', 'Cardenas', '4034820831', '1515524848', 1 UNION
+SELECT 'com', 'Lugo', 'Fernandez', '3841911961', '3424513531', 1 UNION
+SELECT 'com', 'Lucila', 'Buenafuente', '4116032827', '3283011467', 1 UNION
+SELECT 'com', 'Emmanuel', 'de Lourdes', '4142331362', '2514114824', 1 UNION
+SELECT 'com', 'José', 'Lapido', '3001029065', '1207311094', 1 UNION
+SELECT 'com', 'Lucas', 'Pogonza', '1412719418', '3136035276', 1 UNION
+SELECT 'com', 'Cristian', 'Lopez', '4074228768', '4085427382', 1 UNION
+SELECT 'com', 'Carlos', 'Fuertez', '4113930581', '2969435368', 1 UNION
+SELECT 'com', 'Marcelo', 'Pinto', '1885738931', '2700942474', 1 UNION
+SELECT 'com', 'María', 'Estias', '3493412337', '2521614912', 1 UNION
+SELECT 'com', 'José', 'Perez', '3046229608', '3040715816', 1 UNION
+SELECT 'com', 'Antonio', 'Del Bueno', '1778420282', '2456439925', 1 UNION
+SELECT 'com', 'Cristian', 'Buenafuente', '1584230101', '3583020760', 1 UNION
+SELECT 'com', 'Ariel', 'Montero', '2564727232', '1468123804', 1 UNION
+SELECT 'com', 'Carmen', 'Bañez', '1645217340', '2159118225', 1 UNION
+SELECT 'com', 'Carlos', 'Montero', '1390521688', '2378115460', 1 UNION
+SELECT 'com', 'Raul', 'Rufián', '1822537801', '1567328244', 1 UNION
+SELECT 'com', 'Patricia', 'Musiani', '3017125969', '3006926694', 1 UNION
+SELECT 'com', 'Pedro', 'Rodriguez', '1228637642', '1139134822', 1 UNION
+SELECT 'com', 'Ludmila', 'Luna', '1827641207', '2437220429', 1 UNION
+SELECT 'com', 'Monica', 'Pogonza', '3858239022', '2417224498', 1 UNION
+SELECT 'com', 'Cristian', 'Zapatero', '1015241037', '2497442345', 1 UNION
+SELECT 'com', 'Lugo', 'Rufián', '2707838977', '3038118302', 1 UNION
+SELECT 'com', 'Andrés', 'Perez', '3694321159', '2312736175', 1 UNION
+SELECT 'com', 'Damian', 'Montenegro', '2122239431', '3703138765', 1 UNION
+SELECT 'com', 'José', 'Smith', '2457430022', '1797513364', 1 UNION
+SELECT 'aux', 'Patricia', 'Del Bueno', '1259422512', '3924120532', 1 UNION
+SELECT 'aux', 'Ariel', 'Estias', '2827635287', '2237426560', 1 UNION
+SELECT 'aux', 'Franco', 'Musiani', '3754329706', '4155316603', 1 UNION
+SELECT 'aux', 'Marcelo', 'Molina', '1388610407', '1054313692', 1 UNION
+SELECT 'aux', 'Lucila', 'Montenegro', '2922630381', '2703925868', 1 UNION
+SELECT 'aux', 'Alberto', 'Borbón', '3966227698', '3648026486', 1 UNION
+SELECT 'aux', 'Ismaél', 'Borbón', '1376140572', '4127440161', 1 UNION
+SELECT 'aux', 'Antonio', 'Rufián', '3807520737', '4151615330', 1 UNION
+SELECT 'aux', 'Jesús', 'Herrera', '1029612477', '1849515929', 1 UNION
+SELECT 'aux', 'Franco', 'Montenegro', '1714119289', '2069720608', 1 UNION
+SELECT 'aux', 'Raul', 'Fuertez', '3982716921', '1655033621', 1 UNION
+SELECT 'aux', 'Lucas', 'Rufián', '3726034450', '3556115578', 1 UNION
+SELECT 'aux', 'Ariel', 'Correa', '2987817297', '3899924499', 1 UNION
+SELECT 'aux', 'Carmen', 'Rodriguez', '3837232442', '2653722716', 1 UNION
+SELECT 'aux', 'Carlos', 'Fuertez', '3592236804', '2084422318', 1 UNION
+SELECT 'aux', 'David', 'Montenegro', '1199220586', '4242427380', 1 UNION
+SELECT 'aux', 'Emmanuel', 'Perez', '3713929791', '1376713142', 1 UNION
+SELECT 'aux', 'Lucia', 'de Lourdes', '1332423270', '1349615435', 1 UNION
+SELECT 'aux', 'Marcelo', 'Cardenas', '2227929667', '3323913069', 1 UNION
+SELECT 'aux', 'Lucas', 'Luna', '1650236987', '1337119139', 1 UNION
+SELECT 'aux', 'Ana', 'Herrera', '1646415262', '2935036962', 1 UNION
+SELECT 'aux', 'Alberto', 'Rodriguez', '2564737141', '3786339186', 1 UNION
+SELECT 'aux', 'Ana', 'Montenegro', '1102035299', '3357530898', 1 UNION
+SELECT 'aux', 'Carmen', 'Bañez', '1880627423', '1662022109', 1 UNION
+SELECT 'aux', 'Lugo', 'Pogonza', '3699632908', '2578921243', 1 UNION
+SELECT 'aux', 'Carlos', 'Lapido', '3917240607', '3600723096', 1 UNION
+SELECT 'aux', 'Raul', 'Rodriguez', '1678740882', '3252628802', 1 UNION
+SELECT 'aux', 'Raul', 'Perez', '1064716017', '1448612510', 1 UNION
+SELECT 'aux', 'Ludmila', 'Herrera', '2773725770', '3354533705', 1 UNION
+SELECT 'aux', 'Jesús', 'Fernandez', '1810419586', '2137513228', 1 UNION
+SELECT 'aux', 'Raul', 'Candela', '2230518754', '2386130986', 1 UNION
+SELECT 'aux', 'David', 'Luna', '3963110864', '2146727107', 1 UNION
+SELECT 'aux', 'Ludmila', 'Cardenas', '3188740764', '3769236567', 1 UNION
+SELECT 'aux', 'José', 'Del Bueno', '3492216097', '3981611678', 1 UNION
+SELECT 'aux', 'Marcelo', 'Gomez', '2996533802', '2271018037', 1 UNION
+SELECT 'aux', 'Jesús', 'Radnikov', '3245710050', '2065520753', 1 UNION
+SELECT 'aux', 'Monica', 'Pogonza', '2290226827', '2642635925', 1 UNION
+SELECT 'aux', 'Ariel', 'Smith', '3831638017', '1432216387', 1 UNION
+SELECT 'aux', 'Esther', 'Fuertez', '3558827270', '2601812821', 1 UNION
+SELECT 'aux', 'Andrés', 'Candela', '3184011757', '3170522926', 1 UNION
+SELECT 'aux', 'Raul', 'Perez', '1309328618', '1994732203', 1 UNION
+SELECT 'aux', 'Carlos', 'Pogonza', '1296113398', '2551236178', 1 UNION
+SELECT 'aux', 'Esther', 'Luna', '1691938158', '2908215123', 1 UNION
+SELECT 'aux', 'Lugo', 'Herrera', '3184237970', '2041122980', 1 UNION
+SELECT 'aux', 'Cristian', 'Lopez', '3525718438', '1044623512', 1 UNION
+SELECT 'aux', 'Pedro', 'Bañez', '4005417588', '3800829349', 1 UNION
+SELECT 'aux', 'Mateo', 'de Lourdes', '3337836644', '2096812273', 1 UNION
+SELECT 'aux', 'Antonio', 'Fernandez', '2082724567', '4112037149', 1 UNION
+SELECT 'aux', 'Rubén', 'Borbón', '2774925054', '4024341572', 1 UNION
+SELECT 'aux', 'Miguel', 'Gomez', '3956840583', '2613919939', 1 UNION
+SELECT 'aux', 'Carlos', 'Montenegro', '1515222362', '1252415728', 1 UNION
+SELECT 'aux', 'Ismaél', 'Cardenas', '2338424210', '2933418277', 1 UNION
+SELECT 'aux', 'Carlos', 'Estias', '4061331326', '2392532223', 1 UNION
+SELECT 'aux', 'Lugo', 'Fernandez', '4139216142', '2005730006', 1 UNION
+SELECT 'aux', 'Marcelo', 'Rodriguez', '1810828278', '2402033162', 1 UNION
+SELECT 'aux', 'Ariel', 'Zapatero', '1985339434', '1572021691', 1 UNION
+SELECT 'aux', 'Esther', 'Zapatero', '1570521094', '2468923852', 1 UNION
+SELECT 'aux', 'Mateo', 'Fernandez', '3797727193', '1609323320', 1 UNION
+SELECT 'aux', 'Alberto', 'Montenegro', '2929135793', '2152042347', 1 UNION
+SELECT 'aux', 'David', 'Molina', '4011226555', '2624422616', 1 UNION
+SELECT 'aux', 'Esther', 'Smith', '2208526666', '1358030500', 1 UNION
+SELECT 'aux', 'Ludmila', 'Bañez', '1186326670', '2783214300', 1 UNION
+SELECT 'aux', 'José', 'Correa', '4051216091', '2222935574', 1 UNION
+SELECT 'aux', 'Jesús', 'Luna', '1292519956', '3698918950', 1 UNION
+SELECT 'aux', 'Mateo', 'Montero', '3675232948', '2602740976', 1 UNION
+SELECT 'aux', 'Alberto', 'Borbón', '3282037574', '1020533573', 1 UNION
+SELECT 'aux', 'Jesús', 'Estias', '2775024726', '4009119006', 1 UNION
+SELECT 'aux', 'Ana', 'Estias', '1259314713', '3136723458', 1 UNION
+SELECT 'aux', 'Patricia', 'Cardenas', '2439133119', '2757828465', 1 UNION
+SELECT 'aux', 'Lucia', 'Rodriguez', '3142713071', '1706015723', 1 UNION
+SELECT 'aux', 'Emmanuel', 'Fuertez', '3294021783', '3548932527', 1 UNION
+SELECT 'aux', 'Lucas', 'Radnikov', '1819333536', '2866810911', 1 UNION
+SELECT 'aux', 'Raul', 'Smith', '2121039260', '1309613370', 1 UNION
+SELECT 'aux', 'Patricia', 'Fuertez', '3548011977', '3514635195', 1 UNION
+SELECT 'aux', 'Carlos', 'Cardenas', '2048240203', '3287026212', 1 UNION
+SELECT 'aux', 'Andrés', 'Rufián', '3734717589', '1839516772', 1 UNION
+SELECT 'aux', 'Alberto', 'Montenegro', '2626715151', '1175215571', 1 UNION
+SELECT 'aux', 'Matías', 'Smith', '1729134283', '1879738390', 1 UNION
+SELECT 'aux', 'David', 'Lapido', '3276714125', '1310419440', 1 UNION
+SELECT 'aux', 'Lucia', 'Pogonza', '3749032696', '2976526987', 1 UNION
+SELECT 'aux', 'Matías', 'Fernandez', '2797226160', '3057627158', 1 UNION
+SELECT 'aux', 'Emmanuel', 'Fernandez', '3999540990', '2702622223', 1 UNION
+SELECT 'aux', 'Ludmila', 'Maldonado', '2210920947', '3930318328', 1 UNION
+SELECT 'aux', 'Emmanuel', 'Musiani', '1230037276', '4147319330', 1 UNION
+SELECT 'aux', 'Ludmila', 'Maldonado', '3467216397', '3487538419', 1 UNION
+SELECT 'aux', 'Raul', 'Borbón', '1472727199', '3702436559', 1 UNION
+SELECT 'aux', 'Franco', 'Zapatero', '1445719552', '2629619189', 1 UNION
+SELECT 'aux', 'Lucas', 'Lopez', '1946131209', '2661525228', 1 UNION
+SELECT 'aux', 'Jesús', 'Gomez', '1103932324', '3104918765', 1 UNION
+SELECT 'aux', 'Miguel', 'Gutierrez', '1896417375', '2390810514', 1 UNION
+SELECT 'aux', 'Lucia', 'Radnikov', '1506135025', '3848432468', 1 UNION
+SELECT 'aux', 'Lugo', 'Musiani', '2590728569', '3448715455', 1 UNION
+SELECT 'aux', 'Mateo', 'Musiani', '1515640876', '2242716444', 1 UNION
+SELECT 'aux', 'Ana', 'Lopez', '2913215557', '1179025225', 1 UNION
+SELECT 'aux', 'Patricia', 'Rufián', '1653636147', '3473728856', 1 UNION
+SELECT 'aux', 'Ismaél', 'Radnikov', '1931418076', '1432235686', 1 UNION
+SELECT 'aux', 'Carlos', 'Gutierrez', '1202530187', '3474616588', 1 UNION
+SELECT 'aux', 'Esther', 'Lapido', '1775541576', '3064117273', 1 UNION
+SELECT 'aux', 'Cristian', 'Estias', '1101829993', '1059836949', 1 UNION
+SELECT 'aux', 'Ludmila', 'Molina', '2537642325', '3634934846', 1 UNION
+SELECT 'aux', 'Carmen', 'Gutierrez', '1883932511', '1463916347', 1 UNION
+SELECT 'aux', 'Pedro', 'Rodriguez', '2193823927', '1171726873', 1 UNION
+SELECT 'aux', 'Marcelo', 'Montenegro', '3919513160', '1352132021', 1 UNION
+SELECT 'aux', 'Antonio', 'Pinto', '3088035356', '2542641627', 1 UNION
+SELECT 'aux', 'Esther', 'Bañez', '2499236535', '2714622204', 1 UNION
+SELECT 'aux', 'Damian', 'Fernandez', '1933540787', '1475840565', 1 UNION
+SELECT 'aux', 'Miguel', 'Fernandez', '1404441789', '3112341877', 1 UNION
+SELECT 'aux', 'Ismaél', 'Fernandez', '4194441149', '2305733794', 1 UNION
+SELECT 'aux', 'Alberto', 'Radnikov', '1447218489', '3132635001', 1 UNION
+SELECT 'aux', 'Miguel', 'Pogonza', '3758524466', '3330018224', 1 UNION
+SELECT 'aux', 'Patricia', 'Gomez', '4019427140', '1460811046', 1 UNION
+SELECT 'aux', 'Lucila', 'de Lourdes', '1528526613', '2751324590', 1 UNION
+SELECT 'aux', 'Ludmila', 'Montenegro', '2512526492', '2041722666', 1 UNION
+SELECT 'aux', 'Mateo', 'Smith', '3847810620', '3345838843', 1 UNION
+SELECT 'aux', 'Esther', 'Rodriguez', '1648810416', '3736213134', 1 UNION
+SELECT 'aux', 'Emmanuel', 'Correa', '2294842746', '3467438542', 1 UNION
+SELECT 'aux', 'Carmen', 'Buenafuente', '1541323245', '3502211745', 1 UNION
+SELECT 'aux', 'Carmen', 'Candela', '3558214736', '2957840833', 1 UNION
+SELECT 'aux', 'Miguel', 'Rodriguez', '2906732072', '3165224903', 1 UNION
+SELECT 'aux', 'Ana', 'Radnikov', '2792913042', '1741342211', 1
+
+
 
 
 
@@ -625,142 +628,142 @@ SELECT '19238', 'B747' UNION
 SELECT '19239', 'B777'
 
 
+
 UPDATE aeropuertos 
-SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='BRC')+1 
-WHERE codigo_ATO='BRC' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'BAU-320', 'A320', 'BRC' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='BRC') 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='GRU')+1 
+WHERE codigo_ATO='GRU' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'BAO-123', 'A320', 'GRU' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='GRU'), 1 
 UPDATE aeropuertos 
-SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='BRC')+1 
-WHERE codigo_ATO='BRC' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'RXT-877', 'A320', 'BRC' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='BRC') 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='GIG')+1 
+WHERE codigo_ATO='GIG' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'MAT-584', 'A320', 'GIG' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='GIG'), 1 
 UPDATE aeropuertos 
-SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='COR')+1 
-WHERE codigo_ATO='COR' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'PII-743', 'A320', 'COR' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='COR') 
-UPDATE aeropuertos 
-SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='BRC')+1 
-WHERE codigo_ATO='BRC' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'MAT-223', 'A320', 'BRC' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='BRC') 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='MVD')+1 
+WHERE codigo_ATO='MVD' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'TEO-119', 'A320', 'MVD' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='MVD'), 1 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE')+1 
 WHERE codigo_ATO='EZE' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'EOP-801', 'A320', 'EZE' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE') 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'SOS-794', 'A320', 'EZE' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE'), 1 
+UPDATE aeropuertos 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE')+1 
+WHERE codigo_ATO='EZE' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'UNP-711', 'A320', 'EZE' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE'), 1 
+UPDATE aeropuertos 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='MAD')+1 
+WHERE codigo_ATO='MAD' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'EDR-765', 'B747', 'MAD' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='MAD'), 1 
+UPDATE aeropuertos 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='GRU')+1 
+WHERE codigo_ATO='GRU' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'RAS-484', 'B747', 'GRU' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='GRU'), 1 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='LHR')+1 
 WHERE codigo_ATO='LHR' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'EDR-006', 'B777', 'LHR' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='LHR') 
-UPDATE aeropuertos 
-SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='JKF')+1 
-WHERE codigo_ATO='JKF' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'AST-101', 'B777', 'JKF' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='JKF') 
-UPDATE aeropuertos 
-SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='SCL')+1 
-WHERE codigo_ATO='SCL' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'AXD-014', 'B777', 'SCL' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='SCL') 
-UPDATE aeropuertos 
-SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='ROM')+1 
-WHERE codigo_ATO='ROM' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'BRO-833', 'B777', 'ROM' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='ROM') 
-UPDATE aeropuertos 
-SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='SCL')+1 
-WHERE codigo_ATO='SCL' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'PUL-552', 'B777', 'SCL' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='SCL') 
-UPDATE aeropuertos 
-SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='SCL')+1 
-WHERE codigo_ATO='SCL' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'JNN-787', 'B757', 'SCL' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='SCL') 
-UPDATE aeropuertos 
-SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='HND')+1 
-WHERE codigo_ATO='HND' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'EIN-330', 'B757', 'HND' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='HND') 
-UPDATE aeropuertos 
-SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='SVO')+1 
-WHERE codigo_ATO='SVO' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'SEE-894', 'B757', 'SVO' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='SVO') 
-UPDATE aeropuertos 
-SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='COR')+1 
-WHERE codigo_ATO='COR' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'YIM-676', 'B757', 'COR' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='COR') 
-UPDATE aeropuertos 
-SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='HND')+1 
-WHERE codigo_ATO='HND' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'DRK-666', 'B757', 'HND' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='HND') 
-UPDATE aeropuertos 
-SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='SVO')+1 
-WHERE codigo_ATO='SVO' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'AGV-340', 'B747', 'SVO' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='SVO') 
-UPDATE aeropuertos 
-SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='JKF')+1 
-WHERE codigo_ATO='JKF' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'CMM-016', 'B747', 'JKF' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='JKF') 
-UPDATE aeropuertos 
-SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='ROM')+1 
-WHERE codigo_ATO='ROM' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'JAV-433', 'B747', 'ROM' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='ROM') 
-UPDATE aeropuertos 
-SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='HND')+1 
-WHERE codigo_ATO='HND' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'CPP-898', 'B747', 'HND' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='HND') 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'STA-648', 'B747', 'LHR' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='LHR'), 1 
 UPDATE aeropuertos 
 SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE')+1 
 WHERE codigo_ATO='EZE' 
-INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV) 
-SELECT 'RUN-302', 'B747', 'EZE' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE') 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'ASA-481', 'B747', 'EZE' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE'), 1 
+UPDATE aeropuertos 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='MVD')+1 
+WHERE codigo_ATO='MVD' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'LTA-481', 'B747', 'MVD' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='MVD'), 1 
+UPDATE aeropuertos 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='ROM')+1 
+WHERE codigo_ATO='ROM' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'CUN-481', 'B747', 'ROM' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='ROM'), 1 
+UPDATE aeropuertos 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='SVO')+1 
+WHERE codigo_ATO='SVO' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'NAS-791', 'B757', 'SVO' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='SVO'), 1 
+UPDATE aeropuertos 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='DFW')+1 
+WHERE codigo_ATO='DFW' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'DEJ-481', 'B757', 'DFW' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='DFW'), 1 
+UPDATE aeropuertos 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='MEX')+1 
+WHERE codigo_ATO='MEX' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'ATE-165', 'B757', 'MEX' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='MEX'), 1 
+UPDATE aeropuertos 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='GRU')+1 
+WHERE codigo_ATO='GRU' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'DEJ-186', 'B757', 'GRU' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='GRU'), 1 
+UPDATE aeropuertos 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='COR')+1 
+WHERE codigo_ATO='COR' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'ODE-898', 'B777', 'COR' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='COR'), 1 
+UPDATE aeropuertos 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='MAD')+1 
+WHERE codigo_ATO='MAD' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'RXD-481', 'B777', 'MAD' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='MAD'), 1 
+UPDATE aeropuertos 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='HND')+1 
+WHERE codigo_ATO='HND' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'FLA-891', 'B777', 'HND' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='HND'), 1 
+UPDATE aeropuertos 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='SCL')+1 
+WHERE codigo_ATO='SCL' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'COY-894', 'B777', 'SCL' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='SCL'), 1 
+UPDATE aeropuertos 
+SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='BRC')+1 
+WHERE codigo_ATO='BRC' 
+INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+SELECT 'ATA-103', 'B777', 'BRC' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='BRC'), 1 
 
 
 
 
 INSERT rutas (codigo_RTA, ATOpartida_RTA, ATOarrivo_RTA, ETA_RTA, posta_RTA)
-SELECT 'EZE-BRC', 'EZE', 'BRC', 15, 36 UNION
-SELECT 'BRC-EZE', 'BRC', 'EZE', 15, 36 UNION
-SELECT 'EZE-COR', 'EZE', 'COR', 15, 36 UNION
-SELECT 'COR-EZE', 'COR', 'EZE', 15, 36 UNION
-SELECT 'EZE-GIG', 'EZE', 'GIG', 15, 36 UNION
-SELECT 'GIG-EZE', 'GIG', 'EZE', 15, 36 UNION
-SELECT 'EZE-GRU', 'EZE', 'GRU', 15, 36 UNION
-SELECT 'GRU-EZE', 'GRU', 'EZE', 15, 36 UNION
-SELECT 'EZE-SCL', 'EZE', 'SCL', 15, 36 UNION
-SELECT 'SCL-EZE', 'SCL', 'EZE', 15, 36 UNION
-SELECT 'EZE-MVD', 'EZE', 'MVD', 15, 36 UNION
-SELECT 'MVD-EZE', 'MVD', 'EZE', 15, 36 UNION
-SELECT 'EZE-MAD', 'EZE', 'MAD', 15, 36 UNION
-SELECT 'MAD-EZE', 'MAD', 'EZE', 15, 36 UNION
-SELECT 'EZE-JKF', 'EZE', 'JKF', 15, 36 UNION
-SELECT 'JKF-EZE', 'JKF', 'EZE', 15, 36 UNION
-SELECT 'EZE-DFW', 'EZE', 'DFW', 15, 36 UNION
-SELECT 'DFW-EZE', 'DFW', 'EZE', 15, 36 UNION
-SELECT 'EZE-CDG', 'EZE', 'CDG', 15, 36 UNION
-SELECT 'CDG-EZE', 'CDG', 'EZE', 15, 36 UNION
-SELECT 'EZE-LHR', 'EZE', 'LHR', 15, 36 UNION
-SELECT 'LHR-EZE', 'LHR', 'EZE', 15, 36 UNION
-SELECT 'EZE-ROM', 'EZE', 'ROM', 15, 36 UNION
-SELECT 'ROM-EZE', 'ROM', 'EZE', 15, 36 UNION
+SELECT 'EZE-BRC', 'EZE', 'BRC', 2, 1 UNION
+SELECT 'BRC-EZE', 'BRC', 'EZE', 2, 1 UNION
+SELECT 'EZE-COR', 'EZE', 'COR', 1, 1 UNION
+SELECT 'COR-EZE', 'COR', 'EZE', 1, 1 UNION
+SELECT 'EZE-GIG', 'EZE', 'GIG', 3, 1 UNION
+SELECT 'GIG-EZE', 'GIG', 'EZE', 3, 1 UNION
+SELECT 'EZE-GRU', 'EZE', 'GRU', 2, 1 UNION
+SELECT 'GRU-EZE', 'GRU', 'EZE', 2, 1 UNION
+SELECT 'EZE-SCL', 'EZE', 'SCL', 2, 1 UNION
+SELECT 'SCL-EZE', 'SCL', 'EZE', 2, 1 UNION
+SELECT 'EZE-MVD', 'EZE', 'MVD', 1, 1 UNION
+SELECT 'MVD-EZE', 'MVD', 'EZE', 1, 1 UNION
+SELECT 'EZE-MAD', 'EZE', 'MAD', 13, 36 UNION
+SELECT 'MAD-EZE', 'MAD', 'EZE', 13, 36 UNION
+SELECT 'EZE-JKF', 'EZE', 'JKF', 11, 12 UNION
+SELECT 'JKF-EZE', 'JKF', 'EZE', 11, 12 UNION
+SELECT 'EZE-DFW', 'EZE', 'DFW', 11, 12 UNION
+SELECT 'DFW-EZE', 'DFW', 'EZE', 11, 12 UNION
+SELECT 'EZE-CDG', 'EZE', 'CDG', 14, 36 UNION
+SELECT 'CDG-EZE', 'CDG', 'EZE', 14, 36 UNION
+SELECT 'EZE-LHR', 'EZE', 'LHR', 14, 36 UNION
+SELECT 'LHR-EZE', 'LHR', 'EZE', 14, 36 UNION
+SELECT 'EZE-ROM', 'EZE', 'ROM', 13, 36 UNION
+SELECT 'ROM-EZE', 'ROM', 'EZE', 13, 36 UNION
 SELECT 'EZE-HND', 'EZE', 'HND', 15, 36 UNION
 SELECT 'HND-EZE', 'HND', 'EZE', 15, 36 UNION
-SELECT 'EZE-MEX', 'EZE', 'MEX', 15, 36 UNION
-SELECT 'MEX-EZE', 'MEX', 'EZE', 15, 36 UNION
-SELECT 'EZE-SVO', 'EZE', 'SVO', 15, 36 UNION
-SELECT 'SVO-EZE', 'SVO', 'EZE', 15, 36 
-
+SELECT 'EZE-MEX', 'EZE', 'MEX', 9, 12 UNION
+SELECT 'MEX-EZE', 'MEX', 'EZE', 9, 12 UNION
+SELECT 'EZE-SVO', 'EZE', 'SVO', 18, 36 UNION
+SELECT 'SVO-EZE', 'SVO', 'EZE', 18, 36
 
 
 
