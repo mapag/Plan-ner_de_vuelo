@@ -131,6 +131,7 @@ namespace Airport_Management.Clases
 
         public void IniciarTabla(string consulta, string nombretabla, ref DataSet DS, ref DataGridView grid)
         {
+            DS.Tables.Clear();
             SqlConnection cn = new SqlConnection(rutaBD);
             cn.Open();
             SqlDataAdapter adaptador = new SqlDataAdapter(consulta, cn); ///adaptador cambia el string a consulta sql
