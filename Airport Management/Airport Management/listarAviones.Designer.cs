@@ -33,7 +33,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.btnFiltrar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbFabricante = new System.Windows.Forms.ComboBox();
@@ -43,6 +42,7 @@
             this.txtFabricante = new System.Windows.Forms.TextBox();
             this.txtModelo = new System.Windows.Forms.TextBox();
             this.grdListarAviones = new System.Windows.Forms.DataGridView();
+            this.btnReset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdListarAviones)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,7 +82,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(411, 29);
+            this.txtCodigo.Location = new System.Drawing.Point(368, 29);
             this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(171, 29);
@@ -91,26 +91,14 @@
             // btnFiltrar
             // 
             this.btnFiltrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrar.Location = new System.Drawing.Point(631, 62);
+            this.btnFiltrar.Location = new System.Drawing.Point(586, 66);
             this.btnFiltrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(101, 38);
+            this.btnFiltrar.Size = new System.Drawing.Size(140, 38);
             this.btnFiltrar.TabIndex = 5;
             this.btnFiltrar.Text = "Filtrar";
             this.btnFiltrar.UseVisualStyleBackColor = true;
             this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(192, 570);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(345, 40);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Guardar cambios";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -179,7 +167,7 @@
             // txtFabricante
             // 
             this.txtFabricante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFabricante.Location = new System.Drawing.Point(411, 71);
+            this.txtFabricante.Location = new System.Drawing.Point(368, 71);
             this.txtFabricante.Margin = new System.Windows.Forms.Padding(2);
             this.txtFabricante.Name = "txtFabricante";
             this.txtFabricante.Size = new System.Drawing.Size(171, 29);
@@ -188,7 +176,7 @@
             // txtModelo
             // 
             this.txtModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModelo.Location = new System.Drawing.Point(411, 112);
+            this.txtModelo.Location = new System.Drawing.Point(368, 114);
             this.txtModelo.Margin = new System.Windows.Forms.Padding(2);
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Size = new System.Drawing.Size(171, 29);
@@ -209,12 +197,25 @@
             this.grdListarAviones.Size = new System.Drawing.Size(724, 370);
             this.grdListarAviones.TabIndex = 0;
             // 
+            // btnReset
+            // 
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Location = new System.Drawing.Point(586, 106);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(140, 38);
+            this.btnReset.TabIndex = 15;
+            this.btnReset.Text = "Mostrar Todo";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // listarAviones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(1230, 788);
+            this.ClientSize = new System.Drawing.Size(737, 554);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.txtModelo);
             this.Controls.Add(this.txtFabricante);
             this.Controls.Add(this.label6);
@@ -223,7 +224,6 @@
             this.Controls.Add(this.cmbFabricante);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label2);
@@ -250,7 +250,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Button btnFiltrar;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbFabricante;
@@ -260,5 +259,6 @@
         private System.Windows.Forms.TextBox txtFabricante;
         private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.DataGridView grdListarAviones;
+        private System.Windows.Forms.Button btnReset;
     }
 }

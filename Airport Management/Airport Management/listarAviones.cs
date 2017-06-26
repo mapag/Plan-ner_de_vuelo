@@ -67,37 +67,15 @@ namespace Airport_Management
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-           // DataSet dsActualizar;
-            DataSet dsEliminar;
-            //DataSet dsAgregar;
-            GestionAviones gp = new GestionAviones();
-            /*
-            if (dsAviones.HasChanges(DataRowState.Modified))
-            {
-                dsActualizar = new DataSet();
-                dsActualizar = dsAviones.GetChanges(DataRowState.Modified);
-                gp.modificarAvion("Aviones", dsActualizar);
-            }
-            if (dsAviones.HasChanges(DataRowState.Added))
-            {
-                dsAgregar = new DataSet();
-                dsAgregar = dsAviones.GetChanges(DataRowState.Added);
-                gp.insertarAvion("Aviones", dsAgregar);
-            }*/
-            if (dsAviones.HasChanges(DataRowState.Deleted))
-            {
-                dsEliminar = new DataSet();
-                dsEliminar = dsAviones.GetChanges(DataRowState.Deleted);
-                gp.eliminarAvion("Aviones", dsEliminar);
-            }
-            MessageBox.Show("Cambios efectuados en la base de datos.");
-        }
-
         private void cmbCodigo_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            string ClausulaSQL = "select a.codigo_AV as Codigo, b.fabricante_TA as 'Fabricante', b.modelo_TA as Modelo, b.descripcion_TA as Descripción from Aviones a inner join tipos_de_aviones b on b.codigo_TA = a.tipo_AV where a.codigo_AV like '%'";
+            ad.IniciarTabla(ClausulaSQL, "Todos", ref dsAviones, ref grdListarAviones);
         }
 
     }
