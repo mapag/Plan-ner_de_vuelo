@@ -32,31 +32,32 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtFabricante = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtModelo = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(8, 73);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(8, 70);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 20);
+            this.label3.Size = new System.Drawing.Size(76, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Código:";
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(94, 70);
+            this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigo.Location = new System.Drawing.Point(102, 67);
             this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(103, 26);
+            this.txtCodigo.Size = new System.Drawing.Size(103, 29);
             this.txtCodigo.TabIndex = 5;
+            this.txtCodigo.Leave += new System.EventHandler(this.txtCodigo_Leave);
             // 
             // btnEliminar
             // 
@@ -77,19 +78,20 @@
             this.label1.Location = new System.Drawing.Point(8, 129);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 20);
+            this.label1.Size = new System.Drawing.Size(89, 20);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Tipo:";
+            this.label1.Text = "Fabricante:";
             // 
-            // textBox1
+            // txtFabricante
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(94, 126);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(103, 26);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.Text = "No existe";
+            this.txtFabricante.BackColor = System.Drawing.SystemColors.Control;
+            this.txtFabricante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFabricante.Location = new System.Drawing.Point(102, 126);
+            this.txtFabricante.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFabricante.Name = "txtFabricante";
+            this.txtFabricante.Size = new System.Drawing.Size(103, 26);
+            this.txtFabricante.TabIndex = 9;
+            this.txtFabricante.Text = "No existe";
             // 
             // label2
             // 
@@ -108,30 +110,31 @@
             this.label4.Location = new System.Drawing.Point(8, 176);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 20);
+            this.label4.Size = new System.Drawing.Size(65, 20);
             this.label4.TabIndex = 11;
-            this.label4.Text = "Tipo:";
+            this.label4.Text = "Modelo:";
             // 
-            // textBox2
+            // txtModelo
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(94, 173);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(103, 26);
-            this.textBox2.TabIndex = 12;
-            this.textBox2.Text = "No existe";
+            this.txtModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtModelo.Location = new System.Drawing.Point(102, 173);
+            this.txtModelo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtModelo.Name = "txtModelo";
+            this.txtModelo.ReadOnly = true;
+            this.txtModelo.Size = new System.Drawing.Size(103, 26);
+            this.txtModelo.TabIndex = 12;
+            this.txtModelo.Text = "No existe";
             // 
             // eliminarAvion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(208, 272);
-            this.Controls.Add(this.textBox2);
+            this.BackColor = System.Drawing.Color.LightCyan;
+            this.ClientSize = new System.Drawing.Size(216, 272);
+            this.Controls.Add(this.txtModelo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtFabricante);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.txtCodigo);
@@ -152,9 +155,9 @@
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtFabricante;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox txtModelo;
     }
 }
