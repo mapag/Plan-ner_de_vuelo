@@ -214,7 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CadetBlue;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(737, 554);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.txtModelo);
@@ -234,9 +234,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "listarAviones";
+            this.Opacity = 0.1D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "listarAviones";
-            this.TransparencyKey = System.Drawing.Color.Transparent;
+            this.TransparencyKey = System.Drawing.SystemColors.HotTrack;
             this.Load += new System.EventHandler(this.listarAviones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdListarAviones)).EndInit();
             this.ResumeLayout(false);
