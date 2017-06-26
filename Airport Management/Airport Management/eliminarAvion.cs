@@ -45,8 +45,15 @@ namespace Airport_Management
         {
             try
             {
-                ga.eliminarAvion(txtCodigo.Text);
-                MessageBox.Show("El avión ha sido dado de baja");
+                ga.eliminarAvion(txtCodigo.Text, ds.Tables["Aviones"].Rows[0]["baja_AV"].ToString());
+                if (ds.Tables["Aviones"].Rows[0]["baja_AV"].ToString() == "1")
+                {
+                    MessageBox.Show("El avión ha sido dado de baja.");
+                }
+                else
+                {
+                    MessageBox.Show("El avión ha sido dado de alta.");
+                }
             }
             catch (SyntaxErrorException re)
             {

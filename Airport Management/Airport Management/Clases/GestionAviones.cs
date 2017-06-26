@@ -49,12 +49,18 @@ namespace Airport_Management.Clases
             return ds;
         }
 
-        public bool eliminarAvion(string codigo)
+        public bool eliminarAvion(string codigo, string estado)
         {
-
+            string consultaSQL = "";
             AccesoDatos ad = new AccesoDatos();
-            string consultaSQL = "UPDATE aviones SET baja_AV = 0 WHERE codigo_AV = '" + codigo + "'";
-
+            if (estado == "1")
+            {
+                consultaSQL = "UPDATE aviones SET baja_AV = 0 WHERE codigo_AV = '" + codigo + "'";
+            }
+            else if (estado == "0")
+            {
+                consultaSQL = "UPDATE aviones SET baja_AV = 1 WHERE codigo_AV = '" + codigo + "'";
+            }
             ad.EjecutarConsulta(consultaSQL);
             return true;
 

@@ -100,9 +100,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(179, 24);
+            this.label2.Size = new System.Drawing.Size(222, 24);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Menú agregar avión";
+            this.label2.Text = "Cambiar estado del avión";
             // 
             // label4
             // 
@@ -131,7 +131,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(216, 272);
+            this.ClientSize = new System.Drawing.Size(249, 287);
             this.Controls.Add(this.txtModelo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
