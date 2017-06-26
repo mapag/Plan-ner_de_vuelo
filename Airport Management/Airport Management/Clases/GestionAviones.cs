@@ -19,16 +19,24 @@ namespace Airport_Management.Clases
             //
         }
 
-        public void listarAviones(String nombreTabla, ref DataSet ds)
-        {
+        public bool AgregarAvion(string codigo, string fabricante, string modelo) { // Hacer un trigger para esta mierda XD
+
             AccesoDatos ad = new AccesoDatos();
-            ad.cargaTabla(nombreTabla, "select a.codigo_AV as Codigo, b.fabricante_TA as Fabricante, b.modelo_TA as Modelo, b.descripcion_TA as Descripción from Aviones a inner join tipos_de_aviones b on b.codigo_TA = a.tipo_AV", ref ds);
+            string consultaSQL = "UPDATE aeropuertos SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE')+1 WHERE codigo_ATO='EZE' INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) SELECT '"
+                + codigo + "', (select codigo_TA from tipos_de_aviones where fabricante_TA = '" + fabricante + "' and modelo_TA = '" + modelo + "'), 'EZE' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE'), 1";
+
+           ad.EjecutarConsulta(consultaSQL);
+            return true;
         }
 
-        public void listarAvionesClausula(String clausula, String nombreTabla, ref DataSet ds)
+        public bool CodigoExiste(string codigo) 
         {
             AccesoDatos ad = new AccesoDatos();
-            ad.cargaTabla(nombreTabla, clausula, ref ds);
+            string consulta = "Select * from aviones where codigo_AV = '" + codigo + "'";
+
+            int cantidad = ad.ContarRegistros(consulta);
+            if (cantidad>0) return true;
+            return false;
         }
 
         public bool eliminarAvion(String NombreTabla, DataSet ds)

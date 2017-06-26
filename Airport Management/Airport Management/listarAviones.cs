@@ -14,7 +14,10 @@ namespace Airport_Management
 {
     public partial class listarAviones : Form
     {
-        DataSet dsAviones;
+        DataSet dsAviones = new DataSet();
+        ConstructorCodSQL cons = new ConstructorCodSQL();
+        AccesoDatos ad = new AccesoDatos();
+
         public listarAviones()
         {
             InitializeComponent();
@@ -22,11 +25,8 @@ namespace Airport_Management
 
         private void listarAviones_Load(object sender, EventArgs e)
         {
-
-            dsAviones = new DataSet();
-            GestionAviones ga = new GestionAviones();
-            ga.listarAviones("Aviones", ref dsAviones);
-            grdListarAviones.DataSource = dsAviones.Tables["Aviones"];
+            string ClausulaSQL = "select a.codigo_AV as Codigo, b.fabricante_TA as 'Fabricante', b.modelo_TA as Modelo, b.descripcion_TA as Descripción from Aviones a inner join tipos_de_aviones b on b.codigo_TA = a.tipo_AV where a.codigo_AV like '%'";
+            ad.IniciarTabla(ClausulaSQL, "Todos", ref dsAviones, ref grdListarAviones);
 
             CargarComboTexto(ref cmbCodigo);
             CargarComboTexto(ref cmbFabricante);
@@ -44,78 +44,27 @@ namespace Airport_Management
             NombreCombo.Items.Add("Igual a:");
             NombreCombo.Items.Add("Mayor a:");
             NombreCombo.Items.Add("Menor a:");
-        }
-        private void ConstruirClausulaSQL(string NombreCampo,
-                                          string Operador,
-                                          string Valor,
-                                          ref string Clausula)
-        {
-            string d1 = "";  //Delimitador 1
-            string d2 = ""; //Delimitador 2
-            if (Clausula == "")
-                Clausula = Clausula + " WHERE ";
-            else
-                Clausula = Clausula + " AND ";
-            switch (Operador)
-            {
-                case "Igual a:":
-                    d1 = " = ";
-                    d2 = "";
-                    break;
-                case "Mayor a:":
-                    d1 = " > ";
-                    d2 = "";
-                    break;
-                case "Menor a:":
-                    d1 = " < ";
-                    d2 = "";
-                    break;
-                case "Comienza con:":
-                    d1 = " LIKE '";
-                    d2 = "%'";
-                    break;
-                case "Termina en:":
-                    d1 = " LIKE '%";
-                    d2 = "'";
-                    break;
-                case "Contiene:":
-                    d1 = " LIKE '%";
-                    d2 = "%'";
-                    break;
-                case "Es igual a:":
-                    d1 = " ='";
-                    d2 = "'";
-                    break;
-            } // SWITCH
-            Clausula =
-                Clausula + NombreCampo + d1 + Valor + d2;
+            NombreCombo.Items.Add("Mayor o igual a");
+            NombreCombo.Items.Add("Menor o igual a");
         }
 
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
-            string ClausulaSQL = "";
+            
+
+            string ClausulaSQL = "select a.codigo_AV as Codigo, b.fabricante_TA as 'Fabricante', b.modelo_TA as Modelo, b.descripcion_TA as Descripción from Aviones a inner join tipos_de_aviones b on b.codigo_TA = a.tipo_AV where a.codigo_AV like '%'";
+
             if (cmbCodigo.Text != "" && txtCodigo.Text != "")
-                ConstruirClausulaSQL("codigo_AV",
-                                     cmbCodigo.Text,
-                                     txtCodigo.Text,
-                                     ref ClausulaSQL);
+                cons.ConstructorConsultaTextual("aviones", "a.codigo_AV", cmbCodigo.Text, txtCodigo.Text, ref ClausulaSQL);
+
             if (cmbFabricante.Text != "" && txtFabricante.Text != "")
-                ConstruirClausulaSQL("fabricante_TA",
-                                     cmbFabricante.Text,
-                                     txtFabricante.Text,
-                                     ref ClausulaSQL);
+                cons.ConstructorConsultaTextual("aviones", "b.fabricante_TA", cmbFabricante.Text, txtFabricante.Text, ref ClausulaSQL);
+
             if (cmbModelo.Text != "" && txtModelo.Text != "")
-                ConstruirClausulaSQL("modelo_TA",
-                                     cmbModelo.Text,
-                                     txtModelo.Text,
-                                     ref ClausulaSQL);
+                cons.ConstructorConsultaTextual("aviones", "b.modelo_TA", cmbModelo.Text, txtModelo.Text, ref ClausulaSQL);
+                
+            ad.IniciarTabla(ClausulaSQL, "filtro", ref dsAviones, ref grdListarAviones);
 
-            MessageBox.Show(ClausulaSQL);
-
-            dsAviones.Tables.Clear();
-            GestionAviones gp = new GestionAviones();
-            gp.listarAvionesClausula("select a.codigo_AV as Codigo, b.fabricante_TA as 'Fabricante', b.modelo_TA as Modelo, b.descripcion_TA as Descripción from Aviones a inner join tipos_de_aviones b on b.codigo_TA = a.tipo_AV" + ClausulaSQL, "Aviones", ref dsAviones);
-            grdListarAviones.DataSource = dsAviones.Tables["Aviones"];
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -144,6 +93,11 @@ namespace Airport_Management
                 gp.eliminarAvion("Aviones", dsEliminar);
             }
             MessageBox.Show("Cambios efectuados en la base de datos.");
+        }
+
+        private void cmbCodigo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
     }

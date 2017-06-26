@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace Airport_Management.Clases
 {
@@ -50,7 +51,39 @@ namespace Airport_Management.Clases
             SqlConnection cn = ObtenerConexion();
             SqlDataAdapter adp = ObtenerAdaptador(Sql, cn);
             adp.Fill(ds, NombreTabla);
+            cn.Close();
         }
+
+        public void EjecutarConsulta(string consulta) 
+        {
+            SqlConnection cn = ObtenerConexion();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = cn;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = consulta;
+
+            MessageBox.Show(consulta);
+
+            cmd.ExecuteNonQuery();
+            cn.Close();
+        }
+
+        public int ContarRegistros(string consultaSQL)
+        {
+            int cantidad=0;
+            SqlConnection cn = ObtenerConexion();
+            SqlCommand comando = new SqlCommand();
+            comando.CommandText = consultaSQL;
+            comando.Connection = cn;
+            SqlDataReader dr = comando.ExecuteReader();
+            while (dr.Read() == true)
+            {
+                cantidad++; ;
+            }
+            cn.Close();
+            return cantidad;
+        }
+
 
         public int EjecutarProcedimientoAlmacenado(SqlCommand Comando, String NombreSP)
         {
@@ -65,5 +98,47 @@ namespace Airport_Management.Clases
             Conexion.Close();
             return FilasCambiadas;
         }
+
+        public void AgregaraComboBox(string consulta, ref ComboBox cmb)
+        {
+            SqlConnection cn = ObtenerConexion();
+            SqlCommand comando = new SqlCommand();
+            comando.CommandText = consulta;
+            comando.Connection = cn;
+            SqlDataReader dr = comando.ExecuteReader();
+            while (dr.Read() == true)
+            {
+                cmb.Items.Add(dr[0].ToString());
+            }
+            cn.Close();
+        }
+
+        public void AgregaraListBox(string consulta, ref ComboBox lst)
+        {
+            SqlConnection cn = ObtenerConexion();
+            SqlCommand comando = new SqlCommand();
+            comando.CommandText = consulta;
+            comando.Connection = cn;
+            cn.Open();
+            SqlDataReader dr = comando.ExecuteReader();
+            while (dr.Read() == true)
+            {
+                lst.Items.Add(dr[0].ToString());
+            }
+            cn.Close();
+        }
+
+
+        public void IniciarTabla(string consulta, string nombretabla, ref DataSet DS, ref DataGridView grid)
+        {
+            SqlConnection cn = new SqlConnection(rutaBD);
+            cn.Open();
+            SqlDataAdapter adaptador = new SqlDataAdapter(consulta, cn); ///adaptador cambia el string a consulta sql
+            cn.Close();
+            adaptador.Fill(DS, nombretabla);   //ACA CREA UNA TABLA EN EL DS CON UN NOMBRE ESPECIFICO, NO CONTROLA EL INDICE.
+            grid.DataSource = DS.Tables[nombretabla]; ///ACA MUESTRA LA CONSULTA EN LA GRILLA
+        }
+
+
     }
 }

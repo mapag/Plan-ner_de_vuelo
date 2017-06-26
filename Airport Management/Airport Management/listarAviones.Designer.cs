@@ -66,6 +66,7 @@
             this.cmbCodigo.Name = "cmbCodigo";
             this.cmbCodigo.Size = new System.Drawing.Size(147, 32);
             this.cmbCodigo.TabIndex = 2;
+            this.cmbCodigo.SelectedIndexChanged += new System.EventHandler(this.cmbCodigo_SelectedIndexChanged);
             // 
             // label2
             // 
