@@ -58,6 +58,7 @@
             this.txtCodigo.Size = new System.Drawing.Size(121, 26);
             this.txtCodigo.TabIndex = 2;
             this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
+            this.txtCodigo.Leave += new System.EventHandler(this.txtCodigo_Leave);
             // 
             // btnAgregar
             // 
