@@ -32,7 +32,6 @@
             this.aVIONESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarAvionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarAviónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modificarAviónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarAviónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vUELOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarVueloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -69,7 +68,6 @@
             this.aVIONESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.listarAvionesToolStripMenuItem,
             this.agregarAviónToolStripMenuItem,
-            this.modificarAviónToolStripMenuItem,
             this.eliminarAviónToolStripMenuItem});
             this.aVIONESToolStripMenuItem.Name = "aVIONESToolStripMenuItem";
             this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
@@ -78,28 +76,21 @@
             // listarAvionesToolStripMenuItem
             // 
             this.listarAvionesToolStripMenuItem.Name = "listarAvionesToolStripMenuItem";
-            this.listarAvionesToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.listarAvionesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.listarAvionesToolStripMenuItem.Text = "Listar aviones";
             this.listarAvionesToolStripMenuItem.Click += new System.EventHandler(this.listarAvionesToolStripMenuItem_Click);
             // 
             // agregarAviónToolStripMenuItem
             // 
             this.agregarAviónToolStripMenuItem.Name = "agregarAviónToolStripMenuItem";
-            this.agregarAviónToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.agregarAviónToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.agregarAviónToolStripMenuItem.Text = "Agregar avión";
             this.agregarAviónToolStripMenuItem.Click += new System.EventHandler(this.agregarAviónToolStripMenuItem_Click);
-            // 
-            // modificarAviónToolStripMenuItem
-            // 
-            this.modificarAviónToolStripMenuItem.Name = "modificarAviónToolStripMenuItem";
-            this.modificarAviónToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.modificarAviónToolStripMenuItem.Text = "Modificar avión";
-            this.modificarAviónToolStripMenuItem.Click += new System.EventHandler(this.modificarAviónToolStripMenuItem_Click);
             // 
             // eliminarAviónToolStripMenuItem
             // 
             this.eliminarAviónToolStripMenuItem.Name = "eliminarAviónToolStripMenuItem";
-            this.eliminarAviónToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.eliminarAviónToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.eliminarAviónToolStripMenuItem.Text = "Eliminar avión";
             this.eliminarAviónToolStripMenuItem.Click += new System.EventHandler(this.eliminarAviónToolStripMenuItem_Click);
             // 
@@ -153,7 +144,7 @@
             // generarPlanToolStripMenuItem
             // 
             this.generarPlanToolStripMenuItem.Name = "generarPlanToolStripMenuItem";
-            this.generarPlanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.generarPlanToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.generarPlanToolStripMenuItem.Text = "Generar plan";
             // 
             // tRIPULANTESToolStripMenuItem
@@ -209,7 +200,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem aVIONESToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agregarAviónToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem modificarAviónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarAviónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vUELOSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agregarVueloToolStripMenuItem;

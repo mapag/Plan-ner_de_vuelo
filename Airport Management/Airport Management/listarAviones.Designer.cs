@@ -185,6 +185,7 @@
             // grdListarAviones
             // 
             this.grdListarAviones.AllowUserToAddRows = false;
+            this.grdListarAviones.AllowUserToDeleteRows = false;
             this.grdListarAviones.AllowUserToResizeColumns = false;
             this.grdListarAviones.AllowUserToResizeRows = false;
             this.grdListarAviones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;

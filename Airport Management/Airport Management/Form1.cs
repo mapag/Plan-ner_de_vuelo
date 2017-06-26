@@ -39,14 +39,6 @@ namespace Airport_Management
            
         }
 
-        private void modificarAviónToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-            borrarVentanaAnterior();
-            modificarAvionn modAvion = new modificarAvionn();
-            abrirVentana(modAvion);
-        }
-
         private void eliminarAviónToolStripMenuItem_Click(object sender, EventArgs e)
         {
            
