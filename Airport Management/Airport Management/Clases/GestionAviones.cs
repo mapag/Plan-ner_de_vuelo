@@ -49,21 +49,15 @@ namespace Airport_Management.Clases
             return ds;
         }
 
-        public bool eliminarAvion(String NombreTabla, DataSet ds)
+        public bool eliminarAvion(string codigo)
         {
-            int FilasEliminadas = 0;
-            foreach (DataRow fila in ds.Tables[NombreTabla].Rows)
-            {
-                SqlCommand Comando = new SqlCommand();
-                fila.RejectChanges();
-                AccesoDatos ad = new AccesoDatos();
-                ArmarParametrosAvionesEliminar(ref Comando, fila);
-                FilasEliminadas = ad.EjecutarProcedimientoAlmacenado(Comando, "spEliminarAvion");
-            }
-            if (FilasEliminadas >= 1)
-                return true;
-            else
-                return false;
+
+            AccesoDatos ad = new AccesoDatos();
+            string consultaSQL = "UPDATE aviones SET baja_AV = 0 WHERE codigo_AV = '" + codigo + "'";
+
+            ad.EjecutarConsulta(consultaSQL);
+            return true;
+
         }
 
 
