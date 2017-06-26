@@ -76,6 +76,14 @@ namespace Airport_Management
         {
             string ClausulaSQL = "select a.codigo_AV as Codigo, b.fabricante_TA as 'Fabricante', b.modelo_TA as Modelo, b.descripcion_TA as Descripción from Aviones a inner join tipos_de_aviones b on b.codigo_TA = a.tipo_AV where a.codigo_AV like '%'";
             ad.IniciarTabla(ClausulaSQL, "Todos", ref dsAviones, ref grdListarAviones);
+
+            cmbCodigo.Text = "";
+            cmbFabricante.Text = "";
+            cmbModelo.Text = "";
+
+            txtCodigo.Text = "";
+            txtFabricante.Text = "";
+            txtModelo.Text = "";
         }
 
     }
