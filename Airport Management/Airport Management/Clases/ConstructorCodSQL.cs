@@ -29,10 +29,10 @@ namespace Airport_Management
                 case "Menor a:":
                     d = " < ";
                     break;
-                case "Menor o igual a:":
+                case "Menor o igual a":
                     d = " <= ";
                     break;
-                case "Mayor o igual a:":
+                case "Mayor o igual a":
                     d = " >= ";
                     break;
             }

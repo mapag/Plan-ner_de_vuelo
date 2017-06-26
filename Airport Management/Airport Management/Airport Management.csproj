@@ -58,6 +58,7 @@
     </Compile>
     <Compile Include="Clases\AccesoDatos.cs" />
     <Compile Include="Clases\GestionAviones.cs" />
+    <Compile Include="Clases\GestionRutas.cs" />
     <Compile Include="Clases\GestionVuelos.cs" />
     <Compile Include="Clases\ConstructorCodSQL.cs" />
     <Compile Include="eliminarAvion.cs">
@@ -83,6 +84,12 @@
     </Compile>
     <Compile Include="listarAviones.Designer.cs">
       <DependentUpon>listarAviones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listarRutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listarRutas.Designer.cs">
+      <DependentUpon>listarRutas.cs</DependentUpon>
     </Compile>
     <Compile Include="listarVuelos.cs">
       <SubType>Form</SubType>
@@ -115,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="listarAviones.resx">
       <DependentUpon>listarAviones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listarRutas.resx">
+      <DependentUpon>listarRutas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="listarVuelos.resx">
       <DependentUpon>listarVuelos.cs</DependentUpon>
