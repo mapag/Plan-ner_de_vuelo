@@ -39,16 +39,6 @@ namespace Airport_Management.Clases
             return false;
         }
 
-        public DataSet TraerAvionCodigo(string codigo)
-        {
-            DataSet ds = new DataSet();
-            AccesoDatos ad = new AccesoDatos();
-            string consulta = "Select * from aviones where codigo_AV = '" + codigo + "'";
-
-            ad.cargaTabla("Aviones", consulta, ref ds);
-            return ds;
-        }
-
         public bool eliminarAvion(String NombreTabla, DataSet ds)
         {
             int FilasEliminadas = 0;
