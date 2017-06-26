@@ -62,8 +62,6 @@ namespace Airport_Management.Clases
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = consulta;
 
-            MessageBox.Show(consulta);
-
             cmd.ExecuteNonQuery();
             cn.Close();
         }
