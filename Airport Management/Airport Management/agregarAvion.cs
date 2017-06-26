@@ -25,8 +25,7 @@ namespace Airport_Management
                 i++;
                 texto += "El codigo debe tener 7 carácteres. ";
             }
-
-            if('A' > txtCodigo.Text[0] || txtCodigo.Text[0] > 'Z' ||
+            else if('A' > txtCodigo.Text[0] || txtCodigo.Text[0] > 'Z' ||
                'A' > txtCodigo.Text[1] || txtCodigo.Text[1] > 'Z' ||
                'A' > txtCodigo.Text[2] || txtCodigo.Text[2] > 'Z' ||
                txtCodigo.Text[3] != '-' ||

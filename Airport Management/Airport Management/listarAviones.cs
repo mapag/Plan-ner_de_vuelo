@@ -86,5 +86,17 @@ namespace Airport_Management
             txtModelo.Text = "";
         }
 
+        private void btn_activos_Click(object sender, EventArgs e)
+        {
+            string ClausulaSQL = "select a.codigo_AV as Codigo, b.fabricante_TA as 'Fabricante', b.modelo_TA as Modelo, b.descripcion_TA as Descripción from Aviones a inner join tipos_de_aviones b on b.codigo_TA = a.tipo_AV where a.baja_AV = 1 ";
+            ad.IniciarTabla(ClausulaSQL, "Todos", ref dsAviones, ref grdListarAviones);
+        }
+
+        private void btn_noactivos_Click(object sender, EventArgs e)
+        {
+            string ClausulaSQL = "select a.codigo_AV as Codigo, b.fabricante_TA as 'Fabricante', b.modelo_TA as Modelo, b.descripcion_TA as Descripción from Aviones a inner join tipos_de_aviones b on b.codigo_TA = a.tipo_AV where a.baja_AV = 0 ";
+            ad.IniciarTabla(ClausulaSQL, "Todos", ref dsAviones, ref grdListarAviones);
+        }
+
     }
 }
