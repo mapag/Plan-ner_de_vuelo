@@ -25,18 +25,18 @@ namespace Airport_Management
                 i++;
                 texto += "El codigo debe tener 7 carácteres. ";
             }
-            if('A' >= txtCodigo.Text[0] || txtCodigo.Text[0] >= 'Z' ||
-               'A' >= txtCodigo.Text[1] && txtCodigo.Text[1] >= 'Z' ||
-               'A' >= txtCodigo.Text[2] && txtCodigo.Text[2] >= 'Z' ||
+
+            if('A' > txtCodigo.Text[0] || txtCodigo.Text[0] > 'Z' ||
+               'A' > txtCodigo.Text[1] || txtCodigo.Text[1] > 'Z' ||
+               'A' > txtCodigo.Text[2] || txtCodigo.Text[2] > 'Z' ||
                txtCodigo.Text[3] != '-' ||
-               '0' >= txtCodigo.Text[3] && txtCodigo.Text[4] >= '9' ||
-               '0' >= txtCodigo.Text[4] && txtCodigo.Text[5] >= '9' ||
-               '0' >= txtCodigo.Text[5] && txtCodigo.Text[6] >= '9')
+               '0' > txtCodigo.Text[4] || txtCodigo.Text[4] > '9' ||
+               '0' > txtCodigo.Text[5] || txtCodigo.Text[5] > '9' ||
+               '0' > txtCodigo.Text[6] || txtCodigo.Text[6] > '9'
+                )
             {
+                i++;
                 texto += "El formato de codigo es 3 letras mayusculas, un guion '-' y 3 numeros. ";
-                texto += " 0 = " + txtCodigo.Text[0];
-                texto += " 3 = " + txtCodigo.Text[3];
-                texto += " 5 = " + txtCodigo.Text[5];
             }
 
             if (ga.CodigoExiste(txtCodigo.Text))
@@ -44,11 +44,13 @@ namespace Airport_Management
                 i++;
                 texto += "El codigo de avión ya existe. ";
             }
+
             if (cmb_fabricante.Text == "" || cmb_modelo.Text == "") i++;
+            
             if (i == 0) btnAgregar.Enabled = true;
             else
             {
-                MessageBox.Show(texto);
+                if (cmb_fabricante.Text != "" || cmb_modelo.Text != "") MessageBox.Show(texto);
                 btnAgregar.Enabled = false;
             }
         }
