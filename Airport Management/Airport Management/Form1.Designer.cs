@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aVIONESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarAvionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,17 +38,17 @@
             this.agregarVueloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarVueloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarVueloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rUTAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarRutaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarRutaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarRutaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarRutaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pLANESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generarPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tRIPULANTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarTripulantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rEPORTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONFIGURACIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rUTAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarRutaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarRutaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modificarRutaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarRutaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -140,6 +139,42 @@
             this.eliminarVueloToolStripMenuItem.Text = "Eliminar vuelo";
             this.eliminarVueloToolStripMenuItem.Click += new System.EventHandler(this.eliminarVueloToolStripMenuItem_Click);
             // 
+            // rUTAToolStripMenuItem
+            // 
+            this.rUTAToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listarRutaToolStripMenuItem,
+            this.agregarRutaToolStripMenuItem,
+            this.modificarRutaToolStripMenuItem,
+            this.eliminarRutaToolStripMenuItem});
+            this.rUTAToolStripMenuItem.Name = "rUTAToolStripMenuItem";
+            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(55, 22);
+            this.rUTAToolStripMenuItem.Text = "RUTAS";
+            // 
+            // listarRutaToolStripMenuItem
+            // 
+            this.listarRutaToolStripMenuItem.Name = "listarRutaToolStripMenuItem";
+            this.listarRutaToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.listarRutaToolStripMenuItem.Text = "Listar ruta";
+            this.listarRutaToolStripMenuItem.Click += new System.EventHandler(this.listarRutaToolStripMenuItem_Click);
+            // 
+            // agregarRutaToolStripMenuItem
+            // 
+            this.agregarRutaToolStripMenuItem.Name = "agregarRutaToolStripMenuItem";
+            this.agregarRutaToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.agregarRutaToolStripMenuItem.Text = "Agregar ruta";
+            // 
+            // modificarRutaToolStripMenuItem
+            // 
+            this.modificarRutaToolStripMenuItem.Name = "modificarRutaToolStripMenuItem";
+            this.modificarRutaToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.modificarRutaToolStripMenuItem.Text = "Modificar ruta";
+            // 
+            // eliminarRutaToolStripMenuItem
+            // 
+            this.eliminarRutaToolStripMenuItem.Name = "eliminarRutaToolStripMenuItem";
+            this.eliminarRutaToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.eliminarRutaToolStripMenuItem.Text = "Eliminar ruta";
+            // 
             // pLANESToolStripMenuItem
             // 
             this.pLANESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -180,48 +215,12 @@
             this.cONFIGURACIONToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.cONFIGURACIONToolStripMenuItem.Text = "CONFIGURACIÓN";
             // 
-            // rUTAToolStripMenuItem
-            // 
-            this.rUTAToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listarRutaToolStripMenuItem,
-            this.agregarRutaToolStripMenuItem,
-            this.modificarRutaToolStripMenuItem,
-            this.eliminarRutaToolStripMenuItem});
-            this.rUTAToolStripMenuItem.Name = "rUTAToolStripMenuItem";
-            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(55, 22);
-            this.rUTAToolStripMenuItem.Text = "RUTAS";
-            // 
-            // listarRutaToolStripMenuItem
-            // 
-            this.listarRutaToolStripMenuItem.Name = "listarRutaToolStripMenuItem";
-            this.listarRutaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.listarRutaToolStripMenuItem.Text = "Listar ruta";
-            this.listarRutaToolStripMenuItem.Click += new System.EventHandler(this.listarRutaToolStripMenuItem_Click);
-            // 
-            // agregarRutaToolStripMenuItem
-            // 
-            this.agregarRutaToolStripMenuItem.Name = "agregarRutaToolStripMenuItem";
-            this.agregarRutaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.agregarRutaToolStripMenuItem.Text = "Agregar ruta";
-            // 
-            // modificarRutaToolStripMenuItem
-            // 
-            this.modificarRutaToolStripMenuItem.Name = "modificarRutaToolStripMenuItem";
-            this.modificarRutaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.modificarRutaToolStripMenuItem.Text = "Modificar ruta";
-            // 
-            // eliminarRutaToolStripMenuItem
-            // 
-            this.eliminarRutaToolStripMenuItem.Name = "eliminarRutaToolStripMenuItem";
-            this.eliminarRutaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.eliminarRutaToolStripMenuItem.Text = "Eliminar ruta";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Airport_Management.Properties.Resources.fondo;
             this.ClientSize = new System.Drawing.Size(856, 654);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
