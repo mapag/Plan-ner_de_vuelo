@@ -303,7 +303,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CadetBlue;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(737, 554);
             this.Controls.Add(this.txtPosta);
             this.Controls.Add(this.label9);
@@ -332,6 +332,7 @@
             this.Name = "listarRutas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "listarRuta";
+            this.TransparencyKey = System.Drawing.SystemColors.HotTrack;
             this.Load += new System.EventHandler(this.listarRutas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdListarRutas)).EndInit();
             this.ResumeLayout(false);
