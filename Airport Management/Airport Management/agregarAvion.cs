@@ -69,7 +69,10 @@ namespace Airport_Management
             {
                 MessageBox.Show(re.ToString());
             }
+            //LIMPIA LOS CAMPOS
             txtCodigo.Text = "";
+            cmb_fabricante.SelectedIndex = -1;
+            cmb_modelo.SelectedIndex = -1;
         }
 
         private void label2_Click(object sender, EventArgs e)

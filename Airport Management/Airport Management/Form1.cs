@@ -91,5 +91,12 @@ namespace Airport_Management
             listarRutas listarRutas = new listarRutas();
             abrirVentana(listarRutas);
         }
+
+        private void listarTripulantesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarVentanaAnterior();
+            listarTripulantes listarTripulantes = new listarTripulantes();
+            abrirVentana(listarTripulantes);
+        }
     }
 }

@@ -37,7 +37,7 @@ namespace Airport_Management.Clases
             return false;
         }
 
-        public bool eliminarRuta(String NombreTabla, DataSet ds)
+    /*    public bool eliminarRuta(String NombreTabla, DataSet ds)
         {
             int FilasEliminadas = 0;
             foreach (DataRow fila in ds.Tables[NombreTabla].Rows)
@@ -53,7 +53,7 @@ namespace Airport_Management.Clases
             else
                 return false;
         }
-
+        */
 
         private void ArmarParametrosRutasEliminar(ref SqlCommand Comando, DataRow fila)
         {

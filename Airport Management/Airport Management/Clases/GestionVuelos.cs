@@ -32,7 +32,7 @@ namespace Airport_Management.Clases
         }
 
 
-        public bool eliminarVuelo(String NombreTabla, DataSet ds)
+     /*   public bool eliminarVuelo(String NombreTabla, DataSet ds)
         {
             int FilasEliminadas = 0;
             foreach (DataRow fila in ds.Tables[NombreTabla].Rows)
@@ -47,7 +47,7 @@ namespace Airport_Management.Clases
                 return true;
             else
                 return false;
-        }
+        }*/
 
 
         private void ArmarParametrosVuelosEliminar(ref SqlCommand Comando, DataRow fila)
@@ -60,7 +60,7 @@ namespace Airport_Management.Clases
 
 
 
-        public bool modificarVuelo(String NombreTabla, DataSet ds)
+   /*     public bool modificarVuelo(String NombreTabla, DataSet ds)
         {
             int FilasActualizadas = 0;
             foreach (DataRow fila in ds.Tables[NombreTabla].Rows)
@@ -76,30 +76,23 @@ namespace Airport_Management.Clases
             else
                 return false;
         }
-
-        public void ArmarParametrosVuelos(ref SqlCommand Comando, DataRow fila)
+        */
+        public void ArmarParametrosVuelos(ref SqlCommand Comando, String codigo_av, String tipo_av)
         {
             SqlParameter SqlParametros = new SqlParameter();
-            SqlParametros = Comando.Parameters.Add("@codigo_VLO", SqlDbType.VarChar, 10);
-            SqlParametros.Value = fila["codigo_vlo"];
-            SqlParametros = Comando.Parameters.Add("@codigo_RTA", SqlDbType.VarChar, 10);
-            SqlParametros.Value = fila["codigo_rta"];
+            SqlParametros = Comando.Parameters.Add("@Codigo", SqlDbType.VarChar, 10);
+            SqlParametros.Value = codigo_av;
+            SqlParametros = Comando.Parameters.Add("@Tipo", SqlDbType.VarChar, 10);
+            SqlParametros.Value = tipo_av;
         }
 
-        public Boolean InsertarVuelo(String NombreTabla, DataSet ds)
+        public Boolean insertarVuelo(String NombreTabla, String Codigo, String Tipo)
         {
-            int FilasInsertadas=0;
-            foreach (DataRow fila in ds.Tables[NombreTabla].Rows)
-            {
-                SqlCommand Comando = new SqlCommand();
-                ArmarParametrosVuelos(ref Comando, fila);
-                AccesoDatos ad = new AccesoDatos();
-                FilasInsertadas = ad.EjecutarProcedimientoAlmacenado(Comando, "spInsertarVuelo");
-            }
-            if (FilasInsertadas >= 1)
-                return true;
-            else
-                return false;
+            SqlCommand Comando = new SqlCommand();
+            ArmarParametrosVuelos(ref Comando, Codigo, Tipo);
+            AccesoDatos ad = new AccesoDatos();
+            ad.EjecutarProcedimientoAlmacenado(Comando, "spInsertarAvion");
+            return true;
         }
     }
 }
