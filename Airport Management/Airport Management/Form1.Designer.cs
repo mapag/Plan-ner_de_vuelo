@@ -153,26 +153,27 @@
             // listarRutaToolStripMenuItem
             // 
             this.listarRutaToolStripMenuItem.Name = "listarRutaToolStripMenuItem";
-            this.listarRutaToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.listarRutaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.listarRutaToolStripMenuItem.Text = "Listar ruta";
             this.listarRutaToolStripMenuItem.Click += new System.EventHandler(this.listarRutaToolStripMenuItem_Click);
             // 
             // agregarRutaToolStripMenuItem
             // 
             this.agregarRutaToolStripMenuItem.Name = "agregarRutaToolStripMenuItem";
-            this.agregarRutaToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.agregarRutaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.agregarRutaToolStripMenuItem.Text = "Agregar ruta";
+            this.agregarRutaToolStripMenuItem.Click += new System.EventHandler(this.agregarRutaToolStripMenuItem_Click);
             // 
             // modificarRutaToolStripMenuItem
             // 
             this.modificarRutaToolStripMenuItem.Name = "modificarRutaToolStripMenuItem";
-            this.modificarRutaToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.modificarRutaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.modificarRutaToolStripMenuItem.Text = "Modificar ruta";
             // 
             // eliminarRutaToolStripMenuItem
             // 
             this.eliminarRutaToolStripMenuItem.Name = "eliminarRutaToolStripMenuItem";
-            this.eliminarRutaToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.eliminarRutaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.eliminarRutaToolStripMenuItem.Text = "Eliminar ruta";
             // 
             // pLANESToolStripMenuItem

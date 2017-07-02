@@ -91,5 +91,12 @@ namespace Airport_Management
             listarRutas listarRutas = new listarRutas();
             abrirVentana(listarRutas);
         }
+
+        private void agregarRutaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarVentanaAnterior();
+            agregarRuta agregarRuta = new agregarRuta();
+            abrirVentana(agregarRuta);
+        }
     }
 }

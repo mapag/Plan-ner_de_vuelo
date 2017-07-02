@@ -25,7 +25,7 @@ namespace Airport_Management
         }
         private void listarRutas_Load(object sender, EventArgs e)
         {
-            string ClausulaSQL = "select a.codigo_RTA as Codigo, a.ATOpartida_RTA as 'ATO de partida', a.ATOarrivo_RTA as 'ATO de llegada', a.ETA_RTA as 'Tiempo de vuelo', a.posta_RTA as 'Tiempo de descanso' from rutas a  where a.codigo_RTA like '%'";
+            string ClausulaSQL = "select a.codigo_RTA as Codigo, a.ATOpartida_RTA as 'ATO de partida', a.ATOarrivo_RTA as 'ATO de llegada', a.ETA_RTA as 'ETA', a.posta_RTA as 'Posta' from rutas a  where a.codigo_RTA like '%'";
             ad.IniciarTabla(ClausulaSQL, "Todos", ref dsRutas, ref grdListarRutas);
 
             CargarComboTexto(ref cmbRuta);
@@ -53,7 +53,7 @@ namespace Airport_Management
 
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
-            string ClausulaSQL = "select a.codigo_RTA as Codigo, a.ATOpartida_RTA as 'ATO de partida', a.ATOarrivo_RTA as 'ATO de llegada', a.ETA_RTA as 'Tiempo de vuelo', a.posta_RTA as 'Tiempo de descanso' from rutas a  where a.codigo_RTA like '%'";
+            string ClausulaSQL = "select a.codigo_RTA as Codigo, a.ATOpartida_RTA as 'ATO de partida', a.ATOarrivo_RTA as 'ATO de llegada', a.ETA_RTA as 'ETA', a.posta_RTA as 'Posta' from rutas a  where a.codigo_RTA like '%'";
 
             if (cmbRuta.Text != "" && txtRuta.Text != "")
                 cons.ConstructorConsultaTextual("rutas", "a.codigo_RTA", cmbRuta.Text, txtRuta.Text, ref ClausulaSQL);
@@ -75,7 +75,7 @@ namespace Airport_Management
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            string ClausulaSQL = "select a.codigo_RTA as Codigo, a.ATOpartida_RTA as 'ATO de partida', a.ATOarrivo_RTA as 'ATO de llegada', a.ETA_RTA as 'Tiempo de vuelo', a.posta_RTA as 'Tiempo de descanso' from rutas a  where a.codigo_RTA like '%'";
+            string ClausulaSQL = "select a.codigo_RTA as Codigo, a.ATOpartida_RTA as 'ATO de partida', a.ATOarrivo_RTA as 'ATO de llegada', a.ETA_RTA as 'ETA', a.posta_RTA as 'Posta' from rutas a  where a.codigo_RTA like '%'";
             ad.IniciarTabla(ClausulaSQL, "Todos", ref dsRutas, ref grdListarRutas);
             
             cmbRuta.Text = "";

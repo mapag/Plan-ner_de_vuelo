@@ -15,17 +15,6 @@ namespace Airport_Management.Clases
         {
 
         }
-        // VER DESPUES LA CONSULTASQL
-        //public bool AgregarRuta(string codigo, string fabricante, string modelo)
-        //{ 
-
-        //    AccesoDatos ad = new AccesoDatos();
-        //    string consultaSQL = "UPDATE rutas SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE')+1 WHERE codigo_ATO='EZE' INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) SELECT '"
-        //        + codigo + "', (select codigo_TA from tipos_de_aviones where fabricante_TA = '" + fabricante + "' and modelo_TA = '" + modelo + "'), 'EZE' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE'), 1";
-
-        //    ad.EjecutarConsulta(consultaSQL);
-        //    return true;
-        //}
 
         public bool CodigoExiste(string codigo)
         {
@@ -36,6 +25,17 @@ namespace Airport_Management.Clases
             if (cantidad > 0) return true;
             return false;
         }
+         
+        public bool AgregarRuta(string AtoPartida, string AtoLlegada, int ETA, int posta)
+        { 
+
+            AccesoDatos ad = new AccesoDatos();
+            string consultaSQL = "INSERT INTO rutas (codigo_RTA, ATOpartida_RTA, ATOarrivo_RTA, ETA_RTA, posta_RTA) SELECT '" + AtoPartida + "-" + AtoLlegada + "', '" + AtoPartida + "', '" + AtoLlegada + "', " + ETA.ToString() + ", " + posta.ToString();
+
+            ad.EjecutarConsulta(consultaSQL);
+            return true;
+        }
+
 
         public bool eliminarRuta(String NombreTabla, DataSet ds)
         {
