@@ -83,18 +83,15 @@ namespace Airport_Management.Clases
         }
 
 
-        public int EjecutarProcedimientoAlmacenado(SqlCommand Comando, String NombreSP)
+        public void EjecutarProcedimientoAlmacenado(SqlCommand Comando, String NombreSP)
         {
-            int FilasCambiadas;
             SqlConnection Conexion = ObtenerConexion();
             SqlCommand cmd = new SqlCommand();
             cmd = Comando;
             cmd.Connection = Conexion;
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = NombreSP;
-            FilasCambiadas = cmd.ExecuteNonQuery();
             Conexion.Close();
-            return FilasCambiadas;
         }
 
         public void AgregaraComboBox(string consulta, ref ComboBox cmb)

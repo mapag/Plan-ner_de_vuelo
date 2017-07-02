@@ -76,7 +76,7 @@
             this.agregarAviónToolStripMenuItem,
             this.eliminarAviónToolStripMenuItem});
             this.aVIONESToolStripMenuItem.Name = "aVIONESToolStripMenuItem";
-            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
+            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(66, 22);
             this.aVIONESToolStripMenuItem.Text = "AVIONES";
             // 
             // listarAvionesToolStripMenuItem
@@ -147,7 +147,7 @@
             this.modificarRutaToolStripMenuItem,
             this.eliminarRutaToolStripMenuItem});
             this.rUTAToolStripMenuItem.Name = "rUTAToolStripMenuItem";
-            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(55, 22);
+            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(54, 22);
             this.rUTAToolStripMenuItem.Text = "RUTAS";
             // 
             // listarRutaToolStripMenuItem
@@ -203,11 +203,12 @@
             this.listarTripulantesToolStripMenuItem.Name = "listarTripulantesToolStripMenuItem";
             this.listarTripulantesToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.listarTripulantesToolStripMenuItem.Text = "Listar tripulantes";
+            this.listarTripulantesToolStripMenuItem.Click += new System.EventHandler(this.listarTripulantesToolStripMenuItem_Click);
             // 
             // rEPORTESToolStripMenuItem
             // 
             this.rEPORTESToolStripMenuItem.Name = "rEPORTESToolStripMenuItem";
-            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(74, 22);
+            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(73, 22);
             this.rEPORTESToolStripMenuItem.Text = "REPORTES";
             // 
             // cONFIGURACIONToolStripMenuItem

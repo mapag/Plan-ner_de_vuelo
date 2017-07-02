@@ -1,0 +1,11 @@
+create procedure agregarAvion
+  @codigo varchar(10),
+  @fabricante varchar(50),
+  @modelo varchar(50)
+  as
+  UPDATE aeropuertos SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE')+1 
+  WHERE codigo_ATO='EZE' 
+
+  INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) 
+  SELECT @codigo, (select codigo_TA from tipos_de_aviones where fabricante_TA = @fabricante and modelo_TA = @modelo), 'EZE' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE'), 1
+go
