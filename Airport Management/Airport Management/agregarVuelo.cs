@@ -51,14 +51,20 @@ namespace Airport_Management
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            string fecha = timer_Fecha.Value.ToString();
+            
+            string prov = timer_Fecha.Value.ToString();
+            string[] fecha = prov.Split();
 
-
-            string consulta = "INSERT INTO vuelos (codigo_VLO, codigo_RTA, fecha_salida_VLO) SELECT '" + txtVuelo.Text + "', '" + cmb_Ruta.Text + "', '" + fecha + "'";
+            if(fecha[2] == "a.m.") fecha[2] = "am";
+            else fecha[2] = "pm";
+            string consulta = "INSERT INTO vuelos (codigo_VLO, codigo_RTA, fecha_salida_VLO) SELECT '" + txtVuelo.Text + "', '" + cmb_Ruta.Text + "', '" + fecha[0] + " " + fecha[1] + " " + fecha[2] + "'";      
+            
             AccesoDatos ac = new AccesoDatos();
-            MessageBox.Show(fecha);
+            ac.EjecutarConsulta(consulta);
 
-            //ac.EjecutarConsulta(consulta);
+            txtVuelo.Text = "";
+            cmb_Ruta.Text = "";
+
         }
 
         private void txtVuelo_Leave(object sender, EventArgs e)
