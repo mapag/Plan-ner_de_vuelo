@@ -35,15 +35,6 @@ namespace Airport_Management
             
         }
 
-        private void cmbAtoPartida_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmbAtoPartida.Text == cmbAtoLlegada.Text && cmbAtoLlegada.Text.Length != 0)
-                btnAgregar.Enabled = false;
-
-            else btnAgregar.Enabled = true;
-            
-        }
-
         private void agregarRuta_Load(object sender, EventArgs e)
         {
             ad.AgregaraComboBox("select distinct codigo_ATO from aeropuertos", ref cmbAtoPartida);
@@ -51,12 +42,39 @@ namespace Airport_Management
             btnAgregar.Enabled = false;
         }
 
-        private void cmbAtoLlegada_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmbAtoPartida_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbAtoPartida.Text == cmbAtoLlegada.Text && cmbAtoLlegada.Text.Length != 0)               
+            if (cmbAtoPartida.Text == cmbAtoLlegada.Text && cmbAtoLlegada.Text.Length != 0)
+            {
+                MessageBox.Show("El aeropuerto de partida y el de llegada no pueden ser los mismos");
                 btnAgregar.Enabled = false;
+            }
 
             else btnAgregar.Enabled = true;
+            
+        }
+
+        private void cmbAtoLlegada_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbAtoPartida.Text == cmbAtoLlegada.Text && cmbAtoLlegada.Text.Length != 0)
+            {
+                MessageBox.Show("El aeropuerto de partida y el de llegada no pueden ser los mismos");
+                btnAgregar.Enabled = false;
+            }
+
+            else btnAgregar.Enabled = true;
+        }
+
+        private void txtETA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar < 47 || e.KeyChar > 57) && e.KeyChar != 8)
+                e.Handled = true;
+        }
+
+        private void txtPosta_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar < 47 || e.KeyChar > 57) && e.KeyChar != 8)
+                e.Handled = true;
         }
     }
 }
