@@ -47,22 +47,15 @@ namespace Airport_Management
             if (cmbAtoPartida.Text == cmbAtoLlegada.Text && cmbAtoLlegada.Text.Length != 0)
             {
                 MessageBox.Show("El aeropuerto de partida y el de llegada no pueden ser los mismos");
-                btnAgregar.Enabled = false;
-            }
-
-            else btnAgregar.Enabled = true;
-            
+            }  
         }
 
         private void cmbAtoLlegada_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbAtoPartida.Text == cmbAtoLlegada.Text && cmbAtoLlegada.Text.Length != 0)
             {
-                MessageBox.Show("El aeropuerto de partida y el de llegada no pueden ser los mismos");
-                btnAgregar.Enabled = false;
+                MessageBox.Show("El aeropuerto de partida y el de llegada no pueden ser los mismos"); 
             }
-
-            else btnAgregar.Enabled = true;
         }
 
         private void txtETA_KeyPress(object sender, KeyPressEventArgs e)
@@ -75,6 +68,28 @@ namespace Airport_Management
         {
             if ((e.KeyChar < 47 || e.KeyChar > 57) && e.KeyChar != 8)
                 e.Handled = true;
+        }
+
+        private void txtETA_Leave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtPosta_Leave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtPosta_TextChanged(object sender, EventArgs e)
+        {
+            if (txtETA.Text == "" || txtPosta.Text == "") btnAgregar.Enabled = false;
+            else btnAgregar.Enabled = true;
+        }
+
+        private void txtETA_TextChanged(object sender, EventArgs e)
+        {
+            if (txtETA.Text == "" || txtPosta.Text == "") btnAgregar.Enabled = false;
+            else btnAgregar.Enabled = true;
         }
     }
 }

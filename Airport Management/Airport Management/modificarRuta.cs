@@ -23,32 +23,25 @@ namespace Airport_Management
 
         private void modificarRuta_Load(object sender, EventArgs e)
         {
-            ad.AgregaraComboBox("select distinct codigo_ATO from aeropuertos", ref cmbAtoPartida);
-            ad.AgregaraComboBox("select distinct codigo_ATO from aeropuertos", ref cmbAtoLlegada);
+            ad.AgregaraComboBox("select distinct codigo_RTA from rutas", ref cmbCodigo);
             btnModificar.Enabled = false;
-            btnChequear.Enabled = false;
+            
         }
 
         private void txtCodigo_TextChanged(object sender, EventArgs e)
         {
-            btnChequear.Enabled = true;
-            if (txtCodigo.Text == "") btnChequear.Enabled = false;
+            
         }
 
         private void button1_Click(object sender, EventArgs e) // button1 es btnChequear
         {
-            if (gr.CodigoExiste(txtCodigo.Text))
-            {
-                btnModificar.Enabled = true;
-            }
-
-            else MessageBox.Show("La ruta ingresada no existe");
+            
         }
 
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            bool aux = gr.modificarRuta(txtCodigo.Text, cmbAtoPartida.Text, cmbAtoLlegada.Text, Int32.Parse(txtETA.Text), Int32.Parse(txtPosta.Text));
+            bool aux = gr.modificarRuta(cmbCodigo.Text, Int32.Parse(txtETA.Text), Int32.Parse(txtPosta.Text));
 
             if (aux) MessageBox.Show("La ruta se ha modificado con exito");
         }
@@ -72,23 +65,41 @@ namespace Airport_Management
 
         private void cmbAtoPartida_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbAtoPartida.Text == cmbAtoLlegada.Text && cmbAtoLlegada.Text.Length != 0)
-            {
-                MessageBox.Show("El aeropuerto de partida y el de llegada no pueden ser los mismos");
-                btnModificar.Enabled = false;
-            }
-
-            else btnModificar.Enabled = true;
+           
         }
 
         private void cmbAtoLlegada_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbAtoPartida.Text == cmbAtoLlegada.Text && cmbAtoLlegada.Text.Length != 0)
-            {
-                MessageBox.Show("El aeropuerto de partida y el de llegada no pueden ser los mismos");
-                btnModificar.Enabled = false;
-            }
+            
+        }
 
+        private void cmbCodigo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataSet ds = new DataSet();
+            if (gr.CodigoExiste(cmbCodigo.Text))
+            {
+                ds = gr.TraerRutaCodigo(cmbCodigo.Text);
+                txtETA.Text = (ds.Tables["Rutas"].Rows[0]["ETA_RTA"].ToString());
+                txtPosta.Text = ds.Tables["Rutas"].Rows[0]["posta_RTA"].ToString();
+                btnModificar.Enabled = true;
+
+            }
+        }
+
+        private void cmbCodigo_Leave(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txtETA_Leave(object sender, EventArgs e)
+        {
+            if (txtETA.Text == "" || txtPosta.Text == "") btnModificar.Enabled = false;
+            else btnModificar.Enabled = true;
+        }
+
+        private void txtPosta_Leave(object sender, EventArgs e)
+        {
+            if (txtETA.Text == "" || txtPosta.Text == "") btnModificar.Enabled = false;
             else btnModificar.Enabled = true;
         }
     }

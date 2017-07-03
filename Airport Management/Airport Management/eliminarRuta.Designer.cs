@@ -64,7 +64,7 @@
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(146, 29);
             this.btnEliminar.TabIndex = 8;
-            this.btnEliminar.Text = "Eliminar avión";
+            this.btnEliminar.Text = "Eliminar ruta";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 

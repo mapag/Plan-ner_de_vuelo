@@ -35,10 +35,10 @@ namespace Airport_Management.Clases
             ad.EjecutarConsulta(consultaSQL);
             return true;
         }
-        public bool modificarRuta(string codigoRuta, string AtoPartida, string AtoLlegada, int ETA, int posta)
+        public bool modificarRuta(string codigoRuta, int ETA, int posta)
         {
             AccesoDatos ad = new AccesoDatos();
-            string consultaSQL = "UPDATE rutas SET codigo_RTA = '" + AtoPartida + "-" + AtoLlegada + "', ATOpartida_RTA = '" + AtoPartida + "', ATOarrivo_RTA = '" + AtoLlegada + "', ETA_RTA = " + ETA.ToString() + ", posta_RTA = " + posta.ToString() + "WHERE codigo_RTA = '" + codigoRuta + "'";
+            string consultaSQL = "UPDATE rutas SET ETA_RTA = " + ETA.ToString() + ", posta_RTA = " + posta.ToString() + "WHERE codigo_RTA = '" + codigoRuta + "'";
 
             ad.EjecutarConsulta(consultaSQL);
             return true;
@@ -116,7 +116,15 @@ namespace Airport_Management.Clases
             return true;
         }
 
+        public DataSet TraerRutaCodigo(string codigo)
+        {
+            DataSet ds = new DataSet();
+            AccesoDatos ad = new AccesoDatos();
+            string consulta = "Select * from rutas where codigo_RTA = '" + codigo + "'";
 
+            ad.cargaTabla("Rutas", consulta, ref ds);
+            return ds;
+        }
 
 
 

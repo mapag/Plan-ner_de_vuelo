@@ -109,7 +109,9 @@
             this.txtETA.Name = "txtETA";
             this.txtETA.Size = new System.Drawing.Size(121, 26);
             this.txtETA.TabIndex = 19;
+            this.txtETA.TextChanged += new System.EventHandler(this.txtETA_TextChanged);
             this.txtETA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtETA_KeyPress);
+            this.txtETA.Leave += new System.EventHandler(this.txtETA_Leave);
             // 
             // label1
             // 
@@ -130,7 +132,9 @@
             this.txtPosta.Name = "txtPosta";
             this.txtPosta.Size = new System.Drawing.Size(121, 26);
             this.txtPosta.TabIndex = 21;
+            this.txtPosta.TextChanged += new System.EventHandler(this.txtPosta_TextChanged);
             this.txtPosta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPosta_KeyPress);
+            this.txtPosta.Leave += new System.EventHandler(this.txtPosta_Leave);
             // 
             // label5
             // 
