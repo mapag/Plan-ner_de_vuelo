@@ -111,6 +111,7 @@ codigo_VLO varchar(10) REFERENCES vuelos(codigo_VLO),
 codigo_AV varchar(10) REFERENCES aviones(codigo_AV),
 CONSTRAINT PK_VLO_por_AV PRIMARY KEY (codigo_VLO, codigo_AV)
 )
+GO
 
 CREATE TABLE VLO_por_AV_por_TCP
 (
@@ -120,3 +121,13 @@ codigo_AV varchar(10),
 CONSTRAINT FK_VLO_por_AV FOREIGN KEY (codigo_VLO, codigo_AV) REFERENCES VLO_por_AV(codigo_VLO, codigo_AV),
 CONSTRAINT PK_VLO_por_AV_por_TCP FOREIGN KEY (legajo_TCP) REFERENCES tripulantes (legajo_TCP)
 )
+GO
+
+CREATE TABLE usuarios
+(
+id int identity(1,1) not null,
+usuario varchar(50) not null,
+contrasena varchar(50) not null,
+CONSTRAINT PK_USU PRIMARY KEY(id)
+)
+GO
