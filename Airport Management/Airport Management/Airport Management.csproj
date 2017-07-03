@@ -74,6 +74,12 @@
     <Compile Include="eliminarAvion.Designer.cs">
       <DependentUpon>eliminarAvion.cs</DependentUpon>
     </Compile>
+    <Compile Include="eliminarRuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eliminarRuta.Designer.cs">
+      <DependentUpon>eliminarRuta.cs</DependentUpon>
+    </Compile>
     <Compile Include="eliminarVuelo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,12 @@
     <Compile Include="listarVuelos.Designer.cs">
       <DependentUpon>listarVuelos.cs</DependentUpon>
     </Compile>
+    <Compile Include="modificarRuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificarRuta.Designer.cs">
+      <DependentUpon>modificarRuta.cs</DependentUpon>
+    </Compile>
     <Compile Include="modificarVuelo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +142,9 @@
     <EmbeddedResource Include="eliminarAvion.resx">
       <DependentUpon>eliminarAvion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="eliminarRuta.resx">
+      <DependentUpon>eliminarRuta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="eliminarVuelo.resx">
       <DependentUpon>eliminarVuelo.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="listarVuelos.resx">
       <DependentUpon>listarVuelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificarRuta.resx">
+      <DependentUpon>modificarRuta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modificarVuelo.resx">
       <DependentUpon>modificarVuelo.cs</DependentUpon>

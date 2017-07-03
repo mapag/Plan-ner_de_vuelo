@@ -36,13 +36,14 @@
             this.cmbRuta = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnFiltrar = new System.Windows.Forms.Button();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbCodigo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.grdListarVuelos = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnFiltrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdListarVuelos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,17 +129,6 @@
             this.label3.TabIndex = 20;
             this.label3.Text = "Código de ruta";
             // 
-            // btnFiltrar
-            // 
-            this.btnFiltrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrar.Location = new System.Drawing.Point(631, 62);
-            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(101, 38);
-            this.btnFiltrar.TabIndex = 19;
-            this.btnFiltrar.Text = "Filtrar";
-            this.btnFiltrar.UseVisualStyleBackColor = true;
-            // 
             // txtCodigo
             // 
             this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -206,12 +196,36 @@
             this.button1.Text = "Guardar cambios";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // btnReset
+            // 
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Location = new System.Drawing.Point(592, 85);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(140, 38);
+            this.btnReset.TabIndex = 32;
+            this.btnReset.Text = "Mostrar Todo";
+            this.btnReset.UseVisualStyleBackColor = true;
+            // 
+            // btnFiltrar
+            // 
+            this.btnFiltrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltrar.Location = new System.Drawing.Point(592, 45);
+            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFiltrar.Name = "btnFiltrar";
+            this.btnFiltrar.Size = new System.Drawing.Size(140, 38);
+            this.btnFiltrar.TabIndex = 31;
+            this.btnFiltrar.Text = "Filtrar";
+            this.btnFiltrar.UseVisualStyleBackColor = true;
+            // 
             // listarVuelos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(1214, 750);
+            this.BackColor = System.Drawing.Color.LightCyan;
+            this.ClientSize = new System.Drawing.Size(737, 554);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.grdListarVuelos);
             this.Controls.Add(this.txtModelo);
@@ -222,7 +236,6 @@
             this.Controls.Add(this.cmbRuta);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbCodigo);
@@ -249,12 +262,13 @@
         private System.Windows.Forms.ComboBox cmbRuta;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnFiltrar;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbCodigo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView grdListarVuelos;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnFiltrar;
     }
 }

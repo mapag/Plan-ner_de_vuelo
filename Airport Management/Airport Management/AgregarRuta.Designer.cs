@@ -109,6 +109,7 @@
             this.txtETA.Name = "txtETA";
             this.txtETA.Size = new System.Drawing.Size(121, 26);
             this.txtETA.TabIndex = 19;
+            this.txtETA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtETA_KeyPress);
             // 
             // label1
             // 
@@ -129,6 +130,7 @@
             this.txtPosta.Name = "txtPosta";
             this.txtPosta.Size = new System.Drawing.Size(121, 26);
             this.txtPosta.TabIndex = 21;
+            this.txtPosta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPosta_KeyPress);
             // 
             // label5
             // 

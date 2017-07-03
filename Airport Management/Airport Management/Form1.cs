@@ -105,5 +105,19 @@ namespace Airport_Management
             agregarRuta agregarRuta = new agregarRuta();
             abrirVentana(agregarRuta);
         }
+
+        private void modificarRutaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarVentanaAnterior();
+            modificarRuta modificarRuta = new modificarRuta();
+            abrirVentana(modificarRuta);
+        }
+
+        private void eliminarRutaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarVentanaAnterior();
+            eliminarRuta eliminarRuta = new eliminarRuta();
+            abrirVentana(eliminarRuta);
+        }
     }
 }

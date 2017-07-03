@@ -35,7 +35,23 @@ namespace Airport_Management.Clases
             ad.EjecutarConsulta(consultaSQL);
             return true;
         }
+        public bool modificarRuta(string codigoRuta, string AtoPartida, string AtoLlegada, int ETA, int posta)
+        {
+            AccesoDatos ad = new AccesoDatos();
+            string consultaSQL = "UPDATE rutas SET codigo_RTA = '" + AtoPartida + "-" + AtoLlegada + "', ATOpartida_RTA = '" + AtoPartida + "', ATOarrivo_RTA = '" + AtoLlegada + "', ETA_RTA = " + ETA.ToString() + ", posta_RTA = " + posta.ToString() + "WHERE codigo_RTA = '" + codigoRuta + "'";
 
+            ad.EjecutarConsulta(consultaSQL);
+            return true;
+        }
+
+        public bool eliminarRuta (string codigo)
+        {
+            AccesoDatos ad = new AccesoDatos();
+            string consultaSQL = "DELETE FROM rutas WHERE codigo_RTA = '" + codigo + "'";
+
+            ad.EjecutarConsulta(consultaSQL);
+            return true;
+        }
 
     /*    public bool eliminarRuta(String NombreTabla, DataSet ds)
         {
