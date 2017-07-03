@@ -76,7 +76,7 @@ namespace Airport_Management.Clases
             SqlDataReader dr = comando.ExecuteReader();
             while (dr.Read() == true)
             {
-                cantidad++; ;
+                cantidad++;
             }
             cn.Close();
             return cantidad;
