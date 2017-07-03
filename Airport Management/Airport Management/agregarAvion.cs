@@ -72,7 +72,8 @@ namespace Airport_Management
             //LIMPIA LOS CAMPOS
             txtCodigo.Text = "";
             cmb_fabricante.SelectedIndex = -1;
-            cmb_modelo.SelectedIndex = -1;
+            cmb_modelo.Text = "";
+            txtCodigo.Select();
         }
 
         private void label2_Click(object sender, EventArgs e)
