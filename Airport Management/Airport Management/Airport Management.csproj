@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -91,6 +92,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingreso.Designer.cs">
+      <DependentUpon>ingreso.cs</DependentUpon>
     </Compile>
     <Compile Include="listarAviones.cs">
       <SubType>Form</SubType>
@@ -150,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingreso.resx">
+      <DependentUpon>ingreso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="listarAviones.resx">
       <DependentUpon>listarAviones.cs</DependentUpon>
