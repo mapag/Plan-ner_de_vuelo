@@ -14,33 +14,62 @@ namespace Airport_Management
 {
     public partial class agregarVuelo : Form
     {
+        GestionVuelos gv = new GestionVuelos();
+
         public agregarVuelo()
         {
             InitializeComponent();
         }
 
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-            GestionVuelos gv = new GestionVuelos();
-
-            try
+        private void activarbotonagregar(){
+            bool estado = true;
+            if (cmb_Ruta.Text.Equals(""))
             {
-                if (txtVuelo.Text == "") MessageBox.Show("Debe ingresar un código de vuelo");
-                else if (txtVuelo.Text != "" && txtRuta.Text == "") MessageBox.Show("Debe ingresar un código de ruta");
-
-                //gv.InsertarVuelo("Vuelos", txtVuelo.Text, txtRuta.Text);
-                MessageBox.Show("Vuelo agregado!");
-                txtVuelo.Clear();
-                txtRuta.Clear();
-                txtVuelo.Select();
-
-
+                estado = false;
             }
-
-            catch (SyntaxErrorException re)
+            if (gv.VueloExiste(txtVuelo.Text) || txtVuelo.Text == "")
             {
-                MessageBox.Show(re.ToString());
+                estado = false;
             }
+            btnAgregar.Enabled = estado;
+
+
         }
+
+        private void agregarVuelo_Load(object sender, EventArgs e)
+        {
+            AccesoDatos ac = new AccesoDatos();
+            string consulta = "select codigo_RTA from rutas";
+            ac.AgregaraComboBox(consulta, ref cmb_Ruta);            
+
+            timer_Fecha.Format = DateTimePickerFormat.Custom;
+            timer_Fecha.CustomFormat = "dd'/'MM'/'yy 'a las ' HH:mm:ss 'Horas' ";
+            timer_Fecha.MinDate = DateTime.Today;
+
+            activarbotonagregar();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            string fecha = timer_Fecha.Value.ToString();
+
+
+            string consulta = "INSERT INTO vuelos (codigo_VLO, codigo_RTA, fecha_salida_VLO) SELECT '" + txtVuelo.Text + "', '" + cmb_Ruta.Text + "', '" + fecha + "'";
+            AccesoDatos ac = new AccesoDatos();
+            MessageBox.Show(fecha);
+
+            //ac.EjecutarConsulta(consulta);
+        }
+
+        private void txtVuelo_Leave(object sender, EventArgs e)
+        {
+            activarbotonagregar();
+        }
+
+        private void cmb_Ruta_TextChanged(object sender, EventArgs e)
+        {
+            activarbotonagregar();
+        }
+
     }
 }
