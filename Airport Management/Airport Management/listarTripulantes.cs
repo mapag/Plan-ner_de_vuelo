@@ -24,13 +24,14 @@ namespace Airport_Management
 
         private void listarTripulantes_Load(object sender, EventArgs e)
         {
-            string ClausulaSQL = "SELECT a.legajo_tcp AS Legajo, a.apellido_TCP AS Apellido, a.nombre_TCP AS Nombre, tipo_TCP AS Cargo, baja_TCP as Estado from tripulantes a ";
+            string ClausulaSQL = "SELECT a.legajo_tcp AS Legajo, a.apellido_TCP AS Apellido, a.nombre_TCP AS Nombre, b.nombre_TT AS Cargo, baja_TCP as Estado from tripulantes a inner join tipos_de_tripulantes b on a.tipo_TCP = b.codigo_TT ";
             ad.IniciarTabla(ClausulaSQL, "Todos", ref dsRutas, ref grdTripulantes);
 
             CargarComboNumerico(ref cmbLegajo);
             CargarComboTexto(ref cmbApellido);
             CargarComboTexto(ref cmbNombre);
             CargarComboTexto(ref cmbCargo);
+
         }
 
         private void CargarComboTexto(ref ComboBox NombreCombo)

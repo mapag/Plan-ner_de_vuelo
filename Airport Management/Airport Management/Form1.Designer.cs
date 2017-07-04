@@ -50,6 +50,8 @@
             this.rEPORTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONFIGURACIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cERRARSESIÓNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vERPERFILToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cERRARSESIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,27 +80,27 @@
             this.agregarAviónToolStripMenuItem,
             this.eliminarAviónToolStripMenuItem});
             this.aVIONESToolStripMenuItem.Name = "aVIONESToolStripMenuItem";
-            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
+            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(66, 22);
             this.aVIONESToolStripMenuItem.Text = "AVIONES";
             // 
             // listarAvionesToolStripMenuItem
             // 
             this.listarAvionesToolStripMenuItem.Name = "listarAvionesToolStripMenuItem";
-            this.listarAvionesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.listarAvionesToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.listarAvionesToolStripMenuItem.Text = "Listar aviones";
             this.listarAvionesToolStripMenuItem.Click += new System.EventHandler(this.listarAvionesToolStripMenuItem_Click);
             // 
             // agregarAviónToolStripMenuItem
             // 
             this.agregarAviónToolStripMenuItem.Name = "agregarAviónToolStripMenuItem";
-            this.agregarAviónToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.agregarAviónToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.agregarAviónToolStripMenuItem.Text = "Agregar avión";
             this.agregarAviónToolStripMenuItem.Click += new System.EventHandler(this.agregarAviónToolStripMenuItem_Click);
             // 
             // eliminarAviónToolStripMenuItem
             // 
             this.eliminarAviónToolStripMenuItem.Name = "eliminarAviónToolStripMenuItem";
-            this.eliminarAviónToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.eliminarAviónToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.eliminarAviónToolStripMenuItem.Text = "Eliminar avión";
             this.eliminarAviónToolStripMenuItem.Click += new System.EventHandler(this.eliminarAviónToolStripMenuItem_Click);
             // 
@@ -149,7 +151,7 @@
             this.modificarRutaToolStripMenuItem,
             this.eliminarRutaToolStripMenuItem});
             this.rUTAToolStripMenuItem.Name = "rUTAToolStripMenuItem";
-            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(55, 22);
+            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(54, 22);
             this.rUTAToolStripMenuItem.Text = "RUTAS";
             // 
             // listarRutaToolStripMenuItem
@@ -212,7 +214,7 @@
             // rEPORTESToolStripMenuItem
             // 
             this.rEPORTESToolStripMenuItem.Name = "rEPORTESToolStripMenuItem";
-            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(74, 22);
+            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(73, 22);
             this.rEPORTESToolStripMenuItem.Text = "REPORTES";
             // 
             // cONFIGURACIONToolStripMenuItem
@@ -223,9 +225,24 @@
             // 
             // cERRARSESIÓNToolStripMenuItem
             // 
+            this.cERRARSESIÓNToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.vERPERFILToolStripMenuItem,
+            this.cERRARSESIONToolStripMenuItem});
             this.cERRARSESIÓNToolStripMenuItem.Name = "cERRARSESIÓNToolStripMenuItem";
-            this.cERRARSESIÓNToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
-            this.cERRARSESIÓNToolStripMenuItem.Text = "CERRAR SESIÓN";
+            this.cERRARSESIÓNToolStripMenuItem.Size = new System.Drawing.Size(58, 22);
+            this.cERRARSESIÓNToolStripMenuItem.Text = "SESION";
+            // 
+            // vERPERFILToolStripMenuItem
+            // 
+            this.vERPERFILToolStripMenuItem.Name = "vERPERFILToolStripMenuItem";
+            this.vERPERFILToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.vERPERFILToolStripMenuItem.Text = "VER PERFIL";
+            // 
+            // cERRARSESIONToolStripMenuItem
+            // 
+            this.cERRARSESIONToolStripMenuItem.Name = "cERRARSESIONToolStripMenuItem";
+            this.cERRARSESIONToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.cERRARSESIONToolStripMenuItem.Text = "CERRAR SESION";
             // 
             // Form1
             // 
@@ -274,6 +291,8 @@
         private System.Windows.Forms.ToolStripMenuItem modificarRutaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarRutaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cERRARSESIÓNToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vERPERFILToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cERRARSESIONToolStripMenuItem;
 
     }
 }
