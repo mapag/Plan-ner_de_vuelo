@@ -16,16 +16,17 @@ namespace Airport_Management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            
-            
-            /* DESCOMENTAR ESTO PARA QUE ESTE EL INGRESO
-             * ingreso n = new ingreso();
+
+            ingreso n = new ingreso();
             Application.Run(n);
             if (n.validado)
-            {*/
-                Application.Run(new Form1());
-            /*
-            }*/
+            {
+                Form1 a = new Form1();
+                Application.Run(a);
+                if (a.validado)
+                    //Main();
+                    Application.Restart();
+            }
         }
     }
 }

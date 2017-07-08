@@ -68,8 +68,7 @@
             this.cERRARSESIÓNToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(856, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1284, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -80,7 +79,7 @@
             this.agregarAviónToolStripMenuItem,
             this.eliminarAviónToolStripMenuItem});
             this.aVIONESToolStripMenuItem.Name = "aVIONESToolStripMenuItem";
-            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(66, 22);
+            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.aVIONESToolStripMenuItem.Text = "AVIONES";
             // 
             // listarAvionesToolStripMenuItem
@@ -112,7 +111,7 @@
             this.modificarVueloToolStripMenuItem,
             this.eliminarVueloToolStripMenuItem});
             this.vUELOSToolStripMenuItem.Name = "vUELOSToolStripMenuItem";
-            this.vUELOSToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
+            this.vUELOSToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.vUELOSToolStripMenuItem.Text = "VUELOS";
             // 
             // listarVueloToolStripMenuItem
@@ -151,7 +150,7 @@
             this.modificarRutaToolStripMenuItem,
             this.eliminarRutaToolStripMenuItem});
             this.rUTAToolStripMenuItem.Name = "rUTAToolStripMenuItem";
-            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(54, 22);
+            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.rUTAToolStripMenuItem.Text = "RUTAS";
             // 
             // listarRutaToolStripMenuItem
@@ -187,7 +186,7 @@
             this.pLANESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.generarPlanToolStripMenuItem});
             this.pLANESToolStripMenuItem.Name = "pLANESToolStripMenuItem";
-            this.pLANESToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
+            this.pLANESToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.pLANESToolStripMenuItem.Text = "PLANES";
             // 
             // generarPlanToolStripMenuItem
@@ -201,7 +200,7 @@
             this.tRIPULANTESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.listarTripulantesToolStripMenuItem});
             this.tRIPULANTESToolStripMenuItem.Name = "tRIPULANTESToolStripMenuItem";
-            this.tRIPULANTESToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.tRIPULANTESToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
             this.tRIPULANTESToolStripMenuItem.Text = "TRIPULANTES";
             // 
             // listarTripulantesToolStripMenuItem
@@ -214,13 +213,13 @@
             // rEPORTESToolStripMenuItem
             // 
             this.rEPORTESToolStripMenuItem.Name = "rEPORTESToolStripMenuItem";
-            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(73, 22);
+            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.rEPORTESToolStripMenuItem.Text = "REPORTES";
             // 
             // cONFIGURACIONToolStripMenuItem
             // 
             this.cONFIGURACIONToolStripMenuItem.Name = "cONFIGURACIONToolStripMenuItem";
-            this.cONFIGURACIONToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.cONFIGURACIONToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
             this.cONFIGURACIONToolStripMenuItem.Text = "CONFIGURACIÓN";
             // 
             // cERRARSESIÓNToolStripMenuItem
@@ -229,7 +228,7 @@
             this.vERPERFILToolStripMenuItem,
             this.cERRARSESIONToolStripMenuItem});
             this.cERRARSESIÓNToolStripMenuItem.Name = "cERRARSESIÓNToolStripMenuItem";
-            this.cERRARSESIÓNToolStripMenuItem.Size = new System.Drawing.Size(58, 22);
+            this.cERRARSESIÓNToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.cERRARSESIÓNToolStripMenuItem.Text = "SESION";
             // 
             // vERPERFILToolStripMenuItem
@@ -237,25 +236,26 @@
             this.vERPERFILToolStripMenuItem.Name = "vERPERFILToolStripMenuItem";
             this.vERPERFILToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.vERPERFILToolStripMenuItem.Text = "VER PERFIL";
+            this.vERPERFILToolStripMenuItem.Click += new System.EventHandler(this.vERPERFILToolStripMenuItem_Click);
             // 
             // cERRARSESIONToolStripMenuItem
             // 
             this.cERRARSESIONToolStripMenuItem.Name = "cERRARSESIONToolStripMenuItem";
             this.cERRARSESIONToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.cERRARSESIONToolStripMenuItem.Text = "CERRAR SESION";
+            this.cERRARSESIONToolStripMenuItem.Click += new System.EventHandler(this.cERRARSESIONToolStripMenuItem_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::Airport_Management.Properties.Resources.fondo;
-            this.ClientSize = new System.Drawing.Size(856, 654);
+            this.ClientSize = new System.Drawing.Size(1284, 1006);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.TransparencyKey = System.Drawing.Color.Transparent;

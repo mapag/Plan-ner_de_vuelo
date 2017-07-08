@@ -12,6 +12,7 @@ namespace Airport_Management
 {
     public partial class Form1 : Form
     {
+        public bool validado = false;
         public Form1()
         {
             InitializeComponent();
@@ -118,6 +119,20 @@ namespace Airport_Management
             borrarVentanaAnterior();
             eliminarRuta eliminarRuta = new eliminarRuta();
             abrirVentana(eliminarRuta);
+        }
+
+        private void vERPERFILToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarVentanaAnterior();
+            verPerfil verPerfil = new verPerfil();
+            abrirVentana(verPerfil);
+        }
+
+        private void cERRARSESIONToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ingreso A = new ingreso();
+            validado = true;
+            Application.Exit();
         }
     }
 }

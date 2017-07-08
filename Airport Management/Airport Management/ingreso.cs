@@ -27,7 +27,7 @@ namespace Airport_Management
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            int cant = ad.ContarRegistros("select count(usuario) from usuarios where usuario = '" + txtUsuario.Text + "' and contrasena = '" + txtContra.Text + "'");
+            int cant = ad.ContarRegistros("select usuario from usuarios where usuario = '" + txtUsuario.Text + "' and contrasena = '" + txtContra.Text + "'");
             
             if (cant == 1)
             {
