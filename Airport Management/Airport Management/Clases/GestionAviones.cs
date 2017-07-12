@@ -14,7 +14,7 @@ namespace Airport_Management.Clases
     class GestionAviones
     {
         //GESTION CATEGORÍA TRABAJA CON LA CLASE CATEGORÍAS.
-
+        
         public GestionAviones()
         {
             //

@@ -94,11 +94,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clases\GestionAeropuertos.cs" />
     <Compile Include="ingreso.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ingreso.Designer.cs">
       <DependentUpon>ingreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listarAeropuertos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listarAeropuertos.Designer.cs">
+      <DependentUpon>listarAeropuertos.cs</DependentUpon>
     </Compile>
     <Compile Include="listarAviones.cs">
       <SubType>Form</SubType>
@@ -167,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ingreso.resx">
       <DependentUpon>ingreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listarAeropuertos.resx">
+      <DependentUpon>listarAeropuertos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="listarAviones.resx">
       <DependentUpon>listarAviones.cs</DependentUpon>

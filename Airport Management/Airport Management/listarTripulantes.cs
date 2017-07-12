@@ -55,7 +55,7 @@ namespace Airport_Management
             string ClausulaSQL = "SELECT a.legajo_TCP AS Legajo, a.apellido_TCP AS Apellido, a.nombre_TCP AS Nombre, tipo_TCP AS Cargo, baja_TCP as Estado from tripulantes a WHERE a.legajo_TCP like '%'";
 
             if (cmbLegajo.Text != "" && txtLegajo.Text != "")
-                cons.ConstructorConsultaTextual("tripulantes", "a.legajo_TCP", cmbLegajo.Text, txtLegajo.Text, ref ClausulaSQL);
+                cons.ConstructorConsultaNumerica("tripulantes", "a.legajo_TCP", cmbLegajo.Text, txtLegajo.Text, ref ClausulaSQL);
 
             if (cmbApellido.Text != "" && txtApellido.Text != "")
                 cons.ConstructorConsultaTextual("tripulantes", "a.apellido_TCP", cmbApellido.Text, txtApellido.Text, ref ClausulaSQL);
@@ -64,7 +64,7 @@ namespace Airport_Management
                 cons.ConstructorConsultaTextual("tripulantes", "a.nombre_TCP", cmbNombre.Text, txtNombre.Text, ref ClausulaSQL);
 
             if (cmbCargo.Text != "" && txtCargo.Text != "")
-                cons.ConstructorConsultaNumerica("tripulantes", "a.cargo_TCP", cmbCargo.Text, txtCargo.Text, ref ClausulaSQL);
+                cons.ConstructorConsultaTextual("tripulantes", "a.cargo_TCP", cmbCargo.Text, txtCargo.Text, ref ClausulaSQL);
 
 
             ad.IniciarTabla(ClausulaSQL, "filtro", ref dsRutas, ref grdTripulantes);
@@ -90,6 +90,18 @@ namespace Airport_Management
         {
             if ((e.KeyChar < 47 || e.KeyChar > 57) && e.KeyChar != 8)
                 e.Handled = true;
+        }
+
+        private void btn_activos_Click(object sender, EventArgs e)
+        {
+            string ClausulaSQL = "SELECT a.legajo_tcp AS Legajo, a.apellido_TCP AS Apellido, a.nombre_TCP AS Nombre, b.nombre_TT AS Cargo, baja_TCP as Estado from tripulantes a inner join tipos_de_tripulantes b on a.tipo_TCP = b.codigo_TT where a.baja_TCP = 1 ";
+            ad.IniciarTabla(ClausulaSQL, "Todos", ref dsRutas, ref grdTripulantes);
+        }
+
+        private void btn_noactivos_Click(object sender, EventArgs e)
+        {
+            string ClausulaSQL = "SELECT a.legajo_tcp AS Legajo, a.apellido_TCP AS Apellido, a.nombre_TCP AS Nombre, b.nombre_TT AS Cargo, baja_TCP as Estado from tripulantes a inner join tipos_de_tripulantes b on a.tipo_TCP = b.codigo_TT where a.baja_TCP = 0 ";
+            ad.IniciarTabla(ClausulaSQL, "Todos", ref dsRutas, ref grdTripulantes);
         }
     }
 }

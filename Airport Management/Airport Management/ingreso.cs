@@ -29,14 +29,14 @@ namespace Airport_Management
         {
             int cant = ad.ContarRegistros("select usuario from usuarios where usuario = '" + txtUsuario.Text + "' and contrasena = '" + txtContra.Text + "'");
             
-            if (cant == 1)
-            {
+            //if (cant == 1)
+            //{
                 sistema();
-            }
-            else
-            {
-                MessageBox.Show("Usuario o contraseña inexistente");
-            }
+           // }
+            //else
+            //{
+            //    MessageBox.Show("Usuario o contraseña inexistente");
+            //}
         }
     }
 }

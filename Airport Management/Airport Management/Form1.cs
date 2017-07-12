@@ -134,5 +134,12 @@ namespace Airport_Management
             validado = true;
             Application.Exit();
         }
+
+        private void listarAeropuertosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarVentanaAnterior();
+            listarAeropuertos listarAeropuertos = new listarAeropuertos();
+            abrirVentana(listarAeropuertos);
+        }
     }
 }

@@ -47,6 +47,10 @@
             this.generarPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tRIPULANTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarTripulantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aEROPUERTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarAeropuertosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarAeropuertoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarAeropuertoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rEPORTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONFIGURACIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cERRARSESIÓNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,12 +67,14 @@
             this.rUTAToolStripMenuItem,
             this.pLANESToolStripMenuItem,
             this.tRIPULANTESToolStripMenuItem,
+            this.aEROPUERTOSToolStripMenuItem,
             this.rEPORTESToolStripMenuItem,
             this.cONFIGURACIONToolStripMenuItem,
             this.cERRARSESIÓNToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1284, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(856, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -79,7 +85,7 @@
             this.agregarAviónToolStripMenuItem,
             this.eliminarAviónToolStripMenuItem});
             this.aVIONESToolStripMenuItem.Name = "aVIONESToolStripMenuItem";
-            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
             this.aVIONESToolStripMenuItem.Text = "AVIONES";
             // 
             // listarAvionesToolStripMenuItem
@@ -111,7 +117,7 @@
             this.modificarVueloToolStripMenuItem,
             this.eliminarVueloToolStripMenuItem});
             this.vUELOSToolStripMenuItem.Name = "vUELOSToolStripMenuItem";
-            this.vUELOSToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.vUELOSToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
             this.vUELOSToolStripMenuItem.Text = "VUELOS";
             // 
             // listarVueloToolStripMenuItem
@@ -150,7 +156,7 @@
             this.modificarRutaToolStripMenuItem,
             this.eliminarRutaToolStripMenuItem});
             this.rUTAToolStripMenuItem.Name = "rUTAToolStripMenuItem";
-            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(55, 22);
             this.rUTAToolStripMenuItem.Text = "RUTAS";
             // 
             // listarRutaToolStripMenuItem
@@ -186,7 +192,7 @@
             this.pLANESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.generarPlanToolStripMenuItem});
             this.pLANESToolStripMenuItem.Name = "pLANESToolStripMenuItem";
-            this.pLANESToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.pLANESToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
             this.pLANESToolStripMenuItem.Text = "PLANES";
             // 
             // generarPlanToolStripMenuItem
@@ -200,7 +206,7 @@
             this.tRIPULANTESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.listarTripulantesToolStripMenuItem});
             this.tRIPULANTESToolStripMenuItem.Name = "tRIPULANTESToolStripMenuItem";
-            this.tRIPULANTESToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
+            this.tRIPULANTESToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.tRIPULANTESToolStripMenuItem.Text = "TRIPULANTES";
             // 
             // listarTripulantesToolStripMenuItem
@@ -210,16 +216,45 @@
             this.listarTripulantesToolStripMenuItem.Text = "Listar tripulantes";
             this.listarTripulantesToolStripMenuItem.Click += new System.EventHandler(this.listarTripulantesToolStripMenuItem_Click);
             // 
+            // aEROPUERTOSToolStripMenuItem
+            // 
+            this.aEROPUERTOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listarAeropuertosToolStripMenuItem,
+            this.agregarAeropuertoToolStripMenuItem,
+            this.eliminarAeropuertoToolStripMenuItem});
+            this.aEROPUERTOSToolStripMenuItem.Name = "aEROPUERTOSToolStripMenuItem";
+            this.aEROPUERTOSToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
+            this.aEROPUERTOSToolStripMenuItem.Text = "AEROPUERTOS";
+            // 
+            // listarAeropuertosToolStripMenuItem
+            // 
+            this.listarAeropuertosToolStripMenuItem.Name = "listarAeropuertosToolStripMenuItem";
+            this.listarAeropuertosToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.listarAeropuertosToolStripMenuItem.Text = "Listar aeropuertos";
+            this.listarAeropuertosToolStripMenuItem.Click += new System.EventHandler(this.listarAeropuertosToolStripMenuItem_Click);
+            // 
+            // agregarAeropuertoToolStripMenuItem
+            // 
+            this.agregarAeropuertoToolStripMenuItem.Name = "agregarAeropuertoToolStripMenuItem";
+            this.agregarAeropuertoToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.agregarAeropuertoToolStripMenuItem.Text = "Agregar aeropuerto";
+            // 
+            // eliminarAeropuertoToolStripMenuItem
+            // 
+            this.eliminarAeropuertoToolStripMenuItem.Name = "eliminarAeropuertoToolStripMenuItem";
+            this.eliminarAeropuertoToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.eliminarAeropuertoToolStripMenuItem.Text = "Eliminar aeropuerto";
+            // 
             // rEPORTESToolStripMenuItem
             // 
             this.rEPORTESToolStripMenuItem.Name = "rEPORTESToolStripMenuItem";
-            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
+            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(74, 22);
             this.rEPORTESToolStripMenuItem.Text = "REPORTES";
             // 
             // cONFIGURACIONToolStripMenuItem
             // 
             this.cONFIGURACIONToolStripMenuItem.Name = "cONFIGURACIONToolStripMenuItem";
-            this.cONFIGURACIONToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
+            this.cONFIGURACIONToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.cONFIGURACIONToolStripMenuItem.Text = "CONFIGURACIÓN";
             // 
             // cERRARSESIÓNToolStripMenuItem
@@ -228,7 +263,7 @@
             this.vERPERFILToolStripMenuItem,
             this.cERRARSESIONToolStripMenuItem});
             this.cERRARSESIÓNToolStripMenuItem.Name = "cERRARSESIÓNToolStripMenuItem";
-            this.cERRARSESIÓNToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.cERRARSESIÓNToolStripMenuItem.Size = new System.Drawing.Size(58, 22);
             this.cERRARSESIÓNToolStripMenuItem.Text = "SESION";
             // 
             // vERPERFILToolStripMenuItem
@@ -247,15 +282,16 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::Airport_Management.Properties.Resources.fondo;
-            this.ClientSize = new System.Drawing.Size(1284, 1006);
+            this.ClientSize = new System.Drawing.Size(856, 487);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.TransparencyKey = System.Drawing.Color.Transparent;
@@ -293,6 +329,10 @@
         private System.Windows.Forms.ToolStripMenuItem cERRARSESIÓNToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vERPERFILToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cERRARSESIONToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aEROPUERTOSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listarAeropuertosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agregarAeropuertoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarAeropuertoToolStripMenuItem;
 
     }
 }
