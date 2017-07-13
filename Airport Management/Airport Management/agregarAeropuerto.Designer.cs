@@ -44,7 +44,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(70, 9);
+            this.label1.Location = new System.Drawing.Point(121, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(226, 24);
             this.label1.TabIndex = 12;
@@ -54,7 +54,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 53);
+            this.label2.Location = new System.Drawing.Point(11, 69);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(195, 24);
@@ -65,7 +65,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(11, 97);
+            this.label3.Location = new System.Drawing.Point(11, 119);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 24);
@@ -76,7 +76,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(11, 141);
+            this.label4.Location = new System.Drawing.Point(11, 172);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 24);
@@ -87,7 +87,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(11, 185);
+            this.label5.Location = new System.Drawing.Point(11, 228);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 24);
@@ -97,7 +97,7 @@
             // txt_Codigo
             // 
             this.txt_Codigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Codigo.Location = new System.Drawing.Point(210, 53);
+            this.txt_Codigo.Location = new System.Drawing.Point(230, 69);
             this.txt_Codigo.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Codigo.Name = "txt_Codigo";
             this.txt_Codigo.Size = new System.Drawing.Size(86, 26);
@@ -107,7 +107,7 @@
             // txt_Nombre
             // 
             this.txt_Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Nombre.Location = new System.Drawing.Point(147, 95);
+            this.txt_Nombre.Location = new System.Drawing.Point(147, 119);
             this.txt_Nombre.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(200, 26);
@@ -117,7 +117,7 @@
             // txt_Pais
             // 
             this.txt_Pais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Pais.Location = new System.Drawing.Point(147, 139);
+            this.txt_Pais.Location = new System.Drawing.Point(147, 172);
             this.txt_Pais.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Pais.Name = "txt_Pais";
             this.txt_Pais.Size = new System.Drawing.Size(200, 26);
@@ -127,7 +127,7 @@
             // txt_provincia
             // 
             this.txt_provincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_provincia.Location = new System.Drawing.Point(147, 183);
+            this.txt_provincia.Location = new System.Drawing.Point(147, 228);
             this.txt_provincia.Margin = new System.Windows.Forms.Padding(2);
             this.txt_provincia.Name = "txt_provincia";
             this.txt_provincia.Size = new System.Drawing.Size(200, 26);
@@ -136,9 +136,10 @@
             // 
             // btn_agregar
             // 
-            this.btn_agregar.Location = new System.Drawing.Point(74, 248);
+            this.btn_agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_agregar.Location = new System.Drawing.Point(116, 285);
             this.btn_agregar.Name = "btn_agregar";
-            this.btn_agregar.Size = new System.Drawing.Size(222, 23);
+            this.btn_agregar.Size = new System.Drawing.Size(252, 41);
             this.btn_agregar.TabIndex = 21;
             this.btn_agregar.Text = "Agregar Aeropuerto";
             this.btn_agregar.UseVisualStyleBackColor = true;
@@ -148,7 +149,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(378, 293);
+            this.BackColor = System.Drawing.Color.LightCyan;
+            this.ClientSize = new System.Drawing.Size(469, 338);
             this.Controls.Add(this.btn_agregar);
             this.Controls.Add(this.txt_provincia);
             this.Controls.Add(this.txt_Pais);
@@ -159,7 +161,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "agregarAeropuerto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "agregarAeropuerto";
             this.Load += new System.EventHandler(this.agregarAeropuerto_Load);
             this.ResumeLayout(false);
