@@ -240,6 +240,7 @@
             this.agregarAeropuertoToolStripMenuItem.Name = "agregarAeropuertoToolStripMenuItem";
             this.agregarAeropuertoToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.agregarAeropuertoToolStripMenuItem.Text = "Agregar aeropuerto";
+            this.agregarAeropuertoToolStripMenuItem.Click += new System.EventHandler(this.agregarAeropuertoToolStripMenuItem_Click);
             // 
             // eliminarAeropuertoToolStripMenuItem
             // 
