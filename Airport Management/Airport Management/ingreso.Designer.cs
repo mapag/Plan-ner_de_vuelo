@@ -64,6 +64,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(179, 26);
             this.txtUsuario.TabIndex = 2;
+            this.txtUsuario.Text = "root";
             // 
             // txtContra
             // 
@@ -72,6 +73,7 @@
             this.txtContra.Name = "txtContra";
             this.txtContra.Size = new System.Drawing.Size(179, 26);
             this.txtContra.TabIndex = 3;
+            this.txtContra.Text = "123";
             this.txtContra.UseSystemPasswordChar = true;
             // 
             // button1
