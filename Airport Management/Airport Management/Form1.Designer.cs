@@ -85,7 +85,7 @@
             this.agregarAviónToolStripMenuItem,
             this.eliminarAviónToolStripMenuItem});
             this.aVIONESToolStripMenuItem.Name = "aVIONESToolStripMenuItem";
-            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
+            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(66, 22);
             this.aVIONESToolStripMenuItem.Text = "AVIONES";
             // 
             // listarAvionesToolStripMenuItem
@@ -156,7 +156,7 @@
             this.modificarRutaToolStripMenuItem,
             this.eliminarRutaToolStripMenuItem});
             this.rUTAToolStripMenuItem.Name = "rUTAToolStripMenuItem";
-            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(55, 22);
+            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(54, 22);
             this.rUTAToolStripMenuItem.Text = "RUTAS";
             // 
             // listarRutaToolStripMenuItem
@@ -223,7 +223,7 @@
             this.agregarAeropuertoToolStripMenuItem,
             this.eliminarAeropuertoToolStripMenuItem});
             this.aEROPUERTOSToolStripMenuItem.Name = "aEROPUERTOSToolStripMenuItem";
-            this.aEROPUERTOSToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
+            this.aEROPUERTOSToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
             this.aEROPUERTOSToolStripMenuItem.Text = "AEROPUERTOS";
             // 
             // listarAeropuertosToolStripMenuItem
@@ -238,6 +238,7 @@
             this.agregarAeropuertoToolStripMenuItem.Name = "agregarAeropuertoToolStripMenuItem";
             this.agregarAeropuertoToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.agregarAeropuertoToolStripMenuItem.Text = "Agregar aeropuerto";
+            this.agregarAeropuertoToolStripMenuItem.Click += new System.EventHandler(this.agregarAeropuertoToolStripMenuItem_Click);
             // 
             // eliminarAeropuertoToolStripMenuItem
             // 
@@ -248,7 +249,7 @@
             // rEPORTESToolStripMenuItem
             // 
             this.rEPORTESToolStripMenuItem.Name = "rEPORTESToolStripMenuItem";
-            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(74, 22);
+            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(73, 22);
             this.rEPORTESToolStripMenuItem.Text = "REPORTES";
             // 
             // cONFIGURACIONToolStripMenuItem

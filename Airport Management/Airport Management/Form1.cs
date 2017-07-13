@@ -141,5 +141,12 @@ namespace Airport_Management
             listarAeropuertos listarAeropuertos = new listarAeropuertos();
             abrirVentana(listarAeropuertos);
         }
+
+        private void agregarAeropuertoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarVentanaAnterior();
+            agregarAeropuerto agregarAeropuerto = new agregarAeropuerto();
+            abrirVentana(agregarAeropuerto);
+        }
     }
 }

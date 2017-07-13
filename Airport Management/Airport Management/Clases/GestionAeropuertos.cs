@@ -25,11 +25,20 @@ namespace Airport_Management.Clases
             AccesoDatos ad = new AccesoDatos();
             
           
-            string consulta = "Select * from rutas where codigo_RTA = '" + codigo + "'";
+            string consulta = "Select * from aeropuertos where codigo_ATO = '" + codigo + "'";
 
             int cantidad = ad.ContarRegistros(consulta);
             if (cantidad > 0) return true;
             return false;
+        }
+
+        public void agregarAeropuerto(string codigo, string nombre, string pais, string provincia)
+        {
+            string consulta = "INSERT INTO aeropuertos (codigo_ATO, nombre_ATO, pais_ATO, provincia_ATO, contador_ATO) select '" +
+                codigo + "', '" + nombre + "', '" + pais + "', '" + provincia + "', 0";
+            AccesoDatos ad = new AccesoDatos();
+            ad.EjecutarConsulta(consulta);
+
         }
 
 

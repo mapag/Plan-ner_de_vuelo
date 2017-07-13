@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="agregarAeropuerto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregarAeropuerto.Designer.cs">
+      <DependentUpon>agregarAeropuerto.cs</DependentUpon>
+    </Compile>
     <Compile Include="agregarAvion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,9 @@
     <Compile Include="verPerfil.Designer.cs">
       <DependentUpon>verPerfil.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="agregarAeropuerto.resx">
+      <DependentUpon>agregarAeropuerto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="agregarAvion.resx">
       <DependentUpon>agregarAvion.cs</DependentUpon>
     </EmbeddedResource>
