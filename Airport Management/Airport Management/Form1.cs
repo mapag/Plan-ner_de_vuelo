@@ -141,5 +141,12 @@ namespace Airport_Management
             listarAeropuertos listarAeropuertos = new listarAeropuertos();
             abrirVentana(listarAeropuertos);
         }
+
+        private void cREARToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarVentanaAnterior();
+            crearUsuario crearUsuario = new crearUsuario();
+            abrirVentana(crearUsuario);
+        }
     }
 }

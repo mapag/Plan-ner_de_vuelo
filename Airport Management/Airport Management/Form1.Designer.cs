@@ -53,9 +53,11 @@
             this.eliminarAeropuertoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rEPORTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONFIGURACIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cREARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cERRARSESIÓNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vERPERFILToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cERRARSESIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cambiarContraseñaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,7 +87,7 @@
             this.agregarAviónToolStripMenuItem,
             this.eliminarAviónToolStripMenuItem});
             this.aVIONESToolStripMenuItem.Name = "aVIONESToolStripMenuItem";
-            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
+            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(66, 22);
             this.aVIONESToolStripMenuItem.Text = "AVIONES";
             // 
             // listarAvionesToolStripMenuItem
@@ -156,7 +158,7 @@
             this.modificarRutaToolStripMenuItem,
             this.eliminarRutaToolStripMenuItem});
             this.rUTAToolStripMenuItem.Name = "rUTAToolStripMenuItem";
-            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(55, 22);
+            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(54, 22);
             this.rUTAToolStripMenuItem.Text = "RUTAS";
             // 
             // listarRutaToolStripMenuItem
@@ -223,7 +225,7 @@
             this.agregarAeropuertoToolStripMenuItem,
             this.eliminarAeropuertoToolStripMenuItem});
             this.aEROPUERTOSToolStripMenuItem.Name = "aEROPUERTOSToolStripMenuItem";
-            this.aEROPUERTOSToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
+            this.aEROPUERTOSToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
             this.aEROPUERTOSToolStripMenuItem.Text = "AEROPUERTOS";
             // 
             // listarAeropuertosToolStripMenuItem
@@ -248,14 +250,24 @@
             // rEPORTESToolStripMenuItem
             // 
             this.rEPORTESToolStripMenuItem.Name = "rEPORTESToolStripMenuItem";
-            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(74, 22);
+            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(73, 22);
             this.rEPORTESToolStripMenuItem.Text = "REPORTES";
             // 
             // cONFIGURACIONToolStripMenuItem
             // 
+            this.cONFIGURACIONToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cREARToolStripMenuItem,
+            this.cambiarContraseñaToolStripMenuItem});
             this.cONFIGURACIONToolStripMenuItem.Name = "cONFIGURACIONToolStripMenuItem";
             this.cONFIGURACIONToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.cONFIGURACIONToolStripMenuItem.Text = "CONFIGURACIÓN";
+            // 
+            // cREARToolStripMenuItem
+            // 
+            this.cREARToolStripMenuItem.Name = "cREARToolStripMenuItem";
+            this.cREARToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.cREARToolStripMenuItem.Text = "Crear usuario";
+            this.cREARToolStripMenuItem.Click += new System.EventHandler(this.cREARToolStripMenuItem_Click);
             // 
             // cERRARSESIÓNToolStripMenuItem
             // 
@@ -279,6 +291,12 @@
             this.cERRARSESIONToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.cERRARSESIONToolStripMenuItem.Text = "CERRAR SESION";
             this.cERRARSESIONToolStripMenuItem.Click += new System.EventHandler(this.cERRARSESIONToolStripMenuItem_Click);
+            // 
+            // cambiarContraseñaToolStripMenuItem
+            // 
+            this.cambiarContraseñaToolStripMenuItem.Name = "cambiarContraseñaToolStripMenuItem";
+            this.cambiarContraseñaToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.cambiarContraseñaToolStripMenuItem.Text = "Cambiar Contraseña";
             // 
             // Form1
             // 
@@ -333,6 +351,8 @@
         private System.Windows.Forms.ToolStripMenuItem listarAeropuertosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agregarAeropuertoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarAeropuertoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cREARToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cambiarContraseñaToolStripMenuItem;
 
     }
 }

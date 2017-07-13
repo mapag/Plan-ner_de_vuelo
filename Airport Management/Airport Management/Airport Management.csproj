@@ -70,6 +70,12 @@
     <Compile Include="Clases\GestionTripulantes.cs" />
     <Compile Include="Clases\GestionVuelos.cs" />
     <Compile Include="Clases\ConstructorCodSQL.cs" />
+    <Compile Include="crearUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crearUsuario.Designer.cs">
+      <DependentUpon>crearUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="eliminarAvion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="agregarVuelo.resx">
       <DependentUpon>agregarVuelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crearUsuario.resx">
+      <DependentUpon>crearUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="eliminarAvion.resx">
       <DependentUpon>eliminarAvion.cs</DependentUpon>
