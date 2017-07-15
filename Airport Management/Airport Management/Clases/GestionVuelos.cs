@@ -19,12 +19,6 @@ namespace Airport_Management.Clases
             //
         }
 
-        public void listarVuelos(String nombreTabla, ref DataSet ds)
-        {
-            AccesoDatos ad = new AccesoDatos();
-            ad.cargaTabla(nombreTabla, "select codigo_VLO as Código, codigo_RTA as Ruta, fecha_salida_VLO as [Fecha de salida] from vuelos", ref ds);
-        }
-
         public bool VueloExiste(string codigo)
         {
             AccesoDatos ac = new AccesoDatos();

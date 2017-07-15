@@ -65,6 +65,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(103, 29);
             this.txtCodigo.TabIndex = 8;
+            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // label2
             // 
@@ -91,6 +92,7 @@
             this.Name = "eliminarVuelo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "eliminarVuelo";
+            this.Load += new System.EventHandler(this.eliminarVuelo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

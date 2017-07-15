@@ -32,10 +32,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnModificar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtVuelo = new System.Windows.Forms.TextBox();
-            this.txtRuta = new System.Windows.Forms.TextBox();
-            this.txtFecha = new System.Windows.Forms.TextBox();
+            this.txt_Codigo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.timer_Fecha = new System.Windows.Forms.DateTimePicker();
+            this.cmb_Ruta = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +62,7 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(65, 281);
+            this.btnModificar.Location = new System.Drawing.Point(102, 228);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(170, 24);
@@ -81,32 +81,15 @@
             this.label3.TabIndex = 24;
             this.label3.Text = "Menú modificar vuelo";
             // 
-            // txtVuelo
+            // txt_Codigo
             // 
-            this.txtVuelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVuelo.Location = new System.Drawing.Point(178, 84);
-            this.txtVuelo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtVuelo.Name = "txtVuelo";
-            this.txtVuelo.Size = new System.Drawing.Size(121, 26);
-            this.txtVuelo.TabIndex = 30;
-            // 
-            // txtRuta
-            // 
-            this.txtRuta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRuta.Location = new System.Drawing.Point(178, 129);
-            this.txtRuta.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRuta.Name = "txtRuta";
-            this.txtRuta.Size = new System.Drawing.Size(121, 26);
-            this.txtRuta.TabIndex = 31;
-            // 
-            // txtFecha
-            // 
-            this.txtFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFecha.Location = new System.Drawing.Point(178, 174);
-            this.txtFecha.Margin = new System.Windows.Forms.Padding(2);
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(121, 26);
-            this.txtFecha.TabIndex = 33;
+            this.txt_Codigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Codigo.Location = new System.Drawing.Point(163, 81);
+            this.txt_Codigo.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_Codigo.Name = "txt_Codigo";
+            this.txt_Codigo.Size = new System.Drawing.Size(200, 26);
+            this.txt_Codigo.TabIndex = 30;
+            this.txt_Codigo.TextChanged += new System.EventHandler(this.txt_Codigo_TextChanged);
             // 
             // label4
             // 
@@ -119,16 +102,33 @@
             this.label4.TabIndex = 32;
             this.label4.Text = "Fecha de salida:";
             // 
+            // timer_Fecha
+            // 
+            this.timer_Fecha.Location = new System.Drawing.Point(163, 177);
+            this.timer_Fecha.MinDate = new System.DateTime(2017, 7, 3, 0, 0, 0, 0);
+            this.timer_Fecha.Name = "timer_Fecha";
+            this.timer_Fecha.Size = new System.Drawing.Size(200, 20);
+            this.timer_Fecha.TabIndex = 34;
+            this.timer_Fecha.Value = new System.DateTime(2017, 7, 3, 10, 10, 43, 0);
+            // 
+            // cmb_Ruta
+            // 
+            this.cmb_Ruta.FormattingEnabled = true;
+            this.cmb_Ruta.Location = new System.Drawing.Point(163, 131);
+            this.cmb_Ruta.Name = "cmb_Ruta";
+            this.cmb_Ruta.Size = new System.Drawing.Size(200, 21);
+            this.cmb_Ruta.TabIndex = 35;
+            // 
             // modificarVuelo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(315, 316);
-            this.Controls.Add(this.txtFecha);
+            this.ClientSize = new System.Drawing.Size(375, 270);
+            this.Controls.Add(this.cmb_Ruta);
+            this.Controls.Add(this.timer_Fecha);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtRuta);
-            this.Controls.Add(this.txtVuelo);
+            this.Controls.Add(this.txt_Codigo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.label2);
@@ -138,6 +138,7 @@
             this.Name = "modificarVuelo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "modificarVuelo";
+            this.Load += new System.EventHandler(this.modificarVuelo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,9 +150,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtVuelo;
-        private System.Windows.Forms.TextBox txtRuta;
-        private System.Windows.Forms.TextBox txtFecha;
+        private System.Windows.Forms.TextBox txt_Codigo;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker timer_Fecha;
+        private System.Windows.Forms.ComboBox cmb_Ruta;
     }
 }
