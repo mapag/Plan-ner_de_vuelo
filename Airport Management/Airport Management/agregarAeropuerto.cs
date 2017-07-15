@@ -51,7 +51,7 @@ namespace Airport_Management
 
         private void txt_Codigo_Leave(object sender, EventArgs e)
         {
-            if (activarbotonagregar() == 8) MessageBox.Show("El codigo son 3 letras mayúsculas");
+            //if (activarbotonagregar() == 8) MessageBox.Show("El codigo son 3 letras mayúsculas");
         }
 
         private void txt_Nombre_Leave(object sender, EventArgs e)
