@@ -15,6 +15,8 @@ namespace Airport_Management
     public partial class listarVuelos : Form
     {
         DataSet dsVuelos;
+        ConstructorCodSQL cons = new ConstructorCodSQL();
+        AccesoDatos ad = new AccesoDatos();
         public listarVuelos()
         {
             InitializeComponent();
@@ -22,74 +24,47 @@ namespace Airport_Management
 
         private void listarVuelos_Load(object sender, EventArgs e)
         {
+
+            reiniciarTabla();
+
+            cons.CargarComboTexto(ref cmbCodigo);
+            cons.CargarComboTexto(ref cmbRuta);
+            cons.CargarComboTiempo(ref cmbFecha);
+        }
+
+        private void reiniciarTabla(){
             dsVuelos = new DataSet();
-            GestionVuelos gv = new GestionVuelos();
-            gv.listarVuelos("Vuelos", ref dsVuelos);
-            grdListarVuelos.DataSource = dsVuelos.Tables["Vuelos"];
-
-            CargarComboTexto(ref cmbCodigo);
-            CargarComboTexto(ref cmbRuta);
-            CargarComboTexto(ref cmbFecha);
+            string consultaSQL = "select codigo_VLO as Código, codigo_RTA as Ruta, fecha_salida_VLO as [Fecha de salida] from vuelos";
+            ad.IniciarTabla(consultaSQL, "Vuelos", ref dsVuelos, ref grdListarVuelos);
         }
 
-        private void CargarComboTexto(ref ComboBox NombreCombo)
+        private void btnFiltrar_Click(object sender, EventArgs e)
         {
-            NombreCombo.Items.Add("Comienza con");
-            NombreCombo.Items.Add("Termina en");
-            NombreCombo.Items.Add("Contiene");
-            NombreCombo.Items.Add("Es igual a");
-        }
-        private void CargarComboNumerico(ref ComboBox NombreCombo)
-        {
-            NombreCombo.Items.Add("Igual a:");
-            NombreCombo.Items.Add("Mayor a:");
-            NombreCombo.Items.Add("Menor a:");
-        }
-
-        private void ConstruirClausulaSQL(string NombreCampo,
-                                          string Operador,
-                                          string Valor,
-                                          ref string Clausula)
-        {
-            string d1 = "";  //Delimitador 1
-            string d2 = ""; //Delimitador 2
-            if (Clausula == "")
-                Clausula = Clausula + " WHERE ";
-            else
-                Clausula = Clausula + " AND ";
-            switch (Operador)
+            string consultaSQL = "select codigo_VLO as Código, codigo_RTA as Ruta, fecha_salida_VLO as [Fecha de salida] from vuelos where codigo_VLO like '%'";
+            dsVuelos = new DataSet();
+            if (!txtCodigo.Text.Equals("") && !cmbCodigo.Text.Equals(""))
             {
-                case "Igual a:":
-                    d1 = " = ";
-                    d2 = "";
-                    break;
-                case "Mayor a:":
-                    d1 = " > ";
-                    d2 = "";
-                    break;
-                case "Menor a:":
-                    d1 = " < ";
-                    d2 = "";
-                    break;
-                case "Comienza con:":
-                    d1 = " LIKE '";
-                    d2 = "%'";
-                    break;
-                case "Termina en:":
-                    d1 = " LIKE '%";
-                    d2 = "'";
-                    break;
-                case "Contiene:":
-                    d1 = " LIKE '%";
-                    d2 = "%'";
-                    break;
-                case "Es igual a:":
-                    d1 = " ='";
-                    d2 = "'";
-                    break;
-            } // SWITCH
-            Clausula =
-                Clausula + NombreCampo + d1 + Valor + d2;
+                cons.ConstructorConsultaTextual("vuelos", "codigo_VLO", cmbCodigo.Text, txtCodigo.Text, ref consultaSQL);
+            }
+            if (!txtRuta.Text.Equals("") && !cmbRuta.Text.Equals(""))
+            {
+                cons.ConstructorConsultaTextual("vuelos", "codigo_RTA", cmbRuta.Text, txtRuta.Text, ref consultaSQL);
+            }
+            if (!cmbFecha.Text.Equals(""))
+            {
+                string prov = timer_Fecha.Value.ToString();
+                string[] fecha = prov.Split();
+                if (fecha[2] == "a.m.") fecha[2] = "am";
+                else fecha[2] = "pm";
+
+                cons.ConstructorConsultaTemporal("vuelos", "fecha_salida_VLO", cmbFecha.Text, fecha[0] + " " + fecha[1] + " " + fecha[2], ref consultaSQL);
+            }
+            ad.IniciarTabla(consultaSQL, "Vuelos", ref dsVuelos, ref grdListarVuelos);
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            reiniciarTabla();
         }
     }
 }

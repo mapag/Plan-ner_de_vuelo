@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtModelo = new System.Windows.Forms.TextBox();
-            this.txtFabricante = new System.Windows.Forms.TextBox();
+            this.txtRuta = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbFecha = new System.Windows.Forms.ComboBox();
@@ -44,26 +43,18 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnFiltrar = new System.Windows.Forms.Button();
+            this.timer_Fecha = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.grdListarVuelos)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtModelo
+            // txtRuta
             // 
-            this.txtModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModelo.Location = new System.Drawing.Point(411, 112);
-            this.txtModelo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtModelo.Name = "txtModelo";
-            this.txtModelo.Size = new System.Drawing.Size(171, 29);
-            this.txtModelo.TabIndex = 27;
-            // 
-            // txtFabricante
-            // 
-            this.txtFabricante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFabricante.Location = new System.Drawing.Point(411, 71);
-            this.txtFabricante.Margin = new System.Windows.Forms.Padding(2);
-            this.txtFabricante.Name = "txtFabricante";
-            this.txtFabricante.Size = new System.Drawing.Size(171, 29);
-            this.txtFabricante.TabIndex = 26;
+            this.txtRuta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRuta.Location = new System.Drawing.Point(411, 71);
+            this.txtRuta.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRuta.Name = "txtRuta";
+            this.txtRuta.Size = new System.Drawing.Size(171, 29);
+            this.txtRuta.TabIndex = 26;
             // 
             // label6
             // 
@@ -206,6 +197,7 @@
             this.btnReset.TabIndex = 32;
             this.btnReset.Text = "Mostrar Todo";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnFiltrar
             // 
@@ -217,6 +209,16 @@
             this.btnFiltrar.TabIndex = 31;
             this.btnFiltrar.Text = "Filtrar";
             this.btnFiltrar.UseVisualStyleBackColor = true;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
+            // 
+            // timer_Fecha
+            // 
+            this.timer_Fecha.Location = new System.Drawing.Point(382, 118);
+            this.timer_Fecha.MinDate = new System.DateTime(2017, 7, 3, 0, 0, 0, 0);
+            this.timer_Fecha.Name = "timer_Fecha";
+            this.timer_Fecha.Size = new System.Drawing.Size(200, 20);
+            this.timer_Fecha.TabIndex = 33;
+            this.timer_Fecha.Value = new System.DateTime(2017, 7, 3, 10, 10, 43, 0);
             // 
             // listarVuelos
             // 
@@ -224,12 +226,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(737, 554);
+            this.Controls.Add(this.timer_Fecha);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.grdListarVuelos);
-            this.Controls.Add(this.txtModelo);
-            this.Controls.Add(this.txtFabricante);
+            this.Controls.Add(this.txtRuta);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cmbFecha);
@@ -254,8 +256,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtModelo;
-        private System.Windows.Forms.TextBox txtFabricante;
+        private System.Windows.Forms.TextBox txtRuta;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbFecha;
@@ -270,5 +271,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnFiltrar;
+        private System.Windows.Forms.DateTimePicker timer_Fecha;
     }
 }
