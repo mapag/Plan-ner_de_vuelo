@@ -107,6 +107,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\GestionAeropuertos.cs" />
+    <Compile Include="Clases\GestionUsuarios.cs" />
     <Compile Include="ingreso.cs">
       <SubType>Form</SubType>
     </Compile>
