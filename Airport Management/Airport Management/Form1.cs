@@ -177,5 +177,12 @@ namespace Airport_Management
             recuperarBD recuperarBD = new recuperarBD();
             abrirVentana(recuperarBD);
         }
+
+        private void listarVuelosPorAvionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarVentanaAnterior();
+            listarVuelosPorAvion listarVuelosPorAvion = new listarVuelosPorAvion();
+            abrirVentana(listarVuelosPorAvion);
+        }
     }
 }

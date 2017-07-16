@@ -61,6 +61,7 @@
             this.bACKUPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generarBackUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recuperarBackUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarVuelosPorAvionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,7 +92,7 @@
             this.agregarAviónToolStripMenuItem,
             this.eliminarAviónToolStripMenuItem});
             this.aVIONESToolStripMenuItem.Name = "aVIONESToolStripMenuItem";
-            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(66, 22);
+            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
             this.aVIONESToolStripMenuItem.Text = "AVIONES";
             // 
             // listarAvionesToolStripMenuItem
@@ -162,41 +163,42 @@
             this.modificarRutaToolStripMenuItem,
             this.eliminarRutaToolStripMenuItem});
             this.rUTAToolStripMenuItem.Name = "rUTAToolStripMenuItem";
-            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(54, 22);
+            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(55, 22);
             this.rUTAToolStripMenuItem.Text = "RUTAS";
             // 
             // listarRutaToolStripMenuItem
             // 
             this.listarRutaToolStripMenuItem.Name = "listarRutaToolStripMenuItem";
-            this.listarRutaToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.listarRutaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.listarRutaToolStripMenuItem.Text = "Listar ruta";
             this.listarRutaToolStripMenuItem.Click += new System.EventHandler(this.listarRutaToolStripMenuItem_Click);
             // 
             // agregarRutaToolStripMenuItem
             // 
             this.agregarRutaToolStripMenuItem.Name = "agregarRutaToolStripMenuItem";
-            this.agregarRutaToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.agregarRutaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.agregarRutaToolStripMenuItem.Text = "Agregar ruta";
             this.agregarRutaToolStripMenuItem.Click += new System.EventHandler(this.agregarRutaToolStripMenuItem_Click);
             // 
             // modificarRutaToolStripMenuItem
             // 
             this.modificarRutaToolStripMenuItem.Name = "modificarRutaToolStripMenuItem";
-            this.modificarRutaToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.modificarRutaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.modificarRutaToolStripMenuItem.Text = "Modificar ruta";
             this.modificarRutaToolStripMenuItem.Click += new System.EventHandler(this.modificarRutaToolStripMenuItem_Click);
             // 
             // eliminarRutaToolStripMenuItem
             // 
             this.eliminarRutaToolStripMenuItem.Name = "eliminarRutaToolStripMenuItem";
-            this.eliminarRutaToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.eliminarRutaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.eliminarRutaToolStripMenuItem.Text = "Eliminar ruta";
             this.eliminarRutaToolStripMenuItem.Click += new System.EventHandler(this.eliminarRutaToolStripMenuItem_Click);
             // 
             // pLANESToolStripMenuItem
             // 
             this.pLANESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.generarPlanToolStripMenuItem});
+            this.generarPlanToolStripMenuItem,
+            this.listarVuelosPorAvionToolStripMenuItem});
             this.pLANESToolStripMenuItem.Name = "pLANESToolStripMenuItem";
             this.pLANESToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
             this.pLANESToolStripMenuItem.Text = "PLANES";
@@ -204,7 +206,7 @@
             // generarPlanToolStripMenuItem
             // 
             this.generarPlanToolStripMenuItem.Name = "generarPlanToolStripMenuItem";
-            this.generarPlanToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.generarPlanToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.generarPlanToolStripMenuItem.Text = "Generar plan";
             // 
             // tRIPULANTESToolStripMenuItem
@@ -229,7 +231,7 @@
             this.agregarAeropuertoToolStripMenuItem,
             this.eliminarAeropuertoToolStripMenuItem});
             this.aEROPUERTOSToolStripMenuItem.Name = "aEROPUERTOSToolStripMenuItem";
-            this.aEROPUERTOSToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
+            this.aEROPUERTOSToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.aEROPUERTOSToolStripMenuItem.Text = "AEROPUERTOS";
             // 
             // listarAeropuertosToolStripMenuItem
@@ -256,7 +258,7 @@
             // rEPORTESToolStripMenuItem
             // 
             this.rEPORTESToolStripMenuItem.Name = "rEPORTESToolStripMenuItem";
-            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(73, 22);
+            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(74, 22);
             this.rEPORTESToolStripMenuItem.Text = "REPORTES";
             // 
             // cONFIGURACIONToolStripMenuItem
@@ -327,6 +329,13 @@
             this.recuperarBackUpToolStripMenuItem.Text = "Recuperar BackUp";
             this.recuperarBackUpToolStripMenuItem.Click += new System.EventHandler(this.recuperarBackUpToolStripMenuItem_Click);
             // 
+            // listarVuelosPorAvionToolStripMenuItem
+            // 
+            this.listarVuelosPorAvionToolStripMenuItem.Name = "listarVuelosPorAvionToolStripMenuItem";
+            this.listarVuelosPorAvionToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.listarVuelosPorAvionToolStripMenuItem.Text = "Listar vuelos por avion";
+            this.listarVuelosPorAvionToolStripMenuItem.Click += new System.EventHandler(this.listarVuelosPorAvionToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -385,6 +394,7 @@
         private System.Windows.Forms.ToolStripMenuItem bACKUPToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generarBackUpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recuperarBackUpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listarVuelosPorAvionToolStripMenuItem;
 
     }
 }
