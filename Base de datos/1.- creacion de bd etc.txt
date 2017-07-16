@@ -125,15 +125,15 @@ GO
 
 CREATE TABLE usuarios
 (
-id int identity(1,1) not null,
-usuario varchar(50) not null,
-contrasena varchar(50) not null,
-nombre varchar(50) not null,
-apellido varchar(50) not null,
-correo varchar(50) null,
-telefono varchar(50) null,
-foto image null,
-CONSTRAINT PK_USU PRIMARY KEY(id)
+id_USU int identity(1,1) not null,
+usuario_USU varchar(50) not null,
+contrasena_USU varchar(50) not null,
+nombre_USU varchar(50) not null,
+apellido_USU varchar(50) not null,
+correo_USU varchar(50) null,
+telefono_USU varchar(50) null,
+foto_USU image null,
+CONSTRAINT PK_USU PRIMARY KEY(id_USU)
 )
 GO
 
