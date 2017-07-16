@@ -141,6 +141,6 @@ CREATE TABLE backups
 (
 	fecha_bkp datetime,
 	direccion_bkp varchar(500) not null,
-	CONSTRAINT PK_USU PRIMARY KEY(fecha_bkp)
+	CONSTRAINT PK_BKP PRIMARY KEY(fecha_bkp)
 )
 GO
