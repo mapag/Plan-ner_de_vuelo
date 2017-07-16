@@ -11,8 +11,16 @@ namespace Airport_Management.Clases
 {
     class AccesoDatos
     {
-        String rutaBD =
-    "Data Source=localhost\\sqlexpress;Initial Catalog=Airport_Manager;Integrated Security=True";
+        String rutaBD = "Data Source=localhost\\sqlexpress;Initial Catalog=Airport_Manager;Integrated Security=True";
+
+        public void rutaMaster()
+        {
+            rutaBD = "Data Source=localhost\\sqlexpress;Initial Catalog=master;Integrated Security=True";
+        }
+        public void rutaAirportManager()
+        {
+            rutaBD = "Data Source=localhost\\sqlexpress;Initial Catalog=Airport_Manager;Integrated Security=True";
+        }
 
         public AccesoDatos()
         {
@@ -27,11 +35,12 @@ namespace Airport_Management.Clases
                 cn.Open();
                 return cn;
             }
-            catch (Exception ex)
+            catch
             {
                 return null;
             }
         }
+
         public SqlDataAdapter ObtenerAdaptador(String consultaSql, SqlConnection cn)
         {
             SqlDataAdapter adaptador;
@@ -40,7 +49,7 @@ namespace Airport_Management.Clases
                 adaptador = new SqlDataAdapter(consultaSql, cn);
                 return adaptador;
             }
-            catch (Exception ex)
+            catch 
             {
                 return null;
             }
@@ -135,6 +144,24 @@ namespace Airport_Management.Clases
             grid.DataSource = DS.Tables[nombretabla]; ///ACA MUESTRA LA CONSULTA EN LA GRILLA
         }
 
-
+        public bool generarBkp()
+        {
+            try
+            {
+                string prov = "";
+                Random rnd = new Random();
+                for (int i = 0; i < rnd.Next(5, 30); i++)
+                {
+                    int num = rnd.Next(97, 122);
+                    prov += (char)num;
+                }
+                EjecutarConsulta("EXEC GenerarBkp 'c:/BackUpAirport_Manager/Airport_Manager_" + prov + ".bak'");
+                return true;
+            }
+            catch 
+            { 
+                return false;
+            }
+        }
     }
 }

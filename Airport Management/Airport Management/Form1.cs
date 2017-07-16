@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Airport_Management.Clases;
 
 namespace Airport_Management
 {
@@ -161,6 +162,20 @@ namespace Airport_Management
             borrarVentanaAnterior();
             eliminarAeropuerto eliminarAeropuerto = new eliminarAeropuerto();
             abrirVentana(eliminarAeropuerto);
+        }
+
+        private void generarBackUpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AccesoDatos ad = new AccesoDatos();
+            ad.generarBkp();
+            MessageBox.Show("Se ha generado el BackUp");
+        }
+
+        private void recuperarBackUpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarVentanaAnterior();
+            recuperarBD recuperarBD = new recuperarBD();
+            abrirVentana(recuperarBD);
         }
     }
 }

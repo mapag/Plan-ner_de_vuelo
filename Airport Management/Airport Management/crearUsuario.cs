@@ -29,7 +29,7 @@ namespace Airport_Management
                     pictureBox1.Image = Image.FromFile(imagen);
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("El archivo seleccionado no es un tipo de imagen válido");
             }
