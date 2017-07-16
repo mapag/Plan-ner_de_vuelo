@@ -132,6 +132,7 @@ nombre varchar(50) not null,
 apellido varchar(50) not null,
 correo varchar(50) not null,
 telefono varchar(50) not null,
+foto image not null,
 CONSTRAINT PK_USU PRIMARY KEY(id)
 )
 GO
