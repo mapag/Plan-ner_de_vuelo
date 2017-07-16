@@ -136,3 +136,10 @@ foto image not null,
 CONSTRAINT PK_USU PRIMARY KEY(id)
 )
 GO
+
+CREATE TABLE backups
+(
+	fecha datetime primary key,
+	direccion varchar(500) not null
+)
+GO
