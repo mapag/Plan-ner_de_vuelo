@@ -18,7 +18,7 @@ namespace Airport_Management
             Application.SetCompatibleTextRenderingDefault(false);
             ingreso n = new ingreso();
             Application.Run(n);
-            if (n.validado)
+            if (n.validado != 0)
             {
                 Form1 a = new Form1();
                 Application.Run(a);
