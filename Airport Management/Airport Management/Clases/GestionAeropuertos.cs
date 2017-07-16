@@ -41,7 +41,13 @@ namespace Airport_Management.Clases
 
         }
 
-
+        public void eliminarAeropuerto (string codigo)
+        {
+            AccesoDatos ad = new AccesoDatos();
+            string consultaSQL = "DELETE FROM aeropuertos WHERE codigo_ATO = '" + codigo + "'";
+            ad.EjecutarConsulta(consultaSQL);
+            MessageBox.Show("El aeropuerto fue eliminado con éxito");
+        }
 
     }
 }

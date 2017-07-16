@@ -155,5 +155,12 @@ namespace Airport_Management
             crearUsuario crearUsuario = new crearUsuario();
             abrirVentana(crearUsuario);
         }
+
+        private void eliminarAeropuertoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarVentanaAnterior();
+            eliminarAeropuerto eliminarAeropuerto = new eliminarAeropuerto();
+            abrirVentana(eliminarAeropuerto);
+        }
     }
 }
