@@ -55,7 +55,7 @@ namespace Airport_Management
                     MessageBox.Show("El avión ha sido dado de alta.");
                 }
             }
-            catch (SyntaxErrorException re)
+            catch 
             {
                 MessageBox.Show("No se pudo dar de baja el avión.");
             }
