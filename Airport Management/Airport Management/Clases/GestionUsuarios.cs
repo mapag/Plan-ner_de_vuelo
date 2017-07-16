@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 
-namespace Airport_Management
+namespace Airport_Management.Clases
 {
     class GestionUsuarios
     {
@@ -53,7 +53,33 @@ namespace Airport_Management
                 connection.Close();
             }
             return returnvalue;
+        }
 
+        public bool usuarioExiste(string usuario)
+        {
+            AccesoDatos ac = new AccesoDatos();
+            string consulta = "select usuario_USU from usuarios where usuario_USU = '" + usuario + "'";
+            int cantidad = ac.ContarRegistros(consulta);
+            if (cantidad == 0) return false;
+            else return true;
+        }
+
+        public void crearUsuario (string usuario, string contrasena, string nombre, string apellido, string correo, string telefono)
+        {
+            string consultaSQL = "INSERT INTO usuarios(usuario_USU, contrasena_USU, nombre_USU, apellido_USU) SELECT '" + usuario + "', '" + contrasena + "', '" + nombre + "', '" + apellido + "'";
+
+            if (correo != "" && telefono == "")
+                consultaSQL = "INSERT INTO usuarios(usuario_USU, contrasena_USU, nombre_USU, apellido_USU, correo_USU) SELECT '" + usuario + "', '" + contrasena + "', '" + nombre + "', '" + apellido + "', '" + correo + "'";
+
+            if (correo == "" && telefono != "")
+                consultaSQL = "INSERT INTO usuarios(usuario_USU, contrasena_USU, nombre_USU, apellido_USU, telefono_USU) SELECT '" + usuario + "', '" + contrasena + "', '" + nombre + "', '" + apellido + "', '" + telefono + "'";
+
+
+            if (telefono != "" && correo != "")
+                consultaSQL = consultaSQL = "INSERT INTO usuarios(usuario_USU, contrasena_USU, nombre_USU, apellido_USU, correo_USU, telefono_USU) SELECT '" + usuario + "', '" + contrasena + "', '" + nombre + "', '" + apellido + "', '" + correo + "', '" + telefono + "'";
+
+            AccesoDatos ad = new AccesoDatos();
+            ad.EjecutarConsulta(consultaSQL);
         }
     }
 }
