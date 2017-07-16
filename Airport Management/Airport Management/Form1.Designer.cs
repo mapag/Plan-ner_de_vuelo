@@ -58,9 +58,6 @@
             this.cERRARSESIÓNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vERPERFILToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cERRARSESIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bACKUPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gENERARBACKUPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rEUPERARBACKUPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,15 +72,13 @@
             this.aEROPUERTOSToolStripMenuItem,
             this.rEPORTESToolStripMenuItem,
             this.cONFIGURACIONToolStripMenuItem,
-            this.cERRARSESIÓNToolStripMenuItem,
-            this.bACKUPToolStripMenuItem});
+            this.cERRARSESIÓNToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
             this.menuStrip1.Size = new System.Drawing.Size(856, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // aVIONESToolStripMenuItem
             // 
@@ -92,7 +87,7 @@
             this.agregarAviónToolStripMenuItem,
             this.eliminarAviónToolStripMenuItem});
             this.aVIONESToolStripMenuItem.Name = "aVIONESToolStripMenuItem";
-            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(66, 22);
+            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
             this.aVIONESToolStripMenuItem.Text = "AVIONES";
             // 
             // listarAvionesToolStripMenuItem
@@ -163,7 +158,7 @@
             this.modificarRutaToolStripMenuItem,
             this.eliminarRutaToolStripMenuItem});
             this.rUTAToolStripMenuItem.Name = "rUTAToolStripMenuItem";
-            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(54, 22);
+            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(55, 22);
             this.rUTAToolStripMenuItem.Text = "RUTAS";
             // 
             // listarRutaToolStripMenuItem
@@ -205,9 +200,8 @@
             // generarPlanToolStripMenuItem
             // 
             this.generarPlanToolStripMenuItem.Name = "generarPlanToolStripMenuItem";
-            this.generarPlanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.generarPlanToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.generarPlanToolStripMenuItem.Text = "Generar plan";
-            this.generarPlanToolStripMenuItem.Click += new System.EventHandler(this.generarPlanToolStripMenuItem_Click);
             // 
             // tRIPULANTESToolStripMenuItem
             // 
@@ -231,7 +225,7 @@
             this.agregarAeropuertoToolStripMenuItem,
             this.eliminarAeropuertoToolStripMenuItem});
             this.aEROPUERTOSToolStripMenuItem.Name = "aEROPUERTOSToolStripMenuItem";
-            this.aEROPUERTOSToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
+            this.aEROPUERTOSToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.aEROPUERTOSToolStripMenuItem.Text = "AEROPUERTOS";
             // 
             // listarAeropuertosToolStripMenuItem
@@ -253,11 +247,12 @@
             this.eliminarAeropuertoToolStripMenuItem.Name = "eliminarAeropuertoToolStripMenuItem";
             this.eliminarAeropuertoToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.eliminarAeropuertoToolStripMenuItem.Text = "Eliminar aeropuerto";
+            this.eliminarAeropuertoToolStripMenuItem.Click += new System.EventHandler(this.eliminarAeropuertoToolStripMenuItem_Click);
             // 
             // rEPORTESToolStripMenuItem
             // 
             this.rEPORTESToolStripMenuItem.Name = "rEPORTESToolStripMenuItem";
-            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(73, 22);
+            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(74, 22);
             this.rEPORTESToolStripMenuItem.Text = "REPORTES";
             // 
             // cONFIGURACIONToolStripMenuItem
@@ -305,29 +300,6 @@
             this.cERRARSESIONToolStripMenuItem.Text = "CERRAR SESION";
             this.cERRARSESIONToolStripMenuItem.Click += new System.EventHandler(this.cERRARSESIONToolStripMenuItem_Click);
             // 
-            // bACKUPToolStripMenuItem
-            // 
-            this.bACKUPToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gENERARBACKUPToolStripMenuItem,
-            this.rEUPERARBACKUPToolStripMenuItem});
-            this.bACKUPToolStripMenuItem.Name = "bACKUPToolStripMenuItem";
-            this.bACKUPToolStripMenuItem.Size = new System.Drawing.Size(64, 22);
-            this.bACKUPToolStripMenuItem.Text = "BACKUP";
-            // 
-            // gENERARBACKUPToolStripMenuItem
-            // 
-            this.gENERARBACKUPToolStripMenuItem.Name = "gENERARBACKUPToolStripMenuItem";
-            this.gENERARBACKUPToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.gENERARBACKUPToolStripMenuItem.Text = "GENERAR BACKUP";
-            this.gENERARBACKUPToolStripMenuItem.Click += new System.EventHandler(this.gENERARBACKUPToolStripMenuItem_Click);
-            // 
-            // rEUPERARBACKUPToolStripMenuItem
-            // 
-            this.rEUPERARBACKUPToolStripMenuItem.Name = "rEUPERARBACKUPToolStripMenuItem";
-            this.rEUPERARBACKUPToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.rEUPERARBACKUPToolStripMenuItem.Text = "RECUPERAR BACKUP";
-            this.rEUPERARBACKUPToolStripMenuItem.Click += new System.EventHandler(this.rEUPERARBACKUPToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -344,7 +316,6 @@
             this.Text = "Form1";
             this.TransparencyKey = System.Drawing.Color.Transparent;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -384,9 +355,6 @@
         private System.Windows.Forms.ToolStripMenuItem eliminarAeropuertoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cREARToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cambiarContraseñaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bACKUPToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gENERARBACKUPToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rEUPERARBACKUPToolStripMenuItem;
 
     }
 }

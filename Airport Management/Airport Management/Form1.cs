@@ -7,13 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Airport_Management.Clases;
 
 namespace Airport_Management
 {
     public partial class Form1 : Form
     {
-
         public bool validado = false;
         public Form1()
         {
@@ -158,35 +156,11 @@ namespace Airport_Management
             abrirVentana(crearUsuario);
         }
 
-        private void generarPlanToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AccesoDatos ad = new AccesoDatos();
-            ad.generarBkp();
-
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            System.IO.Directory.CreateDirectory("c:/BackUpAirport_Manager");
-        }
-
-        private void gENERARBACKUPToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AccesoDatos ad = new AccesoDatos();
-            if (ad.generarBkp()) MessageBox.Show("Se ha generado un BackUp nuevo");
-            else MessageBox.Show("Error al generar BackUp");
-        }
-
-        private void rEUPERARBACKUPToolStripMenuItem_Click(object sender, EventArgs e)
+        private void eliminarAeropuertoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             borrarVentanaAnterior();
-            recuperarBD recuperarBD = new recuperarBD();
-            abrirVentana(recuperarBD);
+            eliminarAeropuerto eliminarAeropuerto = new eliminarAeropuerto();
+            abrirVentana(eliminarAeropuerto);
         }
     }
 }

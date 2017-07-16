@@ -82,6 +82,12 @@
     <Compile Include="crearUsuario.Designer.cs">
       <DependentUpon>crearUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="eliminarAeropuerto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eliminarAeropuerto.Designer.cs">
+      <DependentUpon>eliminarAeropuerto.cs</DependentUpon>
+    </Compile>
     <Compile Include="eliminarAvion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="crearUsuario.resx">
       <DependentUpon>crearUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eliminarAeropuerto.resx">
+      <DependentUpon>eliminarAeropuerto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="eliminarAvion.resx">
       <DependentUpon>eliminarAvion.cs</DependentUpon>

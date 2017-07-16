@@ -130,9 +130,9 @@ usuario varchar(50) not null,
 contrasena varchar(50) not null,
 nombre varchar(50) not null,
 apellido varchar(50) not null,
-correo varchar(50) not null,
-telefono varchar(50) not null,
-foto image not null,
+correo varchar(50) null,
+telefono varchar(50) null,
+foto image null,
 CONSTRAINT PK_USU PRIMARY KEY(id)
 )
 GO
