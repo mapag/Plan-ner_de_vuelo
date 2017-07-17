@@ -45,13 +45,10 @@
             this.eliminarRutaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pLANESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generarPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tRIPULANTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarTripulantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aEROPUERTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarAeropuertosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarAeropuertoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarAeropuertoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rEPORTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONFIGURACIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cREARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambiarContraseñaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,9 +68,7 @@
             this.vUELOSToolStripMenuItem,
             this.rUTAToolStripMenuItem,
             this.pLANESToolStripMenuItem,
-            this.tRIPULANTESToolStripMenuItem,
             this.aEROPUERTOSToolStripMenuItem,
-            this.rEPORTESToolStripMenuItem,
             this.cONFIGURACIONToolStripMenuItem,
             this.cERRARSESIÓNToolStripMenuItem,
             this.bACKUPToolStripMenuItem});
@@ -204,23 +199,9 @@
             // generarPlanToolStripMenuItem
             // 
             this.generarPlanToolStripMenuItem.Name = "generarPlanToolStripMenuItem";
-            this.generarPlanToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.generarPlanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.generarPlanToolStripMenuItem.Text = "Generar plan";
-            // 
-            // tRIPULANTESToolStripMenuItem
-            // 
-            this.tRIPULANTESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listarTripulantesToolStripMenuItem});
-            this.tRIPULANTESToolStripMenuItem.Name = "tRIPULANTESToolStripMenuItem";
-            this.tRIPULANTESToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
-            this.tRIPULANTESToolStripMenuItem.Text = "TRIPULANTES";
-            // 
-            // listarTripulantesToolStripMenuItem
-            // 
-            this.listarTripulantesToolStripMenuItem.Name = "listarTripulantesToolStripMenuItem";
-            this.listarTripulantesToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.listarTripulantesToolStripMenuItem.Text = "Listar tripulantes";
-            this.listarTripulantesToolStripMenuItem.Click += new System.EventHandler(this.listarTripulantesToolStripMenuItem_Click);
+            this.generarPlanToolStripMenuItem.Click += new System.EventHandler(this.generarPlanToolStripMenuItem_Click);
             // 
             // aEROPUERTOSToolStripMenuItem
             // 
@@ -252,12 +233,6 @@
             this.eliminarAeropuertoToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.eliminarAeropuertoToolStripMenuItem.Text = "Eliminar aeropuerto";
             this.eliminarAeropuertoToolStripMenuItem.Click += new System.EventHandler(this.eliminarAeropuertoToolStripMenuItem_Click);
-            // 
-            // rEPORTESToolStripMenuItem
-            // 
-            this.rEPORTESToolStripMenuItem.Name = "rEPORTESToolStripMenuItem";
-            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(73, 22);
-            this.rEPORTESToolStripMenuItem.Text = "REPORTES";
             // 
             // cONFIGURACIONToolStripMenuItem
             // 
@@ -362,11 +337,8 @@
         private System.Windows.Forms.ToolStripMenuItem eliminarVueloToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pLANESToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generarPlanToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rEPORTESToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cONFIGURACIONToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarAvionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tRIPULANTESToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listarTripulantesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarVueloToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rUTAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarRutaToolStripMenuItem;

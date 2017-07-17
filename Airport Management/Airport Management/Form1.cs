@@ -177,5 +177,106 @@ namespace Airport_Management
             recuperarBD recuperarBD = new recuperarBD();
             abrirVentana(recuperarBD);
         }
+
+        private void generarPlanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AccesoDatos ad = new AccesoDatos();
+            DataSet ds = new DataSet();
+            bool aumentardia = false;
+            ad.generarBkp();
+            string consultaSQL1 = "select vuelos.codigo_VLO as codigo, rutas.ATOpartida_RTA as partida, rutas.ATOarrivo_RTA as arrivo, rutas.ETA_RTA as tiempo, vuelos.fecha_salida_VLO as fecha from vuelos inner join rutas on vuelos.codigo_RTA = rutas.codigo_RTA where vuelos.sincronizado_VLO = 0 order by vuelos.fecha_salida_VLO ASC";
+            
+            ad.cargaTabla("vuelos", consultaSQL1, ref ds);
+            foreach (DataRow vuelo in ds.Tables["vuelos"].Rows)
+            {
+                string prov = vuelo["fecha"].ToString();
+                string[] fecha = prov.Split();
+                if (fecha[2] == "a.m.") fecha[2] = "am";
+                else fecha[2] = "pm";
+
+                string arrivo = fecha[1][0].ToString() + fecha[1][1].ToString();
+                int hora = int.Parse(arrivo);
+                hora += int.Parse(vuelo["tiempo"].ToString());
+                if (fecha[2] == "am")
+                {
+                    if (hora > 24)
+                    {
+                        hora -= 24;
+                        aumentardia = true;
+                    }
+                    if (hora > 12)
+                    {
+                        hora -= 12;
+                        fecha[2] = "pm";
+                    }
+                }
+                else
+                {
+                    if (hora > 24)
+                    {
+                        hora -= 24;
+                        aumentardia = true;
+                    }
+                    if (hora > 12)
+                    {
+                        hora -= 12;
+                        fecha[2] = "am";
+                        aumentardia = true;
+                    }
+                }
+                if (hora < 10) fecha[1] = "0" + hora.ToString() + ":" + fecha[1][3].ToString() + fecha[1][4].ToString() + ":" + fecha[1][6].ToString() + fecha[1][7].ToString();
+                else fecha[1] = hora.ToString() + ":" + fecha[1][3].ToString() + fecha[1][4].ToString() + ":" + fecha[1][6].ToString() + fecha[1][7].ToString();
+                if (aumentardia)
+                {
+                    int anio = int.Parse(fecha[0][8].ToString() + fecha[0][9].ToString());
+                    int mes = int.Parse(fecha[0][3].ToString() + fecha[0][4].ToString());
+                    int dia = int.Parse(fecha[0][8].ToString() + fecha[0][9].ToString());
+                    if(mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10){
+                        if (dia == 31)
+                        {
+                            dia = 1;
+                            mes += 1;
+                        }
+                    }
+                    else if (mes == 12)
+                    {
+                        if (dia == 31)
+                        {
+                            dia = 1;
+                            mes = 1;
+                            anio += 1;
+                        }
+                    }
+                    else if( mes ==  2)
+                    {
+                        if (dia == 28)
+                        {
+                            dia = 1;
+                            mes += 1;
+                        }
+                    }
+                    else
+                    {
+                        if (dia == 30)
+                        {
+                            dia = 1;
+                            mes += 1;
+                        }
+                    }
+                    fecha[0] = dia.ToString() + "/" + mes.ToString() + "/20" + anio.ToString();
+                }
+
+                string consultaSQL2 = "select aviones.codigo_AV as codigo from aviones where aviones.ultimo_ATO_programado_AV = '" + vuelo["partida"].ToString() + "' and aviones.ultima_fecha_programada_AV < '" + fecha[0] + " " + fecha[1] + " " + fecha[2] + "' and aviones.baja_AV = 1 order by aviones.posicion_AV ASC";
+
+                if (ad.ContarRegistros(consultaSQL2) > 0)
+                {
+                    ad.cargaTabla("aviones", consultaSQL2, ref ds);
+                    ad.EjecutarConsulta("insert into VLO_por_AV select '" + vuelo["codigo"].ToString() + "', '" + ds.Tables["aviones"].Rows[0]["codigo"].ToString() + "'");
+                    ad.EjecutarConsulta("update aviones set ultimo_ATO_programado_AV = '" + vuelo["arrivo"].ToString() + "' , ultima_fecha_programada_AV = '" + fecha[0] + " " + fecha[1] + " " + fecha[2] + "' where codigo_AV = '" + ds.Tables["aviones"].Rows[0][0].ToString() + "'" );
+                    ad.EjecutarConsulta("update vuelos set sincronizado_VLO = 1 where codigo_VLO = '" + vuelo["codigo"].ToString() + "'");
+                    ds.Tables["aviones"].Clear();
+                }
+            }
+        }
     }
 }

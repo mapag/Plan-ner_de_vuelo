@@ -57,7 +57,7 @@ namespace Airport_Management
 
             if(fecha[2] == "a.m.") fecha[2] = "am";
             else fecha[2] = "pm";
-            string consulta = "INSERT INTO vuelos (codigo_VLO, codigo_RTA, fecha_salida_VLO) SELECT '" + txtVuelo.Text + "', '" + cmb_Ruta.Text + "', '" + fecha[0] + " " + fecha[1] + " " + fecha[2] + "'";      
+            string consulta = "INSERT INTO vuelos (codigo_VLO, codigo_RTA, fecha_salida_VLO, sincronizado_VLO) SELECT '" + txtVuelo.Text + "', '" + cmb_Ruta.Text + "', '" + fecha[0] + " " + fecha[1] + " " + fecha[2] + "', 0";      
             
             AccesoDatos ac = new AccesoDatos();
             ac.EjecutarConsulta(consulta);
