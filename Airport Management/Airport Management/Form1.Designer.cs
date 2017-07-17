@@ -58,6 +58,7 @@
             this.bACKUPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generarBackUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recuperarBackUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mostrarPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -191,7 +192,8 @@
             // pLANESToolStripMenuItem
             // 
             this.pLANESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.generarPlanToolStripMenuItem});
+            this.generarPlanToolStripMenuItem,
+            this.mostrarPlanToolStripMenuItem});
             this.pLANESToolStripMenuItem.Name = "pLANESToolStripMenuItem";
             this.pLANESToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
             this.pLANESToolStripMenuItem.Text = "PLANES";
@@ -302,6 +304,13 @@
             this.recuperarBackUpToolStripMenuItem.Text = "Recuperar BackUp";
             this.recuperarBackUpToolStripMenuItem.Click += new System.EventHandler(this.recuperarBackUpToolStripMenuItem_Click);
             // 
+            // mostrarPlanToolStripMenuItem
+            // 
+            this.mostrarPlanToolStripMenuItem.Name = "mostrarPlanToolStripMenuItem";
+            this.mostrarPlanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mostrarPlanToolStripMenuItem.Text = "Mostrar Plan";
+            this.mostrarPlanToolStripMenuItem.Click += new System.EventHandler(this.mostrarPlanToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -357,6 +366,7 @@
         private System.Windows.Forms.ToolStripMenuItem bACKUPToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generarBackUpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recuperarBackUpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mostrarPlanToolStripMenuItem;
 
     }
 }

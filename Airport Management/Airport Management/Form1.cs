@@ -185,7 +185,6 @@ namespace Airport_Management
             bool aumentardia = false;
             ad.generarBkp();
             string consultaSQL1 = "select vuelos.codigo_VLO as codigo, rutas.ATOpartida_RTA as partida, rutas.ATOarrivo_RTA as arrivo, rutas.ETA_RTA as tiempo, vuelos.fecha_salida_VLO as fecha from vuelos inner join rutas on vuelos.codigo_RTA = rutas.codigo_RTA where vuelos.sincronizado_VLO = 0 order by vuelos.fecha_salida_VLO ASC";
-            
             ad.cargaTabla("vuelos", consultaSQL1, ref ds);
             foreach (DataRow vuelo in ds.Tables["vuelos"].Rows)
             {
@@ -276,7 +275,19 @@ namespace Airport_Management
                     ad.EjecutarConsulta("update vuelos set sincronizado_VLO = 1 where codigo_VLO = '" + vuelo["codigo"].ToString() + "'");
                     ds.Tables["aviones"].Clear();
                 }
+                else
+                {
+                    MessageBox.Show("No hay aviones disponibles para el vuelo " + vuelo["codigo"].ToString() + "se recomienda planificar un vuelo de ida hacia el aeropuerto " + vuelo["partida"].ToString() + " que llegue antes del la fecha de partida.");
+                }
             }
+            MessageBox.Show("Se ha generado el plan satisfactoriamente.");
+        }
+
+        private void mostrarPlanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarVentanaAnterior();
+            listarVuelosPorAvion listarVuelosPorAvion = new listarVuelosPorAvion();
+            abrirVentana(listarVuelosPorAvion);
         }
     }
 }
