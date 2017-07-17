@@ -101,6 +101,7 @@ CREATE TABLE vuelos
 codigo_VLO varchar(10),
 codigo_RTA varchar(10) NOT NULL REFERENCES rutas(codigo_RTA),
 fecha_salida_VLO datetime NOT NULL,
+sincronizado_VLO int NOT NULL,
 CONSTRAINT PK_VLO PRIMARY KEY (codigo_VLO)
 )
 GO

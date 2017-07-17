@@ -93,7 +93,7 @@
             // btnFiltrar
             // 
             this.btnFiltrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrar.Location = new System.Drawing.Point(558, 11);
+            this.btnFiltrar.Location = new System.Drawing.Point(584, 8);
             this.btnFiltrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(197, 38);
@@ -203,7 +203,7 @@
             // btnReset
             // 
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(558, 137);
+            this.btnReset.Location = new System.Drawing.Point(584, 134);
             this.btnReset.Margin = new System.Windows.Forms.Padding(2);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(197, 38);
@@ -215,7 +215,7 @@
             // btn_activos
             // 
             this.btn_activos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_activos.Location = new System.Drawing.Point(558, 53);
+            this.btn_activos.Location = new System.Drawing.Point(584, 50);
             this.btn_activos.Margin = new System.Windows.Forms.Padding(2);
             this.btn_activos.Name = "btn_activos";
             this.btn_activos.Size = new System.Drawing.Size(197, 38);
@@ -227,7 +227,7 @@
             // btn_noactivos
             // 
             this.btn_noactivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_noactivos.Location = new System.Drawing.Point(558, 95);
+            this.btn_noactivos.Location = new System.Drawing.Point(584, 92);
             this.btn_noactivos.Margin = new System.Windows.Forms.Padding(2);
             this.btn_noactivos.Name = "btn_noactivos";
             this.btn_noactivos.Size = new System.Drawing.Size(197, 38);

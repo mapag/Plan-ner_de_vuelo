@@ -150,6 +150,12 @@
     <Compile Include="listarVuelos.Designer.cs">
       <DependentUpon>listarVuelos.cs</DependentUpon>
     </Compile>
+    <Compile Include="listarVuelosPorAvion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listarVuelosPorAvion.Designer.cs">
+      <DependentUpon>listarVuelosPorAvion.cs</DependentUpon>
+    </Compile>
     <Compile Include="modificarRuta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +229,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="listarVuelos.resx">
       <DependentUpon>listarVuelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listarVuelosPorAvion.resx">
+      <DependentUpon>listarVuelosPorAvion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modificarRuta.resx">
       <DependentUpon>modificarRuta.cs</DependentUpon>
