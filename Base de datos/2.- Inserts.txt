@@ -1,3 +1,6 @@
+USE Airport_Manager
+go
+
 INSERT INTO aeropuertos (codigo_ATO, nombre_ATO, pais_ATO, provincia_ATO, contador_ATO)
 SELECT 'EZE', 'Aeropuerto Internacional Ministro Pistarini de Ezeiza', 'Argentina', 'Buenos Aires', 0 UNION
 SELECT 'BRC', 'Aeropuerto Internacional Teniente Luis Candelaria', 'Argentina', 'Rio Negro', 0 UNION
