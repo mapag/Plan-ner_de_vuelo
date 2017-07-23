@@ -926,3 +926,6 @@ SELECT 'EZE-MVD', 'E170' UNION
 SELECT 'MVD-EZE', 'E170' UNION
 SELECT 'EZE-MVD', 'MD80' UNION
 SELECT 'MVD-EZE', 'MD80'
+
+INSERT usuarios (usuario_USU, contrasena_USU, nombre_USU, apellido_USU, correo_USU, telefono_USU)
+SELECT 'root', '123', 'ROOT', 'ROOT', 'root@gmail.com', '123123123'
