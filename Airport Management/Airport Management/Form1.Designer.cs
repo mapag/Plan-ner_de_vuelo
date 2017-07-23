@@ -52,10 +52,10 @@
             this.eliminarAeropuertoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONFIGURACIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cREARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bACKUPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generarBackUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recuperarBackUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -251,9 +251,16 @@
             // cREARToolStripMenuItem
             // 
             this.cREARToolStripMenuItem.Name = "cREARToolStripMenuItem";
-            this.cREARToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.cREARToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.cREARToolStripMenuItem.Text = "Crear usuario";
             this.cREARToolStripMenuItem.Click += new System.EventHandler(this.cREARToolStripMenuItem_Click);
+            // 
+            // cerrarSesiónToolStripMenuItem
+            // 
+            this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
+            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
+            this.cerrarSesiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesiónToolStripMenuItem_Click);
             // 
             // bACKUPToolStripMenuItem
             // 
@@ -278,13 +285,6 @@
             this.recuperarBackUpToolStripMenuItem.Text = "Recuperar BackUp";
             this.recuperarBackUpToolStripMenuItem.Click += new System.EventHandler(this.recuperarBackUpToolStripMenuItem_Click);
             // 
-            // cerrarSesiónToolStripMenuItem
-            // 
-            this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
-            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
-            this.cerrarSesiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesiónToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -301,6 +301,7 @@
             this.Text = "Form1";
             this.TransparencyKey = System.Drawing.Color.Transparent;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

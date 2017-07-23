@@ -296,5 +296,10 @@ namespace Airport_Management
             validado = true;
             Application.Exit();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            System.IO.Directory.CreateDirectory("c:/BackUpAirport_Manager/");
+        }
     }
 }
