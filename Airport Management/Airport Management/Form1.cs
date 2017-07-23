@@ -289,5 +289,12 @@ namespace Airport_Management
             listarVuelosPorAvion listarVuelosPorAvion = new listarVuelosPorAvion();
             abrirVentana(listarVuelosPorAvion);
         }
+
+        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ingreso A = new ingreso();
+            validado = true;
+            Application.Exit();
+        }
     }
 }

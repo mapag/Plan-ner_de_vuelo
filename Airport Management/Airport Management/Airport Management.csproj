@@ -168,7 +168,7 @@
     <Compile Include="modificarVuelo.Designer.cs">
       <DependentUpon>modificarVuelo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Clases\Program.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="recuperarBD.cs">
       <SubType>Form</SubType>

@@ -45,20 +45,17 @@
             this.eliminarRutaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pLANESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generarPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mostrarPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aEROPUERTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarAeropuertosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarAeropuertoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarAeropuertoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONFIGURACIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cREARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cambiarContraseñaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cERRARSESIÓNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vERPERFILToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cERRARSESIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bACKUPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generarBackUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recuperarBackUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mostrarPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,7 +68,6 @@
             this.pLANESToolStripMenuItem,
             this.aEROPUERTOSToolStripMenuItem,
             this.cONFIGURACIONToolStripMenuItem,
-            this.cERRARSESIÓNToolStripMenuItem,
             this.bACKUPToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -201,9 +197,16 @@
             // generarPlanToolStripMenuItem
             // 
             this.generarPlanToolStripMenuItem.Name = "generarPlanToolStripMenuItem";
-            this.generarPlanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.generarPlanToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.generarPlanToolStripMenuItem.Text = "Generar plan";
             this.generarPlanToolStripMenuItem.Click += new System.EventHandler(this.generarPlanToolStripMenuItem_Click);
+            // 
+            // mostrarPlanToolStripMenuItem
+            // 
+            this.mostrarPlanToolStripMenuItem.Name = "mostrarPlanToolStripMenuItem";
+            this.mostrarPlanToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.mostrarPlanToolStripMenuItem.Text = "Mostrar Plan";
+            this.mostrarPlanToolStripMenuItem.Click += new System.EventHandler(this.mostrarPlanToolStripMenuItem_Click);
             // 
             // aEROPUERTOSToolStripMenuItem
             // 
@@ -240,7 +243,7 @@
             // 
             this.cONFIGURACIONToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cREARToolStripMenuItem,
-            this.cambiarContraseñaToolStripMenuItem});
+            this.cerrarSesiónToolStripMenuItem});
             this.cONFIGURACIONToolStripMenuItem.Name = "cONFIGURACIONToolStripMenuItem";
             this.cONFIGURACIONToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.cONFIGURACIONToolStripMenuItem.Text = "CONFIGURACIÓN";
@@ -251,35 +254,6 @@
             this.cREARToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.cREARToolStripMenuItem.Text = "Crear usuario";
             this.cREARToolStripMenuItem.Click += new System.EventHandler(this.cREARToolStripMenuItem_Click);
-            // 
-            // cambiarContraseñaToolStripMenuItem
-            // 
-            this.cambiarContraseñaToolStripMenuItem.Name = "cambiarContraseñaToolStripMenuItem";
-            this.cambiarContraseñaToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.cambiarContraseñaToolStripMenuItem.Text = "Cambiar Contraseña";
-            // 
-            // cERRARSESIÓNToolStripMenuItem
-            // 
-            this.cERRARSESIÓNToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.vERPERFILToolStripMenuItem,
-            this.cERRARSESIONToolStripMenuItem});
-            this.cERRARSESIÓNToolStripMenuItem.Name = "cERRARSESIÓNToolStripMenuItem";
-            this.cERRARSESIÓNToolStripMenuItem.Size = new System.Drawing.Size(58, 22);
-            this.cERRARSESIÓNToolStripMenuItem.Text = "SESION";
-            // 
-            // vERPERFILToolStripMenuItem
-            // 
-            this.vERPERFILToolStripMenuItem.Name = "vERPERFILToolStripMenuItem";
-            this.vERPERFILToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.vERPERFILToolStripMenuItem.Text = "VER PERFIL";
-            this.vERPERFILToolStripMenuItem.Click += new System.EventHandler(this.vERPERFILToolStripMenuItem_Click);
-            // 
-            // cERRARSESIONToolStripMenuItem
-            // 
-            this.cERRARSESIONToolStripMenuItem.Name = "cERRARSESIONToolStripMenuItem";
-            this.cERRARSESIONToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.cERRARSESIONToolStripMenuItem.Text = "CERRAR SESION";
-            this.cERRARSESIONToolStripMenuItem.Click += new System.EventHandler(this.cERRARSESIONToolStripMenuItem_Click);
             // 
             // bACKUPToolStripMenuItem
             // 
@@ -304,12 +278,12 @@
             this.recuperarBackUpToolStripMenuItem.Text = "Recuperar BackUp";
             this.recuperarBackUpToolStripMenuItem.Click += new System.EventHandler(this.recuperarBackUpToolStripMenuItem_Click);
             // 
-            // mostrarPlanToolStripMenuItem
+            // cerrarSesiónToolStripMenuItem
             // 
-            this.mostrarPlanToolStripMenuItem.Name = "mostrarPlanToolStripMenuItem";
-            this.mostrarPlanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.mostrarPlanToolStripMenuItem.Text = "Mostrar Plan";
-            this.mostrarPlanToolStripMenuItem.Click += new System.EventHandler(this.mostrarPlanToolStripMenuItem_Click);
+            this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
+            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
+            this.cerrarSesiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesiónToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -354,19 +328,16 @@
         private System.Windows.Forms.ToolStripMenuItem agregarRutaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modificarRutaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarRutaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cERRARSESIÓNToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vERPERFILToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cERRARSESIONToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aEROPUERTOSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarAeropuertosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agregarAeropuertoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarAeropuertoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cREARToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cambiarContraseñaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bACKUPToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generarBackUpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recuperarBackUpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mostrarPlanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cerrarSesiónToolStripMenuItem;
 
     }
 }
