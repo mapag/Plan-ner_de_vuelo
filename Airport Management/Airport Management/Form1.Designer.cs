@@ -83,28 +83,28 @@
             this.agregarAviónToolStripMenuItem,
             this.eliminarAviónToolStripMenuItem});
             this.aVIONESToolStripMenuItem.Name = "aVIONESToolStripMenuItem";
-            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(66, 22);
+            this.aVIONESToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
             this.aVIONESToolStripMenuItem.Text = "AVIONES";
             // 
             // listarAvionesToolStripMenuItem
             // 
             this.listarAvionesToolStripMenuItem.Name = "listarAvionesToolStripMenuItem";
-            this.listarAvionesToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.listarAvionesToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
             this.listarAvionesToolStripMenuItem.Text = "Listar aviones";
             this.listarAvionesToolStripMenuItem.Click += new System.EventHandler(this.listarAvionesToolStripMenuItem_Click);
             // 
             // agregarAviónToolStripMenuItem
             // 
             this.agregarAviónToolStripMenuItem.Name = "agregarAviónToolStripMenuItem";
-            this.agregarAviónToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.agregarAviónToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
             this.agregarAviónToolStripMenuItem.Text = "Agregar avión";
             this.agregarAviónToolStripMenuItem.Click += new System.EventHandler(this.agregarAviónToolStripMenuItem_Click);
             // 
             // eliminarAviónToolStripMenuItem
             // 
             this.eliminarAviónToolStripMenuItem.Name = "eliminarAviónToolStripMenuItem";
-            this.eliminarAviónToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.eliminarAviónToolStripMenuItem.Text = "Eliminar avión";
+            this.eliminarAviónToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.eliminarAviónToolStripMenuItem.Text = "Cambiar estado del avión";
             this.eliminarAviónToolStripMenuItem.Click += new System.EventHandler(this.eliminarAviónToolStripMenuItem_Click);
             // 
             // vUELOSToolStripMenuItem
@@ -154,7 +154,7 @@
             this.modificarRutaToolStripMenuItem,
             this.eliminarRutaToolStripMenuItem});
             this.rUTAToolStripMenuItem.Name = "rUTAToolStripMenuItem";
-            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(54, 22);
+            this.rUTAToolStripMenuItem.Size = new System.Drawing.Size(55, 22);
             this.rUTAToolStripMenuItem.Text = "RUTAS";
             // 
             // listarRutaToolStripMenuItem
@@ -215,7 +215,7 @@
             this.agregarAeropuertoToolStripMenuItem,
             this.eliminarAeropuertoToolStripMenuItem});
             this.aEROPUERTOSToolStripMenuItem.Name = "aEROPUERTOSToolStripMenuItem";
-            this.aEROPUERTOSToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
+            this.aEROPUERTOSToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.aEROPUERTOSToolStripMenuItem.Text = "AEROPUERTOS";
             // 
             // listarAeropuertosToolStripMenuItem
