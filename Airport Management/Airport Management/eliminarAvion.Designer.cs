@@ -90,6 +90,7 @@
             this.txtFabricante.Location = new System.Drawing.Point(102, 126);
             this.txtFabricante.Margin = new System.Windows.Forms.Padding(2);
             this.txtFabricante.Name = "txtFabricante";
+            this.txtFabricante.ReadOnly = true;
             this.txtFabricante.Size = new System.Drawing.Size(103, 26);
             this.txtFabricante.TabIndex = 9;
             this.txtFabricante.Text = "No existe";

@@ -20,6 +20,7 @@ namespace Airport_Management
         }
         AccesoDatos ad = new AccesoDatos();
         GestionVuelos gv;
+        DataSet ds = new DataSet();
         private void btnModificar_Click(object sender, EventArgs e)
         {
             ad.EjecutarConsulta("delete from vuelos where codigo_VLO = '" + txtCodigo.Text + "'");
@@ -39,6 +40,22 @@ namespace Airport_Management
                 btnEliminar.Enabled = true;
             }
             else btnEliminar.Enabled = false;
+        }
+
+        private void txtCodigo_Leave(object sender, EventArgs e)
+        {
+            if (gv.VueloExiste(txtCodigo.Text))
+            {
+                ds = gv.TraerVueloCodigo(txtCodigo.Text);
+
+                txtSalida.Text = (ds.Tables["Vuelos"].Rows[0]["codigo_RTA"].ToString());
+                btnEliminar.Enabled = true;
+            }
+            else
+            {
+                btnEliminar.Enabled = false;
+                txtSalida.Text = "No existe";
+            }
         }
     }
 }

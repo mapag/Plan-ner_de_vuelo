@@ -28,5 +28,15 @@ namespace Airport_Management.Clases
             else return true;
         }
 
+        public DataSet TraerVueloCodigo(string codigo)
+        {
+            DataSet ds = new DataSet();
+            AccesoDatos ad = new AccesoDatos();
+            string consulta = "Select * from vuelos where codigo_VLO = '" + codigo + "'";
+
+            ad.cargaTabla("Vuelos", consulta, ref ds);
+            return ds;
+        }
+
     }
 }

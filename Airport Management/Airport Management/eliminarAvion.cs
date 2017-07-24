@@ -26,7 +26,6 @@ namespace Airport_Management
 
         private void txtCodigo_Leave(object sender, EventArgs e)
         {
-            
 
             if ( ga.CodigoExiste(txtCodigo.Text) )
             {
@@ -38,6 +37,12 @@ namespace Airport_Management
                 txtFabricante.Text = (ds.Tables["Modelos"].Rows[0]["fabricante_TA"].ToString());
                 txtModelo.Text = ds.Tables["Modelos"].Rows[0]["modelo_TA"].ToString();
                 btnEliminar.Enabled = true;
+            }
+            else
+            {
+                btnEliminar.Enabled = false;
+                txtFabricante.Text = "No existe";
+                txtModelo.Text = "No existe";
             }
         }
 
