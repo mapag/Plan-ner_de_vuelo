@@ -55,12 +55,17 @@ namespace Airport_Management
             string prov = timer_Fecha.Value.ToString();
             string[] fecha = prov.Split();
 
-            if(fecha[2] == "a.m.") fecha[2] = "am";
+            if (fecha[2] == "a.m.") fecha[2] = "am";
             else fecha[2] = "pm";
-            string consulta = "INSERT INTO vuelos (codigo_VLO, codigo_RTA, fecha_salida_VLO, sincronizado_VLO) SELECT '" + txtVuelo.Text + "', '" + cmb_Ruta.Text + "', '" + fecha[0] + " " + fecha[1] + " " + fecha[2] + "', 0";      
-            
+            string consulta = "INSERT INTO vuelos (codigo_VLO, codigo_RTA, fecha_salida_VLO, sincronizado_VLO) SELECT '" + txtVuelo.Text + "', '" + cmb_Ruta.Text + "', '" + fecha[0] + " " + fecha[1] + " " + fecha[2] + "', 0";
+
             AccesoDatos ac = new AccesoDatos();
             ac.EjecutarConsulta(consulta);
+
+            //MessageBox.Show(prov);
+            //MessageBox.Show(fecha[0]);
+            //MessageBox.Show(fecha[1]);
+            //MessageBox.Show(fecha[2]);
 
             txtVuelo.Text = "";
             cmb_Ruta.Text = "";

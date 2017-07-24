@@ -25,7 +25,7 @@ namespace Airport_Management
 
         private void listarVuelosPorAvion_Load(object sender, EventArgs e)
         {
-            string ClausulaSQL = "select a.codigo_VLO as Vuelo, a.codigo_AV as Avion from VLO_por_AV AS a where a.codigo_VLO like '%'";
+            string ClausulaSQL = "SELECT a.codigo_VLO AS Vuelo, d.ATOpartida_RTA AS [Aeropuerto de partida], d.ATOarrivo_RTA AS [Aeropuerto de llegada], d.ETA_RTA AS [Tiempo de vuelo (En horas)], b.fecha_salida_VLO AS [Fecha de partida], a.codigo_AV AS Avion, e.modelo_TA AS Modelo , e.descripcion_TA AS Descripción from VLO_por_AV AS a inner join vuelos AS b ON a.codigo_VLO = b.codigo_VLO inner join aviones AS c ON c.codigo_AV = a.codigo_AV inner join rutas AS d ON d.codigo_RTA = b.codigo_RTA inner join tipos_de_aviones as E ON c.tipo_AV = e.codigo_TA where a.codigo_VLO like '%'";
             ad.IniciarTabla(ClausulaSQL, "Todos", ref dsVLOxAV, ref grdListarVLOxAV);
 
             CargarComboTexto(ref cmbCodigoVuelo);
@@ -42,7 +42,7 @@ namespace Airport_Management
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            string ClausulaSQL = "select a.codigo_VLO as Vuelo, a.codigo_AV as Avion from VLO_por_AV AS a where a.codigo_VLO like '%'";
+            string ClausulaSQL = "SELECT a.codigo_VLO AS Vuelo, d.ATOpartida_RTA AS [Aeropuerto de partida], d.ATOarrivo_RTA AS [Aeropuerto de llegada], d.ETA_RTA AS [Tiempo de vuelo (En horas)], b.fecha_salida_VLO AS [Fecha de partida], a.codigo_AV AS Avion, e.modelo_TA AS Modelo , e.descripcion_TA AS Descripción from VLO_por_AV AS a inner join vuelos AS b ON a.codigo_VLO = b.codigo_VLO inner join aviones AS c ON c.codigo_AV = a.codigo_AV inner join rutas AS d ON d.codigo_RTA = b.codigo_RTA inner join tipos_de_aviones as E ON c.tipo_AV = e.codigo_TA where a.codigo_VLO like '%'";
             ad.IniciarTabla(ClausulaSQL, "Todos", ref dsVLOxAV, ref grdListarVLOxAV);
 
             cmbCodigoAvion.Text = "";

@@ -25,7 +25,7 @@ namespace Airport_Management
 
         private void listarAviones_Load(object sender, EventArgs e)
         {
-            string ClausulaSQL = "select a.codigo_AV as Codigo, b.fabricante_TA as 'Fabricante', b.modelo_TA as Modelo, b.descripcion_TA as Descripción from Aviones a inner join tipos_de_aviones b on b.codigo_TA = a.tipo_AV where a.codigo_AV like '%'";
+            string ClausulaSQL = "select a.codigo_AV as Codigo, b.fabricante_TA as Fabricante, b.modelo_TA as Modelo, b.descripcion_TA as Descripción, c.nombre_ATO as Ubicacion from Aviones AS a inner join tipos_de_aviones AS b on b.codigo_TA = a.tipo_AV inner join aeropuertos AS c on ultimo_ATO_programado_AV = codigo_ATO where a.codigo_AV like '%'";
             ad.IniciarTabla(ClausulaSQL, "Todos", ref dsAviones, ref grdListarAviones);
 
             CargarComboTexto(ref cmbCodigo);
