@@ -39,13 +39,18 @@
             this.cmbCodigoVuelo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.grdListarVLOxAV = new System.Windows.Forms.DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtTiempoVuelo = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cmbTiempoVuelo = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdListarVLOxAV)).BeginInit();
             this.SuspendLayout();
             // 
             // btnReset
             // 
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(583, 97);
+            this.btnReset.Location = new System.Drawing.Point(584, 117);
             this.btnReset.Margin = new System.Windows.Forms.Padding(2);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(197, 38);
@@ -88,7 +93,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(26, 104);
+            this.label3.Location = new System.Drawing.Point(11, 105);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(148, 24);
@@ -98,7 +103,7 @@
             // btnFiltrar
             // 
             this.btnFiltrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrar.Location = new System.Drawing.Point(583, 55);
+            this.btnFiltrar.Location = new System.Drawing.Point(584, 75);
             this.btnFiltrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(197, 38);
@@ -141,7 +146,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 61);
+            this.label1.Location = new System.Drawing.Point(11, 62);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 24);
@@ -164,12 +169,69 @@
             this.grdListarVLOxAV.Size = new System.Drawing.Size(773, 366);
             this.grdListarVLOxAV.TabIndex = 18;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(294, 18);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(198, 24);
+            this.label4.TabIndex = 33;
+            this.label4.Text = "Menú planes de vuelo";
+            // 
+            // txtTiempoVuelo
+            // 
+            this.txtTiempoVuelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTiempoVuelo.Location = new System.Drawing.Point(368, 142);
+            this.txtTiempoVuelo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTiempoVuelo.Name = "txtTiempoVuelo";
+            this.txtTiempoVuelo.Size = new System.Drawing.Size(171, 29);
+            this.txtTiempoVuelo.TabIndex = 37;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(324, 148);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(15, 24);
+            this.label5.TabIndex = 36;
+            this.label5.Text = ":";
+            // 
+            // cmbTiempoVuelo
+            // 
+            this.cmbTiempoVuelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTiempoVuelo.FormattingEnabled = true;
+            this.cmbTiempoVuelo.Location = new System.Drawing.Point(174, 143);
+            this.cmbTiempoVuelo.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbTiempoVuelo.Name = "cmbTiempoVuelo";
+            this.cmbTiempoVuelo.Size = new System.Drawing.Size(147, 32);
+            this.cmbTiempoVuelo.TabIndex = 35;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(12, 146);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(153, 24);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "Tiempo de vuelo";
+            // 
             // listarVuelosPorAvion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(792, 554);
+            this.Controls.Add(this.txtTiempoVuelo);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.cmbTiempoVuelo);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.txtCodigoAvion);
             this.Controls.Add(this.label6);
@@ -205,5 +267,10 @@
         private System.Windows.Forms.ComboBox cmbCodigoVuelo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView grdListarVLOxAV;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtTiempoVuelo;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cmbTiempoVuelo;
+        private System.Windows.Forms.Label label7;
     }
 }
