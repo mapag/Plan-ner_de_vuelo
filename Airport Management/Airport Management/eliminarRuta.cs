@@ -34,14 +34,22 @@ namespace Airport_Management
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (gr.CodigoExiste(txtCodigo.Text))
+            try
             {
-                bool aux = gr.eliminarRuta(txtCodigo.Text);
+                if (gr.CodigoExiste(txtCodigo.Text))
+                {
+                    bool aux = gr.eliminarRuta(txtCodigo.Text);
 
-                if (aux) MessageBox.Show("La ruta se ha borrado con exito");
+                    if (aux) MessageBox.Show("La ruta se ha borrado con exito");
+                }
+
+                else MessageBox.Show("La ruta ingresada no existe");
             }
-           
-            else MessageBox.Show("La ruta ingresada no existe");
+
+            catch
+            {
+                MessageBox.Show("No se puede borrar, la ruta está siendo utilizada");
+            }
         }
     }
 }
