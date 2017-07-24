@@ -23,8 +23,16 @@ namespace Airport_Management
         DataSet ds = new DataSet();
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            ad.EjecutarConsulta("delete from vuelos where codigo_VLO = '" + txtCodigo.Text + "'");
-            txtCodigo.Text = "";
+            try
+            {
+                ad.EjecutarConsulta("delete from vuelos where codigo_VLO = '" + txtCodigo.Text + "'");
+                txtCodigo.Text = "";
+            }
+
+            catch
+            {
+                MessageBox.Show("El vuelo no se puede eliminar, se encuentra activo en el plan de vuelo");
+            }
         }
 
         private void eliminarVuelo_Load(object sender, EventArgs e)
