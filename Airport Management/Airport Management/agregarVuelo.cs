@@ -69,6 +69,7 @@ namespace Airport_Management
 
             txtVuelo.Text = "";
             cmb_Ruta.Text = "";
+            MessageBox.Show("El vuelo fue agregado correctamente");
 
         }
 

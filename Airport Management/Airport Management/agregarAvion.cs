@@ -70,6 +70,7 @@ namespace Airport_Management
                 MessageBox.Show(re.ToString());
             }
             //LIMPIA LOS CAMPOS
+            MessageBox.Show("El avión fue agregado correctamente");
             txtCodigo.Text = "";
             cmb_fabricante.SelectedIndex = -1;
             cmb_modelo.Text = "";
