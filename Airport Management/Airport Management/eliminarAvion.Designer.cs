@@ -61,7 +61,6 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Enabled = false;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.Location = new System.Drawing.Point(34, 232);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);

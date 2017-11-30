@@ -23,20 +23,24 @@ namespace Airport_Management
 
         private void eliminarRuta_Load(object sender, EventArgs e)
         {
-            btnEliminar.Enabled = false;
+            btnEliminar.Enabled = true;
         }
 
         private void txtCodigo_TextChanged(object sender, EventArgs e)
         {
-            btnEliminar.Enabled = true;
-            if (txtCodigo.Text == "") btnEliminar.Enabled = false;
+            //if (txtCodigo.Text == "") btnEliminar.Enabled = false;
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             try
             {
-                if (gr.CodigoExiste(txtCodigo.Text))
+                if (txtCodigo.Text == "")
+                {
+                    MessageBox.Show("Debe ingresar código de ruta");
+                }
+
+                else if (gr.CodigoExiste(txtCodigo.Text))
                 {
                     bool aux = gr.eliminarRuta(txtCodigo.Text);
 

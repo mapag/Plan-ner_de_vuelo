@@ -37,19 +37,19 @@ namespace Airport_Management.Clases
 
             AccesoDatos ad = new AccesoDatos();
 
-           /* SIN PROCEDIMIENTO ALMACENADO, FUNCIONA
-            string consultaSQL = "UPDATE aeropuertos SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE')+1 WHERE codigo_ATO='EZE' INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) SELECT '"
-                + codigo + "', (select codigo_TA from tipos_de_aviones where fabricante_TA = '" + fabricante + "' and modelo_TA = '" + modelo + "'), 'EZE' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE'), 1";
+            //SIN PROCEDIMIENTO ALMACENADO, FUNCIONA
+             string consultaSQL = "UPDATE aeropuertos SET contador_ATO=(SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE')+1 WHERE codigo_ATO='EZE' INSERT INTO aviones(codigo_AV, tipo_AV, ultimo_ATO_programado_AV, ultima_fecha_programada_AV, posicion_AV, baja_AV) SELECT '"
+                 + codigo + "', (select codigo_TA from tipos_de_aviones where fabricante_TA = '" + fabricante + "' and modelo_TA = '" + modelo + "'), 'EZE' , GETDATE(), (SELECT contador_ATO FROM aeropuertos WHERE codigo_ATO='EZE'), 1";
 
-           ad.EjecutarConsulta(consultaSQL);
-            return true;*/
+            ad.EjecutarConsulta(consultaSQL);
+             return true;
 
             //NO FUNCIONA, SQL SI FUNCIONA
-            SqlCommand Comando = new SqlCommand();
-            ArmarParametrosAvionesAgregar(ref Comando, codigo, fabricante, modelo);
-            ad.EjecutarProcedimientoAlmacenado(Comando, "agregarAvion");
+            //SqlCommand Comando = new SqlCommand();
+            //ArmarParametrosAvionesAgregar(ref Comando, codigo, fabricante, modelo);
+            //ad.EjecutarProcedimientoAlmacenado(Comando, "agregarAvion");
 
-            return true;
+            //return true;
         }
 
         public bool CodigoExiste(string codigo) 

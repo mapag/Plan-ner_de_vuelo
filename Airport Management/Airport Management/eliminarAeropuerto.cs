@@ -22,15 +22,20 @@ namespace Airport_Management
 
         private void eliminarAeropuerto_Load(object sender, EventArgs e)
         {
-            btnEliminar.Enabled = false;
+            btnEliminar.Enabled = true;
             
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (!ga.CodigoExiste(txtCodigo.Text))
+            if (txtCodigo.Text == "")
             {
-                btnEliminar.Enabled = false;
+                MessageBox.Show("Ingrese código de aeropuerto");
+            }
+
+            else if (!ga.CodigoExiste(txtCodigo.Text))
+            {
+                //btnEliminar.Enabled = false;
                 MessageBox.Show("El codigo ingresado no existe");
             }
 
@@ -50,7 +55,7 @@ namespace Airport_Management
 
         private void txtCodigo_TextChanged(object sender, EventArgs e)
         {
-            if (txtCodigo.Text.Length !=0) btnEliminar.Enabled = true;
+            //if (txtCodigo.Text.Length !=0) btnEliminar.Enabled = true;
         }
     }
 }

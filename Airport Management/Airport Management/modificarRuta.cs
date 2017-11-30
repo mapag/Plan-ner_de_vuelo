@@ -24,26 +24,32 @@ namespace Airport_Management
         private void modificarRuta_Load(object sender, EventArgs e)
         {
             ad.AgregaraComboBox("select distinct codigo_RTA from rutas", ref cmbCodigo);
-            btnModificar.Enabled = false;
-            
+            btnModificar.Enabled = true;
+
         }
 
         private void txtCodigo_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e) // button1 es btnChequear
         {
-            
+
         }
 
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            bool aux = gr.modificarRuta(cmbCodigo.Text, Int32.Parse(txtETA.Text), Int32.Parse(txtPosta.Text));
 
-            if (aux) MessageBox.Show("La ruta se ha modificado con exito");
+            if (cmbCodigo.Text != "")
+            {
+                bool aux = gr.modificarRuta(cmbCodigo.Text, Int32.Parse(txtETA.Text), Int32.Parse(txtPosta.Text));
+
+                if (aux) MessageBox.Show("La ruta se ha modificado con exito");
+            }
+            else
+                MessageBox.Show("Debe ingresar un código de ruta");
         }
 
         private void txtETA_Validated(object sender, EventArgs e)
@@ -65,12 +71,12 @@ namespace Airport_Management
 
         private void cmbAtoPartida_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void cmbAtoLlegada_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void cmbCodigo_SelectedIndexChanged(object sender, EventArgs e)
@@ -88,7 +94,7 @@ namespace Airport_Management
 
         private void cmbCodigo_Leave(object sender, EventArgs e)
         {
-           
+
         }
 
         private void txtETA_Leave(object sender, EventArgs e)

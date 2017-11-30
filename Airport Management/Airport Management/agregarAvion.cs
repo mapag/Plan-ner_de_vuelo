@@ -16,16 +16,18 @@ namespace Airport_Management
     {
         AccesoDatos ad = new AccesoDatos();
         GestionAviones ga = new GestionAviones();
-        
-        public void enabilizador(){
+
+        public void enabilizador()
+        {
             GestionAviones ga = new GestionAviones();
-            string texto ="";
+            string texto = "";
             int i = 0;
-            if (txtCodigo.TextLength != 7){
+            if (txtCodigo.TextLength != 7)
+            {
                 i++;
                 texto += "El codigo debe tener 7 carácteres. ";
             }
-            else if('A' > txtCodigo.Text[0] || txtCodigo.Text[0] > 'Z' ||
+            else if ('A' > txtCodigo.Text[0] || txtCodigo.Text[0] > 'Z' ||
                'A' > txtCodigo.Text[1] || txtCodigo.Text[1] > 'Z' ||
                'A' > txtCodigo.Text[2] || txtCodigo.Text[2] > 'Z' ||
                txtCodigo.Text[3] != '-' ||
@@ -45,7 +47,7 @@ namespace Airport_Management
             }
 
             if (cmb_fabricante.Text == "" || cmb_modelo.Text == "") i++;
-            
+
             if (i == 0) btnAgregar.Enabled = true;
             else
             {
@@ -63,9 +65,52 @@ namespace Airport_Management
         {
             try
             {
-                ga.AgregarAvion(txtCodigo.Text, cmb_fabricante.Text, cmb_modelo.Text);
+                if (cmb_modelo.Text == "" || txtCodigo.Text == "")
+                {
+                    MessageBox.Show("Debe completar todos los campos");
+                }
+                else
+                {
+
+                    GestionAviones ga2 = new GestionAviones();
+                    string texto = "";
+                    int i = 0;
+                    if (txtCodigo.TextLength != 7)
+                    {
+                        i++;
+                        texto += "El codigo debe tener 7 carácteres. ";
+                    }
+                    else if ('A' > txtCodigo.Text[0] || txtCodigo.Text[0] > 'Z' ||
+                       'A' > txtCodigo.Text[1] || txtCodigo.Text[1] > 'Z' ||
+                       'A' > txtCodigo.Text[2] || txtCodigo.Text[2] > 'Z' ||
+                       txtCodigo.Text[3] != '-' ||
+                       '0' > txtCodigo.Text[4] || txtCodigo.Text[4] > '9' ||
+                       '0' > txtCodigo.Text[5] || txtCodigo.Text[5] > '9' ||
+                       '0' > txtCodigo.Text[6] || txtCodigo.Text[6] > '9'
+                        )
+                    {
+                        i++;
+                        texto += "El formato de codigo es 3 letras mayusculas, un guion '-' y 3 numeros. ";
+                    }
+
+                    if (ga2.CodigoExiste(txtCodigo.Text))
+                    {
+                        i++;
+                        texto += "El codigo de avión ya existe. ";
+                    }
+
+                    if (i == 0)
+                    {
+                        ga.AgregarAvion(txtCodigo.Text, cmb_fabricante.Text, cmb_modelo.Text);
+                        MessageBox.Show("Avión agregado con éxito a la base de datos del sistema");
+                    }
+                    else
+                    {
+                        if (cmb_fabricante.Text != "" || cmb_modelo.Text != "") MessageBox.Show(texto);
+                    }
+                }
             }
-            catch(SyntaxErrorException re)
+            catch (SyntaxErrorException re)
             {
                 MessageBox.Show(re.ToString());
             }
@@ -91,22 +136,22 @@ namespace Airport_Management
         private void agregarAvion_Load(object sender, EventArgs e)
         {
             ad.AgregaraComboBox("select distinct fabricante_TA from tipos_de_aviones", ref cmb_fabricante);
-            btnAgregar.Enabled = false;
+            btnAgregar.Enabled = true;
         }
 
         private void cmb_modelo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            enabilizador();
+            //enabilizador();
         }
 
         private void txtCodigo_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void txtCodigo_Leave(object sender, EventArgs e)
         {
-            enabilizador();
+            //enabilizador();
         }
     }
 }

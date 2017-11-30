@@ -56,17 +56,17 @@ namespace Airport_Management
 
         private void txt_Nombre_Leave(object sender, EventArgs e)
         {
-            activarbotonagregar();
+            //activarbotonagregar();
         }
 
         private void txt_Pais_Leave(object sender, EventArgs e)
         {
-            activarbotonagregar();
+            //activarbotonagregar();
         }
 
         private void txt_provincia_Leave(object sender, EventArgs e)
         {
-            activarbotonagregar();
+            //activarbotonagregar();
         }
 
         private void btn_agregar_Click(object sender, EventArgs e)
@@ -74,18 +74,44 @@ namespace Airport_Management
 
             try
             {
-                ga.agregarAeropuerto(txt_Codigo.Text, txt_Nombre.Text, txt_Pais.Text, txt_provincia.Text);
+                if (txt_provincia.Text == "" || txt_Codigo.Text == "" || txt_Nombre.Text == "" || txt_Pais.Text == "")
+                {
+
+                    MessageBox.Show("Debe completar todos los campos");
+                }
+                else
+                {
+                    int num = 0;
+                    if (txt_Codigo.Text.Equals("") || txt_Codigo.Text.Length != 3 || 'A' > txt_Codigo.Text[0] || txt_Codigo.Text[0] > 'Z'
+                                                                                  || 'A' > txt_Codigo.Text[1] || txt_Codigo.Text[1] > 'Z'
+                                                                                  || 'A' > txt_Codigo.Text[2] || txt_Codigo.Text[2] > 'Z')
+                    {
+                        num++;
+                        MessageBox.Show("El codigo son 3 letras mayúsculas");
+                    }
+                    if (ga.CodigoExiste(txt_Codigo.Text))
+                    {
+                        num++;
+                        MessageBox.Show("El código ya existe, verifique que el aeropuerto no este ya creado");
+                    }
+
+                    if (num == 0)
+                    {
+                        ga.agregarAeropuerto(txt_Codigo.Text, txt_Nombre.Text, txt_Pais.Text, txt_provincia.Text);
+                        MessageBox.Show("Aeropuerto agregado correctamente.");
+                    }
+                }
             }
             catch (SyntaxErrorException re)
             {
                 MessageBox.Show(re.ToString());
             }
+
             //LIMPIA LOS CAMPOS
             txt_Codigo.Text = "";
             txt_provincia.Text = "";
             txt_Pais.Text = "";
             txt_Nombre.Text = "";
-            MessageBox.Show("Aeropuerto agregado correctamente.");
         }
 
     }
