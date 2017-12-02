@@ -34,11 +34,21 @@ namespace Airport_Management
             ad.AgregaraComboBox("select codigo_RTA from rutas", ref cmb_Ruta);
             timer_Fecha.Format = DateTimePickerFormat.Custom;
             timer_Fecha.CustomFormat = "dd'/'MM'/'yy 'a las ' HH:mm:ss 'Horas' ";
-            activarcampos(false);
+            //activarcampos(false);
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
+            GestionVuelos gv = new  GestionVuelos();
+            if (txt_Codigo.Text.Length == 0)
+            {
+                MessageBox.Show("Debe ingresar código de vuelo");
+            }
+            else if (!gv.VueloExiste(txt_Codigo.Text))
+            {
+                MessageBox.Show("El vuelvo ingresado no existe");
+                txt_Codigo.Text = "";
+            }
             string prov = timer_Fecha.Value.ToString();
             string[] fecha = prov.Split();
             if (fecha[2] == "a.m.") fecha[2] = "am";
@@ -46,6 +56,7 @@ namespace Airport_Management
 
             string consultaSQL = "update vuelos set codigo_RTA = '" + cmb_Ruta.Text + "', fecha_salida_VLO = '" + fecha[0] + " " + fecha[1] + " " + fecha[2] + "' where codigo_VLO = '" + txt_Codigo.Text + "'";
             ad.EjecutarConsulta(consultaSQL);
+            MessageBox.Show("Vuelo modificado con éxito");
             cmb_Ruta.Text = "";
             txt_Codigo.Text = "";
         }
@@ -61,7 +72,7 @@ namespace Airport_Management
                 cmb_Ruta.Text = ds.Tables["vuelo"].Rows[0]["codigo_RTA"].ToString();
                 activarcampos(true);
             }
-            else activarcampos(false);
+            //else activarcampos(false);
         }
     }
 }

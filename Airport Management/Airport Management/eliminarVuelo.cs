@@ -25,10 +25,24 @@ namespace Airport_Management
         {
             try
             {
-                ad.EjecutarConsulta("delete from vuelos where codigo_VLO = '" + txtCodigo.Text + "'");
-                txtCodigo.Text = "";
-            }
+                gv = new GestionVuelos();
+                
+                if (txtCodigo.Text.Length == 0)
+                {
+                    MessageBox.Show("Debe ingresar código de vuelo");
+                }
+                else if (!gv.VueloExiste(txtCodigo.Text))
+                {
+                    MessageBox.Show("El vuelvo ingresado no existe");
+                    txtCodigo.Text = "";
+                }
 
+                else
+                {
+                    ad.EjecutarConsulta("delete from vuelos where codigo_VLO = '" + txtCodigo.Text + "'");
+                    txtCodigo.Text = "";
+                }
+            }
             catch
             {
                 MessageBox.Show("El vuelo no se puede eliminar, se encuentra activo en el plan de vuelo");
@@ -37,31 +51,25 @@ namespace Airport_Management
 
         private void eliminarVuelo_Load(object sender, EventArgs e)
         {
-            btnEliminar.Enabled = false;
+            btnEliminar.Enabled = true;
         }
 
         private void txtCodigo_TextChanged(object sender, EventArgs e)
         {
-            gv = new GestionVuelos();
-            if (gv.VueloExiste(txtCodigo.Text))
-            {
-                btnEliminar.Enabled = true;
-            }
-            else btnEliminar.Enabled = false;
+
         }
 
         private void txtCodigo_Leave(object sender, EventArgs e)
         {
+            gv = new GestionVuelos();
             if (gv.VueloExiste(txtCodigo.Text))
             {
                 ds = gv.TraerVueloCodigo(txtCodigo.Text);
 
                 txtSalida.Text = (ds.Tables["Vuelos"].Rows[0]["codigo_RTA"].ToString());
-                btnEliminar.Enabled = true;
             }
             else
             {
-                btnEliminar.Enabled = false;
                 txtSalida.Text = "No existe";
             }
         }
