@@ -99,6 +99,11 @@ namespace Airport_Management
                     {
                         ga.agregarAeropuerto(txt_Codigo.Text, txt_Nombre.Text, txt_Pais.Text, txt_provincia.Text);
                         MessageBox.Show("Aeropuerto agregado correctamente.");
+                        //LIMPIA LOS CAMPOS
+                        txt_Codigo.Text = "";
+                        txt_provincia.Text = "";
+                        txt_Pais.Text = "";
+                        txt_Nombre.Text = "";
                     }
                 }
             }
@@ -107,11 +112,7 @@ namespace Airport_Management
                 MessageBox.Show(re.ToString());
             }
 
-            //LIMPIA LOS CAMPOS
-            txt_Codigo.Text = "";
-            txt_provincia.Text = "";
-            txt_Pais.Text = "";
-            txt_Nombre.Text = "";
+            
         }
 
     }
