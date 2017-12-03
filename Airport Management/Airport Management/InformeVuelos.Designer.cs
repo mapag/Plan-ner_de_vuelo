@@ -31,7 +31,6 @@
             this.grdInformeVuelos = new System.Windows.Forms.DataGridView();
             this.cmbFIltro = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnReset = new System.Windows.Forms.Button();
             this.btnMostrarInforme = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdInformeVuelos)).BeginInit();
             this.SuspendLayout();
@@ -73,17 +72,6 @@
             this.label1.TabIndex = 39;
             this.label1.Text = "Filtro de selección";
             // 
-            // btnReset
-            // 
-            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(548, 85);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(2);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(235, 38);
-            this.btnReset.TabIndex = 38;
-            this.btnReset.Text = "Borrar selección";
-            this.btnReset.UseVisualStyleBackColor = true;
-            // 
             // btnMostrarInforme
             // 
             this.btnMostrarInforme.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -104,7 +92,6 @@
             this.ClientSize = new System.Drawing.Size(792, 554);
             this.Controls.Add(this.cmbFIltro);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnMostrarInforme);
             this.Controls.Add(this.grdInformeVuelos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -123,7 +110,6 @@
         private System.Windows.Forms.DataGridView grdInformeVuelos;
         private System.Windows.Forms.ComboBox cmbFIltro;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnMostrarInforme;
     }
 }
