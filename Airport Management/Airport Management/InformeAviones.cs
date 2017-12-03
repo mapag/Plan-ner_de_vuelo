@@ -45,13 +45,6 @@ namespace Airport_Management
             string ClausulaSQL = "select a.codigo_AV as 'codigo del avión', v.codigo_RTA as ruta, v.fecha_salida_VLO  as fecha, r.ETA_RTA as 'Duracion vuelo (horas)' from aviones a inner join VLO_por_AV va on a.codigo_AV = va.codigo_AV inner join vuelos v on va.codigo_VLO = v.codigo_VLO inner join rutas r on v.codigo_RTA = r.codigo_RTA WHERE MONTH(v.fecha_salida_VLO) > MONTH(GETDATE()) - 1 and v.fecha_salida_VLO < GETDATE()";
             ad.IniciarTabla(ClausulaSQL, "Todos", ref dsAviones, ref grdInformeAviones);
         }
-<<<<<<< HEAD
-        
-=======
-        public void BarExample()
-        {
 
-        }
->>>>>>> 0a5556bdfc91c1324a9f58e941009e2c73f85bdd
     }
 }
