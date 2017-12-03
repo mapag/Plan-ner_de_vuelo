@@ -65,7 +65,7 @@
             // cmbAtoLlegada
             // 
             this.cmbAtoLlegada.FormattingEnabled = true;
-            this.cmbAtoLlegada.Location = new System.Drawing.Point(152, 124);
+            this.cmbAtoLlegada.Location = new System.Drawing.Point(159, 124);
             this.cmbAtoLlegada.Name = "cmbAtoLlegada";
             this.cmbAtoLlegada.Size = new System.Drawing.Size(121, 21);
             this.cmbAtoLlegada.TabIndex = 15;
@@ -74,7 +74,7 @@
             // cmbAtoPartida
             // 
             this.cmbAtoPartida.FormattingEnabled = true;
-            this.cmbAtoPartida.Location = new System.Drawing.Point(152, 82);
+            this.cmbAtoPartida.Location = new System.Drawing.Point(159, 81);
             this.cmbAtoPartida.Name = "cmbAtoPartida";
             this.cmbAtoPartida.Size = new System.Drawing.Size(121, 21);
             this.cmbAtoPartida.TabIndex = 14;
@@ -104,7 +104,7 @@
             // txtETA
             // 
             this.txtETA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtETA.Location = new System.Drawing.Point(152, 162);
+            this.txtETA.Location = new System.Drawing.Point(159, 162);
             this.txtETA.Margin = new System.Windows.Forms.Padding(2);
             this.txtETA.Name = "txtETA";
             this.txtETA.Size = new System.Drawing.Size(121, 26);
@@ -127,7 +127,7 @@
             // txtPosta
             // 
             this.txtPosta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPosta.Location = new System.Drawing.Point(152, 205);
+            this.txtPosta.Location = new System.Drawing.Point(159, 205);
             this.txtPosta.Margin = new System.Windows.Forms.Padding(2);
             this.txtPosta.Name = "txtPosta";
             this.txtPosta.Size = new System.Drawing.Size(121, 26);

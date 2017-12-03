@@ -93,6 +93,7 @@
             this.btnMostrarInforme.TabIndex = 37;
             this.btnMostrarInforme.Text = "Mostrar";
             this.btnMostrarInforme.UseVisualStyleBackColor = true;
+            this.btnMostrarInforme.Click += new System.EventHandler(this.btnMostrarInforme_Click);
             // 
             // InformeAviones
             // 

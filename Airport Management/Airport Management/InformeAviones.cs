@@ -16,5 +16,10 @@ namespace Airport_Management
         {
             InitializeComponent();
         }
+
+        private void btnMostrarInforme_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

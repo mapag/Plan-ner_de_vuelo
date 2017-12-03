@@ -103,6 +103,10 @@ namespace Airport_Management
                     {
                         ga.AgregarAvion(txtCodigo.Text, cmb_fabricante.Text, cmb_modelo.Text);
                         MessageBox.Show("Avión agregado con éxito a la base de datos del sistema");
+                        txtCodigo.Text = "";
+                        cmb_fabricante.SelectedIndex = -1;
+                        cmb_modelo.Text = "";
+                        txtCodigo.Select();
                     }
                     else
                     {
@@ -115,10 +119,6 @@ namespace Airport_Management
                 MessageBox.Show(re.ToString());
             }
             //LIMPIA LOS CAMPOS
-            txtCodigo.Text = "";
-            cmb_fabricante.SelectedIndex = -1;
-            cmb_modelo.Text = "";
-            txtCodigo.Select();
         }
 
         private void label2_Click(object sender, EventArgs e)
