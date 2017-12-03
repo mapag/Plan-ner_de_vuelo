@@ -35,12 +35,12 @@ namespace Airport_Management
 
         private void RutasTransitadas()
         {
-            string ClausulaSQL = "select COUNT(distinct codigo_RTA) as Cantidad, codigo_RTA as 'codigo ruta' from vuelos group by vuelos.codigo_RTA";
+            string ClausulaSQL = "select COUNT( codigo_RTA) as Cantidad, codigo_RTA as 'Codigo ruta' from vuelos group by vuelos.codigo_RTA order by Cantidad desc";
             ad.IniciarTabla(ClausulaSQL, "Todos", ref dsVuelos, ref grdInformeVuelos);
         }
         private void RutasTransitadasMes()
         {
-            string ClausulaSQL = "select COUNT(distinct codigo_RTA) as Cantidad, codigo_RTA as 'codigo ruta' from vuelos WHERE MONTH(fecha_salida_VLO) > MONTH(GETDATE()) - 1 and fecha_salida_VLO < GETDATE() group by vuelos.codigo_RTA";
+            string ClausulaSQL = "select COUNT( codigo_RTA) as Cantidad, codigo_RTA as 'codigo ruta' from vuelos WHERE MONTH(fecha_salida_VLO) > MONTH(GETDATE()) - 1 group by vuelos.codigo_RTA order by Cantidad desc";
             ad.IniciarTabla(ClausulaSQL, "Todos", ref dsVuelos, ref grdInformeVuelos);
         }
 
