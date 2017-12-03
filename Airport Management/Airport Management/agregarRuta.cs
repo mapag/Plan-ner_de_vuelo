@@ -33,7 +33,15 @@ namespace Airport_Management
 
                 else
                 {
-                    gr.AgregarRuta(cmbAtoPartida.Text, cmbAtoLlegada.Text, Int32.Parse(txtETA.Text), Int32.Parse(txtPosta.Text));
+                    try
+                    {
+                        gr.AgregarRuta(cmbAtoPartida.Text, cmbAtoLlegada.Text, Int32.Parse(txtETA.Text), Int32.Parse(txtPosta.Text));
+                    }
+                    catch
+                    {
+                        MessageBox.Show("La ruta especificada ya existe.");
+                    }
+                    
                 }
             }
             catch (SyntaxErrorException re)

@@ -94,6 +94,7 @@
             this.btnMostrarInforme.TabIndex = 37;
             this.btnMostrarInforme.Text = "Mostrar";
             this.btnMostrarInforme.UseVisualStyleBackColor = true;
+            this.btnMostrarInforme.Click += new System.EventHandler(this.btnMostrarInforme_Click);
             // 
             // InformeVuelos
             // 
@@ -110,6 +111,7 @@
             this.Name = "InformeVuelos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InformeVuelos";
+            this.Load += new System.EventHandler(this.InformeVuelos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdInformeVuelos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

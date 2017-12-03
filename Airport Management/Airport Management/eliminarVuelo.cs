@@ -41,6 +41,7 @@ namespace Airport_Management
                 {
                     ad.EjecutarConsulta("delete from vuelos where codigo_VLO = '" + txtCodigo.Text + "'");
                     txtCodigo.Text = "";
+                    MessageBox.Show("El vuelo ha sido eliminado con exito");
                 }
             }
             catch

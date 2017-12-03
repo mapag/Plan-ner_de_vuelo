@@ -44,9 +44,16 @@ namespace Airport_Management
 
             if (cmbCodigo.Text != "")
             {
-                bool aux = gr.modificarRuta(cmbCodigo.Text, Int32.Parse(txtETA.Text), Int32.Parse(txtPosta.Text));
+                if (txtETA.Text.Length > 8 || txtPosta.Text.Length > 8)
+                {
+                    MessageBox.Show("El ETA o POSTA es demasiado largo"); 
+                }
+                else
+                {
+                    bool aux = gr.modificarRuta(cmbCodigo.Text, Int32.Parse(txtETA.Text), Int32.Parse(txtPosta.Text));
 
-                if (aux) MessageBox.Show("La ruta se ha modificado con exito");
+                    if (aux) MessageBox.Show("La ruta se ha modificado con exito"); 
+                }
             }
             else
                 MessageBox.Show("Debe ingresar un código de ruta");
