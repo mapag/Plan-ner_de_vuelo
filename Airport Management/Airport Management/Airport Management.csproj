@@ -114,6 +114,24 @@
     </Compile>
     <Compile Include="Clases\GestionAeropuertos.cs" />
     <Compile Include="Clases\GestionUsuarios.cs" />
+    <Compile Include="InformeAeropuertos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformeAeropuertos.Designer.cs">
+      <DependentUpon>InformeAeropuertos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformeAviones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformeAviones.Designer.cs">
+      <DependentUpon>InformeAviones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformeVuelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformeVuelos.Designer.cs">
+      <DependentUpon>InformeVuelos.cs</DependentUpon>
+    </Compile>
     <Compile Include="ingreso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +229,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformeAeropuertos.resx">
+      <DependentUpon>InformeAeropuertos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformeAviones.resx">
+      <DependentUpon>InformeAviones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformeVuelos.resx">
+      <DependentUpon>InformeVuelos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ingreso.resx">
       <DependentUpon>ingreso.cs</DependentUpon>

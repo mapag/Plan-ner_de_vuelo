@@ -301,5 +301,31 @@ namespace Airport_Management
         {
             System.IO.Directory.CreateDirectory("c:/BackUpAirport_Manager/");
         }
+
+        private void aEROPUERTOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void informeAeropuertosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarVentanaAnterior();
+            InformeAeropuertos inforeAeropuertos = new InformeAeropuertos();
+            abrirVentana(inforeAeropuertos);
+        }
+
+        private void informeAvionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarVentanaAnterior();
+            InformeAviones informeAviones = new InformeAviones();
+            abrirVentana(informeAviones);
+        }
+
+        private void informeVuelosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarVentanaAnterior();
+            InformeVuelos informeVuelos = new InformeVuelos();
+            abrirVentana(informeVuelos);
+        }
     }
 }
